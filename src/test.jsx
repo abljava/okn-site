@@ -36,7 +36,7 @@ export default function Test() {
         <div className="md:w-1/3 flex flex-col items-center">
           {/* Фото-полароид */}
           <div className="bg-white shadow-lg rounded p-2 mb-2">
-            <img src="/photo1.jpg" alt="Владивосток 1950" className="w-40 h-40 object-cover rounded" />
+            <img src="/images/photo1.jpg" alt="Владивосток 1950" className="w-40 h-40 object-cover rounded" />
             <div className="text-xs text-center mt-1">Владивосток, 1950</div>
           </div>
         </div>

@@ -9,10 +9,11 @@ export default {
       fontFamily: {
         'bebas': ['Bebas Neue', 'sans-serif'],
         'geist': ['Geist', 'sans-serif'],
+        'vasek': ['Vasek', 'sans-serif'],
       },
       colors: {
         bg: '#CCD4D9',
-        bgGray: '#2F373B',
+        bgGrey: '#2F373B',
         black: '#2A2C2E',
         white: '#FFFFFF',
         darkGrey: '#4A4E51',
