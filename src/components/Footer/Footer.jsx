@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <footer className="relative z-10 text-white py-2 bg-bgGrey rounded-t-3xl px-5 py-10">
+    <footer className="relative z-10 text-white py-2 bg-bgGrey rounded-t-3xl px-5 py-9">
       <div className="flex flex-col items-center gap-8">
         <Link to="/" className="w-16">
           <img src="/logo.png" alt="logo" />
