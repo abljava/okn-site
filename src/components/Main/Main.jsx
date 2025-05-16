@@ -3,12 +3,12 @@ import BackgroundVideo from "../BackgroundVideo/BackgroundVideo";
 
 function Main() {
   return (
-    <main>
+    <main className="md:max-w-[1440px] mx-auto">
       {/* Видео и оверлей */}
       <BackgroundVideo src="/videos/east-to-west.mp4" />
       <div className="fixed inset-0 bg-black bg-opacity-50 pointer-events-none -z-5"></div>
 
-      <div className="relative z-10  mx-5 mt-7">
+      <section className="relative z-10  mx-5 mt-7">
         <div className="relative z-10">
           <h1 className="text-white text-3xl/8 font-bold font-bebas tracking-[0.04em]">
             Достопримечательное место "Исторический центр города Владивостока"
@@ -287,7 +287,7 @@ function Main() {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </main>
   );
 }

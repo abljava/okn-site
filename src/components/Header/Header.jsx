@@ -2,17 +2,33 @@ import Burger from "../Burger/Burger";
 
 function Header() {
   return (
-    <header className="relative z-10 text-white py-2">
-      <div className="flex justify-between items-center mx-5">
-        <Burger/>
-        <a href="/" className="w-12">
+    <header className="relative z-10 text-white lg:max-w-[1440px] lg:mx-auto mx-5 lg:py-5 py-2 border-b border-white/30">
+      <div className="flex justify-between items-center gap-6">
+        <div className="md:hidden">
+          <Burger />
+        </div>
+        <a href="/" className="w-12 md:w-12 lg:w-24 flex-shrink-0">
           <img src="/logo.png" alt="logo" />
         </a>
-        <button className="text-white text-[9px] font-semibold uppercase bg-orange rounded px-3 py-1.5">
+        <nav className="hidden md:flex flex-1 justify-between items-center gap-6 text-[9px] lg:text-sm xl:text-lg uppercase font-medium tracking-wide">
+          <a href="#" className="hover:text-orange-400">
+            Исторические сведения
+          </a>
+          <a href="#" className="hover:text-orange-400">
+            Предмет охраны достопримечательного места
+          </a>
+          <a href="#" className="hover:text-orange-400">
+            Режимы использования земель и требования к градостроительному
+            регламенту
+          </a>
+          <a href="#" className="hover:text-orange-400">
+            Авторский коллектив
+          </a>
+        </nav>
+        <button className="text-white text-[9px] font-semibold lg:text-base uppercase bg-orange rounded px-3 py-1.5 lg:px-6 lg:py-4 ml-4">
           <span>Написать на почту</span>
         </button>
       </div>
-      <div className="mt-1 border-b border-white/30 mx-5"></div>
     </header>
   );
 }
