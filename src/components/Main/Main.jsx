@@ -3,14 +3,14 @@ import BackgroundVideo from "../BackgroundVideo/BackgroundVideo";
 
 function Main() {
   return (
-    <main className="md:max-w-[1440px] mx-auto">
+    <main className="md:max-w-[1440px] mx-auto relative overflow-hidden">
       {/* Видео и оверлей */}
-      <BackgroundVideo src="/videos/east-to-west.mp4" />
+      <BackgroundVideo src="/videos/east-to-west.mp4" className=""/>
       <div className="fixed inset-0 bg-black bg-opacity-50 pointer-events-none -z-5"></div>
 
-      <section className="relative z-10  mx-5 mt-7">
+      <section className="relative z-10  mx-5 mt-7 2xl:text-2xl">
         <div className="relative z-10">
-          <h1 className="text-white text-3xl/8 font-bold font-bebas tracking-[0.04em]">
+          <h1 className="text-white text-3xl/8 md:text-3xl/[1.1] xl:text-[80px] font-bold font-bebas tracking-[0.04em]">
             Достопримечательное место "Исторический центр города Владивостока"
           </h1>
           <p className="mt-4 text-white text-xs/4 uppercase">
@@ -24,12 +24,12 @@ function Main() {
             className="absolute -z-10 pointer-events-none scale-[2.3] top-0 left-1/2 right-1/2 -translate-x-1/2 w-screen max-w-none opacity-40"
             alt="background"
           />
-          <h3 className="uppercase text-white text-3xl/8 font-bold font-bebas tracking-[0.04em]">
+          <h3 className="h3">
             введение
           </h3>
           <img src="/images/photo-0.png" alt="photo" />
         </div>
-        <div className="flex flex-col gap-2 text-white text-xs/4 mt-3 leading-[1.4]">
+        <div className="flex flex-col gap-2 text-white text-xs/4 md:text-[10px] xl:text-[22px] mt-3 leading-[1.4]">
           <p>
             <span className="font-bold">
               За последние десятилетия накопилось множество
@@ -62,7 +62,7 @@ function Main() {
           />
 
           <div className="relative ">
-            <h3 className="pt-28 text-black text-3xl/8 font-bold font-bebas uppercase tracking-[0.04em]">
+            <h3 className="h3 pt-28 !text-black">
               Для кого этот сайт?
             </h3>
             <div className="space-y-3 text-xs">
@@ -139,7 +139,7 @@ function Main() {
             <div className="relative pt-20 text-white text-xs">
               <div className="relative grid grid-cols-[75%_1fr] grid-rows-[auto_auto_auto] gap-x-6 gap-y-4 items-start">
                 {/* 1 строка, 1 колонка: Заголовок */}
-                <h3 className="col-start-1 row-start-1 text-white text-3xl/8 font-bold font-bebas uppercase tracking-[0.04em]">
+                <h3 className="h3 col-start-1 row-start-1">
                   правовой статус
                 </h3>
                 {/* 1 строка, 2 колонка: Круглая картинка */}
@@ -189,7 +189,7 @@ function Main() {
           </div>
 
           <div className="relative bg-cover bg-center">
-            <h3 className="pt-28 text-black text-3xl/8 font-bold font-bebas uppercase tracking-[0.04em]">
+            <h3 className="pt-28 h3 !text-black">
               Знать, чтобы развивать
             </h3>
             <div className="text-xs">
@@ -266,7 +266,7 @@ function Main() {
               className="absolute -z-5 pointer-events-none origin-top scale-[2.2] right-0 -translate-x-1/2 w-screen max-w-none"
             />
             <div className="relative flex flex-col gap-5 items-start text-white ">
-              <h3 className=" pt-28 text-3xl/8 font-bold font-bebas uppercase tracking-[0.04em]">
+              <h3 className=" pt-28 h3">
                 Обратная связь
               </h3>
               <p className="font-bold text-xs">

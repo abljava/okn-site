@@ -30,6 +30,23 @@
   font-style: normal;
 }
 
+@layer utilities {
+  .h3 {
+    @apply uppercase text-white text-3xl/8 font-bold font-bebas tracking-[0.04em];
+    /* @apply font-bebas font-bold tracking-wide leading-tight text-2xl; */
+  }
+  @screen md {
+    .h3 {
+      @apply text-3xl;
+    }
+  }
+  @screen xl {
+    .h3 {
+      @apply text-[80px];
+    }
+  }
+}
+
 :root {
   font-family: 'Geist', Arial, sans-serif;
   font-weight: 400;
