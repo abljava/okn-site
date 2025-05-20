@@ -3,14 +3,15 @@ import BackgroundVideo from "../BackgroundVideo/BackgroundVideo";
 
 function Main() {
   return (
-    <main className="md:max-w-[1440px] mx-auto relative overflow-hidden bg-blueGray">
+    <main className="md:max-w-[1440px] mx-auto relative overflow-hidden">
       {/* Видео и оверлей */}
-      {/* <BackgroundVideo src="/videos/east-to-west.mp4" className="" />
-      <div className="fixed inset-0 bg-black bg-opacity-50 pointer-events-none -z-5"></div> */}
+      <BackgroundVideo src="/videos/east-to-west.mp4" className="" />
+      <div className="fixed inset-0 bg-black bg-opacity-50 pointer-events-none -z-5"></div>
 
       <section className="relative z-10 mx-5 pt-10 md:pt-0 2xl:text-2xl">
         <div className="flex flex-col md:grid md:grid-cols-[167px_1fr] 2xl:grid-cols-[370px_1fr] ">
           <div className="hidden md:block"></div>
+          {/* Заголовок и подзаголовок */}
           <div className="relative z-10 md:border-l-2 md:border-white/40 md:pl-5 md:pt-10 2xl:pt-[100px] 2xl:pl-[100px]">
             <h1 className="text-white text-3xl/8 md:text-3xl/[1.1] xl:text-[80px] font-bold font-bebas tracking-[0.04em]">
               Достопримечательное место "Исторический центр города Владивостока"
@@ -19,17 +20,27 @@ function Main() {
               Разработка документации, связанной с исторической архитектурой
             </p>
           </div>
-          <div className="flex items-end justify-between relative w-full">
-            {/* <img
-              src="/images/bg-01.png"
-              className="absolute -z-10 pointer-events-none scale-[2.3] top-0 left-1/2 right-1/2 -translate-x-1/2 w-screen max-w-none opacity-40"
-              alt="background"
-            /> */}
-            <h3 className="h3">введение</h3>
-            <img src="/images/photo-0.png" alt="photo" />
-          </div>
+        </div>
 
-          <div className="flex flex-col gap-2 text-white text-xs/4 md:text-[10px] xl:text-[22px] pt-3 leading-[1.4] md:border-l-2 md:border-white/40 md:pl-5 2xl:pl-[100px]">
+        <div className="flex flex-col md:grid md:grid-cols-[167px_1fr_auto] 2xl:grid-cols-[370px_1fr_auto]">
+          <div className="flex justify-between items-end gap-2">
+            <h3 className="h3 md:leading-[1] md:pt-10">введение</h3>
+            <div className="md:hidden ">
+              <img
+                src="/images/photo-0.png"
+                alt="photo"
+                className="w-28"
+              />
+            </div>
+          </div>
+          <div className="hidden md:block md:col-start-3 md:row-start-1 md:justify-self-end md:px-16">
+            <img
+              src="/images/photo-0.png"
+              alt="photo"
+              className="w-28 md:w-32 lg:w-48 2xl:w-64"
+            />
+          </div>
+          <div className="flex flex-col gap-2 text-white text-xs/4 md:text-[10px] xl:text-[22px] pt-3 md:pt-10 leading-[1.4] md:border-l-2 md:border-white/40 md:pl-5 2xl:pl-[100px]">
             <p>
               <span className="font-bold">
                 За последние десятилетия накопилось множество
@@ -57,13 +68,13 @@ function Main() {
         </div>
 
         <div className="relative">
-          {/* <img
+          <img
             src="/images/bg-main3.png"
             className="absolute pointer-events-none scale-[2.3] origin-top left-1/2 right-1/2 -translate-x-1/2 w-screen max-w-none"
             alt="background"
-          /> */}
+          />
 
-          <div className="relative md:grid md:grid-cols-[167px_1fr] 2xl:grid-cols-[370px_1fr] ">
+          <div className="relative pt-10 md:grid md:grid-cols-[167px_1fr] 2xl:grid-cols-[370px_1fr] ">
             <div className="hidden md:block"></div>
             <h3 className="h3 pt-28 !text-black md:hidden">
               Для кого этот сайт?
@@ -258,7 +269,7 @@ function Main() {
                   className="w-full h-full object-cover"
                   poster="/images/video-preview.png"
                 />
-                {/* Кнопка play */} 
+                {/* Кнопка play */}
                 <button
                   className="absolute inset-0 flex items-center justify-center"
                   aria-label="Play video"
@@ -271,8 +282,12 @@ function Main() {
                 </button>
               </div>
               <div className="flex justify-between w-full mt-4 px-2 text-black font-vasek">
-                <span className="font-vasek text-3xl lg:text-[44px] 2xl:text-[66px]">Владивосток</span>
-                <span className="italic text-base lg:text-[22px] 2xl:text-[33px]">2025</span>
+                <span className="font-vasek text-3xl lg:text-[44px] 2xl:text-[66px]">
+                  Владивосток
+                </span>
+                <span className="italic text-base lg:text-[22px] 2xl:text-[33px]">
+                  2025
+                </span>
               </div>
             </div>
           </div>
