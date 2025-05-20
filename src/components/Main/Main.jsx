@@ -5,8 +5,8 @@ function Main() {
   return (
     <main className="md:max-w-[1440px] mx-auto relative overflow-hidden">
       {/* Видео и оверлей */}
-      <BackgroundVideo src="/videos/east-to-west.mp4" className="" />
-      <div className="fixed inset-0 bg-black bg-opacity-50 pointer-events-none -z-5"></div>
+      {/* <BackgroundVideo src="/videos/east-to-west.mp4" className="" />
+      <div className="fixed inset-0 bg-black bg-opacity-50 pointer-events-none -z-5"></div> */}
 
       <section className="relative z-10 mx-5 pt-10 md:pt-0 2xl:text-2xl">
         <div className="flex flex-col md:grid md:grid-cols-[167px_1fr] 2xl:grid-cols-[370px_1fr] ">
@@ -23,14 +23,15 @@ function Main() {
         </div>
 
         <div className="flex flex-col md:grid md:grid-cols-[167px_1fr_auto] 2xl:grid-cols-[370px_1fr_auto]">
+          <img
+            src="/images/bg-01.png"
+            className="absolute -z-10 pointer-events-none scale-[2.3] top-0 left-1/2 right-1/2 -translate-x-1/2 w-screen max-w-none opacity-40"
+            alt="background"
+          />
           <div className="flex justify-between items-end gap-2">
             <h3 className="h3 md:leading-[1] md:pt-10">введение</h3>
             <div className="md:hidden ">
-              <img
-                src="/images/photo-0.png"
-                alt="photo"
-                className="w-28"
-              />
+              <img src="/images/photo-0.png" alt="photo" className="w-28" />
             </div>
           </div>
           <div className="hidden md:block md:col-start-3 md:row-start-1 md:justify-self-end md:px-16">
@@ -292,29 +293,41 @@ function Main() {
             </div>
           </div>
 
+          {/* Обратная связь */}
           <div className="relative mb-10">
             <img
               src="/images/bg-0.png"
               alt="фоновая картинка"
               className="absolute -z-5 pointer-events-none origin-top scale-[2.2] right-0 -translate-x-1/2 w-screen max-w-none"
             />
-            <div className="relative flex flex-col gap-5 items-start text-white ">
+            <div className="relative flex flex-col items-start md:grid md:grid-cols-[167px_1fr] 2xl:grid-cols-[370px_1fr] text-white ">
               <h3 className=" pt-28 h3">Обратная связь</h3>
-              <p className="font-bold text-xs">
-                Авторский коллектив, участвовавший в создании данной
-                документации, открыт к диалогу и готов принять к рассмотрению
-                поступившие предложения и мнения о потенциальных изменениях
-                документации в будущем.
-              </p>
-              <p className="text-xs">
-                К таким предложениям могут также относиться обоснованные
-                пожелания по включению/исключению ценных исторических объектов
-                (как зданий, так и сооружений) в состав предмета охраны
-                достопримечательного места
-              </p>
-              <button className="text-white text-xs font-semibold uppercase bg-orange rounded px-8 py-3">
-                <span>Написать на почту</span>
-              </button>
+              <div className="flex flex-col gap-5 md:pl-5 md:pr-20 items-start border-l-2 border-white/40">
+                <p className="font-bold text-xs">
+                  Авторский коллектив, участвовавший в создании данной
+                  документации, открыт к диалогу и готов принять к рассмотрению
+                  поступившие предложения и мнения о потенциальных изменениях
+                  документации в будущем.
+                </p>
+                <div className="flex gap-2 items-center md:items-start">
+                  <p className="text-xs ">
+                    К таким предложениям могут также относиться обоснованные
+                    пожелания по включению/исключению ценных исторических
+                    объектов (как зданий, так и сооружений) в состав предмета
+                    охраны достопримечательного места
+                  </p>
+                  <div className="flex-shrink-0">
+                    <img
+                      alt="photo"
+                      className="w-28 md:w-[250px] object-cover"
+                      src="/images/photo-5.png"
+                    />
+                  </div>
+                </div>
+                <button className="text-white text-xs font-semibold uppercase bg-orange rounded px-8 py-3">
+                  <span>Написать на почту</span>
+                </button>
+              </div>
             </div>
           </div>
         </div>
