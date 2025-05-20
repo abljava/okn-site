@@ -32,7 +32,7 @@ function Footer() {
             </ul>
           </nav>
           {/* Контакты и копирайт */}
-          <div className="flex flex-col items-center md:flex-row md:justify-between gap-2 md:pt-4 xl:pt-10 text-xs md:text-[10px] xl:text-base md:border-t md:border-white/20 ">
+          <div className="flex flex-col items-center md:flex-row md:justify-between gap-2 md:pt-4 xl:pt-10 text-xs md:text-[10px] xl:text-base md:border-t md:border-white/40/20 ">
             <a
               href="mailto:hist.center-vl@mail.ru"
               className="underline hover:text-orange transition-colors"

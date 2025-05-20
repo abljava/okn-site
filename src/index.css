@@ -45,6 +45,9 @@
       @apply text-[80px];
     }
   }
+  .row-span-full {
+    grid-row: 1 / -1;
+  }
 }
 
 :root {
@@ -61,5 +64,11 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+}
+
+@layer base {
+  body {
+    @apply text-black;
+  }
 }
 
