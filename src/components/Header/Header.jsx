@@ -2,7 +2,7 @@ import Burger from "../Burger/Burger";
 
 function Header() {
   return (
-    <header className="relative z-10 text-white 2xl:max-w-[1440px] 2xl:mx-auto lg:mx-10 xl:mx-20 mx-5 lg:py-5 py-1 border-b border-white/40 bg-blueGray">
+    <header className="relative z-10 text-white py-1 md:py-2 2xl:max-w-[1440px] 2xl:mx-auto lg:mx-10 xl:mx-20 mx-5 lg:py-5  border-b border-white/40 bg-blueGray">
       <div className="flex justify-between items-center gap-6">
         <div className="pl-7 md:hidden">
           <Burger />

@@ -12,11 +12,11 @@ function Main() {
         <div className="flex flex-col md:grid md:grid-cols-[167px_1fr] 2xl:grid-cols-[370px_1fr] ">
           <div className="hidden md:block"></div>
           {/* Заголовок и подзаголовок */}
-          <div className="relative z-10 md:border-l-2 md:border-white/40 md:pl-5 md:pt-10 2xl:pt-[100px] 2xl:pl-[100px]">
+          <div className="relative z-10 md:pr-44 md:border-l-2 md:border-white/40 md:pl-5 md:pt-10 2xl:pt-[100px] 2xl:pl-[100px]">
             <h1 className="text-white text-3xl/8 md:text-3xl/[1.1] xl:text-[80px] font-bold font-bebas tracking-[0.04em]">
               Достопримечательное место "Исторический центр города Владивостока"
             </h1>
-            <p className="mt-4 text-white text-xs/4 uppercase">
+            <p className="mt-4 md:mt-3 text-white text-xs/4 uppercase">
               Разработка документации, связанной с исторической архитектурой
             </p>
           </div>
@@ -28,20 +28,20 @@ function Main() {
             className="absolute -z-10 pointer-events-none scale-[2.3] top-0 left-1/2 right-1/2 -translate-x-1/2 w-screen max-w-none opacity-40"
             alt="background"
           />
-          <div className="flex justify-between items-end gap-2">
-            <h3 className="h3 md:leading-[1] md:pt-10">введение</h3>
+          <div className="flex justify-between items-start gap-2">
+            <h3 className="h3 md:pt-28 md:leading-[1]">введение</h3>
             <div className="md:hidden ">
               <img src="/images/photo-0.png" alt="photo" className="w-30" />
             </div>
           </div>
-          <div className="hidden md:block md:col-start-3 md:row-start-1 md:justify-self-end md:px-16">
+          <div className="hidden md:block md:col-start-3 md:row-start-1 md:justify-self-end md:pt-28 md:px-12">
             <img
               src="/images/photo-0.png"
               alt="photo"
-              className="w-28 md:w-32 lg:w-48 2xl:w-64"
+              className="w-28 md:w-36 lg:w-48 2xl:w-64"
             />
           </div>
-          <div className="flex flex-col gap-2 text-white text-xs/4 md:text-[10px] xl:text-[22px] pt-3 md:pt-10 leading-[1.4] md:border-l-2 md:border-white/40 md:pl-5 2xl:pl-[100px]">
+          <div className="flex flex-col gap-2 text-white text-xs/4 md:text-[10px] xl:text-[22px] pt-3 md:pt-28 leading-[1.4] md:border-l-2 md:border-white/40 md:pl-5 2xl:pl-[100px]">
             <p>
               <span className="font-bold">
                 За последние десятилетия накопилось множество
@@ -75,12 +75,18 @@ function Main() {
             alt="background"
           />
 
-          <div className="relative pt-44 md:grid md:grid-cols-[167px_1fr] 2xl:grid-cols-[370px_1fr] ">
-            <div className="hidden md:block"></div>
+          <div className="relative pt-44 md:pt-0 md:grid md:grid-cols-[167px_1fr] 2xl:grid-cols-[370px_1fr] ">
+            <div className="hidden md:block md:pt-40">
+            <img
+                src="/images/photo-1.png"
+                alt="photo"
+                className="w-full h-auto object-cover md:w-[130px] 2xl:w-[290px]"
+              />
+            </div>
             <h3 className="h3 pt-28 !text-black md:hidden">
               Для кого этот сайт?
             </h3>
-            <div className="space-y-3 text-xs md:border-l-2 md:border-white/40 md:pl-5 md:pt-10 2xl:pl-[100px]">
+            <div className="space-y-3 text-xs md:pt-44 md:pr-32 md:border-l-2 md:border-white/40 md:pl-5 2xl:pl-[100px]">
               <h3 className="h3 pt-28 !text-black hidden md:block">
                 Для кого этот сайт?
               </h3>
@@ -132,7 +138,7 @@ function Main() {
           </div>
           <div className="relative flex gap-2 mt-9 md:mt-0 md:gap-0 md:grid md:grid-cols-[167px_1fr] 2xl:grid-cols-[370px_1fr] ">
             {/* Текст — в правой колонке грида */}
-            <p className="text-xs max-w-[210px] md:col-start-2 md:row-start-1 md:pl-5 md:pt-10 2xl:pl-[100px] md:border-l-2 md:border-white/40">
+            <p className="text-xs max-w-[210px] md:max-w-none md:col-start-2 md:row-start-1 md:pl-5 md:pr-32 md:pt-10 2xl:pl-[100px] md:border-l-2 md:border-white/40">
               Информация, размещённая здесь, носит ознакомительный характер и
               призвана в первую очередь наглядно информировать заинтересованных
               лиц, в том числе собственников зданий и земельных участков,
@@ -141,7 +147,7 @@ function Main() {
               исторического центра города.
             </p>
             {/* Картинка — в левой колонке грида */}
-            <div className="md:col-start-1 md:row-start-1">
+            <div className="md:hidden">
               <img
                 src="/images/photo-1.png"
                 alt="photo"
@@ -159,7 +165,7 @@ function Main() {
             <div className="relative pt-32 md:pt-0 text-white text-xs">
               <div className="relative grid grid-cols-[75%_1fr] grid-rows-[auto_auto_auto] gap-x-6 gap-y-4 items-start md:grid-cols-[167px_1fr_1fr] md:grid-rows-[auto_auto] md:gap-0 2xl:grid-cols-[370px_1fr_1fr]">
                 {/* 1 строка, 1 колонка: Заголовок */}
-                <h3 className="h3 col-start-1 row-start-1 md:col-start-1 md:row-start-1 md:pt-10 2xl:leading-[1.1]">
+                <h3 className="h3 col-start-1 row-start-1 md:pt-36 md:col-start-1 md:row-start-1 2xl:leading-[1.1]">
                   правовой статус
                 </h3>
 
@@ -196,11 +202,11 @@ function Main() {
                   </p>
                 </div>
                 {/* 3 строка, 2 колонка: Картинка */}
-                <div className="absolute col-start-2 row-start-3 md:static md:pl-5 2xl:pl-[100px] md:col-start-2 md:row-start-1 md:h-full flex justify-start -right-5 md:border-l-2 md:border-white/40">
+                <div className="absolute col-start-2 row-start-3 md:static md:pl-5 md:pt-20 2xl:pl-[100px] md:col-start-2 md:row-start-1 md:h-full flex justify-start -right-5 md:border-l-2 md:border-white/40">
                   <img
                     src="/images/photo-3.png"
                     alt="Фото"
-                    className="w-24 pr-2 pt-9 max-w-none md:w-[200px] md:h-full 2xl:w-full object-cover"
+                    className="w-24 pr-2 pt-9 max-w-none md:w-[190px] md:h-full 2xl:w-full object-cover"
                   />
                 </div>
               </div>
@@ -208,7 +214,7 @@ function Main() {
           </div>
 
           <div className="relative md:grid md:grid-cols-[167px_1fr] 2xl:grid-cols-[370px_1fr] bg-cover bg-center">
-            <div className="pt-32 md:border-l-2 md:border-white/40 md:pl-5 md:pt-10 2xl:pl-[100px]">
+            <div className="pt-32 md:border-l-2 md:border-white/40 md:pl-5 md:pt-36 2xl:pl-[100px]">
               <h3 className="pt-28 h3 !text-black xl:leading-[1.1]">
                 Знать, чтобы развивать
               </h3>
@@ -251,11 +257,11 @@ function Main() {
               </div>
             </div>
             {/* Картинка */}
-            <div className="hidden md:block md:col-start-1 md:row-start-1">
+            <div className="hidden md:block md:col-start-1 md:row-start-1 md:pt-44">
               <img
                 src="/images/photo-4.png"
                 alt="photo"
-                className="w-full h-auto md:w-[120px] 2xl:w-[290px]"
+                className="w-full h-auto md:w-[130px] 2xl:w-[290px]"
               />
             </div>
           </div>
@@ -300,7 +306,7 @@ function Main() {
               alt="фоновая картинка"
               className="absolute -z-5 pointer-events-none origin-top scale-[2.2] right-0 -translate-x-1/2 w-screen max-w-none"
             />
-            <div className="relative flex flex-col items-start pt-14 gap-4 md:grid md:grid-cols-[167px_1fr] 2xl:grid-cols-[370px_1fr] text-white ">
+            <div className="relative flex flex-col items-start pt-14 md:pt-9 gap-4 md:grid md:grid-cols-[167px_1fr] md:gap-0 2xl:grid-cols-[370px_1fr] text-white ">
               <h3 className=" pt-28 h3">Обратная связь</h3>
               <div className="flex flex-col gap-7 md:pl-5 md:pr-20 items-start border-l-2 border-white/40">
                 <p className="font-bold text-xs">
