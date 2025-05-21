@@ -307,7 +307,7 @@ function Main() {
               className="absolute -z-5 pointer-events-none origin-top scale-[2.2] right-0 -translate-x-1/2 w-screen max-w-none"
             />
             <div className="relative flex flex-col items-start pt-14 md:pt-9 gap-4 md:grid md:grid-cols-[167px_1fr] md:gap-0 2xl:grid-cols-[370px_1fr] text-white ">
-              <h3 className=" pt-28 h3">Обратная связь</h3>
+              <h3 className=" pt-28 h3 lg:leading-[1]">Обратная связь</h3>
               <div className="flex flex-col gap-7 md:pl-5 md:pr-20 items-start border-l-2 border-white/40">
                 <p className="font-bold text-xs">
                   Авторский коллектив, участвовавший в создании данной
