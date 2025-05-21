@@ -3,7 +3,7 @@ import BackgroundVideo from "../BackgroundVideo/BackgroundVideo";
 
 function Main() {
   return (
-    <main className="md:max-w-[1440px] mx-auto relative overflow-hidden">
+    <main className="md:max-w-[1440px] mx-auto relative overflow-hidden bg-blueGray">
       {/* Видео и оверлей */}
       {/* <BackgroundVideo src="/videos/east-to-west.mp4" className="" />
       <div className="fixed inset-0 bg-black bg-opacity-50 pointer-events-none -z-5"></div> */}
@@ -31,7 +31,7 @@ function Main() {
           <div className="flex justify-between items-end gap-2">
             <h3 className="h3 md:leading-[1] md:pt-10">введение</h3>
             <div className="md:hidden ">
-              <img src="/images/photo-0.png" alt="photo" className="w-28" />
+              <img src="/images/photo-0.png" alt="photo" className="w-30" />
             </div>
           </div>
           <div className="hidden md:block md:col-start-3 md:row-start-1 md:justify-self-end md:px-16">
@@ -75,7 +75,7 @@ function Main() {
             alt="background"
           />
 
-          <div className="relative pt-10 md:grid md:grid-cols-[167px_1fr] 2xl:grid-cols-[370px_1fr] ">
+          <div className="relative pt-44 md:grid md:grid-cols-[167px_1fr] 2xl:grid-cols-[370px_1fr] ">
             <div className="hidden md:block"></div>
             <h3 className="h3 pt-28 !text-black md:hidden">
               Для кого этот сайт?
@@ -130,9 +130,9 @@ function Main() {
               </div>
             </div>
           </div>
-          <div className="relative flex gap-2 mt-8 md:mt-0 md:gap-0 md:grid md:grid-cols-[167px_1fr] 2xl:grid-cols-[370px_1fr] ">
+          <div className="relative flex gap-2 mt-9 md:mt-0 md:gap-0 md:grid md:grid-cols-[167px_1fr] 2xl:grid-cols-[370px_1fr] ">
             {/* Текст — в правой колонке грида */}
-            <p className="text-xs md:col-start-2 md:row-start-1 md:pl-5 md:pt-10 2xl:pl-[100px] md:border-l-2 md:border-white/40">
+            <p className="text-xs max-w-[210px] md:col-start-2 md:row-start-1 md:pl-5 md:pt-10 2xl:pl-[100px] md:border-l-2 md:border-white/40">
               Информация, размещённая здесь, носит ознакомительный характер и
               призвана в первую очередь наглядно информировать заинтересованных
               лиц, в том числе собственников зданий и земельных участков,
@@ -145,7 +145,7 @@ function Main() {
               <img
                 src="/images/photo-1.png"
                 alt="photo"
-                className="w-full h-auto md:w-[120px] 2xl:w-[290px]"
+                className="w-full h-auto object-cover md:w-[120px] 2xl:w-[290px]"
               />
             </div>
           </div>
@@ -156,7 +156,7 @@ function Main() {
               alt="фоновая картинка"
               className="absolute pointer-events-none origin-top scale-[2.2] left-[80%]  -translate-x-1/2 w-screen max-w-none"
             />
-            <div className="relative pt-20 md:pt-0 text-white text-xs">
+            <div className="relative pt-32 md:pt-0 text-white text-xs">
               <div className="relative grid grid-cols-[75%_1fr] grid-rows-[auto_auto_auto] gap-x-6 gap-y-4 items-start md:grid-cols-[167px_1fr_1fr] md:grid-rows-[auto_auto] md:gap-0 2xl:grid-cols-[370px_1fr_1fr]">
                 {/* 1 строка, 1 колонка: Заголовок */}
                 <h3 className="h3 col-start-1 row-start-1 md:col-start-1 md:row-start-1 md:pt-10 2xl:leading-[1.1]">
@@ -200,7 +200,7 @@ function Main() {
                   <img
                     src="/images/photo-3.png"
                     alt="Фото"
-                    className="w-32 max-w-none md:w-[200px] md:h-full 2xl:w-full object-cover"
+                    className="w-24 pr-2 pt-9 max-w-none md:w-[200px] md:h-full 2xl:w-full object-cover"
                   />
                 </div>
               </div>
@@ -208,14 +208,14 @@ function Main() {
           </div>
 
           <div className="relative md:grid md:grid-cols-[167px_1fr] 2xl:grid-cols-[370px_1fr] bg-cover bg-center">
-            <div className="md:border-l-2 md:border-white/40 md:pl-5 md:pt-10 2xl:pl-[100px]">
+            <div className="pt-32 md:border-l-2 md:border-white/40 md:pl-5 md:pt-10 2xl:pl-[100px]">
               <h3 className="pt-28 h3 !text-black xl:leading-[1.1]">
                 Знать, чтобы развивать
               </h3>
-              <div className="text-xs">
+              <div className="text-xs pt-6">
                 {/* Первый пункт */}
-                <div className="flex items-start gap-3 pt-3">
-                  <img src="/icons/pdf.svg" className="pt-3"></img>
+                <div className="flex items-start gap-5 pt-6">
+                  <img src="/icons/pdf.svg" className="pt-6"></img>
                   <Link
                     to="/"
                     className="text-orange font-bold underline border-t border-white/40 pt-3"
@@ -226,8 +226,8 @@ function Main() {
                 </div>
 
                 {/* Второй пункт */}
-                <div className="flex items-start gap-3 pt-3">
-                  <img src="/icons/pdf.svg" className="pt-3"></img>
+                <div className="flex items-start gap-5 pt-6">
+                  <img src="/icons/pdf.svg" className="pt-6"></img>
                   <Link
                     to="/"
                     className="text-orange font-bold underline border-t border-white/40 pt-3"
@@ -238,8 +238,8 @@ function Main() {
                 </div>
 
                 {/* Третий пункт */}
-                <div className="flex items-start gap-3 pt-3">
-                  <img src="/icons/pdf.svg" className="pt-3"></img>
+                <div className="flex items-start gap-5 pt-6">
+                  <img src="/icons/pdf.svg" className="pt-6"></img>
                   <Link
                     to="/"
                     className="text-orange font-bold underline border-t border-b border-white/40 py-3"
@@ -294,15 +294,15 @@ function Main() {
           </div>
 
           {/* Обратная связь */}
-          <div className="relative mb-10">
+          <div className="relative mb-14">
             <img
               src="/images/bg-0.png"
               alt="фоновая картинка"
               className="absolute -z-5 pointer-events-none origin-top scale-[2.2] right-0 -translate-x-1/2 w-screen max-w-none"
             />
-            <div className="relative flex flex-col items-start md:grid md:grid-cols-[167px_1fr] 2xl:grid-cols-[370px_1fr] text-white ">
+            <div className="relative flex flex-col items-start pt-14 gap-4 md:grid md:grid-cols-[167px_1fr] 2xl:grid-cols-[370px_1fr] text-white ">
               <h3 className=" pt-28 h3">Обратная связь</h3>
-              <div className="flex flex-col gap-5 md:pl-5 md:pr-20 items-start border-l-2 border-white/40">
+              <div className="flex flex-col gap-7 md:pl-5 md:pr-20 items-start border-l-2 border-white/40">
                 <p className="font-bold text-xs">
                   Авторский коллектив, участвовавший в создании данной
                   документации, открыт к диалогу и готов принять к рассмотрению
