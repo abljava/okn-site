@@ -10,12 +10,12 @@ function History() {
 
   return (
     <>
-      <main className="bg-blueGray relative pb-16 md:max-w-[1440px] mx-auto z-10 px-5 2xl:text-2xl">
+      <main className="bg-blueGray relative pb-16 md:pb-6 md:max-w-[1440px] mx-auto z-10 px-5 2xl:text-2xl">
         <Breadcrumbs />
-        <section className="flex flex-col pt-8 md:grid md:grid-cols-[167px_1fr] 2xl:grid-cols-[370px_1fr] ">
+        <section className="flex flex-col md:grid md:grid-cols-[167px_1fr] 2xl:grid-cols-[370px_1fr] ">
           <div className="hidden md:block"></div>
           {/* Заголовок и подзаголовок */}
-          <div className="relative z-10 grid md:pr-44 md:border-l-2 md:border-white/40 md:pl-5 md:pt-10 2xl:pt-[100px] 2xl:pl-[100px]">
+          <div className="relative z-10 grid pt-8 md:pt-3 md:pr-44 md:border-l-2 md:border-white/40 md:pl-5 md:pt-10 2xl:pt-[100px] 2xl:pl-[100px]">
             <h1 className="text-white text-3xl/8 md:text-3xl/[1.1] xl:text-[80px] font-bold font-bebas tracking-[0.04em]">
               Достопримечательное место "Исторический центр города Владивостока"
             </h1>
@@ -37,10 +37,10 @@ function History() {
             Историческая справка по освоению территории
           </h3>
           <div className="text-xs md:pt-44 md:pr-32 md:border-l-2 md:border-white/40 md:pl-5 2xl:pl-[100px]">
-            <h3 className="h3 pt-28 !text-black hidden md:block xl:leading-[1] ">
+            <h3 className="h3 pt-28 !text-black hidden md:block md:leading-8 md:w-72 xl:leading-[1] ">
               Историческая справка по освоению территории
             </h3>
-            <nav className="max-w-md mx-auto py-8">
+            <nav className="max-w-md mx-auto py-8 md:py-5">
               <button
                 className="flex items-center w-full text-left font-semibold text-sm"
                 onClick={() => setOpen(!open)}
@@ -63,7 +63,7 @@ function History() {
                 </svg>
               </button>
               {open && (
-                <ul className="mt-8 space-y-[10px]">
+                <ul className="mt-8 md:mt-5 space-y-[10px]">
                   <li className="">
                     <a
                       href="#intro"
@@ -107,7 +107,9 @@ function History() {
         </section>
 
         <section className="relative md:pt-0 md:grid md:grid-cols-[167px_1fr] 2xl:grid-cols-[370px_1fr] ">
-          <div className="hidden md:block"></div>
+          <div className="hidden md:block self-center md:px-2">
+            <img src='images/photo-2.png' alt='photo' className="" />
+          </div>
           <div className="md:border-l-2 md:border-white/40 md:pl-5 2xl:pl-[100px]">
             <div className="flex flex-col md:grid md:grid-cols-2 md:gap-2 xl:gap-5">
               <img
@@ -121,7 +123,7 @@ function History() {
                 className="w-full h-auto object-cover"
               />
             </div>
-            <div className="flex flex-col py-8 space-y-8 text-xs">
+            <div className="flex flex-col py-8 md:py-5 space-y-8 md:space-y-6 text-xs">
               <p>
                 В июне 1859 г. генерал-губернатор Восточной Сибири граф Николай
                 Николаевич Муравьев-Амурский, посетил на борту корвета-парохода
@@ -168,9 +170,14 @@ function History() {
             <img
               src="/images/photo-10.png"
               alt="photo"
-              className="w-full h-auto object-cover"
+              className="w-full h-auto object-cover md:hidden"
             />
-            <div className="flex flex-col py-8 space-y-10 text-xs">
+            <img
+              src="/images/photo-8.png"
+              alt="photo"
+              className="hidden md:block w-full h-auto object-cover"
+            />
+            <div className="flex flex-col py-8 space-y-10 md:py-5 md:space-y-5 text-xs">
               <p>
                 16 февраля 1871 г., в соответствии с императорским указом,
                 Владивосток получил статус Главного порта Восточного океана,
@@ -207,9 +214,14 @@ function History() {
             <img
               src="/images/photo-11.png"
               alt="photo"
-              className="w-full h-auto object-cover"
+              className="w-full h-auto object-cover md:hidden"
             />
-            <div className="pt-8">
+            <img
+              src="/images/photo-9.png"
+              alt="photo"
+              className="hidden md:block w-full h-auto object-cover"
+            />
+            <div className="pt-8 md:pt-4">
               <button
                 className="w-full py-3 text-white text-sm font-semibold lg:text-base uppercase bg-orange rounded 
           "
