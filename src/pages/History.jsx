@@ -1,7 +1,7 @@
 import Breadcrumbs from "../components/Breadcrumbs";
 import { useState } from "react";
-import { sectionOne } from "../utils/sections.js";
-import { sectionTwo } from "../utils/sections.js";
+import { sectionOne } from "../utils/history/sections.js";
+import { sectionTwo } from "../utils/history/sections.js";
 
 function History() {
   const [open, setOpen] = useState(false);
@@ -10,22 +10,22 @@ function History() {
 
   return (
     <>
-      <main className="bg-blueGray relative md:max-w-[1440px] mx-auto z-10 px-5 2xl:text-2xl">
+      <main className="bg-blueGray relative pb-16 md:max-w-[1440px] mx-auto z-10 px-5 2xl:text-2xl">
         <Breadcrumbs />
-        <section className="flex flex-col pt-5 md:grid md:grid-cols-[167px_1fr] 2xl:grid-cols-[370px_1fr] ">
+        <section className="flex flex-col pt-8 md:grid md:grid-cols-[167px_1fr] 2xl:grid-cols-[370px_1fr] ">
           <div className="hidden md:block"></div>
           {/* Заголовок и подзаголовок */}
           <div className="relative z-10 grid md:pr-44 md:border-l-2 md:border-white/40 md:pl-5 md:pt-10 2xl:pt-[100px] 2xl:pl-[100px]">
             <h1 className="text-white text-3xl/8 md:text-3xl/[1.1] xl:text-[80px] font-bold font-bebas tracking-[0.04em]">
               Достопримечательное место "Исторический центр города Владивостока"
             </h1>
-            <div className="justify-self-end pt-5 md:hidden">
+            <div className="justify-self-end pt-8 md:hidden">
               <img src="/images/photo-2.png" alt="photo" className="w-32" />
             </div>
           </div>
         </section>
 
-        <div className="relative pt-6 md:pt-0 md:grid md:grid-cols-[167px_1fr] 2xl:grid-cols-[370px_1fr] ">
+        <section className="relative pt-4 md:pt-0 md:grid md:grid-cols-[167px_1fr] 2xl:grid-cols-[370px_1fr] ">
           <div className="hidden md:block md:pt-40">
             <img
               src="/images/photo-1.png"
@@ -40,7 +40,7 @@ function History() {
             <h3 className="h3 pt-28 !text-black hidden md:block xl:leading-[1] ">
               Историческая справка по освоению территории
             </h3>
-            <nav className="max-w-md mx-auto pt-4">
+            <nav className="max-w-md mx-auto py-8">
               <button
                 className="flex items-center w-full text-left font-semibold text-sm"
                 onClick={() => setOpen(!open)}
@@ -63,7 +63,7 @@ function History() {
                 </svg>
               </button>
               {open && (
-                <ul className="mt-4 space-y-2">
+                <ul className="mt-8 space-y-[10px]">
                   <li className="">
                     <a
                       href="#intro"
@@ -104,7 +104,121 @@ function History() {
               )}
             </nav>
           </div>
-        </div>
+        </section>
+
+        <section className="relative md:pt-0 md:grid md:grid-cols-[167px_1fr] 2xl:grid-cols-[370px_1fr] ">
+          <div className="hidden md:block"></div>
+          <div className="md:border-l-2 md:border-white/40 md:pl-5 2xl:pl-[100px]">
+            <div className="flex flex-col md:grid md:grid-cols-2 md:gap-2 xl:gap-5">
+              <img
+                src="/images/photo-6.png"
+                alt="photo"
+                className="w-full h-auto object-cover"
+              />
+              <img
+                src="/images/photo-7.png"
+                alt="photo"
+                className="w-full h-auto object-cover"
+              />
+            </div>
+            <div className="flex flex-col py-8 space-y-8 text-xs">
+              <p>
+                В июне 1859 г. генерал-губернатор Восточной Сибири граф Николай
+                Николаевич Муравьев-Амурский, посетил на борту корвета-парохода
+                «Америка» пролив Гамелен, разделяющий обширный гористый
+                полуостров и крупный остров, лежащий напротив него. По его
+                приказу «Америка» заходила во все бухты северного побережья
+                пролива, включая самую большую. Места эти произвели на него
+                очень сильное впечатление. Граф распорядился назвать по аналогии
+                с Константинополем (Стамбулом), ключевым городом на пути из
+                Европы в Азию и столицей Османской империи, основные топонимы, а
+                именно пролив Босфор-Восточный, и бухту Золотой Рог.
+                Северо-западную часть бухты, удобной для устройства порта, он
+                предложил назвать Порт Владивосток – ясно обозначая ключевой
+                характер этого места для удержания дальневосточных территорий
+                России.
+              </p>
+              <p>
+                В марте 1860 г. Муравьев-Амурский отдал приказ об основании
+                военного поста в гавани Владивосток, сразу же имея в виду
+                создать здесь морской порт. По его приказу 20 июня 1860 г. с
+                борта военного транспорта Сибирской флотилии «Манджур» был
+                высажен десант солдат 3-й роты линейного батальона Восточной
+                Сибири № 4 во главе с прапорщиком Н.В. Комаровым, который и
+                основал здесь постоянный военный пост. В октябре 1860 г. в
+                рапорте на имя Генерал-адмирала великого князя Константина
+                Николаевича он разъяснял, что порт Владивосток по сравнительной
+                близости к Амуру и удобству сообщения с бассейном этой реки,
+                удовлетворяет вдобавок всем требованиям морской науки, и поэтому
+                должен быть главным по своим морским учреждениям.
+              </p>
+              <p>
+                В течение последующих пятнадцати лет никаких значительных работ
+                по укреплению Владивостока не велось, несмотря на его
+                постепенный рост. Главной военной силой здесь все эти годы
+                оставался Горный дивизион линейной Забайкальской артиллерийской
+                бригады, прибывший во Владивосток под командой прапорщика С.А.
+                Гильдебранта в августе-сентябре 1862 г. и размещенный на
+                окраинах тогдашнего поста, а именно на вершинах горы Тигровой и
+                расположенной к северу от нее Батарейной сопки, что уже тогда
+                указывало на ключевое значение этих высот в системе обороны
+                Владивостока.
+              </p>
+            </div>
+            <img
+              src="/images/photo-10.png"
+              alt="photo"
+              className="w-full h-auto object-cover"
+            />
+            <div className="flex flex-col py-8 space-y-10 text-xs">
+              <p>
+                16 февраля 1871 г., в соответствии с императорским указом,
+                Владивосток получил статус Главного порта Восточного океана,
+                который перенесли из Николаевска-на-Амуре. В 1875 г. во
+                Владивостоке было введено городовое положение, то есть он
+                получил городское самоуправление, в статус города Владивосток
+                был возведен несколько позже, в 1880 г. Это вывело Владивосток в
+                ряды важнейших пунктов азиатской части России. Однако лишь в
+                1876 г. главное инженерное управление выделило 30 тыс. рублей на
+                укрепление обороны Владивостока и Николаевска-на-Амуре,
+                поскольку в преддверии Русско-турецкой войны 1877–1878 гг. резко
+                ухудшились отношения с Англией, имевшей большое влияние на
+                Китай. Основная часть выделенных средств предназначалась
+                Владивостоку как более важному и уязвимому пункту.
+              </p>
+              <p>
+                Летом 1876 г. из Николаевска-на-Амуре во Владивосток
+                командировали военного инженера штабс-капитана В.П. Широкова для
+                изучения вопроса об укреплении Владивостока на месте. Из
+                артиллерийского вооружения во Владивостоке на складах к тому
+                времени имелось в наличии два 6-дюймовых нарезных стальных
+                орудия, четыре чугунные 60 фунтовые пушки, четыре 2-пудовые
+                бомбовые пушки и одна 36-фунтовая. Такой состав вооружения не
+                мог обеспечить сколько-нибудь удовлетворительную защиту, поэтому
+                из Хабаровска во Владивосток отправили десять 6-дюймовых
+                нарезных мортир и 200 морских мин, однако до конца года они так
+                и не прибыли. Такое внимание к Владивостоку не было случайным,
+                поскольку уже 12 апреля 1877 г. Российская империя объявила
+                войну Турции, началась Русско-турецкая война 1877–1878 гг., в
+                ходе которой во Владивостоке развернулось полноценное
+                оборонительное строительство
+              </p>
+            </div>
+            <img
+              src="/images/photo-11.png"
+              alt="photo"
+              className="w-full h-auto object-cover"
+            />
+            <div className="pt-8">
+              <button
+                className="w-full py-3 text-white text-sm font-semibold lg:text-base uppercase bg-orange rounded 
+          "
+              >
+                <span>Смотреть фото</span>
+              </button>
+            </div>
+          </div>
+        </section>
       </main>
     </>
   );
