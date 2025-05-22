@@ -1,9 +1,9 @@
-import Burger from "../Burger/Burger";
+import Burger from "./Burger";
 
 function Header() {
   return (
-    <header className="relative z-10 text-white py-1 md:py-2 2xl:max-w-[1440px] 2xl:mx-auto lg:mx-10 xl:mx-20 mx-5 lg:py-5  border-b border-white/40 bg-blueGray">
-      <div className="flex justify-between items-center gap-6">
+    <header className="relative z-10 text-white py-1 md:py-2 lg:py-5 border-b border-white/40 bg-blueGray">
+      <div className=" max-w-[1440px] mx-auto flex justify-between items-center gap-6 px-5 2xl:px-0">
         <div className="pl-7 md:hidden">
           <Burger />
         </div>

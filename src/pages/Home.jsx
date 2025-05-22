@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom";
-import BackgroundVideo from "../BackgroundVideo/BackgroundVideo";
+import BackgroundVideo from "../components/BackgroundVideo";
 
-function Main() {
+function Home() {
   return (
-    <main className="md:max-w-[1440px] mx-auto relative overflow-hidden bg-blueGray">
+    <main className="relative overflow-hidden bg-blueGray">
       {/* Видео и оверлей */}
       {/* <BackgroundVideo src="/videos/east-to-west.mp4" className="" />
       <div className="fixed inset-0 bg-black bg-opacity-50 pointer-events-none -z-5"></div> */}
 
-      <section className="relative z-10 mx-5 pt-10 md:pt-0 2xl:text-2xl">
+      <section className="relative md:max-w-[1440px] mx-auto z-10 px-5 pt-10 md:pt-0 2xl:text-2xl">
         <div className="flex flex-col md:grid md:grid-cols-[167px_1fr] 2xl:grid-cols-[370px_1fr] ">
           <div className="hidden md:block"></div>
           {/* Заголовок и подзаголовок */}
@@ -342,4 +342,4 @@ function Main() {
   );
 }
 
-export default Main;
+export default Home;
