@@ -1,4 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
+import pageNames from "../utils/pageNames";
 
 function Breadcrumbs() {
   const location = useLocation();
@@ -15,14 +16,15 @@ function Breadcrumbs() {
         {pathnames.map((name, idx) => {
           const routeTo = "/" + pathnames.slice(0, idx + 1).join("/");
           const isLast = idx === pathnames.length - 1;
+          const displayName = pageNames[name] || decodeURIComponent(name);
           return (
             <li key={routeTo} className="flex items-center gap-2">
               <span className="mx-1">|</span>
               {isLast ? (
-                <span className="">{decodeURIComponent(name)}</span>
+                <span className="">{displayName}</span>
               ) : (
                 <Link to={routeTo} className="hover:underline text-blue-700">
-                  {decodeURIComponent(name)}
+                  {displayName}
                 </Link>
               )}
             </li>
