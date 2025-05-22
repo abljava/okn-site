@@ -5,7 +5,7 @@ function Breadcrumbs() {
   const pathnames = location.pathname.split("/").filter((x) => x);
 
   return (
-    <nav className="text-[10px] text-white uppercase py-4 bg-blueGray" aria-label="Breadcrumb">
+    <nav className="text-[10px] lg:text-base text-white uppercase py-4 bg-blueGray" aria-label="Breadcrumb">
       <ol className="list-none flex flex-wrap gap-2">
         <li>
           <Link to="/" className="hover:underline">
