@@ -22,7 +22,7 @@ function Header() {
             Режимы использования земель и требования к градостроительному
             регламенту
           </Link>
-          <Link to="#" className="hover:text-orange-400">
+          <Link to="/authors" className="hover:text-orange-400">
             Авторский коллектив
           </Link>
         </nav>

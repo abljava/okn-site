@@ -1,4 +1,4 @@
-import Breadcrumbs from "../components/Breadcrumbs";
+import Breadcrumbs from "../components/Breadcrumbs.jsx";
 import { useState } from "react";
 import { sectionOne } from "../utils/history/sections.js";
 import { sectionTwo } from "../utils/history/sections.js";
@@ -7,8 +7,6 @@ import { photos } from "../utils/history/photos.js";
 function History() {
   const [open, setOpen] = useState(false);
   const [showPhotos, setShowPhotos] = useState(false);
-
-  console.log("sectionOne ", sectionOne);
 
   const handleShowPhotosClick = () => {
     setShowPhotos(!showPhotos);
