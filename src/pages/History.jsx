@@ -22,13 +22,13 @@ function History() {
           <section className="flex flex-col md:grid md:grid-cols-[167px_1fr] 2xl:grid-cols-[370px_1fr] ">
             <div className="hidden md:block"></div>
             {/* Заголовок и подзаголовок */}
-            <div className="relative z-10 grid pt-8 md:pr-44 md:pl-5 md:pt-10 xl:pt-12 xl:pr-0 2xl:pl-[100px] md:border-l-2 md:border-white/40 ">
+            <div className="relative z-10 grid pt-8 md:pr-44 md:pl-5 md:pt-10 xl:pt-12 xl:pr-0 xl:pl-[100px] md:border-l-2 md:border-white/40 ">
               <h1 className="text-white text-3xl/8 md:text-3xl/[1.1] xl:text-[80px] font-bold font-bebas tracking-[0.04em]">
                 Достопримечательное место "Исторический центр города
                 Владивостока"
               </h1>
               <div className="justify-self-end pt-8 md:hidden">
-                <img src="/images/photo-2.png" alt="photo" className="w-32" />
+                <img src="/images/photo-3.png" alt="photo" className="w-32" />
               </div>
             </div>
           </section>
@@ -41,7 +41,7 @@ function History() {
                   <img
                     src="/images/photo-1.png"
                     alt="photo"
-                    className="w-full h-auto object-cover md:w-[130px] 2xl:w-[340px]"
+                    className="absolute w-full h-auto object-cover md:w-[130px] 2xl:w-[340px]"
                   />
                 </div>
                 <h3 className="h3 pt-28 !text-black md:hidden">
@@ -119,7 +119,7 @@ function History() {
 
               <section className="relative md:pt-0 md:grid md:grid-cols-[167px_1fr] 2xl:grid-cols-[370px_1fr] ">
                 <div className="hidden md:block self-center md:px-2">
-                  <img src="images/photo-2.png" alt="photo" className="" />
+                  <img src="images/photo-3.png" alt="photo" className="" />
                 </div>
                 <div className="md:border-l-2 md:border-white/40 md:pl-5 2xl:pl-[100px]">
                   <div className="flex flex-col md:grid md:grid-cols-2 md:gap-2 xl:gap-5">
@@ -253,15 +253,18 @@ function History() {
           ) : (
             <section className="relative pt-4 md:pt-0 md:grid md:grid-cols-[167px_1fr] 2xl:grid-cols-[370px_1fr]">
               {/* Кнопка "Вернуться назад" в левой колонке на десктопе */}
-              <div className="hidden md:block pt-8 md:pt-4 xl:pt-8 xl:pb-32">
+              <div className="hidden md:block pt-8 md:pt-4 md:pr-3 xl:pr-6 xl:pt-8 xl:pb-32">
                 <button
-                  className="w-full py-3 xl:py-5 text-white text-sm md:text-xs xl:text-[22px] font-semibold lg:text-base uppercase bg-darkGrey rounded"
+                  className="w-full py-3 2xl:py-5 text-white text-sm md:text-xs 2xl:text-base font-semibold uppercase bg-darkGrey rounded"
                   onClick={handleShowPhotosClick}
                 >
                   <span>Вернуться назад</span>
                 </button>
+                <div className="hidden md:block self-center md:px-2 md:pt-8">
+                  <img src="images/photo-3.png" alt="photo" className="" />
+                </div>
               </div>
-              <div className="md:border-l-2 md:border-white/40 md:pl-5 2xl:pl-[100px]">
+              <div className="md:border-l-2 md:border-white/40 md:pl-5 xl:pl-[100px]">
                 {/* Кнопка "Вернуться назад" в правой колонке на мобилке */}
                 <div className="pt-6 md:pt-4 xl:pt-8 xl:pb-32 md:hidden">
                   <button
@@ -275,18 +278,22 @@ function History() {
                   <h3 className="py-7 md:pt-4 text-darkGrey text-3xl/8 md:text-3xl/[1.1] xl:text-[80px] font-bold font-bebas tracking-[0.04em]">
                     Исторические фотографии
                   </h3>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 xl:max-w-[970px]">
                     {photos.map((photo, index) => (
                       <img
                         key={photo.id}
                         src={photo.src}
                         alt={photo.title}
-                        className={`object-cover w-full ${index % 3 === 2 ? 'md:col-span-2 md:h-[200px]' : 'md:col-span-1 md:h-[150px]'}`}
+                        className={`object-cover w-full ${
+                          index % 3 === 2
+                            ? "md:col-span-2 md:h-[200px] xl:h-[360px]"
+                            : "md:col-span-1 md:h-[150px] xl:h-[270px]"
+                        }`}
                       />
                     ))}
                   </div>
                 </div>
-              </div> 
+              </div>
             </section>
           )}
         </div>
