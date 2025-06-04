@@ -10,7 +10,7 @@ function History() {
 
   return (
     <>
-      <main className="bg-blueGray relative pb-16 md:pb-6  z-10 px-5 2xl:text-2xl">
+      <main className="relative pb-16 md:pb-6  z-10 px-5 2xl:text-2xl bg-[url('/images/bg-main.jpg')] bg-cover bg-center">
         <div className="md:max-w-[1440px] mx-auto">
           <Breadcrumbs />
           <section className="flex flex-col md:grid md:grid-cols-[167px_1fr] 2xl:grid-cols-[370px_1fr] ">
