@@ -26,9 +26,12 @@ function Header() {
             Авторский коллектив
           </Link>
         </nav>
-        <button className="text-white text-[9px] font-semibold lg:text-base uppercase bg-orange rounded px-3 py-1.5 lg:px-6 lg:py-4 ml-4">
+        <a
+          href="mailto:hist.center-vl@mail.ru"
+          className="text-white text-[9px] font-semibold lg:text-base uppercase bg-orange rounded px-3 py-1.5 lg:px-6 lg:py-4 ml-4"
+        >
           <span>Написать на почту</span>
-        </button>
+        </a>
       </div>
     </header>
   );

@@ -22,7 +22,7 @@ function Home() {
           </div>
         </div>
 
-        <div className="flex flex-col md:grid md:grid-cols-[167px_1fr_auto] 2xl:grid-cols-[370px_1fr_auto]">
+        <section className="flex flex-col md:grid md:grid-cols-[167px_1fr_auto] 2xl:grid-cols-[370px_1fr_auto]">
           <img
             src="/images/bg-01.png"
             className="absolute -z-10 pointer-events-none scale-[2.3] top-0 left-1/2 right-1/2 -translate-x-1/2 w-screen max-w-none opacity-40"
@@ -66,7 +66,7 @@ function Home() {
               значения.
             </p>
           </div>
-        </div>
+        </section>
 
         <div className="relative">
           <img

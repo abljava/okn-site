@@ -1,15 +1,11 @@
 import React from "react";
 import Breadcrumbs from "../components/Breadcrumbs";
-
-const outerPhotos = Array(6).fill({}); // внешний круг — 6 фото
-const innerPhotos = Array(7).fill({}); // внутренний круг — 7 фото
-const outerRadius = 170; // px, радиус внешнего круга
-const innerRadius = 100; // px, радиус внутреннего круга
+import Circle from "../components/Circle";
 
 function Authors() {
   return (
     <>
-      <main className="relative pb-16 md:pb-6  z-10 px-5 2xl:text-2xl bg-[url('/images/bg-main.jpg')] bg-cover bg-center">
+      <main className="relative pb-16 md:pb-6 lg:pb-28 z-10 px-5 2xl:text-2xl bg-[url('/images/bg-main.jpg')] bg-cover bg-center">
         <div className="md:max-w-[1440px] mx-auto">
           <Breadcrumbs />
           <section className="flex flex-col md:grid md:grid-cols-[167px_1fr] 2xl:grid-cols-[370px_1fr] ">
@@ -24,49 +20,125 @@ function Authors() {
                 <img src="/images/photo-33.png" alt="photo" className="w-32" />
               </div>
               {/* Круги с фото */}
-              <div className="relative w-[335px] h-[335px] mx-auto mt-12">
-                {/* Внешний круг */}
-                {outerPhotos.map((_, idx) => {
-                  const angle = (360 / outerPhotos.length) * idx - 180;
-                  const rad = (angle * Math.PI) / 180;
-                  const x = 210 + outerRadius * Math.cos(rad);
-                  const y = 210 + outerRadius * Math.sin(rad);
-                  return (
-                    <img
-                      key={"outer-" + idx}
-                      src="/images/authors.png"
-                      alt="photo"
-                      className="absolute w-16 h-16 rounded-full"
-                      style={{
-                        left: `${x}px`,
-                        top: `${y}px`,
-                        transform: "translate(-50%, -50%)",
-                      }}
-                    />
-                  );
-                })}
-                {/* Внутренний круг */}
-                {innerPhotos.map((_, idx) => {
-                  const angle = (360 / innerPhotos.length) * idx - 90;
-                  const rad = (angle * Math.PI) / 180;
-                  const x = 210 + innerRadius * Math.cos(rad);
-                  const y = 210 + innerRadius * Math.sin(rad);
-                  return (
-                    <img
-                      key={"inner-" + idx}
-                      src="/images/authors.png"
-                      alt="photo"
-                      className="absolute w-12 h-12 rounded-full"
-                      style={{
-                        left: `${x}px`,
-                        top: `${y}px`,
-                        transform: "translate(-50%, -50%)",
-                      }}
-                    />
-                  );
-                })}
+              <Circle />
+            </div>
+          </section>
 
+          <section className="relative md:grid md:grid-cols-[167px_1fr] 2xl:grid-cols-[370px_1fr] bg-cover bg-center">
+            <div className="pt-32 md:border-l-2 md:border-white/40 md:pl-5 md:pt-20 2xl:pl-[100px]">
+              <h3 className="pt-28 h3 !text-black xl:leading-[1.1]">
+                Авторский коллектив занимается разработкой проектов:
+              </h3>
+              <div className="text-xs md:text-sm xl:text-xl pt-6">
+                <ul className="flex flex-col space-y-2">
+                  <li className="flex gap-2">
+                    <span>&bull;</span>
+                    <p>
+                      <span className="font-semibold">
+                        Зон охраны объектов культурного наследия
+                      </span>{" "}
+                      регионального и федерального значения
+                    </p>
+                  </li>
+                  <li className="flex gap-2">
+                    <span>&bull;</span>
+                    <p className="font-semibold">Достопримечательных мест</p>
+                  </li>
+                  <li className="flex gap-2">
+                    <span>&bull;</span>
+                    <p>
+                      <span className="font-semibold">Границ территорий</span>{" "}
+                      объектов культурного наследия
+                    </p>
+                  </li>
+                  <li className="flex gap-2">
+                    <span>&bull;</span>
+                    <p>
+                      <span className="font-semibold">Предметов охраны</span>{" "}
+                      объектов культурного наследия
+                    </p>
+                  </li>
+                  <li className="flex gap-2">
+                    <span>&bull;</span>
+                    <p>
+                      <span className="font-semibold">
+                        Работами по выявлению
+                      </span>
+                      и включению в реестр новых объектов культурного наследия
+                    </p>
+                  </li>
+                </ul>
+                <p className="pt-5">
+                  <span className="font-semibold">
+                    Ваши пожелания и предложения по сотрудничеству,
+                  </span>{" "}
+                  касающиеся разработанной документации по достопримечательному
+                  месту Исторический центр города Владивостока, вы можете
+                  направить на электронный адрес{" "}
+                  <a
+                    href="mailto:hist.center-vl@mail.ru"
+                    className="text-orange font-semibold hover:text-black transition-colors"
+                  >
+                    hist.center-vl@mail.ru
+                  </a>
+                </p>
               </div>
+            </div>
+            {/* Картинка */}
+            <div className="hidden md:block md:col-start-1 md:row-start-1 md:pt-16">
+              <img
+                src="/images/photo-33.png"
+                alt="photo"
+                className="w-full h-auto md:w-[180px] lg:w-[360px]"
+              />
+            </div>
+          </section>
+
+          <section className="flex flex-col md:grid md:grid-cols-[167px_1fr_auto] 2xl:grid-cols-[370px_1fr_auto]">
+            <div className="pt-16 md:pt-20">
+              <h3 className="h3 !text-black  md:leading-[1]">контакты</h3>
+            </div>
+
+            <div className="flex flex-col items-start gap-6 lg:gap-12 text-xs/4 md:text-[10px] xl:text-[22px] pt-3 md:pt-20 leading-[1.4] md:border-l-2 md:border-white/40 md:pl-5 2xl:pl-[100px]">
+              <div className="hidden md:block"></div>
+              <div className="flex flex-col gap-3 lg:gap-5 text-xs md:text-sm xl:text-2xl">
+                <p className="font-bold">
+                  Авторский коллектив, участвовавший в создании данной
+                  документации, открыт к диалогу и готов принять к рассмотрению
+                  поступившие предложения и мнения о потенциальных изменениях
+                  документации в будущем.
+                </p>
+
+                {/* Первый пункт */}
+                <div className="flex items-start gap-3 lg:gap-5 border-t border-white/40 py-3 lg:py-5">
+                  <img
+                    src="/icons/mail.svg"
+                    alt="иконка электронной почты"
+                    className="lg:w-8"
+                  />
+                  <div className="md:text-base xl:text-2xl font-semibold hover:text-orange transition-colors ">
+                    hist.center-vl@mail.ru
+                  </div>
+                </div>
+
+                {/* Второй пункт */}
+                <div className="flex items-start gap-3 lg:gap-5 md:text-base border-t border-b border-white/40 py-3 lg:py-5">
+                  <img
+                    src="/icons/geo.svg"
+                    alt="иконка геолокации"
+                    className="lg:w-8"
+                  />
+                  <div className="md:text-base xl:text-2xl font-bold">
+                    г. Владивосток
+                  </div>
+                </div>
+              </div>
+              <a
+                href="mailto:hist.center-vl@mail.ru"
+                className="text-white text-xs lg:text-2xl font-semibold uppercase bg-orange rounded px-8 py-3 lg:px-14 lg:py-5"
+              >
+                <span>Написать на почту</span>
+              </a>
             </div>
           </section>
         </div>
