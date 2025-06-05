@@ -24,7 +24,7 @@ function Home() {
 
         <section className="flex flex-col md:grid md:grid-cols-[167px_1fr_auto] 2xl:grid-cols-[370px_1fr_auto]">
           <img
-            src="/images/bg-01.png"
+            src="/bgs/bg-01.png"
             className="absolute -z-10 pointer-events-none scale-[2.3] top-0 left-1/2 right-1/2 -translate-x-1/2 w-screen max-w-none opacity-40"
             alt="background"
           />
@@ -70,14 +70,14 @@ function Home() {
 
         <div className="relative">
           <img
-            src="/images/bg-main3.png"
+            src="/bgs/bg-main3.png"
             className="absolute pointer-events-none scale-[2.3] origin-top left-1/2 right-1/2 -translate-x-1/2 w-screen max-w-none"
             alt="background"
           />
 
           <div className="relative pt-44 md:pt-0 md:grid md:grid-cols-[167px_1fr] 2xl:grid-cols-[370px_1fr] ">
             <div className="hidden md:block md:pt-40">
-            <img
+              <img
                 src="/images/photo-1.png"
                 alt="photo"
                 className="w-full h-auto object-cover md:w-[130px] 2xl:w-[290px]"
@@ -158,7 +158,7 @@ function Home() {
 
           <div className="relative">
             <img
-              src="/images/bg-2.png"
+              src="/bgs/bg-2.png"
               alt="фоновая картинка"
               className="absolute pointer-events-none origin-top scale-[2.2] left-[80%]  -translate-x-1/2 w-screen max-w-none"
             />
@@ -302,7 +302,7 @@ function Home() {
           {/* Обратная связь */}
           <div className="relative mb-14">
             <img
-              src="/images/bg-0.png"
+              src="/bgs/bg-0.png"
               alt="фоновая картинка"
               className="absolute -z-5 pointer-events-none origin-top scale-[2.2] right-0 -translate-x-1/2 w-screen max-w-none"
             />
@@ -330,9 +330,12 @@ function Home() {
                     />
                   </div>
                 </div>
-                <button className="text-white text-xs font-semibold uppercase bg-orange rounded px-8 py-3">
+                <a
+                  href="mailto:hist.center-vl@mail.ru"
+                  className="text-white text-xs font-semibold uppercase bg-orange rounded px-8 py-3"
+                >
                   <span>Написать на почту</span>
-                </button>
+                </a>
               </div>
             </div>
           </div>

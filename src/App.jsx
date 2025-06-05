@@ -3,7 +3,9 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import History from "./pages/History";
-import Authors from "./pages/authors";
+import Authors from "./pages/Authors";
+import ProtectedObjects from "./pages/ProtectedObjects";
+import DevelopmentRegulations from "./pages/DevelopmentRegulations";
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/history" element={<History />} />
         <Route path="/authors" element={<Authors />} />
+        <Route path="/protected-objects" element={<ProtectedObjects />} />
+        <Route path="/development-regulations" element={<DevelopmentRegulations />} />
       </Routes>
       <Footer />
     </BrowserRouter>

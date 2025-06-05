@@ -15,10 +15,10 @@ function Header() {
           <Link to="/history" className="hover:text-orange-400">
             Исторические сведения
           </Link>
-          <Link to="/" className="hover:text-orange-400">
+          <Link to="/protected-objects" className="hover:text-orange-400">
             Предмет охраны достопримечательного места
           </Link>
-          <Link to="/" className="hover:text-orange-400">
+          <Link to="/development-regulations" className="hover:text-orange-400">
             Режимы использования земель и требования к градостроительному
             регламенту
           </Link>
