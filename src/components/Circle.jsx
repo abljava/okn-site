@@ -153,11 +153,9 @@ function Circle() {
         const center = outerCircleCenters[idx];
         const scaledImageSizeOuter = 64 * scale; // w-16 = 64px
         return (
-          <img
+          <div
             key={"outer-" + idx}
-            src="/images/authors.png"
-            alt="photo"
-            className="absolute rounded-full"
+            className="absolute group"
             style={{
               left: `${center.x}px`,
               top: `${center.y}px`,
@@ -165,21 +163,28 @@ function Circle() {
               width: `${scaledImageSizeOuter}px`,
               height: `${scaledImageSizeOuter}px`,
             }}
-          />
+          >
+            <img
+              src="/images/authors.png"
+              alt="photo"
+              className="absolute inset-0 w-full h-full rounded-full"
+            />
+            <div className="absolute inset-0 rounded-full bg-blueGray opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-center w-full">
+                Имя Сотрудника
+              </p>
+            </div>
+          </div>
         );
       })}
       {/* Внутренний круг */}
       {innerPhotos.map((_, idx) => {
-        // Находим центр этого внутреннего круга из уже рассчитанных
         const center = innerCircleCenters[idx];
-
         const scaledImageSizeInner = 48 * scale; // w-12 = 48px
         return (
-          <img
+          <div
             key={"inner-" + idx}
-            src="/images/authors.png"
-            alt="photo"
-            className="absolute rounded-full"
+            className="absolute group"
             style={{
               left: `${center.x}px`,
               top: `${center.y}px`,
@@ -187,7 +192,18 @@ function Circle() {
               width: `${scaledImageSizeInner}px`,
               height: `${scaledImageSizeInner}px`,
             }}
-          />
+          >
+            <img
+              src="/images/authors.png"
+              alt="photo"
+              className="absolute inset-0 w-full h-full rounded-full"
+            />
+            <div className="absolute inset-0 rounded-full bg-blueGray opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-center w-full">
+                Имя Сотрудника
+              </p>
+            </div>{" "}
+          </div>
         );
       })}
     </div>
