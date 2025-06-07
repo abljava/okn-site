@@ -1,9 +1,7 @@
-const BgOverlay = ({ children, bgClass }) => (
-  <div className="relative min-h-screen w-full">
-    {/* Фон-оверлей, который перекрывает всё содержимое */}
-    <div className={`pointer-events-none absolute inset-0 z-20 min-h-screen w-full  bg-contain bg-no-repeat bg-top ${bgClass}`}></div>
-    <div className="relative z-30">{children}</div>
-  </div>
+const BgOverlay = ({ bgClass }) => (
+  <div
+    className={`fixed top-0 left-0 w-full h-full -z-10 bg-contain bg-no-repeat bg-top ${bgClass}`}
+  ></div>
 );
 
 export default BgOverlay;

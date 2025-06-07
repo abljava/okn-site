@@ -1,9 +1,9 @@
-import { Link, Links } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Burger from "./Burger";
 
 function Header() {
   return (
-    <header className="relative z-10 text-white py-1 md:py-2 lg:py-5 border-b border-white/40">
+    <header className="relative z-20 text-white py-1 md:py-2 lg:py-5 border-b border-white/40">
       <div className=" max-w-[1440px] mx-auto flex justify-between items-center gap-6 px-5 2xl:px-0">
         <div className="pl-7 md:hidden">
           <Burger />
