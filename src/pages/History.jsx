@@ -1,8 +1,10 @@
-import Breadcrumbs from "../components/Breadcrumbs.jsx";
-import { useState } from "react";
-import { sectionOne } from "../utils/history/sections.js";
-import { sectionTwo } from "../utils/history/sections.js";
-import { photos } from "../utils/history/photos.js";
+import Breadcrumbs from '../components/Breadcrumbs.jsx';
+import { useState } from 'react';
+import { sectionOne } from '../utils/history/sections.js';
+import { sectionTwo } from '../utils/history/sections.js';
+import { photos } from '../utils/history/photos.js';
+import Header from '../components/Header';
+import BgOverlay from '../components/BgOverlay';
 
 function History() {
   const [open, setOpen] = useState(false);
@@ -13,20 +15,26 @@ function History() {
   };
 
   return (
-    <>
-      <main className="relative pb-16 md:pb-6  z-10 px-5 2xl:text-2xl bg-[url('/images/bg-main.jpg')] bg-cover bg-center">
-        <div className="md:max-w-[1440px] mx-auto">
+    <BgOverlay bgClass="bg-[url('/bgs/bg-history-mobile.png')] md:bg-[url('/bgs/bg-history-tablet.png')] lg:bg-[url('/bgs/bg-history.png')] 2xl:bg-[position:center_-150px]">
+      <Header />
+      <main className="relative pb-16 md:pb-6 px-5 2xl:text-2xl">
+        <img
+          src='/bgs/bg-main.png'
+          alt='фоновое изображение'
+          className='absolute -z-10 top-0 left-0 w-full h-full object-cover'
+        />
+        <div className='md:max-w-[1440px] mx-auto'>
           <Breadcrumbs />
-          <section className="flex flex-col md:grid md:grid-cols-[167px_1fr] 2xl:grid-cols-[370px_1fr] ">
-            <div className="hidden md:block"></div>
+          <section className='flex flex-col md:grid md:grid-cols-[167px_1fr] 2xl:grid-cols-[370px_1fr] '>
+            <div className='hidden md:block'></div>
             {/* Заголовок и подзаголовок */}
-            <div className="relative z-10 grid pt-8 md:pr-44 md:pl-5 md:pt-10 xl:pt-12 xl:pr-0 xl:pl-[100px] md:border-l-2 md:border-white/40 ">
-              <h1 className="text-white text-3xl/8 md:text-3xl/[1.1] xl:text-[80px] font-bold font-bebas tracking-[0.04em]">
+            <div className='relative z-10 grid pt-8 md:pr-44 md:pl-5 md:pt-10 xl:pt-12 xl:pr-0 xl:pl-[100px] md:border-l-2 md:border-white/40 '>
+              <h1 className='text-white text-3xl/8 md:text-3xl/[1.1] xl:text-[80px] font-bold font-bebas tracking-[0.04em]'>
                 Достопримечательное место "Исторический центр города
                 Владивостока"
               </h1>
-              <div className="justify-self-end pt-8 md:hidden">
-                <img src="/images/photo-3.png" alt="photo" className="w-32" />
+              <div className='justify-self-end pt-8 md:hidden'>
+                <img src='/images/photo-3.png' alt='photo' className='w-32' />
               </div>
             </div>
           </section>
@@ -34,49 +42,49 @@ function History() {
           {/* Условный рендеринг: показываем контент или фотографии */}
           {!showPhotos ? (
             <>
-              <section className="relative pt-4 md:pt-0 md:grid md:grid-cols-[167px_1fr] 2xl:grid-cols-[370px_1fr] ">
-                <div className="hidden md:block md:pt-80">
+              <section className='relative pt-4 md:pt-0 md:grid md:grid-cols-[167px_1fr] 2xl:grid-cols-[370px_1fr] '>
+                <div className='hidden md:block md:pt-80'>
                   <img
-                    src="/images/photo-1.png"
-                    alt="photo"
-                    className="absolute w-full h-auto object-cover md:w-[130px] 2xl:w-[340px]"
+                    src='/images/photo-1.png'
+                    alt='photo'
+                    className='absolute w-full h-auto object-cover md:w-[130px] 2xl:w-[340px]'
                   />
                 </div>
-                <h3 className="h3 pt-28 !text-black md:hidden">
+                <h3 className='h3 pt-28 !text-black md:hidden'>
                   Историческая справка по освоению территории
                 </h3>
-                <div className="text-xs md:pt-44 md:pr-32 xl:pr-0 xl:pt-[330px] md:border-l-2 md:border-white/40 md:pl-5 2xl:pl-[100px]">
-                  <h3 className="h3 pt-28 !text-black hidden md:block md:leading-8 md:w-72 xl:w-full xl:leading-[1] ">
+                <div className='text-xs md:pt-44 md:pr-32 xl:pr-0 xl:pt-[330px] md:border-l-2 md:border-white/40 md:pl-5 2xl:pl-[100px]'>
+                  <h3 className='h3 pt-28 !text-black hidden md:block md:leading-8 md:w-72 xl:w-full xl:leading-[1] '>
                     Историческая справка по освоению территории
                   </h3>
-                  <nav className="max-w-md xl:max-w-full py-8 md:py-5">
+                  <nav className='max-w-md xl:max-w-full py-8 md:py-5'>
                     <button
-                      className="flex items-center w-full text-sm text-left font-semibold lg:text-3xl"
+                      className='flex items-center w-full text-sm text-left font-semibold lg:text-3xl'
                       onClick={() => setOpen(!open)}
                     >
                       Содержание
                       <svg
                         className={`ml-2 transition-transform ${
-                          open ? "rotate-180" : ""
+                          open ? 'rotate-180' : ''
                         }`}
-                        width="20"
-                        height="20"
-                        fill="none"
-                        viewBox="0 0 20 20"
+                        width='20'
+                        height='20'
+                        fill='none'
+                        viewBox='0 0 20 20'
                       >
                         <path
-                          d="M5 8l5 5 5-5"
-                          stroke="currentColor"
-                          strokeWidth="2"
+                          d='M5 8l5 5 5-5'
+                          stroke='currentColor'
+                          strokeWidth='2'
                         />
                       </svg>
                     </button>
                     {open && (
-                      <ul className="mt-8 md:mt-5 space-y-[10px] lg:text-xl">
-                        <li className="">
+                      <ul className='mt-8 md:mt-5 space-y-[10px] lg:text-xl'>
+                        <li className=''>
                           <a
-                            href="#intro"
-                            className="block xl:text-xl font-semibold hover:text-orange-500"
+                            href='#intro'
+                            className='block xl:text-xl font-semibold hover:text-orange-500'
                           >
                             Историческая справка по освоению территории
                           </a>
@@ -85,16 +93,16 @@ function History() {
                           <li key={section.id}>
                             <a
                               href={`#${section.id}`}
-                              className="block hover:text-orange-500"
+                              className='block hover:text-orange-500'
                             >
                               {section.title}
                             </a>
                           </li>
                         ))}
-                        <li className="">
+                        <li className=''>
                           <a
-                            href="#intro"
-                            className="block font-semibold hover:text-orange-500"
+                            href='#intro'
+                            className='block font-semibold hover:text-orange-500'
                           >
                             Историко-градостроительная справка
                           </a>
@@ -103,7 +111,7 @@ function History() {
                           <li key={section.id}>
                             <a
                               href={`#${section.id}`}
-                              className="block hover:text-orange-500"
+                              className='block hover:text-orange-500'
                             >
                               {section.title}
                             </a>
@@ -115,24 +123,24 @@ function History() {
                 </div>
               </section>
 
-              <section className="relative md:pt-0 md:grid md:grid-cols-[167px_1fr] 2xl:grid-cols-[370px_1fr] ">
-                <div className="hidden md:block self-center md:px-2">
-                  <img src="images/photo-3.png" alt="photo" className="" />
+              <section className='relative md:pt-0 md:grid md:grid-cols-[167px_1fr] 2xl:grid-cols-[370px_1fr] '>
+                <div className='hidden md:block self-center md:px-2'>
+                  <img src='images/photo-3.png' alt='photo' className='' />
                 </div>
-                <div className="md:border-l-2 md:border-white/40 md:pl-5 2xl:pl-[100px]">
-                  <div className="flex flex-col md:grid md:grid-cols-2 md:gap-2 xl:gap-5">
+                <div className='md:border-l-2 md:border-white/40 md:pl-5 2xl:pl-[100px]'>
+                  <div className='flex flex-col md:grid md:grid-cols-2 md:gap-2 xl:gap-5'>
                     <img
-                      src="/images/photo-6.png"
-                      alt="photo"
-                      className="w-full h-auto object-cover"
+                      src='/images/photo-6.png'
+                      alt='photo'
+                      className='w-full h-auto object-cover'
                     />
                     <img
-                      src="/images/photo-7.png"
-                      alt="photo"
-                      className="w-full h-auto object-cover"
+                      src='/images/photo-7.png'
+                      alt='photo'
+                      className='w-full h-auto object-cover'
                     />
                   </div>
-                  <div className="flex flex-col py-8 md:py-5 space-y-8 md:space-y-6 text-xs xl:text-xl">
+                  <div className='flex flex-col py-8 md:py-5 space-y-8 md:space-y-6 text-xs xl:text-xl'>
                     <p>
                       В июне 1859 г. генерал-губернатор Восточной Сибири граф
                       Николай Николаевич Муравьев-Амурский, посетил на борту
@@ -181,16 +189,16 @@ function History() {
                     </p>
                   </div>
                   <img
-                    src="/images/photo-10.png"
-                    alt="photo"
-                    className="w-full h-auto object-cover md:hidden"
+                    src='/images/photo-10.png'
+                    alt='photo'
+                    className='w-full h-auto object-cover md:hidden'
                   />
                   <img
-                    src="/images/photo-8.png"
-                    alt="photo"
-                    className="hidden md:block w-full h-auto object-cover"
+                    src='/images/photo-8.png'
+                    alt='photo'
+                    className='hidden md:block w-full h-auto object-cover'
                   />
-                  <div className="flex flex-col py-8 space-y-10 md:py-5 md:space-y-5 text-xs xl:text-xl">
+                  <div className='flex flex-col py-8 space-y-10 md:py-5 md:space-y-5 text-xs xl:text-xl'>
                     <p>
                       16 февраля 1871 г., в соответствии с императорским указом,
                       Владивосток получил статус Главного порта Восточного
@@ -227,19 +235,19 @@ function History() {
                     </p>
                   </div>
                   <img
-                    src="/images/photo-11.png"
-                    alt="photo"
-                    className="w-full h-auto object-cover md:hidden"
+                    src='/images/photo-11.png'
+                    alt='photo'
+                    className='w-full h-auto object-cover md:hidden'
                   />
                   <img
-                    src="/images/photo-9.png"
-                    alt="photo"
-                    className="hidden md:block w-full h-auto object-cover"
+                    src='/images/photo-9.png'
+                    alt='photo'
+                    className='hidden md:block w-full h-auto object-cover'
                   />
-                  <div className="pt-8 md:pt-4 xl:pt-8 xl:pb-32">
+                  <div className='pt-8 md:pt-4 xl:pt-8 xl:pb-32'>
                     <button
-                      className="w-full py-3 xl:py-5 text-white text-sm xl:text-[22px] font-semibold lg:text-base uppercase bg-orange rounded 
-            "
+                      className='w-full py-3 xl:py-5 text-white text-sm xl:text-[22px] font-semibold lg:text-base uppercase bg-orange rounded 
+            '
                       onClick={handleShowPhotosClick}
                     >
                       <span>Смотреть фото</span>
@@ -249,34 +257,34 @@ function History() {
               </section>
             </>
           ) : (
-            <section className="relative pt-4 md:pt-0 md:grid md:grid-cols-[167px_1fr] 2xl:grid-cols-[370px_1fr]">
+            <section className='relative pt-4 md:pt-0 md:grid md:grid-cols-[167px_1fr] 2xl:grid-cols-[370px_1fr]'>
               {/* Кнопка "Вернуться назад" в левой колонке на десктопе */}
-              <div className="hidden md:block pt-8 md:pt-4 md:pr-3 xl:pr-6 xl:pt-8 xl:pb-32">
+              <div className='hidden md:block pt-8 md:pt-4 md:pr-3 xl:pr-6 xl:pt-8 xl:pb-32'>
                 <button
-                  className="w-full py-3 2xl:py-5 text-white text-sm md:text-xs 2xl:text-base font-semibold uppercase bg-darkGrey rounded"
+                  className='w-full py-3 2xl:py-5 text-white text-sm md:text-xs 2xl:text-base font-semibold uppercase bg-darkGrey rounded'
                   onClick={handleShowPhotosClick}
                 >
                   <span>Вернуться назад</span>
                 </button>
-                <div className="hidden md:block self-center md:px-2 md:pt-8">
-                  <img src="images/photo-3.png" alt="photo" className="" />
+                <div className='hidden md:block self-center md:px-2 md:pt-8'>
+                  <img src='images/photo-3.png' alt='photo' className='' />
                 </div>
               </div>
-              <div className="md:border-l-2 md:border-white/40 md:pl-5 xl:pl-[100px]">
+              <div className='md:border-l-2 md:border-white/40 md:pl-5 xl:pl-[100px]'>
                 {/* Кнопка "Вернуться назад" в правой колонке на мобилке */}
-                <div className="pt-6 md:pt-4 xl:pt-8 xl:pb-32 md:hidden">
+                <div className='pt-6 md:pt-4 xl:pt-8 xl:pb-32 md:hidden'>
                   <button
-                    className="w-full py-3 xl:py-5 text-white text-sm xl:text-[22px] font-semibold lg:text-base uppercase bg-darkGrey rounded"
+                    className='w-full py-3 xl:py-5 text-white text-sm xl:text-[22px] font-semibold lg:text-base uppercase bg-darkGrey rounded'
                     onClick={handleShowPhotosClick}
                   >
                     <span>Вернуться назад</span>
                   </button>
                 </div>
-                <div className=" text-white">
-                  <h3 className="py-7 md:pt-4 text-darkGrey text-3xl/8 md:text-3xl/[1.1] xl:text-[80px] font-bold font-bebas tracking-[0.04em]">
+                <div className=' text-white'>
+                  <h3 className='py-7 md:pt-4 text-darkGrey text-3xl/8 md:text-3xl/[1.1] xl:text-[80px] font-bold font-bebas tracking-[0.04em]'>
                     Исторические фотографии
                   </h3>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 xl:max-w-[970px]">
+                  <div className='grid grid-cols-1 md:grid-cols-2 gap-4 xl:max-w-[970px]'>
                     {photos.map((photo, index) => (
                       <img
                         key={photo.id}
@@ -284,8 +292,8 @@ function History() {
                         alt={photo.title}
                         className={`object-cover w-full ${
                           index % 3 === 2
-                            ? "md:col-span-2 md:h-[200px] xl:h-[360px]"
-                            : "md:col-span-1 md:h-[150px] xl:h-[270px]"
+                            ? 'md:col-span-2 md:h-[200px] xl:h-[360px]'
+                            : 'md:col-span-1 md:h-[150px] xl:h-[270px]'
                         }`}
                       />
                     ))}
@@ -296,7 +304,7 @@ function History() {
           )}
         </div>
       </main>
-    </>
+    </BgOverlay>
   );
 }
 
