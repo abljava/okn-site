@@ -4,7 +4,7 @@ import BgOverlay from '../components/BgOverlay';
 
 function DevelopmentRegulations() {
   return (
-    <main className="relative pb-16 md:pb-6 lg:pb-28 z-10 px-5 2xl:text-2xl bg-[url('/images/bg-main.jpg')] bg-cover bg-center">
+    <main className="relative z-10 px-5 2xl:text-2xl bg-[url('/images/bg-main.jpg')] bg-cover bg-center">
       <BgOverlay bgClass="bg-[url('/bgs/bg-development-mobile.png')] md:bg-[url('/bgs/bg-development-tablet.png')] lg:bg-[url('/bgs/bg-development.png')] 2xl:bg-[position:center_-150px]" />
       <img
         src='/bgs/bg-main.png'
@@ -26,14 +26,14 @@ function DevelopmentRegulations() {
           </div>
         </section>
         <section className='flex flex-col md:grid md:grid-cols-[167px_1fr] 2xl:grid-cols-[370px_1fr] '>
-          <div className='hidden justify-self-end pt-8 md:block'>
+          <div className='hidden justify-self-end pt-8 md:pt-32 md:block'>
             <img
               src='/images/photo-34.png'
               alt='photo'
               className='w-32 lg:w-[360px]'
             />
           </div>
-          <div className='relative z-10 grid pt-8 md:pr-44 md:pl-5 md:pt-10 xl:pt-12 xl:pr-0 xl:pl-[100px] md:border-l-2 md:border-white/40 '>
+          <div className='relative z-10 grid pt-8 md:pr-44 md:pl-5 md:pt-32 xl:pt-26 xl:pr-0 xl:pl-[100px] md:border-l-2 md:border-white/40 '>
             <h1 className='text-3xl/8 md:text-3xl/[1.1] xl:text-[80px] font-bold font-bebas tracking-[0.04em]'>
               проект режимов использования земель и требования к
               градостроительному регламенту
@@ -41,7 +41,7 @@ function DevelopmentRegulations() {
           </div>
         </section>
         {/* Карта */}
-        <div className='relative'>
+        <div className='relative pt-10'>
           <img
             src='/maps/map-development.png'
             alt='карта'

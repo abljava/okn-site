@@ -28,14 +28,14 @@ function ProtectedObjects() {
             </div>
           </section>
           <section className='flex flex-col md:grid md:grid-cols-[167px_1fr] 2xl:grid-cols-[370px_1fr] '>
-            <div className='hidden justify-self-end pt-8 md:block'>
+            <div className='hidden justify-self-end pt-8 md:pt-32 md:block'>
               <img
                 src='/images/photo-12.png'
                 alt='photo'
                 className='w-32 lg:w-[360px]'
               />
             </div>
-            <div className='relative z-10 grid pt-8 md:pr-44 md:pl-5 md:pt-10 xl:pt-12 xl:pr-0 xl:pl-[100px] md:border-l-2 md:border-white/40 '>
+            <div className='relative z-10 grid pt-8 md:pr-44 md:pl-5 md:pt-32 xl:pr-0 xl:pl-[100px] md:border-l-2 md:border-white/40 '>
               <h1 className='text-3xl/8 md:text-3xl/[1.1] xl:text-[80px] font-bold font-bebas tracking-[0.04em]'>
                 Предмет охраны Достопримечательного места
               </h1>

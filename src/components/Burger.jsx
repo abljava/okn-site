@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import pageNames from '../utils/pageNames';
 
 function Burger() {
   const [open, setOpen] = useState(false);
@@ -35,10 +36,15 @@ function Burger() {
               <Link to="/" onClick={() => setOpen(false)}>
                 Главная
               </Link>
-              <Link to="/history" onClick={() => setOpen(false)}>
-                История
-              </Link>
-              {/* Добавьте остальные ссылки по необходимости */}
+              {pageNames.map((item) => (
+                <Link
+                  key={item.id}
+                  to={`/${item.url}`}
+                  onClick={() => setOpen(false)}
+                >
+                  {item.title}
+                </Link>
+              ))}
             </nav>
           </div>
         </div>

@@ -1,6 +1,6 @@
 const BgOverlay = ({ bgClass }) => (
   <div
-    className={`fixed top-0 left-0 w-full h-full -z-10 bg-contain bg-no-repeat bg-top ${bgClass}`}
+    className={`fixed top-0 left-0 w-full h-full -z-10 bg-cover bg-no-repeat bg-top ${bgClass}`}
   ></div>
 );
 
