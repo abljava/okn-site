@@ -222,37 +222,42 @@ function Home() {
                 {/* Первый пункт */}
                 <div className="flex items-start gap-5 pt-6">
                   <img src="/icons/pdf.svg" className="pt-6"></img>
-                  <Link
-                    to="/"
+                  <a
+                    href="/documents/prikaz_290_o_vkluchenii_mesta.pdf"
+                    download="Приказ о включении достопримечательного места в перечень выявленных объектов культурного наследия.pdf"
                     className="text-orange font-bold underline border-t border-white/40 pt-3"
                   >
                     Приказ о включении достопримечательного места в перечень
                     выявленных объектов культурного наследия
-                  </Link>
+                  </a>
                 </div>
 
                 {/* Второй пункт */}
                 <div className="flex items-start gap-5 pt-6">
                   <img src="/icons/pdf.svg" className="pt-6"></img>
-                  <Link
-                    to="/"
+                  <a
+                    href="/documents/prikaz_437_o_vkluchenii_v_reestr.pdf"
+                    download="Приказ о включении достопримечательного места в реестр
+                    объектов культурного наследия.pdf"
                     className="text-orange font-bold underline border-t border-white/40 pt-3"
                   >
-                    Приказ о включении достопримечательного места в перечень
-                    выявленных объектов культурного наследия
-                  </Link>
+                    Приказ о включении достопримечательного места в реестр
+                    объектов культурного наследия
+                  </a>
                 </div>
 
                 {/* Третий пункт */}
                 <div className="flex items-start gap-5 pt-6">
                   <img src="/icons/pdf.svg" className="pt-6"></img>
-                  <Link
-                    to="/"
+                  <a
+                    href="/documents/prikaz_ob_utverzhdenii_predmeta_ohrany_14.12.2024.pdf"
+                    download="Приказ об утверждении предмета охраны достопримечательного
+                    места.pdf"
                     className="text-orange font-bold underline border-t border-b border-white/40 py-3"
                   >
-                    Приказ о включении достопримечательного места в перечень
-                    выявленных объектов культурного наследия
-                  </Link>
+                    Приказ об утверждении предмета охраны достопримечательного
+                    места
+                  </a>
                 </div>
               </div>
             </div>
