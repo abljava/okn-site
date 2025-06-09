@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import pageNames from "../utils/pageNames";
 
 function Footer() {
   return (
@@ -15,20 +16,16 @@ function Footer() {
           {/* Меню */}
           <nav>
             <ul className="flex flex-col md:flex-row md:gap-7 items-center md:items-start gap-5 text-xs font-medium uppercase md:text-[10px] xl:text-lg">
-              <li>
-                <Link to="/">Исторические сведения</Link>
-              </li>
-              <li>
-                <Link to="/">Предмет охраны Достопримечательного места</Link>
-              </li>
-              <li className="text-center md:text-left">
-                <Link to="/">
-                  режимы использования земель и&nbsp;требования&nbsp;к&nbsp;градостроительному регламенту
+              {pageNames.map((item) => (
+                <Link
+                  key={item.id}
+                  to={`/${item.url}`}
+                  onClick={() => setOpen(false)}
+                  className="hover:text-orange transition-all"
+                >
+                  {item.title}
                 </Link>
-              </li>
-              <li>
-                <Link to="/">Авторский коллектив</Link>
-              </li>
+              ))}
             </ul>
           </nav>
           {/* Контакты и копирайт */}

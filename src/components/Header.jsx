@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Burger from "./Burger";
+import pageNames from "../utils/pageNames";
 
 function Header() {
   return (
@@ -12,19 +13,18 @@ function Header() {
           <img src="/logo.png" alt="logo" />
         </Link>
         <nav className="hidden md:flex flex-1 justify-between items-center gap-6 text-[9px] lg:text-sm xl:text-lg uppercase font-medium tracking-wide">
-          <Link to="/history" className="hover:text-orange-400">
-            Исторические сведения
-          </Link>
-          <Link to="/protected-objects" className="hover:text-orange-400">
-            Предмет охраны достопримечательного места
-          </Link>
-          <Link to="/development-regulations" className="hover:text-orange-400">
-            Режимы использования земель и требования к градостроительному
-            регламенту
-          </Link>
-          <Link to="/authors" className="hover:text-orange-400">
-            Авторский коллектив
-          </Link>
+          {pageNames.map((item) => (
+            <Link
+              key={item.id}
+              to={`/${item.url}`}
+              onClick={() => setOpen(false)}
+              className="hover:text-orange transition-all"
+            >
+              {item.title}
+            </Link>
+          ))}
+
+
         </nav>
         <a
           href="mailto:hist.center-vl@mail.ru"
