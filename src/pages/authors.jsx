@@ -6,7 +6,7 @@ import BgOverlay from "../components/BgOverlay";
 function Authors() {
   return (
     <>
-      <main className="relative pb-16 md:pb-6 lg:pb-28 z-10 px-5 2xl:text-2xl bg-[url('/bgs/bg-main.jpg')] bg-cover bg-center">
+      <main className="relative pb-16 md:pb-6 lg:pb-28 z-10 px-5 2xl:text-2xl bg-[url('/bgs/bg-main.jpg')] bg-cover bg-center overflow-hidden">
         <BgOverlay bgClass="bg-[url('/bgs/bg-authors-mobile.png')] md:bg-[url('/bgs/bg-authors-tablet.png')] lg:bg-[url('/bgs/bg-authors.png')] 2xl:bg-[position:center_-150px]" />
         {/* <img
           src='/bgs/bg-main.png'
@@ -48,11 +48,11 @@ function Authors() {
             </picture>
             <Circle />
           </div>
-          <div>
+          <div className="overflow-hidden">
             <img
-              src="/bgs/bg-main.png"
+              src="/bgs/bg-main4.png"
               alt="фоновое изображение"
-              className="absolute -z-10 top-1/3 left-0 w-full h-full object-cover"
+              className="absolute -z-10 top-1/3 left-0 w-full h-full object-cover "
             />
             <section className="relative md:grid md:grid-cols-[167px_1fr] 2xl:grid-cols-[370px_1fr] bg-cover bg-center">
               <div className="pt-32 md:pt-28 lg:pt-56 md:pl-5 2xl:pl-[100px] md:border-l-2 md:border-white/40 ">
@@ -114,7 +114,7 @@ function Authors() {
                   </p>
                 </div>
               </div>
-              {/* Картинка */}
+              {/* Фото */}
               <div className="hidden md:block md:col-start-1 md:row-start-1 pt-32 md:pt-28 lg:pt-56">
                 <img
                   src="/images/photo-33.png"
