@@ -170,7 +170,7 @@ function Circle() {
               className="absolute inset-0 w-full h-full rounded-full"
             />
             <div className="absolute inset-0 rounded-full bg-blueGray opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-center w-full">
+              <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-center text-[10px] md:text-sm xl:text-2xl w-full">
                 Имя Сотрудника
               </p>
             </div>
@@ -199,7 +199,7 @@ function Circle() {
               className="absolute inset-0 w-full h-full rounded-full"
             />
             <div className="absolute inset-0 rounded-full bg-blueGray opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-center w-full">
+              <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-center text-[8px] md:text-xs xl:text-lg w-full">
                 Имя Сотрудника
               </p>
             </div>{" "}
