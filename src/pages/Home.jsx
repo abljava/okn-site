@@ -16,7 +16,7 @@ function Home() {
             <h1 className="text-white text-3xl/8 md:text-3xl/[1.1] xl:text-[80px] font-bold font-bebas tracking-[0.04em]">
               Достопримечательное место "Исторический центр города Владивостока"
             </h1>
-            <p className="mt-4 md:mt-3 text-white text-xs/4 uppercase">
+            <p className="mt-4 md:mt-3 text-white text-xs/4 uppercase lg:hidden">
               Разработка документации, связанной с исторической архитектурой
             </p>
           </div>
@@ -25,7 +25,7 @@ function Home() {
         <section className="flex flex-col md:grid md:grid-cols-[167px_1fr_auto] 2xl:grid-cols-[370px_1fr_auto]">
           <img
             src="/bgs/bg-01.png"
-            className="absolute -z-10 pointer-events-none scale-[2.3] md:scale-[1] top-0 left-1/2 right-1/2 -translate-x-1/2 w-screen max-w-none opacity-40"
+            className="absolute -z-10 pointer-events-none scale-[2.3] md:scale-[1] top-0 md:-top-10 lg:-top-56 left-1/2 right-1/2 -translate-x-1/2 w-screen max-w-none opacity-40"
             alt="background"
           />
           <div className="flex justify-between items-start gap-2">
@@ -71,7 +71,7 @@ function Home() {
         <div className="relative">
           <img
             src="/bgs/bg-main3.png"
-            className="absolute pointer-events-none scale-[2.3] md:scale-[1] origin-top left-1/2 right-1/2 -translate-x-1/2 w-screen max-w-none"
+            className="absolute pointer-events-none scale-[2.3] md:scale-[1] lg:scale-[2] origin-top lg:-top-40 2xl:-top-80 left-1/2 right-1/2 -translate-x-1/2 w-screen max-w-none"
             alt="background"
           />
 
@@ -86,13 +86,13 @@ function Home() {
             <h3 className="h3 pt-28 !text-black md:hidden">
               Для кого этот сайт?
             </h3>
-            <div className="space-y-3 text-xs md:pt-44 md:pr-32 md:border-l-2 md:border-white/40 md:pl-5 2xl:pl-[100px]">
+            <div className="flex flex-col gap-5 lg:gap-8 text-xs md:text-[10px] xl:text-[22px] leading-[1.4] pt-5 lg:pt- md:pt-44 md:pr-32 md:border-l-2 md:border-white/40 md:pl-5 2xl:pl-[100px]">
               <h3 className="h3 pt-28 !text-black hidden md:block">
                 Для кого этот сайт?
               </h3>
               {/* Первый пункт */}
-              <div className="flex items-start gap-3 pt-3">
-                <span className="text-orange font-bold font-bebas text-3xl leading-none select-none">
+              <div className="flex items-start gap-3 lg:gap-10 lg:pt-16">
+                <span className="text-orange font-bold font-bebas text-3xl xl:text-[63px] leading-none select-none">
                   01
                 </span>
                 <div className="border-t border-white/40 pt-3">
@@ -104,8 +104,8 @@ function Home() {
               </div>
 
               {/* Второй пункт */}
-              <div className="flex items-start gap-3">
-                <span className="text-orange font-bold font-bebas text-3xl leading-none select-none">
+              <div className="flex items-start gap-3 lg:gap-10">
+                <span className="text-orange font-bold font-bebas text-3xl xl:text-[63px] leading-none select-none">
                   02
                 </span>
                 <div className="border-t border-white/40 pt-3">
@@ -121,8 +121,8 @@ function Home() {
               </div>
 
               {/* Третий пункт */}
-              <div className="flex items-start gap-3">
-                <span className="text-orange font-bold font-bebas text-3xl leading-none select-none">
+              <div className="flex items-start gap-3 lg:gap-10">
+                <span className="text-orange font-bold font-bebas text-3xl xl:text-[63px] leading-none select-none">
                   03
                 </span>
                 <div className="border-t border-b border-white/40 py-3">
@@ -138,7 +138,7 @@ function Home() {
           </div>
           <div className="relative flex gap-2 mt-9 md:mt-0 md:gap-0 md:grid md:grid-cols-[167px_1fr] 2xl:grid-cols-[370px_1fr] ">
             {/* Текст — в правой колонке грида */}
-            <p className="text-xs max-w-[210px] md:max-w-none md:col-start-2 md:row-start-1 md:pl-5 md:pr-32 md:pt-10 2xl:pl-[100px] md:border-l-2 md:border-white/40">
+            <p className="text-xs md:text-[10px] xl:text-[22px] leading-[1.4] max-w-[210px] md:max-w-none md:col-start-2 md:row-start-1 md:pl-5 md:pr-32 md:pt-10 2xl:pl-[100px] md:border-l-2 md:border-white/40">
               Информация, размещённая здесь, носит ознакомительный характер и
               призвана в первую очередь наглядно информировать заинтересованных
               лиц, в том числе собственников зданий и земельных участков,
@@ -160,7 +160,7 @@ function Home() {
             <img
               src="/bgs/bg-2.png"
               alt="фоновая картинка"
-              className="absolute pointer-events-none origin-top scale-[2.2] md:scale-[1] left-1/2 right-1/2 -translate-x-1/2 w-screen max-w-none"
+              className="absolute pointer-events-none origin-top scale-[2.2] md:scale-[1] lg:scale-y-[0.7] left-1/2 right-1/2 -translate-x-1/2 w-screen max-w-none"
             />
             <div className="relative pt-32 md:pt-0 text-white text-xs">
               <div className="relative grid grid-cols-[75%_1fr] grid-rows-[auto_auto_auto] gap-x-6 gap-y-4 items-start md:grid-cols-[167px_1fr_1fr] md:grid-rows-[auto_auto] md:gap-0 2xl:grid-cols-[370px_1fr_1fr]">
@@ -218,7 +218,7 @@ function Home() {
               <h3 className="pt-28 h3 !text-black xl:leading-[1.1]">
                 Знать, чтобы развивать
               </h3>
-              <div className="text-xs pt-6">
+              <div className="text-xs md:text-[10px] xl:text-[22px] leading-[1.4] pt-6">
                 {/* Первый пункт */}
                 <div className="flex items-start gap-5 pt-6">
                   <img src="/icons/pdf.svg" className="pt-6"></img>
@@ -309,19 +309,19 @@ function Home() {
             <img
               src="/bgs/bg-0.png"
               alt="фоновая картинка"
-              className="absolute -z-5 pointer-events-none origin-top scale-[2.3] md:scale-[1.2] left-1/2 right-1/2 -translate-x-1/2 w-screen max-w-none"
+              className="absolute -z-5 pointer-events-none origin-top xl:-top-32 scale-[2.3] md:scale-[1.2] left-1/2 right-1/2 -translate-x-1/2 w-screen max-w-none"
             />
             <div className="relative flex flex-col items-start pt-24 md:pt-0 gap-4 md:grid md:grid-cols-[167px_1fr] md:gap-0 2xl:grid-cols-[370px_1fr] text-white ">
               <h3 className="h3 md:pt-32 lg:leading-[1]">Обратная связь</h3>
               <div className="flex flex-col gap-7 md:pt-32 md:pl-5 md:pr-20 items-start md:border-l-2 md:border-white/40">
-                <p className="font-bold text-xs">
+                <p className="font-bold text-xs md:text-[10px] xl:text-[22px] leading-[1.4]">
                   Авторский коллектив, участвовавший в создании данной
                   документации, открыт к диалогу и готов принять к рассмотрению
                   поступившие предложения и мнения о потенциальных изменениях
                   документации в будущем.
                 </p>
                 <div className="flex gap-2 items-center md:items-start">
-                  <p className="text-xs ">
+                  <p className="text-xs md:text-[10px] xl:text-[22px] leading-[1.4]">
                     К таким предложениям могут также относиться обоснованные
                     пожелания по включению/исключению ценных исторических
                     объектов (как зданий, так и сооружений) в состав предмета
@@ -337,7 +337,7 @@ function Home() {
                 </div>
                 <a
                   href="mailto:hist.center-vl@mail.ru"
-                  className="text-white text-xs font-semibold uppercase bg-orange rounded px-8 py-3"
+                  className="text-white text-xs lg:text-[22px] font-semibold uppercase bg-orange rounded px-8 py-3 lg:px-16 lg:py-6"
                 >
                   <span>Написать на почту</span>
                 </a>

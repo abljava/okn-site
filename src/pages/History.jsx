@@ -244,7 +244,7 @@ function History() {
                   alt="photo"
                   className="hidden md:block w-full h-auto object-cover"
                 />
-                <div className="pt-8 md:pt-4 xl:pt-8 xl:pb-32">
+                <div className="pt-8 md:py-4 xl:pt-8 xl:pb-32">
                   <button
                     className="w-full py-3 xl:py-5 text-white text-sm xl:text-[22px] font-semibold lg:text-base uppercase bg-orange rounded 
             "

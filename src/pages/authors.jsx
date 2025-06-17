@@ -129,7 +129,7 @@ function Authors() {
                 <h3 className="h3 !text-black  md:leading-[1]">контакты</h3>
               </div>
 
-              <div className="flex flex-col items-start gap-6 lg:gap-12 text-xs/4 md:text-[10px] xl:text-[22px] pt-3 md:pt-20 leading-[1.4] md:border-l-2 md:border-white/40 md:pl-5 2xl:pl-[100px]">
+              <div className="flex flex-col items-start gap-6 lg:gap-12 text-xs/4 md:text-[10px] xl:text-[22px] pt-3 md:pt-20 md:pb-8 leading-[1.4] md:border-l-2 md:border-white/40 md:pl-5 2xl:pl-[100px]">
                 <div className="hidden md:block"></div>
                 <div className="flex flex-col gap-3 lg:gap-5 text-xs md:text-sm xl:text-2xl">
                   <p className="font-bold">
