@@ -3,7 +3,7 @@ import pageNames from "../utils/pageNames";
 
 function Footer() {
   return (
-    <footer className="relative z-10 text-white bg-bgGrey rounded-t-3xl px-6 py-9 xl:px-12 2xl:px-60 2xl:pb-10 2xl:pt-16">
+    <footer className="relative z-10 text-white bg-bgGrey -mt-5 rounded-t-3xl px-6 py-9 xl:px-12 2xl:px-60 2xl:pb-10 2xl:pt-16">
       <div className="max-w-[1440px] mx-auto flex flex-col gap-8 md:grid md:[grid-template-columns:auto_1fr] md:gap-x-7">
         {/* Левая колонка: Логотип */}
         <div className="flex justify-center md:justify-start items-start">

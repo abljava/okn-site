@@ -25,7 +25,7 @@ function Home() {
         <section className="flex flex-col md:grid md:grid-cols-[167px_1fr_auto] 2xl:grid-cols-[370px_1fr_auto]">
           <img
             src="/bgs/bg-01.png"
-            className="absolute -z-10 pointer-events-none scale-[2.3] top-0 left-1/2 right-1/2 -translate-x-1/2 w-screen max-w-none opacity-40"
+            className="absolute -z-10 pointer-events-none scale-[2.3] md:scale-[1] top-0 left-1/2 right-1/2 -translate-x-1/2 w-screen max-w-none opacity-40"
             alt="background"
           />
           <div className="flex justify-between items-start gap-2">
@@ -71,7 +71,7 @@ function Home() {
         <div className="relative">
           <img
             src="/bgs/bg-main3.png"
-            className="absolute pointer-events-none scale-[2.3] origin-top left-1/2 right-1/2 -translate-x-1/2 w-screen max-w-none"
+            className="absolute pointer-events-none scale-[2.3] md:scale-[1] origin-top left-1/2 right-1/2 -translate-x-1/2 w-screen max-w-none"
             alt="background"
           />
 
@@ -160,7 +160,7 @@ function Home() {
             <img
               src="/bgs/bg-2.png"
               alt="фоновая картинка"
-              className="absolute pointer-events-none origin-top scale-[2.2] left-[80%]  -translate-x-1/2 w-screen max-w-none"
+              className="absolute pointer-events-none origin-top scale-[2.2] md:scale-[1] left-1/2 right-1/2 -translate-x-1/2 w-screen max-w-none"
             />
             <div className="relative pt-32 md:pt-0 text-white text-xs">
               <div className="relative grid grid-cols-[75%_1fr] grid-rows-[auto_auto_auto] gap-x-6 gap-y-4 items-start md:grid-cols-[167px_1fr_1fr] md:grid-rows-[auto_auto] md:gap-0 2xl:grid-cols-[370px_1fr_1fr]">
@@ -309,11 +309,11 @@ function Home() {
             <img
               src="/bgs/bg-0.png"
               alt="фоновая картинка"
-              className="absolute -z-5 pointer-events-none origin-top scale-[2.2] right-0 -translate-x-1/2 w-screen max-w-none"
+              className="absolute -z-5 pointer-events-none origin-top scale-[2.3] md:scale-[1.2] left-1/2 right-1/2 -translate-x-1/2 w-screen max-w-none"
             />
-            <div className="relative flex flex-col items-start pt-14 md:pt-9 gap-4 md:grid md:grid-cols-[167px_1fr] md:gap-0 2xl:grid-cols-[370px_1fr] text-white ">
-              <h3 className=" pt-28 h3 lg:leading-[1]">Обратная связь</h3>
-              <div className="flex flex-col gap-7 md:pl-5 md:pr-20 items-start md:border-l-2 md:border-white/40">
+            <div className="relative flex flex-col items-start pt-24 md:pt-0 gap-4 md:grid md:grid-cols-[167px_1fr] md:gap-0 2xl:grid-cols-[370px_1fr] text-white ">
+              <h3 className="h3 md:pt-32 lg:leading-[1]">Обратная связь</h3>
+              <div className="flex flex-col gap-7 md:pt-32 md:pl-5 md:pr-20 items-start md:border-l-2 md:border-white/40">
                 <p className="font-bold text-xs">
                   Авторский коллектив, участвовавший в создании данной
                   документации, открыт к диалогу и готов принять к рассмотрению
