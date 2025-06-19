@@ -4,6 +4,8 @@ import { sectionOne } from "../utils/history/sections.js";
 import { sectionTwo } from "../utils/history/sections.js";
 import { photos } from "../utils/history/photos.js";
 import BgOverlay from "../components/BgOverlay";
+import ScrollToTop from '../components/ScrollToTop.jsx';
+
 
 function History() {
   const [open, setOpen] = useState(false);
@@ -23,6 +25,7 @@ function History() {
 
   return (
     <main className="relative pb-16 md:pb-6 px-5 2xl:text-2xl">
+      <ScrollToTop />
       <BgOverlay bgClass="bg-[url('/bgs/bg-history-mobile.png')] md:bg-[url('/bgs/bg-history-tablet.png')] lg:bg-[url('/bgs/bg-history.png')] 2xl:bg-[position:center_-150px]" />
       <img
         src="/bgs/bg-main.png"
