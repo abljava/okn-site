@@ -1,9 +1,13 @@
 import { Link } from "react-router-dom";
 import BackgroundVideo from "../components/BackgroundVideo";
+import BgOverlay from "../components/BgOverlay";
 
 function Home() {
   return (
-    <main className="relative overflow-hidden">
+    <>
+    {/* <BgOverlay bgClass='bg-black z-30 opacity-90' /> */}
+    
+        <main className="relative overflow-hidden">
       {/* Видео и оверлей */}
       <BackgroundVideo src="/videos/east-to-west.mp4" className="" />
       <div className="fixed inset-0 bg-black bg-opacity-50 pointer-events-none -z-5"></div>
@@ -347,6 +351,8 @@ function Home() {
         </div>
       </section>
     </main>
+    </>
+
   );
 }
 
