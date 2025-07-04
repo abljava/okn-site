@@ -9,7 +9,7 @@ function Home() {
 
       <main className="relative overflow-hidden">
         {/* Видео и оверлей */}
-        <BackgroundVideo src="/videos/east-to-west.mp4" className="" />
+        <BackgroundVideo src="/videos/east-to-west.webm" className="" />
         <div className="fixed inset-0 bg-black bg-opacity-50 pointer-events-none -z-5"></div>
 
         <section className="relative md:max-w-[1440px] mx-auto z-10 px-5 pt-10 md:pt-0 2xl:text-2xl">
@@ -286,26 +286,32 @@ function Home() {
                     className="w-full h-full object-cover"
                     poster="/images/video-preview.png"
                     preload="metadata"
+                    playsInline
+                    muted
+                    loop
                   >
+                    <source src="/videos/east-to-west.webm" type="video/webm" />
                     <source
                       src="/videos/east-to-west-full.mp4"
                       type="video/mp4"
                     />
-                    <source src="/videos/east-to-west.mp4" type="video/mp4" />
                     Ваш браузер не поддерживает воспроизведение видео.
                   </video>
                   {/* Кнопка play */}
                   <button
-                    className="absolute inset-0 flex items-center justify-center"
+                    className="absolute inset-0 flex items-center justify-center video-play-button"
                     aria-label="Play video"
                     onClick={(e) => {
                       const video = e.target
                         .closest(".relative")
                         .querySelector("video");
                       if (video) {
+                        video.muted = false; // Включаем звук при клике
                         video.play().catch((err) => {
                           console.error("Ошибка воспроизведения:", err);
                         });
+                        // Скрываем кнопку после начала воспроизведения
+                        e.target.style.display = 'none';
                       }
                     }}
                   >
