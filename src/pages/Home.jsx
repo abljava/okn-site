@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import BackgroundVideo from "../components/BackgroundVideo";
 import BgOverlay from "../components/BgOverlay";
+import MapComponent from '../components/MapComponent';
 
 function Home() {
   return (
@@ -290,10 +291,10 @@ function Home() {
                     muted
                     loop
                   >
-                    <source src="/videos/east-to-west.webm" type="video/webm" />
+                    <source src="/videos/east-to-west-full.webm" type="video/webm" />
                     <source
-                      src="/videos/east-to-west-full.mp4"
-                      type="video/mp4"
+                      src="/videos/east-to-west.webm"
+                      type="video/webm"
                     />
                     Ваш браузер не поддерживает воспроизведение видео.
                   </video>
@@ -380,6 +381,8 @@ function Home() {
             </div>
           </div>
         </section>
+
+
       </main>
     </>
   );
