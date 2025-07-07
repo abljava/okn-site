@@ -1,18 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import Breadcrumbs from "../components/Breadcrumbs";
 import BgOverlay from "../components/BgOverlay";
 import MapComponent from "../components/MapComponent";
+import FullscreenMapPortal from "../components/FullscreenMapPortal";
 
 function ProtectedObjects() {
+  const [isFullscreen, setIsFullscreen] = useState(false);
+
   return (
     <>
       <main className="relative  z-10 px-5 2xl:text-2xl overflow-hidden">
         <BgOverlay bgClass="bg-[url('/bgs/bg-protected-mobile.png')] md:bg-[url('/bgs/bg-protected-tablet.png')] lg:bg-[url('/bgs/bg-protected.png')] 2xl:bg-[position:center_-150px]" />
-        {/* <img
+        <img
           src='/bgs/bg-main.png'
           alt='фоновое изображение'
           className='absolute -z-20 top-0 left-0 w-full h-full object-cover'
-        /> */}
+        />
         <div className="md:max-w-[1440px] mx-auto">
           <Breadcrumbs />
           <section className="flex flex-col md:grid md:grid-cols-[167px_1fr] 2xl:grid-cols-[370px_1fr] ">
@@ -29,11 +32,11 @@ function ProtectedObjects() {
             </div>
           </section>
           <section className="relative flex flex-col md:grid md:grid-cols-[167px_1fr] 2xl:grid-cols-[370px_1fr] ">
-            <img
+            {/* <img
               src="/bgs/bg-1.png"
               alt="фоновое изображение"
               className="absolute -z-10 -top-20 md:top-0 lg:-top-10 xl:-top-32 2xl:-top-40 md:scale-y-90 left-1/2 right-1/2 -translate-x-1/2 w-screen max-w-none"
-            />
+            /> */}
             <div className="hidden justify-self-end pt-8 md:pt-32 md:block">
               <img
                 src="/images/photo-12.png"
@@ -49,15 +52,25 @@ function ProtectedObjects() {
           </section>
 
           {/* Карта */}
-          <div className="relative -z-20 -top-16 left-1/2 right-1/2 -translate-x-1/2 w-screen max-w-none">
-            {/* <img
+          {/* <div className="relative -z-20 -top-16 left-1/2 right-1/2 -translate-x-1/2 w-screen max-w-none"> */}
+          {/* <img
               src="/maps/map-objects.png"
               alt="карта"
               className="relative top-0 left-1/2 right-1/2 -translate-x-1/2 w-screen max-w-none"
             /> */}
-            <MapComponent />
-          </div>
+          {/* </div> */}
         </div>
+        <div
+          className="relative -z-20 -top-16 left-1/2 right-1/2 -translate-x-1/2 w-screen max-w-none"
+          onClick={() => setIsFullscreen(true)}
+        >
+          <MapComponent />
+        </div>
+        {isFullscreen && (
+          <FullscreenMapPortal onClose={() => setIsFullscreen(false)}>
+            <MapComponent />
+          </FullscreenMapPortal>
+        )}
       </main>
     </>
   );
