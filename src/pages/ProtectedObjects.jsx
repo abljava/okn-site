@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Breadcrumbs from "../components/Breadcrumbs";
 import BgOverlay from "../components/BgOverlay";
 import MapComponent from "../components/MapComponent";
+import MapWithObjects from "../components/MapWithObjects";
 import FullscreenMapPortal from "../components/FullscreenMapPortal";
 
 function ProtectedObjects() {
@@ -12,9 +13,9 @@ function ProtectedObjects() {
       <main className="relative  z-10 px-5 2xl:text-2xl overflow-hidden">
         <BgOverlay bgClass="bg-[url('/bgs/bg-protected-mobile.png')] md:bg-[url('/bgs/bg-protected-tablet.png')] lg:bg-[url('/bgs/bg-protected.png')] 2xl:bg-[position:center_-150px]" />
         <img
-          src='/bgs/bg-main.png'
-          alt='фоновое изображение'
-          className='absolute -z-20 top-0 left-0 w-full h-full object-cover'
+          src="/bgs/bg-main.png"
+          alt="фоновое изображение"
+          className="absolute -z-20 top-0 left-0 w-full h-full object-cover"
         />
         <div className="md:max-w-[1440px] mx-auto">
           <Breadcrumbs />
@@ -62,9 +63,9 @@ function ProtectedObjects() {
         </div>
         <div
           className="relative -z-20 -top-16 left-1/2 right-1/2 -translate-x-1/2 w-screen max-w-none"
-          onClick={() => setIsFullscreen(true)}
+          // onClick={() => setIsFullscreen(true)}
         >
-          <MapComponent />
+          <MapWithObjects />
         </div>
         {isFullscreen && (
           <FullscreenMapPortal onClose={() => setIsFullscreen(false)}>

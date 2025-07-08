@@ -1,6 +1,16 @@
 import { createPortal } from "react-dom";
+import { MapContainer, TileLayer, Polygon } from "react-leaflet";
 
 export default function FullscreenMapPortal({ children, onClose }) {
+  const testPolygon = [
+    [43.116265, 131.882393],
+    [43.116800, 131.885000],
+    [43.115900, 131.887200],
+    [43.114900, 131.885800],
+    [43.115400, 131.883000],
+    [43.116265, 131.882393],
+  ];
+
   return createPortal(
     <div
       style={{
@@ -25,7 +35,12 @@ export default function FullscreenMapPortal({ children, onClose }) {
         }}
         onClick={e => e.stopPropagation()}
       >
-        {children}
+        <MapContainer center={[43.116265, 131.882393]} zoom={16} style={{ height: "100%", width: "100%" }}>
+          <TileLayer
+            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          />
+          <Polygon positions={testPolygon} color="blue" />
+        </MapContainer>
         <button
           onClick={onClose}
           style={{
@@ -41,7 +56,7 @@ export default function FullscreenMapPortal({ children, onClose }) {
             cursor: "pointer"
           }}
         >
-          Закрыть
+          x
         </button>
       </div>
     </div>,
