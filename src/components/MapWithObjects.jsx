@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { MapContainer, TileLayer, GeoJSON } from "react-leaflet";
 import ObjectInfoModal from "./ObjectInfoModal";
+import ViewSights from "./ViewSights";
 
 export default function MapWithObjects() {
   const [selectedFeature, setSelectedFeature] = useState(null);
@@ -24,6 +25,8 @@ export default function MapWithObjects() {
   return (
     <>
       <MapContainer center={[43.116265, 131.882393]} zoom={14} style={{ height: "600px", width: "100%" }}>
+      <ViewSights onFeatureClick={setSelectedFeature} />
+
         <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
         {geojsonData && <GeoJSON
           data={geojsonData}
