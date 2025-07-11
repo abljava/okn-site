@@ -2,7 +2,7 @@ import React from "react";
 
 export default function ObjectInfoModal({ feature, onClose }) {
   if (!feature) return null;
-  const { name, description, image } = feature.properties || {};
+  const { fid, name, description, image } = feature.properties || {};
   return (
     <div style={{
       position: "fixed",
@@ -35,6 +35,9 @@ export default function ObjectInfoModal({ feature, onClose }) {
           padding: "4px 12px",
           cursor: "pointer"
         }}>×</button>
+        {fid !== undefined && (
+          <div style={{ color: '#888', fontSize: 14, marginBottom: 8 }}>fid: {fid}</div>
+        )}
         <h2 style={{marginTop:0}}>{name}</h2>
         <p>{description}</p>
         {image && <img src={image} alt={name} style={{maxWidth: "100%", borderRadius: 8, marginTop: 16}} />}

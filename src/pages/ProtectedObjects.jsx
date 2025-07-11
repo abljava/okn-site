@@ -4,6 +4,10 @@ import BgOverlay from "../components/BgOverlay";
 import MapComponent from "../components/MapComponent";
 import MapWithObjects from "../components/MapWithObjects";
 import FullscreenMapPortal from "../components/FullscreenMapPortal";
+import ViewSights from "../components/ViewSights";
+import ViewOKNPolygons from "../components/ViewOKNPolygons";
+import ViewBorders from "../components/ViewBorders";
+import Numbers from "../components/Numbers";
 
 function ProtectedObjects() {
   const [isFullscreen, setIsFullscreen] = useState(false);
@@ -65,7 +69,12 @@ function ProtectedObjects() {
           className="relative -z-20 -top-16 left-1/2 right-1/2 -translate-x-1/2 w-screen max-w-none"
           // onClick={() => setIsFullscreen(true)}
         >
-          <MapWithObjects />
+          <MapWithObjects>
+            <ViewSights layerName="Видовые объекты" />
+            <ViewOKNPolygons layerName="ОКН с номерами" />
+            <ViewBorders layerName="Границы" />
+            <Numbers layerName="Номера" />
+          </MapWithObjects>
         </div>
         {isFullscreen && (
           <FullscreenMapPortal onClose={() => setIsFullscreen(false)}>

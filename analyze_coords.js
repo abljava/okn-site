@@ -1,4 +1,5 @@
 import fs from 'fs';
+const path = require('path');
 
 // Функция для преобразования координат из DMS в десятичные градусы
 function dmsToDecimal(dmsString) {
@@ -206,3 +207,28 @@ function calculateDistanceBetweenPoints(lat1, lng1, lat2, lng2) {
     const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
     return R * c;
 } 
+
+const path = require('path');
+
+// Пути к файлам
+const inputPath = path.join(__dirname, 'public', 'data', 'vidovie_wgs4326.geojson');
+const outputPath = path.join(__dirname, 'public', 'data', 'vidovie_wgs4326_with_id.geojson');
+
+// Чтение исходного файла
+const data = JSON.parse(fs.readFileSync(inputPath, 'utf8'));
+
+if (!Array.isArray(data.features)) {
+  throw new Error('Некорректный формат GeoJSON: отсутствует массив features');
+}
+
+// Добавление id каждому объекту
+let id = 1;
+data.features.forEach(feature => {
+  if (!feature.properties) feature.properties = {};
+  feature.properties.id = id++;
+});
+
+// Запись результата в новый файл
+fs.writeFileSync(outputPath, JSON.stringify(data, null, 2), 'utf8');
+
+console.log('Готово! Файл сохранён как', outputPath); 

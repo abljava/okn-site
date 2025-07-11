@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import { GeoJSON } from "react-leaflet";
 
-export default function ViewSights({ onFeatureClick }) {
+export default function ViewBorders({ onFeatureClick }) {
   const [geojsonData, setGeojsonData] = useState(null);
 
   useEffect(() => {
-    fetch("/data/vidovie_wgs4326.geojson")
+    fetch("/data/borders.geojson")
       .then(res => res.json())
       .then(setGeojsonData);
   }, []);
@@ -23,10 +23,10 @@ export default function ViewSights({ onFeatureClick }) {
       data={geojsonData}
       onEachFeature={onEachFeature}
       style={() => ({
-        color: "#ff9900",
+        color: "#0066cc",
         weight: 1,
-        fillColor: "#ffcc80",
-        fillOpacity: 0.3,
+        fillColor: "#99ccff",
+        fillOpacity: 0.1,
         opacity: 1
       })}
     />

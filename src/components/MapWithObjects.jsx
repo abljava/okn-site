@@ -1,44 +1,57 @@
-import { useState, useEffect } from "react";
-import { MapContainer, TileLayer, GeoJSON } from "react-leaflet";
+import React, { useState } from "react";
+import { MapContainer, TileLayer } from "react-leaflet";
 import ObjectInfoModal from "./ObjectInfoModal";
-import ViewSights from "./ViewSights";
 
-export default function MapWithObjects() {
+export default function MapWithObjects({ children }) {
   const [selectedFeature, setSelectedFeature] = useState(null);
-  const [geojsonData, setGeojsonData] = useState(null);
 
-  useEffect(() => {
-    fetch("/data/objects.geojson")
-      .then(res => res.json())
-      .then(setGeojsonData);
-  }, []);
+  // Получаем массив слоёв и их имена
+  const layers = Array.isArray(children) ? children : [children];
+  const layerNames = layers.map(child => child.props.layerName || child.type.name);
 
-  function onEachFeature(feature, layer) {
-    layer.on({
-      click: () => {
-        console.log("Клик по объекту:", feature);
-        setSelectedFeature(feature);
-      }
+  // Состояние видимости слоёв
+  const [visibleLayers, setVisibleLayers] = useState(
+    Object.fromEntries(layerNames.map(name => [name, true]))
+  );
+
+  // Обработчик чекбоксов
+  const handleToggle = (name) => {
+    setVisibleLayers(v => ({ ...v, [name]: !v[name] }));
+  };
+
+  // Добавляем onFeatureClick и фильтруем по видимости
+  const layersWithProps = layers.map((child, idx) => {
+    const name = layerNames[idx];
+    if (!visibleLayers[name]) return null;
+    return React.cloneElement(child, {
+      onFeatureClick: setSelectedFeature,
+      key: name,
     });
-  }
+  });
 
   return (
     <>
-      <MapContainer center={[43.116265, 131.882393]} zoom={14} style={{ height: "600px", width: "100%" }}>
-      <ViewSights onFeatureClick={setSelectedFeature} />
-
+      {/* Панель управления слоями */}
+      <div style={{
+        position: "absolute", zIndex: 1000, top: 100, left: 10, background: "#fff", padding: 10, borderRadius: 8, boxShadow: "0 2px 8px #0002"
+      }}>
+        <b>Слои:</b>
+        {layerNames.map(name => (
+          <div key={name}>
+            <label>
+              <input
+                type="checkbox"
+                checked={visibleLayers[name]}
+                onChange={() => handleToggle(name)}
+              />
+              {name}
+            </label>
+          </div>
+        ))}
+      </div>
+      <MapContainer center={[43.304348693306679, 126.004575375893268]} zoom={14} style={{ height: "600px", width: "100%" }}>
         <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-        {geojsonData && <GeoJSON
-          data={geojsonData}
-          onEachFeature={onEachFeature}
-          style={() => ({
-            color: "blue",
-            weight: 2,
-            fillColor: "cyan",
-            fillOpacity: 0.4,
-            opacity: 1
-          })}
-        />}
+        {layersWithProps}
       </MapContainer>
       <ObjectInfoModal feature={selectedFeature} onClose={() => setSelectedFeature(null)} />
     </>
