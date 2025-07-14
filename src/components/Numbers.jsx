@@ -24,7 +24,7 @@ export default function Numbers({ onFeatureClick }) {
     const coords = feature.geometry.coordinates;
     const icon = L.divIcon({
       className: "number-marker",
-      html: `<div style="width:5px;height:5px;border-radius:50%;background:#009933;"></div>`,
+      html: `<div style="width:3px;height:3px;border-radius:50%;background:#009933;"></div>`,
       iconSize: [5, 5],
       iconAnchor: [2.5, 2.5]
     });
