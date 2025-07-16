@@ -5,7 +5,7 @@ export default function ViewOKNPolygons({ onFeatureClick }) {
   const [geojsonData, setGeojsonData] = useState(null);
 
   useEffect(() => {
-    fetch("/data/okn_4326.geojson")
+    fetch("/data/okn_00.geojson")
       .then(res => res.json())
       .then(setGeojsonData);
   }, []);

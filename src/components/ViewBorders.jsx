@@ -5,7 +5,7 @@ export default function ViewBorders({ onFeatureClick }) {
   const [geojsonData, setGeojsonData] = useState(null);
 
   useEffect(() => {
-    fetch("/data/borders.geojson")
+    fetch("/data/okn_borders_00.geojson")
       .then(res => res.json())
       .then(setGeojsonData);
   }, []);
@@ -23,9 +23,9 @@ export default function ViewBorders({ onFeatureClick }) {
       data={geojsonData}
       onEachFeature={onEachFeature}
       style={() => ({
-        color: "#0066cc",
+        color: "#000",
         weight: 1,
-        fillColor: "#99ccff",
+        fillColor: "#000",
         fillOpacity: 0.1,
         opacity: 1
       })}
