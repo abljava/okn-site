@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import { GeoJSON } from "react-leaflet";
 
-export default function ViewOKNPolygons({ onFeatureClick }) {
+export default function ViewDevBorders({ onFeatureClick }) {
   const [geojsonData, setGeojsonData] = useState(null);
 
   useEffect(() => {
-    fetch("/test_data/okn_00.geojson")
+    fetch("/test_data/razrab_granicy_00.geojson")
       .then(res => res.json())
       .then(setGeojsonData);
   }, []);
@@ -16,10 +16,6 @@ export default function ViewOKNPolygons({ onFeatureClick }) {
         if (onFeatureClick) onFeatureClick(feature);
       }
     });
-    // Можно добавить popup с номером
-    if (feature.properties && feature.properties.plaintext_2) {
-      layer.bindTooltip(`№ ${feature.properties.plaintext_2}`, {permanent: false, direction: 'top'});
-    }
   }
 
   return geojsonData ? (
@@ -27,12 +23,13 @@ export default function ViewOKNPolygons({ onFeatureClick }) {
       data={geojsonData}
       onEachFeature={onEachFeature}
       style={() => ({
-        color: "#b71c1c",
-        weight: 2,
-        fillColor: "#ff8a80",
-        fillOpacity: 0.4,
+        color: "#c4732e",
+        weight: 1,
+        fillColor: "#c4732e",
+        fillOpacity: 0.3,
         opacity: 1
       })}
     />
   ) : null;
-} 
+}
+

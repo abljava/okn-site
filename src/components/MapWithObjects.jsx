@@ -49,7 +49,7 @@ export default function MapWithObjects({ children }) {
           </div>
         ))}
       </div>
-      <MapContainer center={[43.304348693306679, 131.8]} zoom={14} style={{ height: "600px", width: "100%" }}>
+      <MapContainer center={[43.1159, 131.8828]} zoom={14} style={{ height: "600px", width: "100%" }}>
         <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
         {layersWithProps}
       </MapContainer>

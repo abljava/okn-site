@@ -5,7 +5,7 @@ export default function ViewBorders({ onFeatureClick }) {
   const [geojsonData, setGeojsonData] = useState(null);
 
   useEffect(() => {
-    fetch("/data/okn_borders_00.geojson")
+    fetch("/test_data/granicy_transformed.geojson")
       .then(res => res.json())
       .then(setGeojsonData);
   }, []);
@@ -31,4 +31,5 @@ export default function ViewBorders({ onFeatureClick }) {
       })}
     />
   ) : null;
-} 
+}
+
