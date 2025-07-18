@@ -11,6 +11,9 @@ import { ViewNumbers } from "../components/ViewNumbers";
 import ViewDevBorders from "../components/ViewDevBorders";
 import ViewDorevPost from "../components/ViewDorevPost";
 import ViewSovietPost from "../components/ViewSovietPost";
+import ViewOKNRazrab from "../components/ViewOknRazrab";
+import ViewObjects from "../components/ViewObjects";
+import ViewObjects01 from "../components/ViewObjects01";
 
 function ProtectedObjects() {
   const [isFullscreen, setIsFullscreen] = useState(false);
@@ -76,11 +79,13 @@ function ProtectedObjects() {
             <ViewSights layerName="Видовые объекты" />
             <ViewOKNPolygons layerName="ОКН" />
             <ViewBorders layerName="Границы" />
-            {/* <ViewNumbers layerName="Номера объектов" /> */}
             <ViewDevBorders layerName="Границы разработки" />
             <ViewDorevPost layerName="Дореволюционные постройки" />
             <ViewSovietPost layerName="Советские постройки" />
-
+            <ViewOKNRazrab layerName="ОКН разработанные" />
+            <ViewObjects layerName="ОКН объекты" />
+            <ViewObjects01 layerName="ОКН объекты разр" />
+            <ViewNumbers layerName="Номера" />
           </MapWithObjects>
         </div>
         {isFullscreen && (
