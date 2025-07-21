@@ -85,7 +85,7 @@ function ProtectedObjects() {
             <ViewOKNRazrab layerName="ОКН разработанные" />
             <ViewObjects layerName="ОКН объекты" />
             <ViewObjects01 layerName="ОКН объекты разр" />
-            <ViewNumbers layerName="Номера" />
+            {/* <ViewNumbers layerName="Номера" /> */}
           </MapWithObjects>
         </div>
         {isFullscreen && (

@@ -1,47 +1,46 @@
 const fs = require('fs');
-const turf = require('@turf/turf');
 
 // Пути к файлам
-const pointsPath = 'public/test_data/number_00.geojson';
-const polygonsPath = 'public/test_data/okn_00.geojson';
-const outputPath = 'public/test_data/okn_00_with_number.geojson';
+const jsonPath = 'src/data/objectsData.json';
+const geojsonPath = 'public/test_data/okn_objects_01_numbers.geojson';
 
 // Загрузка данных
-const points = JSON.parse(fs.readFileSync(pointsPath));
-const polygons = JSON.parse(fs.readFileSync(polygonsPath));
+const objectsData = JSON.parse(fs.readFileSync(jsonPath));
+const geojson = JSON.parse(fs.readFileSync(geojsonPath));
+console.log(geojson);
 
-let totalMatches = 0;
-let totalPoints = 0;
-
-// Для каждого полигона ищем точки внутри
-for (const polyFeature of polygons.features) {
-  // Пропускаем не-полигоны
-  if (!polyFeature.geometry || (polyFeature.geometry.type !== 'Polygon' && polyFeature.geometry.type !== 'MultiPolygon')) {
-    continue;
-  }
-  const numbers = [];
-  for (const ptFeature of points.features) {
-    if (!ptFeature.geometry || ptFeature.geometry.type !== 'Point') continue;
-    if (turf.booleanPointInPolygon(ptFeature, polyFeature)) {
-      if (ptFeature.properties && ptFeature.properties.text) {
-        numbers.push(ptFeature.properties.text);
-        totalPoints++;
-        // Выводим информацию о совпавшей точке и полигоне
-        console.log('Точка', ptFeature.properties.text, 'попала в полигон с id:', polyFeature.properties && polyFeature.properties.id);
-      }
-    }
-  }
-  if (numbers.length > 0) {
-    polyFeature.properties = polyFeature.properties || {};
-    polyFeature.properties.number = numbers.join(', ');
-    totalMatches++;
+// Создаём быстрый поиск по номеру
+const dataByNumber = {};
+for (const obj of objectsData) {
+  if (obj.number !== undefined && obj.number !== null) {
+    dataByNumber[String(obj.number).trim()] = obj;
   }
 }
 
-console.log('Число полигонов с совпавшими точками:', totalMatches);
-console.log('Всего совпавших точек:', totalPoints);
+let matched = 0;
+for (const feature of geojson.features) {
+  if (!feature.properties) continue;
+  // Ищем совпадение по номеру (учитываем возможные типы и пробелы)
+  const featureNumber = feature.properties.Number || feature.properties.number;
+  if (featureNumber === undefined || featureNumber === null) continue;
+  const key = String(featureNumber).trim();
+  const match = dataByNumber[key];
+  if (match) {
+    // Добавляем нужные поля
+    feature.properties.id = match.id;
+    feature.properties.number = match.number;
+    feature.properties.description = match.description;
+    feature.properties.address = match.address;
+    // Исправляем путь к изображениям
+    if (match.image && Array.isArray(match.image)) {
+      feature.properties.image = match.image.map(img => `/photo/${img}`);
+    } else if (match.image) {
+      feature.properties.image = [`/photo/${match.image}`];
+    }
+    matched++;
+  }
+}
 
-// Сохраняем результат
-fs.writeFileSync(outputPath, JSON.stringify(polygons, null, 2));
-
-console.log('Готово! Результат сохранён в', outputPath); 
+console.log('Совпавших объектов:', matched);
+fs.writeFileSync(geojsonPath, JSON.stringify(geojson, null, 2));
+console.log('Готово! Результат сохранён в', geojsonPath); 
