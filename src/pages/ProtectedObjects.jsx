@@ -77,15 +77,14 @@ function ProtectedObjects() {
         >
           <MapWithObjects>
             <ViewSights layerName="Видовые объекты" />
-            <ViewOKNPolygons layerName="ОКН" />
             <ViewBorders layerName="Границы" />
-            <ViewDevBorders layerName="Границы разработки" />
-            <ViewDorevPost layerName="Дореволюционные постройки" />
+            <ViewOKNPolygons layerName="Границы ОКН 00" />
+            <ViewOKNRazrab layerName="Границы разр ОКН 01" />
             <ViewSovietPost layerName="Советские постройки" />
-            <ViewOKNRazrab layerName="ОКН разработанные" />
-            <ViewObjects layerName="ОКН объекты" />
-            <ViewObjects01 layerName="ОКН объекты разр" />
-            {/* <ViewNumbers layerName="Номера" /> */}
+            <ViewObjects layerName="ОКН 00" />
+            <ViewObjects01 layerName="ОКН 01 разр" />
+            <ViewDorevPost layerName="Дореволюционные постройки" />
+            <ViewNumbers layerName="Номера" />
           </MapWithObjects>
         </div>
         {isFullscreen && (

@@ -24,9 +24,9 @@ export default function ViewSights({ onFeatureClick }) {
       data={geojsonData}
       onEachFeature={onEachFeature}
       style={() => ({
-        color: "#ff9900",
+        color: "#985c59",
         weight: 1,
-        fillColor: "#ffcc80",
+        fillColor: "#000",
         fillOpacity: 0.3,
         opacity: 1
       })}

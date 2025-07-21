@@ -27,9 +27,9 @@ export default function ViewOKNRazrab({ onFeatureClick }) {
       data={geojsonData}
       onEachFeature={onEachFeature}
       style={() => ({
-        color: "#3c6ced",
-        weight: 2,
-        fillColor: "##3c6ced",
+        color: "#6f75bf",
+        weight: 1,
+        fillColor: "#6f75bf",
         fillOpacity: 0.4,
         opacity: 1
       })}

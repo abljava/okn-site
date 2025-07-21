@@ -27,9 +27,9 @@ export default function ViewOKNPolygons({ onFeatureClick }) {
       data={geojsonData}
       onEachFeature={onEachFeature}
       style={() => ({
-        color: "#b71c1c",
-        weight: 2,
-        fillColor: "#ff8a80",
+        color: "#bc6c6e",
+        weight: 1,
+        fillColor: "#bc6c6e",
         fillOpacity: 0.4,
         opacity: 1
       })}

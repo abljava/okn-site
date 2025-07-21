@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { GeoJSON } from "react-leaflet";
+import L from "leaflet";
 
 export function ViewNumbers({ onFeatureClick }) {
   const [geojsonData, setGeojsonData] = useState(null);
@@ -18,17 +19,21 @@ export function ViewNumbers({ onFeatureClick }) {
     });
   }
 
+  function pointToLayer(feature, latlng) {
+    return L.circleMarker(latlng, {
+      radius: 2.5, // радиус 2.5px = диаметр 5px
+      color: "#007bff",
+      fillColor: "#007bff",
+      fillOpacity: 1,
+      weight: 0
+    });
+  }
+
   return geojsonData ? (
     <GeoJSON
       data={geojsonData}
       onEachFeature={onEachFeature}
-      style={() => ({
-        color: "#007bff",
-        weight: 2,
-        fillColor: "#007bff",
-        fillOpacity: 0.2,
-        opacity: 1
-      })}
+      pointToLayer={pointToLayer}
     />
   ) : null;
 } 

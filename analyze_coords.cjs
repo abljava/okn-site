@@ -1,8 +1,8 @@
 const fs = require('fs');
 
 // Пути к файлам
-const jsonPath = 'src/data/objectsData.json';
-const geojsonPath = 'public/test_data/okn_objects_01_numbers.geojson';
+const jsonPath = 'src/data/objects_protected.json';
+const geojsonPath = 'public/test_data/number_00.geojson';
 
 // Загрузка данных
 const objectsData = JSON.parse(fs.readFileSync(jsonPath));
@@ -21,8 +21,10 @@ let matched = 0;
 for (const feature of geojson.features) {
   if (!feature.properties) continue;
   // Ищем совпадение по номеру (учитываем возможные типы и пробелы)
-  const featureNumber = feature.properties.Number || feature.properties.number;
+  const featureNumber = feature.properties.Text;
   if (featureNumber === undefined || featureNumber === null) continue;
+  // const featureNumber = feature.properties.Number || feature.properties.number;
+  // if (featureNumber === undefined || featureNumber === null) continue;
   const key = String(featureNumber).trim();
   const match = dataByNumber[key];
   if (match) {
