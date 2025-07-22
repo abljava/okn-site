@@ -54,9 +54,9 @@ export default function ViewObjects({ onFeatureClick }) {
         data={geojsonData}
         onEachFeature={onEachFeature}
         style={() => ({
-          color: "#000",
+          color: "#1b3359",
           weight: 3,
-          fillColor: "#000",
+          fillColor: "#1b3359",
           fillOpacity: 0.4,
           opacity: 1
         })}

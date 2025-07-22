@@ -42,7 +42,7 @@ export default function ObjectInfoModal({ feature, onClose }) {
             position: "absolute",
             top: 12,
             right: 12,
-            background: "#eee222",
+            background: "#e5e5e5",
             border: "none",
             borderRadius: 6,
             padding: "4px 12px",
