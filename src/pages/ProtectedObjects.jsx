@@ -5,13 +5,12 @@ import MapComponent from "../components/MapComponent";
 import MapWithObjects from "../components/MapWithObjects";
 import FullscreenMapPortal from "../components/FullscreenMapPortal";
 import ViewSights from "../components/ViewSights";
-import ViewOKNPolygons from "../components/ViewOKNPolygons";
+import ViewOKNBorders from "../components/ViewOKNBorders";
 import ViewBorders from "../components/ViewBorders";
 import { ViewNumbers } from "../components/ViewNumbers";
-import ViewDevBorders from "../components/ViewDevBorders";
 import ViewDorevPost from "../components/ViewDorevPost";
 import ViewSovietPost from "../components/ViewSovietPost";
-import ViewOKNRazrab from "../components/ViewOknRazrab";
+import ViewOKNBordersRazrab from "../components/ViewOKNBordersRazrab";
 import ViewObjects from "../components/ViewObjects";
 import ViewObjects01 from "../components/ViewObjects01";
 
@@ -78,8 +77,8 @@ function ProtectedObjects() {
           <MapWithObjects>
             <ViewSights layerName="Видовые объекты" />
             <ViewBorders layerName="Границы" />
-            <ViewOKNPolygons layerName="Границы ОКН 00" />
-            <ViewOKNRazrab layerName="Границы разр ОКН 01" />
+            <ViewOKNBorders layerName="Границы ОКН 00" />
+            <ViewOKNBordersRazrab layerName="Границы разр ОКН 01" />
             <ViewSovietPost layerName="Советские постройки" />
             <ViewObjects layerName="ОКН 00" />
             <ViewObjects01 layerName="ОКН 01 разр" />

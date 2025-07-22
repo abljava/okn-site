@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { GeoJSON } from "react-leaflet";
 
-export default function ViewDevBorders({ onFeatureClick }) {
+export default function ViewOKNBordersRazrab({ onFeatureClick }) {
   const [geojsonData, setGeojsonData] = useState(null);
 
   useEffect(() => {
@@ -16,6 +16,10 @@ export default function ViewDevBorders({ onFeatureClick }) {
         if (onFeatureClick) onFeatureClick(feature);
       }
     });
+    // Можно добавить popup с номером
+    if (feature.properties && feature.properties.plaintext_2) {
+      layer.bindTooltip(`№ ${feature.properties.plaintext_2}`, {permanent: false, direction: 'top'});
+    }
   }
 
   return geojsonData ? (
@@ -23,13 +27,12 @@ export default function ViewDevBorders({ onFeatureClick }) {
       data={geojsonData}
       onEachFeature={onEachFeature}
       style={() => ({
-        color: "#c4732e",
+        color: "#6f75bf",
         weight: 1,
-        fillColor: "#c4732e",
-        fillOpacity: 0.3,
+        fillColor: "#6f75bf",
+        fillOpacity: 0.4,
         opacity: 1
       })}
     />
   ) : null;
-}
-
+} 

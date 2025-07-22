@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { GeoJSON } from "react-leaflet";
 
-export default function ViewOKNPolygons({ onFeatureClick }) {
+export default function ViewOKNBorders
+({ onFeatureClick }) {
   const [geojsonData, setGeojsonData] = useState(null);
 
   useEffect(() => {
@@ -25,7 +26,7 @@ export default function ViewOKNPolygons({ onFeatureClick }) {
   return geojsonData ? (
     <GeoJSON
       data={geojsonData}
-      onEachFeature={onEachFeature}
+      // onEachFeature={onEachFeature}
       style={() => ({
         color: "#bc6c6e",
         weight: 1,
