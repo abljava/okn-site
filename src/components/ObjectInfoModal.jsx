@@ -2,7 +2,8 @@ import React from "react";
 
 export default function ObjectInfoModal({ feature, onClose }) {
   if (!feature) return null;
-  const { fid, name, description, image } = feature.properties || {};
+  const { id, number, fid, name, description, image } =
+    feature.properties || {};
   const [currentImgIdx, setCurrentImg] = React.useState(0);
 
   return (
@@ -41,7 +42,7 @@ export default function ObjectInfoModal({ feature, onClose }) {
             position: "absolute",
             top: 12,
             right: 12,
-            background: "#eee",
+            background: "#eee222",
             border: "none",
             borderRadius: 6,
             padding: "4px 12px",
@@ -50,13 +51,23 @@ export default function ObjectInfoModal({ feature, onClose }) {
         >
           ×
         </button>
-        {fid !== undefined && (
-          <div style={{ color: "#888", fontSize: 14, marginBottom: 8 }}>
-            fid: {fid}
-          </div>
-        )}
+        <div className="flex gap-5">
+          {id !== undefined && (
+            <div style={{ color: "#888", fontSize: 14, marginBottom: 8 }}>
+              id: {id}
+            </div>
+          )}
+          {number !== undefined && (
+            <div style={{ color: "#888", fontSize: 14, marginBottom: 8 }}>
+              number: {number}
+            </div>
+          )}
+        </div>
+
+        {/* Заголовок и описание */}
         <h2 style={{ marginTop: 0 }}>{name}</h2>
         <p>{description}</p>
+        
         {/* Слайдер изображений */}
         {Array.isArray(image) && image.length > 1 ? (
           <div
