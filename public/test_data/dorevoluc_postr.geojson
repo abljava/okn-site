@@ -1,0 +1,758 @@
+{
+  "type": "FeatureCollection",
+  "name": "dorevoluc_postr",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 5518,
+        "Layer": "задание - предмет охраны для сайта-24. ценная дореволюц постройка",
+        "PaperSpace": null,
+        "SubClasses": "AcDbEntity:AcDbPolyline",
+        "Linetype": "1D727",
+        "EntityHandle": null,
+        "Text": "PEN(c:#c2a50052)",
+        "ogr_style": null,
+        "font": null,
+        "angle": null,
+        "size": null,
+        "size_u": null,
+        "anchor": "#c2a50052",
+        "color": null,
+        "underline": null,
+        "plaintext": null,
+        "fcolor": null,
+        "flnum": null,
+        "bold": null,
+        "italic": null,
+        "dx": null,
+        "dx_u": null,
+        "dy": null,
+        "dy_u": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            131.868892344498505,
+            43.10259311476824
+          ],
+          [
+            131.86876288943418,
+            43.102506160502095
+          ],
+          [
+            131.86872135557698,
+            43.102481894573891
+          ],
+          [
+            131.868580317827565,
+            43.102393886692653
+          ],
+          [
+            131.868414651338156,
+            43.102299601083224
+          ],
+          [
+            131.868254614094951,
+            43.102233448171951
+          ],
+          [
+            131.868036771994838,
+            43.10216306415591
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 5519,
+        "Layer": "задание - предмет охраны для сайта-24. ценная дореволюц постройка",
+        "PaperSpace": null,
+        "SubClasses": "AcDbEntity:AcDbPolyline",
+        "Linetype": "1D728",
+        "EntityHandle": null,
+        "Text": "PEN(c:#c2a50052)",
+        "ogr_style": null,
+        "font": null,
+        "angle": null,
+        "size": null,
+        "size_u": null,
+        "anchor": "#c2a50052",
+        "color": null,
+        "underline": null,
+        "plaintext": null,
+        "fcolor": null,
+        "flnum": null,
+        "bold": null,
+        "italic": null,
+        "dx": null,
+        "dx_u": null,
+        "dy": null,
+        "dy_u": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            131.877291697214901,
+            43.106620681387817
+          ],
+          [
+            131.877142009521009,
+            43.106542410421419
+          ],
+          [
+            131.877038220182811,
+            43.106464188578201
+          ],
+          [
+            131.876649456877004,
+            43.106204690485328
+          ],
+          [
+            131.876607917401401,
+            43.106180427428413
+          ],
+          [
+            131.876466859853764,
+            43.106092429299906
+          ],
+          [
+            131.876385930908526,
+            43.1060630242998
+          ],
+          [
+            131.876212277142429,
+            43.105970240639778
+          ],
+          [
+            131.876053576604704,
+            43.105900730168244
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 5520,
+        "Layer": "задание - предмет охраны для сайта-24. ценная дореволюц постройка",
+        "PaperSpace": null,
+        "SubClasses": "AcDbEntity:AcDbPolyline",
+        "Linetype": "1D729",
+        "EntityHandle": null,
+        "Text": "PEN(c:#c2a50052)",
+        "ogr_style": null,
+        "font": null,
+        "angle": null,
+        "size": null,
+        "size_u": null,
+        "anchor": "#c2a50052",
+        "color": null,
+        "underline": null,
+        "plaintext": null,
+        "fcolor": null,
+        "flnum": null,
+        "bold": null,
+        "italic": null,
+        "dx": null,
+        "dx_u": null,
+        "dy": null,
+        "dy_u": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            131.878834985964346,
+            43.107695657430334
+          ],
+          [
+            131.878368663934793,
+            43.107302601219409
+          ],
+          [
+            131.878216817974646,
+            43.107180181204818
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 5521,
+        "Layer": "задание - предмет охраны для сайта-24. ценная дореволюц постройка",
+        "PaperSpace": null,
+        "SubClasses": "AcDbEntity:AcDbPolyline",
+        "Linetype": "1D72A",
+        "EntityHandle": null,
+        "Text": "PEN(c:#c2a50052)",
+        "ogr_style": null,
+        "font": null,
+        "angle": null,
+        "size": null,
+        "size_u": null,
+        "anchor": "#c2a50052",
+        "color": null,
+        "underline": null,
+        "plaintext": null,
+        "fcolor": null,
+        "flnum": null,
+        "bold": null,
+        "italic": null,
+        "dx": null,
+        "dx_u": null,
+        "dy": null,
+        "dy_u": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            131.87964661255765,
+            43.108352484172379
+          ],
+          [
+            131.87926237318834,
+            43.108035275340953
+          ],
+          [
+            131.878973277052324,
+            43.107792998980862
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 5522,
+        "Layer": "задание - предмет охраны для сайта-24. ценная дореволюц постройка",
+        "PaperSpace": null,
+        "SubClasses": "AcDbEntity:AcDbPolyline",
+        "Linetype": "1D72B",
+        "EntityHandle": null,
+        "Text": "PEN(c:#c2a50052)",
+        "ogr_style": null,
+        "font": null,
+        "angle": null,
+        "size": null,
+        "size_u": null,
+        "anchor": "#c2a50052",
+        "color": null,
+        "underline": null,
+        "plaintext": null,
+        "fcolor": null,
+        "flnum": null,
+        "bold": null,
+        "italic": null,
+        "dx": null,
+        "dx_u": null,
+        "dy": null,
+        "dy_u": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            131.87524764680424,
+            43.112319335172167
+          ],
+          [
+            131.875361883583565,
+            43.112216425978879
+          ],
+          [
+            131.875611632921334,
+            43.112361653337665
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 5523,
+        "Layer": "задание - предмет охраны для сайта-24. ценная дореволюц постройка",
+        "PaperSpace": null,
+        "SubClasses": "AcDbEntity:AcDbPolyline",
+        "Linetype": "1D72C",
+        "EntityHandle": null,
+        "Text": "PEN(c:#c2a50052)",
+        "ogr_style": null,
+        "font": null,
+        "angle": null,
+        "size": null,
+        "size_u": null,
+        "anchor": "#c2a50052",
+        "color": null,
+        "underline": null,
+        "plaintext": null,
+        "fcolor": null,
+        "flnum": null,
+        "bold": null,
+        "italic": null,
+        "dx": null,
+        "dx_u": null,
+        "dy": null,
+        "dy_u": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            131.876942122055453,
+            43.111342299088555
+          ],
+          [
+            131.877168874812099,
+            43.111297200486945
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 5524,
+        "Layer": "задание - предмет охраны для сайта-24. ценная дореволюц постройка",
+        "PaperSpace": null,
+        "SubClasses": "AcDbEntity:AcDbPolyline",
+        "Linetype": "1D72D",
+        "EntityHandle": null,
+        "Text": "PEN(c:#c2a50052)",
+        "ogr_style": null,
+        "font": null,
+        "angle": null,
+        "size": null,
+        "size_u": null,
+        "anchor": "#c2a50052",
+        "color": null,
+        "underline": null,
+        "plaintext": null,
+        "fcolor": null,
+        "flnum": null,
+        "bold": null,
+        "italic": null,
+        "dx": null,
+        "dx_u": null,
+        "dy": null,
+        "dy_u": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            131.89231347286173,
+            43.127548284048274
+          ],
+          [
+            131.892202286401385,
+            43.127420396933616
+          ],
+          [
+            131.892156409400798,
+            43.127367368395582
+          ],
+          [
+            131.892010564599161,
+            43.127195022913938
+          ],
+          [
+            131.891865710125245,
+            43.127016062783717
+          ],
+          [
+            131.891755862351431,
+            43.126878474838584
+          ],
+          [
+            131.89166468921357,
+            43.126764608980594
+          ],
+          [
+            131.891560682514353,
+            43.12663756788816
+          ],
+          [
+            131.891427365216742,
+            43.1264883608834
+          ],
+          [
+            131.89127783685754,
+            43.126313567252289
+          ],
+          [
+            131.891143234690674,
+            43.126152129909961
+          ],
+          [
+            131.891014038777882,
+            43.125996607981691
+          ],
+          [
+            131.890882907722244,
+            43.125837879474119
+          ],
+          [
+            131.890732155583919,
+            43.125658079333455
+          ],
+          [
+            131.890609521165288,
+            43.125525909187033
+          ],
+          [
+            131.890416044043491,
+            43.125432279069209
+          ],
+          [
+            131.890287681470795,
+            43.12538534235248
+          ],
+          [
+            131.890115449142371,
+            43.125335283133758
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 5525,
+        "Layer": "задание - предмет охраны для сайта-24. ценная дореволюц постройка",
+        "PaperSpace": null,
+        "SubClasses": "AcDbEntity:AcDbPolyline",
+        "Linetype": "1D72E",
+        "EntityHandle": null,
+        "Text": "PEN(c:#c2a50052)",
+        "ogr_style": null,
+        "font": null,
+        "angle": null,
+        "size": null,
+        "size_u": null,
+        "anchor": "#c2a50052",
+        "color": null,
+        "underline": null,
+        "plaintext": null,
+        "fcolor": null,
+        "flnum": null,
+        "bold": null,
+        "italic": null,
+        "dx": null,
+        "dx_u": null,
+        "dy": null,
+        "dy_u": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            131.888862420381514,
+            43.124524857219853
+          ],
+          [
+            131.888986499145147,
+            43.124850539175881
+          ],
+          [
+            131.88901506293152,
+            43.124912370849799
+          ],
+          [
+            131.889039970214554,
+            43.124952186412195
+          ],
+          [
+            131.889045893054657,
+            43.124961149766698
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 5526,
+        "Layer": "задание - предмет охраны для сайта-24. ценная дореволюц постройка",
+        "PaperSpace": null,
+        "SubClasses": "AcDbEntity:AcDbPolyline",
+        "Linetype": "1D72F",
+        "EntityHandle": null,
+        "Text": "PEN(c:#c2a50052)",
+        "ogr_style": null,
+        "font": null,
+        "angle": null,
+        "size": null,
+        "size_u": null,
+        "anchor": "#c2a50052",
+        "color": null,
+        "underline": null,
+        "plaintext": null,
+        "fcolor": null,
+        "flnum": null,
+        "bold": null,
+        "italic": null,
+        "dx": null,
+        "dx_u": null,
+        "dy": null,
+        "dy_u": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            131.898591964834537,
+            43.115121605371307
+          ],
+          [
+            131.898600755884701,
+            43.115103530787728
+          ],
+          [
+            131.898430272189216,
+            43.11505902725186
+          ],
+          [
+            131.898091665596439,
+            43.114980163313085
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 5527,
+        "Layer": "задание - предмет охраны для сайта-24. ценная дореволюц постройка",
+        "PaperSpace": null,
+        "SubClasses": "AcDbEntity:AcDbPolyline",
+        "Linetype": "1D730",
+        "EntityHandle": null,
+        "Text": "PEN(c:#c2a50052)",
+        "ogr_style": null,
+        "font": null,
+        "angle": null,
+        "size": null,
+        "size_u": null,
+        "anchor": "#c2a50052",
+        "color": null,
+        "underline": null,
+        "plaintext": null,
+        "fcolor": null,
+        "flnum": null,
+        "bold": null,
+        "italic": null,
+        "dx": null,
+        "dx_u": null,
+        "dy": null,
+        "dy_u": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            131.89854894370967,
+            43.115206504292651
+          ],
+          [
+            131.898581363966827,
+            43.115143298253315
+          ],
+          [
+            131.898410880175021,
+            43.115098794688784
+          ],
+          [
+            131.898247563265215,
+            43.115062707537234
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 5528,
+        "Layer": "задание - предмет охраны для сайта-24. ценная дореволюц постройка",
+        "PaperSpace": null,
+        "SubClasses": "AcDbEntity:AcDbPolyline",
+        "Linetype": "1D731",
+        "EntityHandle": null,
+        "Text": "PEN(c:#c2a50052)",
+        "ogr_style": null,
+        "font": null,
+        "angle": null,
+        "size": null,
+        "size_u": null,
+        "anchor": "#c2a50052",
+        "color": null,
+        "underline": null,
+        "plaintext": null,
+        "fcolor": null,
+        "flnum": null,
+        "bold": null,
+        "italic": null,
+        "dx": null,
+        "dx_u": null,
+        "dy": null,
+        "dy_u": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            131.937464334661655,
+            43.11962043660472
+          ],
+          [
+            131.937465766173887,
+            43.11962292501218
+          ],
+          [
+            131.938082808359724,
+            43.119432389468777
+          ],
+          [
+            131.93808112315503,
+            43.119430027286306
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 5529,
+        "Layer": "задание - предмет охраны для сайта-24. ценная дореволюц постройка",
+        "PaperSpace": null,
+        "SubClasses": "AcDbEntity:AcDbPolyline",
+        "Linetype": "1D732",
+        "EntityHandle": null,
+        "Text": "PEN(c:#c2a50052)",
+        "ogr_style": null,
+        "font": null,
+        "angle": null,
+        "size": null,
+        "size_u": null,
+        "anchor": "#c2a50052",
+        "color": null,
+        "underline": null,
+        "plaintext": null,
+        "fcolor": null,
+        "flnum": null,
+        "bold": null,
+        "italic": null,
+        "dx": null,
+        "dx_u": null,
+        "dy": null,
+        "dy_u": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            131.945233902447853,
+            43.122303410491078
+          ],
+          [
+            131.94522362263703,
+            43.122286052812939
+          ],
+          [
+            131.945194612162425,
+            43.122236699042283
+          ],
+          [
+            131.945138553769084,
+            43.122134052054768
+          ],
+          [
+            131.945087697103133,
+            43.122053145409851
+          ],
+          [
+            131.945001366557165,
+            43.121904127510938
+          ],
+          [
+            131.944912048252377,
+            43.121740554735048
+          ],
+          [
+            131.944892607683101,
+            43.121705768993273
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 5530,
+        "Layer": "задание - предмет охраны для сайта-24. ценная дореволюц постройка",
+        "PaperSpace": null,
+        "SubClasses": "AcDbEntity:AcDbPolyline",
+        "Linetype": "1D733",
+        "EntityHandle": null,
+        "Text": "PEN(c:#c2a50052)",
+        "ogr_style": null,
+        "font": null,
+        "angle": null,
+        "size": null,
+        "size_u": null,
+        "anchor": "#c2a50052",
+        "color": null,
+        "underline": null,
+        "plaintext": null,
+        "fcolor": null,
+        "flnum": null,
+        "bold": null,
+        "italic": null,
+        "dx": null,
+        "dx_u": null,
+        "dy": null,
+        "dy_u": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            131.943868785159992,
+            43.119971159755018
+          ],
+          [
+            131.943831299077686,
+            43.119913781327007
+          ],
+          [
+            131.94377408900462,
+            43.119814314853194
+          ],
+          [
+            131.943645146071844,
+            43.119595762613088
+          ],
+          [
+            131.943530034158812,
+            43.119392848623491
+          ],
+          [
+            131.943368519302282,
+            43.119118071376683
+          ]
+        ]
+      }
+    }
+  ]
+}

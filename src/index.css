@@ -84,3 +84,9 @@ body {
   }
 }
 
+
+/* Скрываем флаг */
+.leaflet-control-attribution .leaflet-attribution-flag {
+  display: none !important;
+}
+
