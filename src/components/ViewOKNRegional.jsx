@@ -2,19 +2,19 @@ import { useEffect, useState } from "react";
 import { GeoJSON } from "react-leaflet";
 import * as turf from "@turf/turf";
 
-export default function ViewObjects({ onFeatureClick }) {
+export default function ViewOKNRegional({ onFeatureClick }) {
   const [geojsonData, setGeojsonData] = useState(null);
   const [bufferData, setBufferData] = useState(null);
 
   useEffect(() => {
-    fetch("/test_data/okn_objects_01_numbers.geojson")
-      .then(res => res.json())
-      .then(data => {
+    fetch("/test_data/okn_region.geojson")
+      .then((res) => res.json())
+      .then((data) => {
         setGeojsonData(data);
         // Генерируем буфер вокруг линий (например, 2 метра)
         const bufferFeatures = data.features
-          .filter(f => f.geometry && f.geometry.type === "LineString")
-          .map(f => {
+          .filter((f) => f.geometry && f.geometry.type === "LineString")
+          .map((f) => {
             const buf = turf.buffer(f, 3, { units: "meters" });
             buf.properties = { ...f.properties };
             return buf;
@@ -27,10 +27,13 @@ export default function ViewObjects({ onFeatureClick }) {
     layer.on({
       click: () => {
         if (onFeatureClick) onFeatureClick(feature);
-      }
+      },
     });
     if (feature.properties && feature.properties.plaintext_2) {
-      layer.bindTooltip(`№ ${feature.properties.plaintext_2}`, {permanent: false, direction: 'top'});
+      layer.bindTooltip(`№ ${feature.properties.plaintext_2}`, {
+        permanent: false,
+        direction: "top",
+      });
     }
   }
 
@@ -45,7 +48,7 @@ export default function ViewObjects({ onFeatureClick }) {
             color: "transparent",
             fillColor: "transparent",
             fillOpacity: 0,
-            weight: 0
+            weight: 0,
           })}
         />
       )}
@@ -55,12 +58,12 @@ export default function ViewObjects({ onFeatureClick }) {
         onEachFeature={onEachFeature}
         style={() => ({
           color: "#f85e5b",
-          weight: 3,
-          fillColor: "#1b3359",
+          weight: 1,
+          fillColor: "#f85e5b",
           fillOpacity: 0.4,
-          opacity: 1
+          opacity: 1,
         })}
       />
     </>
   ) : null;
-} 
+}
