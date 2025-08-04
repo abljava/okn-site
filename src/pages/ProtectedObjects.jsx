@@ -13,6 +13,7 @@ import ViewSovietPost from "../components/ViewSovietPost";
 import ViewOKNBordersRazrab from "../components/ViewOKNBordersRazrab";
 import ViewObjects from "../components/ViewObjects";
 import ViewObjects01 from "../components/ViewObjects01";
+import ViewOKNRegional from "../components/ViewOKNRegional";
 
 function ProtectedObjects() {
   const [isFullscreen, setIsFullscreen] = useState(false);
@@ -75,15 +76,16 @@ function ProtectedObjects() {
           // onClick={() => setIsFullscreen(true)}
         >
           <MapWithObjects>
-            <ViewSights layerName="Видовые объекты" />
-            <ViewBorders layerName="Границы" />
-            <ViewOKNBorders layerName="Границы ОКН 00" />
-            <ViewOKNBordersRazrab layerName="Границы разр ОКН 01" />
-            <ViewSovietPost layerName="Советские постройки" />
+            {/* <ViewSights layerName="Видовые объекты" /> */}
+            {/* <ViewBorders layerName="Границы" /> */}
+            {/* <ViewOKNBorders layerName="Границы ОКН 00" /> */}
+            {/* <ViewOKNBordersRazrab layerName="Границы разр ОКН 01" /> */}
+            {/* <ViewSovietPost layerName="Советские постройки" /> */}
+            <ViewOKNRegional layerName="Объекты культурного наследия регионального значения" layerColor="#f85e5b"/>
             <ViewObjects layerName="ОКН 00" />
             <ViewObjects01 layerName="ОКН 01 разр" />
-            <ViewDorevPost layerName="Дореволюционные постройки" />
-            <ViewNumbers layerName="Номера" />
+            {/* <ViewDorevPost layerName="Дореволюционные постройки" />
+            <ViewNumbers layerName="Номера" /> */}
           </MapWithObjects>
         </div>
         {isFullscreen && (

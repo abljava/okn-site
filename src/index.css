@@ -90,5 +90,102 @@ body {
   display: none !important;
 }
 
+.leaflet-control {
+  margin-left: 10px !important;
+}
+
+/* Перемещаем элементы управления масштабом в правую часть */
+.leaflet-top.leaflet-left {
+  right: 10px !important;
+  left: auto !important;
+}
+
+.leaflet-control-zoom {
+  right: 10px !important;
+  left: auto !important;
+  float: right !important;
+}
+
+.leaflet-control-zoom-in,
+.leaflet-control-zoom-out {
+  right: 10px !important;
+  left: auto !important;
+}
+
+/* Альтернативный способ - принудительное позиционирование */
+.leaflet-top.leaflet-left .leaflet-control-zoom {
+  position: absolute !important;
+  right: 10px !important;
+  left: auto !important;
+  top: 10px !important;
+}
+
+/* Кастомные стили для чекбоксов */
+.custom-checkbox {
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  width: 16px !important;
+  height: 16px !important;
+  border: 2px solid #d1d5db !important;
+  border-radius: 3px !important;
+  background-color: white !important;
+  cursor: pointer !important;
+  position: relative !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.custom-checkbox:checked {
+  background-color: #3b82f6 !important;
+  border-color: #3b82f6 !important;
+}
+
+.custom-checkbox:checked::after {
+  content: '✓' !important;
+  position: absolute !important;
+  top: -2px !important;
+  left: 1px !important;
+  color: white !important;
+  font-size: 12px !important;
+  font-weight: bold !important;
+}
+
+.custom-checkbox:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5) !important;
+}
+
+/* Более специфичные селекторы */
+input[type="checkbox"].custom-checkbox {
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  width: 16px !important;
+  height: 16px !important;
+  border: 2px solid #d1d5db !important;
+  border-radius: 3px !important;
+  background-color: white !important;
+  cursor: pointer !important;
+  position: relative !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+input[type="checkbox"].custom-checkbox:checked {
+  background-color: #3b82f6 !important;
+  border-color: #3b82f6 !important;
+}
+
+input[type="checkbox"].custom-checkbox:checked::after {
+  content: '✓' !important;
+  position: absolute !important;
+  top: -2px !important;
+  left: 1px !important;
+  color: white !important;
+  font-size: 12px !important;
+  font-weight: bold !important;
+}
+
 
 
