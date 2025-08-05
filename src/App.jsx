@@ -7,6 +7,7 @@ import Authors from './pages/Authors';
 import ProtectedObjects from './pages/ProtectedObjects';
 import DevelopmentRegulations from './pages/DevelopmentRegulations';
 import TestMap from './components/TetsMap';
+import Politics from './pages/Politics';
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
             path='/development-regulations'
             element={<DevelopmentRegulations />}
           />
-          <Route path='/test-map' element={<TestMap />} />
+          <Route path='/politics' element={<Politics />} />
         </Routes>
         <Footer />
     </BrowserRouter>
