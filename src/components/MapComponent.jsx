@@ -49,7 +49,7 @@ function MapComponent() {
   return (
     <MapContainer
       center={polygonCoords[0] || [43.1155, 131.8855]}
-      zoom={18}
+      zoom={20}
       style={{ height: "1000px", width: "100%" }}
     >
       <TileLayer

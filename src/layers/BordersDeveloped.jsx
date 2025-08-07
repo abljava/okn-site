@@ -40,7 +40,7 @@ export default function ViewBordersDeveloped({ onFeatureClick }) {
       {bufferData && (
         <GeoJSON
           data={bufferData}
-          onEachFeature={onEachFeature}
+          // onEachFeature={onEachFeature}
           style={() => ({
             color: "transparent",
             fillColor: "transparent",
@@ -52,12 +52,12 @@ export default function ViewBordersDeveloped({ onFeatureClick }) {
       {/* Отрисовка самих линий */}
       <GeoJSON
         data={geojsonData}
-        onEachFeature={onEachFeature}
+        // onEachFeature={onEachFeature}
         style={() => ({
           color: "#0000ff",
-          weight: 2,
+          weight: 1,
           fillColor: "#0000ff",
-          fillOpacity: 0.4,
+          fillOpacity: 0.8,
           opacity: 1,
           dashArray: "5, 5"
         })}

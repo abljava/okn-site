@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
 import { GeoJSON } from "react-leaflet";
 
-export default function ViewOKNBordersRazrab({ onFeatureClick }) {
+export default function ViewOKNBorders
+({ onFeatureClick }) {
   const [geojsonData, setGeojsonData] = useState(null);
 
   useEffect(() => {
-    fetch("/data/razrab_granicy_00.geojson")
+    fetch("/data/1_borders.geojson")
       .then(res => res.json())
       .then(setGeojsonData);
   }, []);
@@ -25,13 +26,14 @@ export default function ViewOKNBordersRazrab({ onFeatureClick }) {
   return geojsonData ? (
     <GeoJSON
       data={geojsonData}
-      onEachFeature={onEachFeature}
+      // onEachFeature={onEachFeature}
       style={() => ({
-        color: "#6f75bf",
-        weight: 1,
-        fillColor: "#6f75bf",
-        fillOpacity: 0.4,
-        opacity: 1
+        color: "#000",
+        weight: 3,
+        fillColor: "#bc6c6e",
+        fillOpacity: 0.8,
+        opacity: 1,
+        dashArray: "10, 10"
       })}
     />
   ) : null;

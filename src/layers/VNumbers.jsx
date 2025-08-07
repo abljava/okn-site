@@ -38,7 +38,7 @@ export function ViewNumbers({ onFeatureClick }) {
       color: "#a8400f",
       fillColor: "#7a2d43",
       opacity: 1,
-      fillOpacity: 0.7,
+      fillOpacity: 0.8,
       weight: 0
     });
   }

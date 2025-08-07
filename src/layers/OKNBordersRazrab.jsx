@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import { GeoJSON } from "react-leaflet";
 
-export default function ViewSovietPost({ onFeatureClick }) {
+export default function ViewOKNBordersRazrab({ onFeatureClick }) {
   const [geojsonData, setGeojsonData] = useState(null);
 
   useEffect(() => {
-    fetch("/data/soviet_postr.geojson")
+    fetch("/data/razrab_granicy_00.geojson")
       .then(res => res.json())
       .then(setGeojsonData);
   }, []);
@@ -16,20 +16,23 @@ export default function ViewSovietPost({ onFeatureClick }) {
         if (onFeatureClick) onFeatureClick(feature);
       }
     });
+    // Можно добавить popup с номером
+    if (feature.properties && feature.properties.plaintext_2) {
+      layer.bindTooltip(`№ ${feature.properties.plaintext_2}`, {permanent: false, direction: 'top'});
+    }
   }
 
   return geojsonData ? (
     <GeoJSON
       data={geojsonData}
-      onEachFeature={onEachFeature}
+      // onEachFeature={onEachFeature}
       style={() => ({
-        color: "#3489ff",
+        color: "#6f75bf",
         weight: 1,
-        fillColor: "#3489ff",
-        fillOpacity: 0.1,
+        fillColor: "#6f75bf",
+        fillOpacity: 0.8,
         opacity: 1
       })}
     />
   ) : null;
-}
-
+} 

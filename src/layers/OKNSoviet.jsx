@@ -2,12 +2,12 @@ import { useEffect, useState } from "react";
 import { GeoJSON } from "react-leaflet";
 import * as turf from "@turf/turf";
 
-export default function ViewOKNRegional({ onFeatureClick }) {
+export default function ViewOKNSoviet({ onFeatureClick }) {
   const [geojsonData, setGeojsonData] = useState(null);
   const [bufferData, setBufferData] = useState(null);
 
   useEffect(() => {
-    fetch("/data/okn_region.geojson")
+    fetch("/data/9_valued_development_soviet.geojson")
       .then((res) => res.json())
       .then((data) => {
         setGeojsonData(data);
@@ -43,7 +43,7 @@ export default function ViewOKNRegional({ onFeatureClick }) {
       {bufferData && (
         <GeoJSON
           data={bufferData}
-          onEachFeature={onEachFeature}
+          // onEachFeature={onEachFeature}
           style={() => ({
             color: "transparent",
             fillColor: "transparent",
@@ -55,12 +55,12 @@ export default function ViewOKNRegional({ onFeatureClick }) {
       {/* Отрисовка самих линий */}
       <GeoJSON
         data={geojsonData}
-        onEachFeature={onEachFeature}
+        // onEachFeature={onEachFeature}
         style={() => ({
-          color: "#f85e5b",
+          color: "#000",
           weight: 1,
-          fillColor: "#f85e5b",
-          fillOpacity: 0.4,
+          fillColor: "#75eb73",
+          fillOpacity: 0.8,
           opacity: 1,
         })}
       />

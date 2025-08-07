@@ -2,19 +2,19 @@ import { useEffect, useState } from "react";
 import { GeoJSON } from "react-leaflet";
 import * as turf from "@turf/turf";
 
-export default function ViewOKNIdentified({ onFeatureClick }) {
+export default function BordersSites({ onFeatureClick }) {
   const [geojsonData, setGeojsonData] = useState(null);
   const [bufferData, setBufferData] = useState(null);
 
   useEffect(() => {
-    fetch("/data/5_okn_identified.geojson")
-      .then((res) => res.json())
-      .then((data) => {
+    fetch("/data/13_borders_sites.geojson")
+      .then(res => res.json())
+      .then(data => {
         setGeojsonData(data);
         // Генерируем буфер вокруг линий (например, 2 метра)
         const bufferFeatures = data.features
-          .filter((f) => f.geometry && f.geometry.type === "LineString")
-          .map((f) => {
+          .filter(f => f.geometry && f.geometry.type === "LineString")
+          .map(f => {
             const buf = turf.buffer(f, 3, { units: "meters" });
             buf.properties = { ...f.properties };
             return buf;
@@ -27,13 +27,10 @@ export default function ViewOKNIdentified({ onFeatureClick }) {
     layer.on({
       click: () => {
         if (onFeatureClick) onFeatureClick(feature);
-      },
+      }
     });
     if (feature.properties && feature.properties.plaintext_2) {
-      layer.bindTooltip(`№ ${feature.properties.plaintext_2}`, {
-        permanent: false,
-        direction: "top",
-      });
+      layer.bindTooltip(`№ ${feature.properties.plaintext_2}`, {permanent: false, direction: 'top'});
     }
   }
 
@@ -43,27 +40,27 @@ export default function ViewOKNIdentified({ onFeatureClick }) {
       {bufferData && (
         <GeoJSON
           data={bufferData}
-          onEachFeature={onEachFeature}
+          // onEachFeature={onEachFeature}
           style={() => ({
             color: "transparent",
             fillColor: "transparent",
             fillOpacity: 0,
-            weight: 0,
+            weight: 0
           })}
         />
       )}
       {/* Отрисовка самих линий */}
       <GeoJSON
         data={geojsonData}
-        onEachFeature={onEachFeature}
+        // onEachFeature={onEachFeature}
         style={() => ({
-          color: "#000",
+          color: "#2776bb",
           weight: 1,
-          fillColor: "#ffb266",
-          fillOpacity: 1,
+          fillColor: "#2776bb",
+          fillOpacity: 0.8,
           opacity: 1,
         })}
       />
     </>
   ) : null;
-}
+} 
