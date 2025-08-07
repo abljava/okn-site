@@ -5,7 +5,7 @@ export default function ViewSovietPost({ onFeatureClick }) {
   const [geojsonData, setGeojsonData] = useState(null);
 
   useEffect(() => {
-    fetch("/test_data/soviet_postr.geojson")
+    fetch("/data/soviet_postr.geojson")
       .then(res => res.json())
       .then(setGeojsonData);
   }, []);

@@ -5,7 +5,7 @@ export default function ViewOKNBordersRazrab({ onFeatureClick }) {
   const [geojsonData, setGeojsonData] = useState(null);
 
   useEffect(() => {
-    fetch("/test_data/razrab_granicy_00.geojson")
+    fetch("/data/razrab_granicy_00.geojson")
       .then(res => res.json())
       .then(setGeojsonData);
   }, []);

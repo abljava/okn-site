@@ -5,7 +5,7 @@ export default function ViewDorevPost({ onFeatureClick }) {
   const [geojsonData, setGeojsonData] = useState(null);
 
   useEffect(() => {
-    fetch("/test_data/dorevoluc_postr_24.geojson")
+    fetch("/data/dorevoluc_postr_24.geojson")
       .then(res => res.json())
       .then(setGeojsonData);
   }, []);

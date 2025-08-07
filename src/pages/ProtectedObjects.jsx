@@ -6,14 +6,15 @@ import MapWithObjects from "../components/MapWithObjects";
 import FullscreenMapPortal from "../components/FullscreenMapPortal";
 import ViewSights from "../components/ViewSights";
 import ViewOKNBorders from "../components/ViewOKNBorders";
-import ViewBorders from "../components/ViewBorders";
 import { ViewNumbers } from "../components/ViewNumbers";
 import ViewDorevPost from "../components/ViewDorevPost";
 import ViewSovietPost from "../components/ViewSovietPost";
 import ViewOKNBordersRazrab from "../components/ViewOKNBordersRazrab";
-import ViewObjects from "../components/ViewObjects";
-import ViewObjects01 from "../components/ViewObjects01";
+import ViewBordersDeveloped from "../components/ViewBordersDeveloped";
+import ViewBordersApproved from "../components/ViewBordersApproved";
 import ViewOKNRegional from "../components/ViewOKNRegional";
+import ViewOKNFederal from "../components/ViewOKNFederal";
+import ViewOKNIdentified from "../components/ViewOKNIdentified";
 
 function ProtectedObjects() {
   const [isFullscreen, setIsFullscreen] = useState(false);
@@ -76,14 +77,30 @@ function ProtectedObjects() {
           // onClick={() => setIsFullscreen(true)}
         >
           <MapWithObjects>
-            {/* <ViewSights layerName="Видовые объекты" /> */}
-            {/* <ViewBorders layerName="Границы" /> */}
-            {/* <ViewOKNBorders layerName="Границы ОКН 00" /> */}
-            {/* <ViewOKNBordersRazrab layerName="Границы разр ОКН 01" /> */}
+            <ViewOKNBorders layerName="Границы достопримечательного места" />
+            <ViewOKNFederal
+              layerName="Объекты культурного наследия федерального значения"
+              layerColor="#ea66c9"
+            />
+            <ViewOKNRegional
+              layerName="Объекты культурного наследия регионального значения"
+              layerColor="#f85e5b"
+            />
+            <ViewOKNIdentified
+              layerName="Выявленные объекты культурного наследия"
+              layerColor="#ffb266"
+            />
+            <ViewBordersApproved
+              layerName="Утвержденные границы ОКН"
+              layerColor="#ff0000"
+            />
+            <ViewBordersDeveloped
+              layerName="Разработанные границы ОКН"
+              layerColor="#0000ff"
+            />
+            <ViewOKNBordersRazrab layerName="Границы разр ОКН 01" />
             {/* <ViewSovietPost layerName="Советские постройки" /> */}
-            <ViewOKNRegional layerName="Объекты культурного наследия регионального значения" layerColor="#f85e5b"/>
-            <ViewObjects layerName="ОКН 00" />
-            <ViewObjects01 layerName="ОКН 01 разр" />
+            {/* <ViewSights layerName="Видовые объекты" /> */}
             {/* <ViewDorevPost layerName="Дореволюционные постройки" />
             <ViewNumbers layerName="Номера" /> */}
           </MapWithObjects>

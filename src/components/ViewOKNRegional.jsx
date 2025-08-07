@@ -7,7 +7,7 @@ export default function ViewOKNRegional({ onFeatureClick }) {
   const [bufferData, setBufferData] = useState(null);
 
   useEffect(() => {
-    fetch("/test_data/okn_region.geojson")
+    fetch("/data/okn_region.geojson")
       .then((res) => res.json())
       .then((data) => {
         setGeojsonData(data);

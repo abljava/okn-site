@@ -8,7 +8,7 @@ export function ViewNumbers({ onFeatureClick }) {
 
   useEffect(() => {
     // Загружаем объекты и собираем их номера
-    fetch("/test_data/okn_objects_01_numbers.geojson")
+    fetch("/data/okn_objects_01_numbers.geojson")
       .then(res => res.json())
       .then(objectsData => {
         const numbers = objectsData.features
@@ -19,7 +19,7 @@ export function ViewNumbers({ onFeatureClick }) {
   }, []);
 
   useEffect(() => {
-    fetch("/test_data/number_00_2.geojson")
+    fetch("/data/number_00_2.geojson")
       .then(res => res.json())
       .then(setGeojsonData);
   }, []);
@@ -73,7 +73,7 @@ export function ViewNumbers({ onFeatureClick }) {
 //   const [bufferData, setBufferData] = useState(null);
 
 //   useEffect(() => {
-//     fetch("/test_data/number_00_2.geojson")
+//     fetch("/data/number_00_2.geojson")
 //       .then(res => res.json())
 //       .then(data => {
 //         setGeojsonData(data);

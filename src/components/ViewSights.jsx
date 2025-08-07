@@ -6,7 +6,7 @@ export default function ViewSights({ onFeatureClick }) {
 
   useEffect(() => {
     // fetch("/data/vidovye.geojson")
-    fetch("/test_data/vidovye_test.geojson")
+    fetch("/data/vidovye_test.geojson")
       .then(res => res.json())
       .then(setGeojsonData);
   }, []);

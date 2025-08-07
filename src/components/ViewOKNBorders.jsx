@@ -6,7 +6,7 @@ export default function ViewOKNBorders
   const [geojsonData, setGeojsonData] = useState(null);
 
   useEffect(() => {
-    fetch("/test_data/okn_00.geojson")
+    fetch("/data/1_borders.geojson")
       .then(res => res.json())
       .then(setGeojsonData);
   }, []);
@@ -28,11 +28,12 @@ export default function ViewOKNBorders
       data={geojsonData}
       // onEachFeature={onEachFeature}
       style={() => ({
-        color: "#bc6c6e",
-        weight: 1,
+        color: "#000",
+        weight: 3,
         fillColor: "#bc6c6e",
         fillOpacity: 0.4,
-        opacity: 1
+        opacity: 1,
+        dashArray: "10, 10"
       })}
     />
   ) : null;
