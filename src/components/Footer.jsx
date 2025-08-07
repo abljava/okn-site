@@ -39,7 +39,7 @@ function Footer() {
             <div className="flex flex-col md:flex-row md:items-center md:gap-4">
               <p>©ООО 2024. Все права защищены</p>
               <Link
-                to="/"
+                to="/politics"
                 className="underline hover:text-orange transition-colors"
               >
                 Политика конфиденциальности

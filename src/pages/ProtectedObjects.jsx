@@ -4,16 +4,20 @@ import BgOverlay from "../components/BgOverlay";
 import MapComponent from "../components/MapComponent";
 import MapWithObjects from "../components/MapWithObjects";
 import FullscreenMapPortal from "../components/FullscreenMapPortal";
-import ViewSights from "../components/ViewSights";
-import ViewOKNBorders from "../components/ViewOKNBorders";
-import ViewBorders from "../components/ViewBorders";
-import { ViewNumbers } from "../components/ViewNumbers";
-import ViewDorevPost from "../components/ViewDorevPost";
-import ViewSovietPost from "../components/ViewSovietPost";
-import ViewOKNBordersRazrab from "../components/ViewOKNBordersRazrab";
-import ViewObjects from "../components/ViewObjects";
-import ViewObjects01 from "../components/ViewObjects01";
-import ViewOKNRegional from "../components/ViewOKNRegional";
+import OKNBorders from "../layers/OKNBorders";
+// import { Numbers } from "../components/Numbers";
+import OKNHistorical from "../layers/OKNHistorical";
+import OKNSoviet from "../layers/OKNSoviet";
+import BordersDeveloped from "../layers/BordersDeveloped";
+import BordersApproved from "../layers/BordersApproved";
+import OKNRegional from "../layers/OKNRegional";
+import OKNFederal from "../layers/OKNFederal";
+import OKNIdentified from "../layers/OKNIdentified";
+import CityLanscape from "../layers/CityLanscape";
+import NatureLandscape from "../layers/NatureLandscape";
+import ViewSightsTracks from "../layers/ViewSightsTracks";
+import BordersSites from "../layers/BordersSites";
+import HistoricalPlan from "../layers/HistoricalPlan";
 
 function ProtectedObjects() {
   const [isFullscreen, setIsFullscreen] = useState(false);
@@ -76,16 +80,37 @@ function ProtectedObjects() {
           // onClick={() => setIsFullscreen(true)}
         >
           <MapWithObjects>
-            {/* <ViewSights layerName="Видовые объекты" /> */}
-            {/* <ViewBorders layerName="Границы" /> */}
-            {/* <ViewOKNBorders layerName="Границы ОКН 00" /> */}
-            {/* <ViewOKNBordersRazrab layerName="Границы разр ОКН 01" /> */}
-            {/* <ViewSovietPost layerName="Советские постройки" /> */}
-            <ViewOKNRegional layerName="Объекты культурного наследия регионального значения" layerColor="#f85e5b"/>
-            <ViewObjects layerName="ОКН 00" />
-            <ViewObjects01 layerName="ОКН 01 разр" />
-            {/* <ViewDorevPost layerName="Дореволюционные постройки" />
-            <ViewNumbers layerName="Номера" /> */}
+            <OKNBorders layerName="Границы достопримечательного места" />
+            <OKNFederal
+              layerName="Объекты культурного наследия федерального значения"
+              layerColor="#ea66c9"
+            />
+            <OKNRegional
+              layerName="Объекты культурного наследия регионального значения"
+              layerColor="#f85e5b"
+            />
+            <OKNIdentified
+              layerName="Выявленные объекты культурного наследия"
+              layerColor="#ffb266"
+            />
+            <BordersApproved
+              layerName="Утвержденные границы ОКН"
+              layerColor="#ff0000"
+            />
+            <BordersDeveloped
+              layerName="Разработанные границы ОКН"
+              layerColor="#0000ff"
+            />
+            <OKNHistorical
+              layerName="Ценная историческая застройка конца XIX - начала XX вв."
+              layerColor="#a866ea"
+            />
+            <OKNSoviet layerName="Ценная историческая застройка 1930-1960 гг." layerColor="#75eb73"/>
+            <CityLanscape layerName="Ценный городской ландшафт" layerColor="#80d4a2"/>
+            <NatureLandscape layerName="Природный ландшафт" layerColor="#cbe8bc"/>
+            <ViewSightsTracks layerName="Трассы видовых раскрытий" layerColor="#dd3700 "/>
+            <BordersSites layerName="Границы земельных участков" layerColor="#2776bb "/>
+            <HistoricalPlan layerName="Историческая планировочная структура" layerColor="#acacac "/>
           </MapWithObjects>
         </div>
         {isFullscreen && (

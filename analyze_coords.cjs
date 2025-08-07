@@ -2,7 +2,7 @@ const fs = require('fs');
 
 // Пути к файлам
 const jsonPath = 'src/data/objectsData.json';
-const geojsonPath = 'public/test_data/number_00_2.geojson';
+const geojsonPath = 'public/data/number_00_2.geojson';
 
 // Загрузка данных
 const objectsData = JSON.parse(fs.readFileSync(jsonPath));
