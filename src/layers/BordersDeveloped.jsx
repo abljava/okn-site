@@ -55,7 +55,7 @@ export default function ViewBordersDeveloped({ onFeatureClick }) {
         // onEachFeature={onEachFeature}
         style={() => ({
           color: "#0000ff",
-          weight: 1,
+          weight: 2,
           fillColor: "#0000ff",
           fillOpacity: 0.8,
           opacity: 1,
