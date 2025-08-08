@@ -49,11 +49,6 @@ function ProtectedObjects() {
             </div>
           </section>
           <section className="relative flex flex-col md:grid md:grid-cols-[167px_1fr] 2xl:grid-cols-[370px_1fr] ">
-            {/* <img
-              src="/bgs/bg-1.png"
-              alt="фоновое изображение"
-              className="absolute -z-10 -top-20 md:top-0 lg:-top-10 xl:-top-32 2xl:-top-40 md:scale-y-90 left-1/2 right-1/2 -translate-x-1/2 w-screen max-w-none"
-            /> */}
             <div className="hidden justify-self-end pt-8 md:pt-0 md:block">
               <img
                 src="/images/photo-12.png"
@@ -67,15 +62,6 @@ function ProtectedObjects() {
               </h1>
             </div>
           </section>
-
-          {/* Карта */}
-          {/* <div className="relative -z-20 -top-16 left-1/2 right-1/2 -translate-x-1/2 w-screen max-w-none"> */}
-          {/* <img
-              src="/maps/map-objects.png"
-              alt="карта"
-              className="relative top-0 left-1/2 right-1/2 -translate-x-1/2 w-screen max-w-none"
-            /> */}
-          {/* </div> */}
         </div>
         <div
           className="relative -z-20 left-1/2 right-1/2 -translate-x-1/2 w-screen max-w-none"
@@ -95,10 +81,10 @@ function ProtectedObjects() {
               layerName="Выявленные объекты культурного наследия"
               layerColor="#ffb266"
             />
-            {/* <BordersSites
+            <BordersSites
               layerName="Границы земельных участков"
               layerColor="#2776bb "
-            /> */}
+            />
             <BordersApproved
               layerName="Утвержденные границы ОКН"
               layerColor="#ff0000"
