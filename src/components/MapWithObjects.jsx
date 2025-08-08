@@ -56,7 +56,7 @@ export default function MapWithObjects({ children }) {
       </MapContainer>
 
       {/* Панель управления слоями */}
-      <div className="absolute z-[1000] md:w-[450px] xl:w-[650px] md:top-[10px] left-[10px] bg-white rounded-lg shadow-lg">
+      <div className="absolute z-[1000] w-[345px] md:w-[450px] xl:w-[650px] top-3 left-3 bg-white rounded-lg shadow-lg">
         {isCollapsed ? (
           // Свернутое состояние
           <div 
