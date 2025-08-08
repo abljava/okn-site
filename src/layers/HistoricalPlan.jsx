@@ -57,9 +57,9 @@ export default function HistoricalPlan({ onFeatureClick }) {
         data={geojsonData}
         // onEachFeature={onEachFeature}
         style={() => ({
-          color: "#acacac",
-          weight: 4,
-          fillColor: "#acacac",
+          color: "#7f8f97",
+          weight: 15,
+          fillColor: "#7f8f97",
           fillOpacity: 0.8,
           opacity: 1,
         })}

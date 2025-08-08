@@ -55,10 +55,11 @@ export default function ViewBordersApproved({ onFeatureClick }) {
         // onEachFeature={onEachFeature}
         style={() => ({
           color: "#ff0000",
-          weight: 1,
+          weight: 2,
           fillColor: "#ff0000",
           fillOpacity: 0.8,
-          opacity: 1
+          opacity: 1,
+          dashArray: "5, 5"
         })}
       />
     </>
