@@ -58,7 +58,7 @@ export default function HistoricalPlan({ onFeatureClick }) {
         // onEachFeature={onEachFeature}
         style={() => ({
           color: "#7f8f97",
-          weight: 15,
+          weight: 10,
           fillColor: "#7f8f97",
           fillOpacity: 0.8,
           opacity: 1,

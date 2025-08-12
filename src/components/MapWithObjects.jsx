@@ -37,6 +37,7 @@ export default function MapWithObjects({ children }) {
     if (!visibleLayers[name]) return null;
     return React.cloneElement(child, {
       onFeatureClick: setSelectedFeature,
+      isVisible: visibleLayers[name],
       key: name,
     });
   });
@@ -45,7 +46,8 @@ export default function MapWithObjects({ children }) {
     <div className="relative w-full h-full">
       <MapContainer
         center={[43.1155, 131.8855]}
-        zoom={18}
+        zoom={16}
+        scrollWheelZoom={false}
         style={{ height: "100vh", width: "100%" }}
       >
         <TileLayer
@@ -56,7 +58,7 @@ export default function MapWithObjects({ children }) {
       </MapContainer>
 
       {/* Панель управления слоями */}
-      <div className="absolute z-[1000] w-[345px] md:w-[450px] xl:w-[650px] top-3 left-3 bg-white rounded-lg shadow-lg">
+      <div className="absolute z-[1000] w-[300px] md:w-[450px] xl:w-[650px] top-3 left-3 bg-white rounded-lg shadow-lg">
         {isCollapsed ? (
           // Свернутое состояние
           <div 

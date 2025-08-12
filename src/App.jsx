@@ -1,15 +1,18 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Helmet, HelmetProvider } from "react-helmet-async";
+import { lazy, Suspense } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Home from "./pages/Home";
-import History from "./pages/History";
-import Authors from "./pages/Authors";
-import ProtectedObjects from "./pages/ProtectedObjects";
-import DevelopmentRegulations from "./pages/DevelopmentRegulations";
-import Politics from "./pages/Politics";
-import Cookies from "./pages/Cookies";
 import CookieConsent from "./components/CookieConsent";
+
+// Ленивая загрузка страниц
+const Home = lazy(() => import("./pages/Home"));
+const History = lazy(() => import("./pages/History"));
+const Authors = lazy(() => import("./pages/Authors"));
+const ProtectedObjects = lazy(() => import("./pages/ProtectedObjects"));
+const DevelopmentRegulations = lazy(() => import("./pages/DevelopmentRegulations"));
+const Politics = lazy(() => import("./pages/Politics"));
+const Cookies = lazy(() => import("./pages/Cookies"));
 
 function App() {
   return (
@@ -48,18 +51,24 @@ function App() {
 
         <BrowserRouter>
           <Header />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/history" element={<History />} />
-            <Route path="/authors" element={<Authors />} />
-            <Route path="/protected-objects" element={<ProtectedObjects />} />
-            <Route
-              path="/development-regulations"
-              element={<DevelopmentRegulations />}
-            />
-            <Route path="/politics" element={<Politics />} />
-            <Route path="/cookies" element={<Cookies />} />
-          </Routes>
+          <Suspense fallback={
+            <div className="flex items-center justify-center min-h-screen">
+              <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-orange-500"></div>
+            </div>
+          }>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/history" element={<History />} />
+              <Route path="/authors" element={<Authors />} />
+              <Route path="/protected-objects" element={<ProtectedObjects />} />
+              <Route
+                path="/development-regulations"
+                element={<DevelopmentRegulations />}
+              />
+              <Route path="/politics" element={<Politics />} />
+              <Route path="/cookies" element={<Cookies />} />
+            </Routes>
+          </Suspense>
           <Footer />
           <CookieConsent />
         </BrowserRouter>

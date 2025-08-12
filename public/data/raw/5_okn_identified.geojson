@@ -1,0 +1,1260 @@
+{
+  "type": "FeatureCollection",
+  "name": "5_okn_identified",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 1,
+        "Layer": "5 - выявленные окн",
+        "PaperSpace": null,
+        "SubClasses": "AcDbEntity:AcDbPolyline",
+        "Linetype": "ByLayer",
+        "EntityHandle": "113",
+        "Text": null,
+        "ogr_style": "PEN(c:#000000)",
+        "font": null,
+        "angle": null,
+        "size": null,
+        "size_u": null,
+        "anchor": null,
+        "color": "#000000",
+        "underline": null,
+        "plaintext": null,
+        "fcolor": null,
+        "flnum": null,
+        "bold": null,
+        "italic": null,
+        "dx": null,
+        "dx_u": null,
+        "dy": null,
+        "dy_u": null
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                131.925008129174671,
+                43.111800815938899
+              ],
+              [
+                131.925057405956522,
+                43.111692832057038
+              ],
+              [
+                131.924959117135387,
+                43.11169276740317
+              ],
+              [
+                131.925008129174671,
+                43.111800815938899
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 2,
+        "Layer": "5 - выявленные окн",
+        "PaperSpace": null,
+        "SubClasses": "AcDbEntity:AcDbPolyline",
+        "Linetype": "ByLayer",
+        "EntityHandle": "115",
+        "Text": null,
+        "ogr_style": "PEN(c:#000000)",
+        "font": null,
+        "angle": null,
+        "size": null,
+        "size_u": null,
+        "anchor": null,
+        "color": "#000000",
+        "underline": null,
+        "plaintext": null,
+        "fcolor": null,
+        "flnum": null,
+        "bold": null,
+        "italic": null,
+        "dx": null,
+        "dx_u": null,
+        "dy": null,
+        "dy_u": null
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                131.925008129174671,
+                43.111800815938899
+              ],
+              [
+                131.925057405956522,
+                43.111692832057038
+              ],
+              [
+                131.924959117135387,
+                43.11169276740317
+              ],
+              [
+                131.925008129174671,
+                43.111800815938899
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 3,
+        "Layer": "5 - выявленные окн",
+        "PaperSpace": null,
+        "SubClasses": "AcDbEntity:AcDbPolyline",
+        "Linetype": "ByLayer",
+        "EntityHandle": "117",
+        "Text": null,
+        "ogr_style": "PEN(c:#000000)",
+        "font": null,
+        "angle": null,
+        "size": null,
+        "size_u": null,
+        "anchor": null,
+        "color": "#000000",
+        "underline": null,
+        "plaintext": null,
+        "fcolor": null,
+        "flnum": null,
+        "bold": null,
+        "italic": null,
+        "dx": null,
+        "dx_u": null,
+        "dy": null,
+        "dy_u": null
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                131.89420931545726,
+                43.115056558963886
+              ],
+              [
+                131.89444044598946,
+                43.115015390519055
+              ],
+              [
+                131.894451363982142,
+                43.115048288722626
+              ],
+              [
+                131.894540494573022,
+                43.115032412844457
+              ],
+              [
+                131.894527978095823,
+                43.114994698233524
+              ],
+              [
+                131.894684765341481,
+                43.114968505652691
+              ],
+              [
+                131.894661241050443,
+                43.114898447600524
+              ],
+              [
+                131.894687416750571,
+                43.114893392199427
+              ],
+              [
+                131.894676059496049,
+                43.11486184349225
+              ],
+              [
+                131.894650956851052,
+                43.114865519428541
+              ],
+              [
+                131.894625777150935,
+                43.1147961236776
+              ],
+              [
+                131.894631210986944,
+                43.114785956111184
+              ],
+              [
+                131.894622301704032,
+                43.114763016466917
+              ],
+              [
+                131.89459500915558,
+                43.114748680679568
+              ],
+              [
+                131.89454688905181,
+                43.114757348099467
+              ],
+              [
+                131.894539945285686,
+                43.114767854155019
+              ],
+              [
+                131.894442959019273,
+                43.114783965523813
+              ],
+              [
+                131.894482884388793,
+                43.114898281522919
+              ],
+              [
+                131.894175172757315,
+                43.114953112225862
+              ],
+              [
+                131.89420931545726,
+                43.115056558963886
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 4,
+        "Layer": "5 - выявленные окн",
+        "PaperSpace": null,
+        "SubClasses": "AcDbEntity:AcDbPolyline",
+        "Linetype": "ByLayer",
+        "EntityHandle": "119",
+        "Text": null,
+        "ogr_style": "PEN(c:#000000)",
+        "font": null,
+        "angle": null,
+        "size": null,
+        "size_u": null,
+        "anchor": null,
+        "color": "#000000",
+        "underline": null,
+        "plaintext": null,
+        "fcolor": null,
+        "flnum": null,
+        "bold": null,
+        "italic": null,
+        "dx": null,
+        "dx_u": null,
+        "dy": null,
+        "dy_u": null
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                131.844056829231789,
+                43.082933394066217
+              ],
+              [
+                131.844081780010129,
+                43.082955667841198
+              ],
+              [
+                131.844115031574489,
+                43.082971616555454
+              ],
+              [
+                131.844130763502335,
+                43.082965277337429
+              ],
+              [
+                131.844142385806293,
+                43.082949692018964
+              ],
+              [
+                131.844083383084154,
+                43.082912376541742
+              ],
+              [
+                131.844061344516405,
+                43.082921305855251
+              ],
+              [
+                131.844056829231789,
+                43.082933394066217
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 5,
+        "Layer": "5 - выявленные окн",
+        "PaperSpace": null,
+        "SubClasses": "AcDbEntity:AcDbPolyline",
+        "Linetype": "ByLayer",
+        "EntityHandle": "11B",
+        "Text": null,
+        "ogr_style": "PEN(c:#000000)",
+        "font": null,
+        "angle": null,
+        "size": null,
+        "size_u": null,
+        "anchor": null,
+        "color": "#000000",
+        "underline": null,
+        "plaintext": null,
+        "fcolor": null,
+        "flnum": null,
+        "bold": null,
+        "italic": null,
+        "dx": null,
+        "dx_u": null,
+        "dy": null,
+        "dy_u": null
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                131.842129654660397,
+                43.079584638161371
+              ],
+              [
+                131.842100945068097,
+                43.07957891942138
+              ],
+              [
+                131.842098257326683,
+                43.079583810303568
+              ],
+              [
+                131.842177322141481,
+                43.079617308229452
+              ],
+              [
+                131.842189947263194,
+                43.079614495450741
+              ],
+              [
+                131.842216303873585,
+                43.079581184479196
+              ],
+              [
+                131.842245540438284,
+                43.079589427315248
+              ],
+              [
+                131.842274518424659,
+                43.079549282409801
+              ],
+              [
+                131.842273835279457,
+                43.07954382098707
+              ],
+              [
+                131.842242263998799,
+                43.079529507284832
+              ],
+              [
+                131.842207178447353,
+                43.079528293870503
+              ],
+              [
+                131.842186434246798,
+                43.079556223355546
+              ],
+              [
+                131.84215120473732,
+                43.079554503750401
+              ],
+              [
+                131.842129654660397,
+                43.079584638161371
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 6,
+        "Layer": "5 - выявленные окн",
+        "PaperSpace": null,
+        "SubClasses": "AcDbEntity:AcDbPolyline",
+        "Linetype": "ByLayer",
+        "EntityHandle": "11D",
+        "Text": null,
+        "ogr_style": "PEN(c:#000000)",
+        "font": null,
+        "angle": null,
+        "size": null,
+        "size_u": null,
+        "anchor": null,
+        "color": "#000000",
+        "underline": null,
+        "plaintext": null,
+        "fcolor": null,
+        "flnum": null,
+        "bold": null,
+        "italic": null,
+        "dx": null,
+        "dx_u": null,
+        "dy": null,
+        "dy_u": null
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                131.843129279045513,
+                43.073179323140685
+              ],
+              [
+                131.843143491685538,
+                43.073186930913096
+              ],
+              [
+                131.843158292567523,
+                43.073185617080767
+              ],
+              [
+                131.843167534220981,
+                43.073176790489441
+              ],
+              [
+                131.84316631368489,
+                43.073165281225656
+              ],
+              [
+                131.843152329209119,
+                43.073157673769309
+              ],
+              [
+                131.843137187956273,
+                43.073158904002284
+              ],
+              [
+                131.843127940865429,
+                43.073168563923311
+              ],
+              [
+                131.843129279045513,
+                43.073179323140685
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 7,
+        "Layer": "5 - выявленные окн",
+        "PaperSpace": null,
+        "SubClasses": "AcDbEntity:AcDbPolyline",
+        "Linetype": "ByLayer",
+        "EntityHandle": "11F",
+        "Text": null,
+        "ogr_style": "PEN(c:#000000)",
+        "font": null,
+        "angle": null,
+        "size": null,
+        "size_u": null,
+        "anchor": null,
+        "color": "#000000",
+        "underline": null,
+        "plaintext": null,
+        "fcolor": null,
+        "flnum": null,
+        "bold": null,
+        "italic": null,
+        "dx": null,
+        "dx_u": null,
+        "dy": null,
+        "dy_u": null
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                131.851038227983025,
+                43.087882265482214
+              ],
+              [
+                131.851232498051729,
+                43.087806490056295
+              ],
+              [
+                131.851156372266416,
+                43.087697665316455
+              ],
+              [
+                131.85095664140681,
+                43.087776388014909
+              ],
+              [
+                131.851038227983025,
+                43.087882265482214
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 8,
+        "Layer": "5 - выявленные окн",
+        "PaperSpace": null,
+        "SubClasses": "AcDbEntity:AcDbPolyline",
+        "Linetype": "ByLayer",
+        "EntityHandle": "121",
+        "Text": null,
+        "ogr_style": "PEN(c:#000000)",
+        "font": null,
+        "angle": null,
+        "size": null,
+        "size_u": null,
+        "anchor": null,
+        "color": "#000000",
+        "underline": null,
+        "plaintext": null,
+        "fcolor": null,
+        "flnum": null,
+        "bold": null,
+        "italic": null,
+        "dx": null,
+        "dx_u": null,
+        "dy": null,
+        "dy_u": null
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                131.879456176213267,
+                43.11199105727021
+              ],
+              [
+                131.879515172990892,
+                43.112160883405764
+              ],
+              [
+                131.879613844624487,
+                43.112140494076478
+              ],
+              [
+                131.879606832843791,
+                43.112120292355989
+              ],
+              [
+                131.879643251347858,
+                43.112112728663412
+              ],
+              [
+                131.879615181205224,
+                43.112031855458731
+              ],
+              [
+                131.879694633161307,
+                43.11201535417942
+              ],
+              [
+                131.879670733370034,
+                43.111946496302238
+              ],
+              [
+                131.879456176213267,
+                43.11199105727021
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 9,
+        "Layer": "5 - выявленные окн",
+        "PaperSpace": null,
+        "SubClasses": "AcDbEntity:AcDbPolyline",
+        "Linetype": "ByLayer",
+        "EntityHandle": "123",
+        "Text": null,
+        "ogr_style": "PEN(c:#000000)",
+        "font": null,
+        "angle": null,
+        "size": null,
+        "size_u": null,
+        "anchor": null,
+        "color": "#000000",
+        "underline": null,
+        "plaintext": null,
+        "fcolor": null,
+        "flnum": null,
+        "bold": null,
+        "italic": null,
+        "dx": null,
+        "dx_u": null,
+        "dy": null,
+        "dy_u": null
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                131.919884039242817,
+                43.110686468858354
+              ],
+              [
+                131.92030241568699,
+                43.110674344326334
+              ],
+              [
+                131.920298677051221,
+                43.110584374788225
+              ],
+              [
+                131.920138389369868,
+                43.11058956676564
+              ],
+              [
+                131.920136666587496,
+                43.110556792520505
+              ],
+              [
+                131.920030906041035,
+                43.110559893953948
+              ],
+              [
+                131.920032936744462,
+                43.110594778785227
+              ],
+              [
+                131.919879647217499,
+                43.110601088460605
+              ],
+              [
+                131.919884039242817,
+                43.110686468858354
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 10,
+        "Layer": "5 - выявленные окн",
+        "PaperSpace": null,
+        "SubClasses": "AcDbEntity:AcDbPolyline",
+        "Linetype": "ByLayer",
+        "EntityHandle": "125",
+        "Text": null,
+        "ogr_style": "PEN(c:#000000)",
+        "font": null,
+        "angle": null,
+        "size": null,
+        "size_u": null,
+        "anchor": null,
+        "color": "#000000",
+        "underline": null,
+        "plaintext": null,
+        "fcolor": null,
+        "flnum": null,
+        "bold": null,
+        "italic": null,
+        "dx": null,
+        "dx_u": null,
+        "dy": null,
+        "dy_u": null
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                131.92124431699412,
+                43.110620491788971
+              ],
+              [
+                131.921636163975961,
+                43.110605294730235
+              ],
+              [
+                131.921629262765322,
+                43.11050675980065
+              ],
+              [
+                131.921501840012411,
+                43.110516433630409
+              ],
+              [
+                131.921497461202136,
+                43.110482045424291
+              ],
+              [
+                131.921355304556158,
+                43.110489148552148
+              ],
+              [
+                131.921358823160944,
+                43.110523626183948
+              ],
+              [
+                131.921237431389528,
+                43.110529303266489
+              ],
+              [
+                131.92124431699412,
+                43.110620491788971
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 11,
+        "Layer": "5 - выявленные окн",
+        "PaperSpace": null,
+        "SubClasses": "AcDbEntity:AcDbPolyline",
+        "Linetype": "ByLayer",
+        "EntityHandle": "127",
+        "Text": null,
+        "ogr_style": "PEN(c:#000000)",
+        "font": null,
+        "angle": null,
+        "size": null,
+        "size_u": null,
+        "anchor": null,
+        "color": "#000000",
+        "underline": null,
+        "plaintext": null,
+        "fcolor": null,
+        "flnum": null,
+        "bold": null,
+        "italic": null,
+        "dx": null,
+        "dx_u": null,
+        "dy": null,
+        "dy_u": null
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                131.92306417029036,
+                43.111056589895163
+              ],
+              [
+                131.924296358661678,
+                43.110998509224466
+              ],
+              [
+                131.924280101996686,
+                43.110815117287629
+              ],
+              [
+                131.923051358661439,
+                43.110873577613944
+              ],
+              [
+                131.92306417029036,
+                43.111056589895163
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 12,
+        "Layer": "5 - выявленные окн",
+        "PaperSpace": null,
+        "SubClasses": "AcDbEntity:AcDbPolyline",
+        "Linetype": "ByLayer",
+        "EntityHandle": "129",
+        "Text": null,
+        "ogr_style": "PEN(c:#000000)",
+        "font": null,
+        "angle": null,
+        "size": null,
+        "size_u": null,
+        "anchor": null,
+        "color": "#000000",
+        "underline": null,
+        "plaintext": null,
+        "fcolor": null,
+        "flnum": null,
+        "bold": null,
+        "italic": null,
+        "dx": null,
+        "dx_u": null,
+        "dy": null,
+        "dy_u": null
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                131.920871014070542,
+                43.111167175593032
+              ],
+              [
+                131.922103672160375,
+                43.111118201634312
+              ],
+              [
+                131.922089040328359,
+                43.110920544031075
+              ],
+              [
+                131.920853381990099,
+                43.11096963717884
+              ],
+              [
+                131.920871014070542,
+                43.111167175593032
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 13,
+        "Layer": "5 - выявленные окн",
+        "PaperSpace": null,
+        "SubClasses": "AcDbEntity:AcDbPolyline",
+        "Linetype": "ByLayer",
+        "EntityHandle": "12B",
+        "Text": null,
+        "ogr_style": "PEN(c:#000000)",
+        "font": null,
+        "angle": null,
+        "size": null,
+        "size_u": null,
+        "anchor": null,
+        "color": "#000000",
+        "underline": null,
+        "plaintext": null,
+        "fcolor": null,
+        "flnum": null,
+        "bold": null,
+        "italic": null,
+        "dx": null,
+        "dx_u": null,
+        "dy": null,
+        "dy_u": null
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                131.919980108273592,
+                43.111201954373144
+              ],
+              [
+                131.920323831531647,
+                43.111185849314644
+              ],
+              [
+                131.920387162677883,
+                43.111183366672982
+              ],
+              [
+                131.920387781780676,
+                43.111191204596246
+              ],
+              [
+                131.920481527940979,
+                43.111188171895712
+              ],
+              [
+                131.920463372847649,
+                43.11098441015347
+              ],
+              [
+                131.920369987021701,
+                43.110988498416006
+              ],
+              [
+                131.92037053941047,
+                43.110997170821776
+              ],
+              [
+                131.920262575043125,
+                43.111003079495795
+              ],
+              [
+                131.9199605129497,
+                43.111016074631735
+              ],
+              [
+                131.919960173233335,
+                43.111010481185609
+              ],
+              [
+                131.919869531243506,
+                43.111013369930667
+              ],
+              [
+                131.919885448747351,
+                43.111215007109998
+              ],
+              [
+                131.919980523230151,
+                43.111209634720858
+              ],
+              [
+                131.919980108273592,
+                43.111201954373144
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 14,
+        "Layer": "5 - выявленные окн",
+        "PaperSpace": null,
+        "SubClasses": "AcDbEntity:AcDbPolyline",
+        "Linetype": "ByLayer",
+        "EntityHandle": "12D",
+        "Text": null,
+        "ogr_style": "PEN(c:#000000)",
+        "font": null,
+        "angle": null,
+        "size": null,
+        "size_u": null,
+        "anchor": null,
+        "color": "#000000",
+        "underline": null,
+        "plaintext": null,
+        "fcolor": null,
+        "flnum": null,
+        "bold": null,
+        "italic": null,
+        "dx": null,
+        "dx_u": null,
+        "dy": null,
+        "dy_u": null
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                131.923745810513282,
+                43.111598952572649
+              ],
+              [
+                131.924351526665447,
+                43.111577853470521
+              ],
+              [
+                131.924338436511931,
+                43.111376153028885
+              ],
+              [
+                131.923733892352743,
+                43.111397211311875
+              ],
+              [
+                131.923745810513282,
+                43.111598952572649
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 15,
+        "Layer": "5 - выявленные окн",
+        "PaperSpace": null,
+        "SubClasses": "AcDbEntity:AcDbPolyline",
+        "Linetype": "ByLayer",
+        "EntityHandle": "12F",
+        "Text": null,
+        "ogr_style": "PEN(c:#000000)",
+        "font": null,
+        "angle": null,
+        "size": null,
+        "size_u": null,
+        "anchor": null,
+        "color": "#000000",
+        "underline": null,
+        "plaintext": null,
+        "fcolor": null,
+        "flnum": null,
+        "bold": null,
+        "italic": null,
+        "dx": null,
+        "dx_u": null,
+        "dy": null,
+        "dy_u": null
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                131.922824700915044,
+                43.111644094104051
+              ],
+              [
+                131.923411444529563,
+                43.11161729605147
+              ],
+              [
+                131.923404152078831,
+                43.111413920270969
+              ],
+              [
+                131.922808294559843,
+                43.111440337017683
+              ],
+              [
+                131.922824700915044,
+                43.111644094104051
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 16,
+        "Layer": "5 - выявленные окн",
+        "PaperSpace": null,
+        "SubClasses": "AcDbEntity:AcDbPolyline",
+        "Linetype": "ByLayer",
+        "EntityHandle": "131",
+        "Text": null,
+        "ogr_style": "PEN(c:#000000)",
+        "font": null,
+        "angle": null,
+        "size": null,
+        "size_u": null,
+        "anchor": null,
+        "color": "#000000",
+        "underline": null,
+        "plaintext": null,
+        "fcolor": null,
+        "flnum": null,
+        "bold": null,
+        "italic": null,
+        "dx": null,
+        "dx_u": null,
+        "dy": null,
+        "dy_u": null
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                131.92187009553075,
+                43.111688645741097
+              ],
+              [
+                131.92245621277857,
+                43.111660423442714
+              ],
+              [
+                131.922439964836911,
+                43.111452504972661
+              ],
+              [
+                131.921854233342827,
+                43.111480028157771
+              ],
+              [
+                131.92187009553075,
+                43.111688645741097
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 17,
+        "Layer": "5 - выявленные окн",
+        "PaperSpace": null,
+        "SubClasses": "AcDbEntity:AcDbPolyline",
+        "Linetype": "ByLayer",
+        "EntityHandle": "133",
+        "Text": null,
+        "ogr_style": "PEN(c:#000000)",
+        "font": null,
+        "angle": null,
+        "size": null,
+        "size_u": null,
+        "anchor": null,
+        "color": "#000000",
+        "underline": null,
+        "plaintext": null,
+        "fcolor": null,
+        "flnum": null,
+        "bold": null,
+        "italic": null,
+        "dx": null,
+        "dx_u": null,
+        "dy": null,
+        "dy_u": null
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                131.920928222619722,
+                43.111734778082969
+              ],
+              [
+                131.921518346515882,
+                43.111707277867687
+              ],
+              [
+                131.921501070228999,
+                43.111508292335941
+              ],
+              [
+                131.920908728318324,
+                43.11153399156975
+              ],
+              [
+                131.920928222619722,
+                43.111734778082969
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 18,
+        "Layer": "5 - выявленные окн",
+        "PaperSpace": null,
+        "SubClasses": "AcDbEntity:AcDbPolyline",
+        "Linetype": "ByLayer",
+        "EntityHandle": "135",
+        "Text": null,
+        "ogr_style": "PEN(c:#000000)",
+        "font": null,
+        "angle": null,
+        "size": null,
+        "size_u": null,
+        "anchor": null,
+        "color": "#000000",
+        "underline": null,
+        "plaintext": null,
+        "fcolor": null,
+        "flnum": null,
+        "bold": null,
+        "italic": null,
+        "dx": null,
+        "dx_u": null,
+        "dy": null,
+        "dy_u": null
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                131.920003206758309,
+                43.111812748980768
+              ],
+              [
+                131.920613779238266,
+                43.111791051355816
+              ],
+              [
+                131.920597763950497,
+                43.111583713853193
+              ],
+              [
+                131.919987023569405,
+                43.111608536760365
+              ],
+              [
+                131.920003206758309,
+                43.111812748980768
+              ]
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}
