@@ -115,9 +115,9 @@ body {
 /* Альтернативный способ - принудительное позиционирование */
 .leaflet-top.leaflet-left .leaflet-control-zoom {
   position: absolute !important;
-  right: 10px !important;
+  right: 0px !important;
   left: auto !important;
-  top: 10px !important;
+  top: 0px !important;
 }
 
 /* Кастомные стили для чекбоксов */
@@ -187,5 +187,19 @@ input[type="checkbox"].custom-checkbox:checked::after {
   font-weight: bold !important;
 }
 
+/* Убираем стандартную рамку выделения Leaflet */
+.leaflet-interactive {
+  cursor: pointer !important;
+}
 
+/* Убираем стандартную черную рамку при клике */
+.leaflet-interactive:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
 
+/* Убираем стандартную рамку выделения */
+.leaflet-interactive:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
