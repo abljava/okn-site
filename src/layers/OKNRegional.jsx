@@ -7,7 +7,7 @@ export default function ViewOKNRegional({ onFeatureClick }) {
   const [bufferData, setBufferData] = useState(null);
 
   useEffect(() => {
-    fetch("/data/numbered/3_okn_regional_test.geojson")
+    fetch("/data/numbered/3_okn_regional.geojson")
       .then((res) => res.json())
       .then((data) => {
         console.log('Загружено объектов:', data.features.length);

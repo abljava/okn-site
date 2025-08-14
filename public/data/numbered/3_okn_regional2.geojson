@@ -1,6 +1,6 @@
 {
   "type": "FeatureCollection",
-  "name": "3_okn_regional_test",
+  "name": "3_okn_regional",
   "crs": {
     "type": "name",
     "properties": {
@@ -8608,7 +8608,7 @@
         "Text": "287",
         "id": 258,
         "number": "287",
-        "description": "25:28:020022:65 Доходный дом Тау-Цзе-линь",
+        "description": "Доходный дом Тау-Цзе-линь",
         "address": "Приморский край, г. Владивосток, ул. Светланская, д. 23 (лит.2)",
         "image": [
           "/photo/287.webp",
@@ -8661,7 +8661,7 @@
         "Text": "287",
         "id": 258,
         "number": "287",
-        "description": "25:28:020022:65 Доходный дом Тау-Цзе-линь",
+        "description": "Доходный дом Тау-Цзе-линь",
         "address": "Приморский край, г. Владивосток, ул. Светланская, д. 23 (лит.2)",
         "image": [
           "/photo/287.webp",
@@ -11022,7 +11022,7 @@
         "fid": 171,
         "Layer": "LINES",
         "Text": "164",
-        "id": 135,
+        "id": 999,
         "number": "164",
         "description": "Здание Морвокзала Владивостокского торгового порта, постройки 1964 г., архитектор М. Бронников",
         "address": "Приморский край, г. Владивосток, ул. Нижнепортовая, 1",
@@ -16223,6 +16223,61 @@
     {
       "type": "Feature",
       "properties": {
+        "fid": 245,
+        "Layer": "LINES",
+        "Text": "143",
+        "id": 114,
+        "number": "143",
+        "description": "Мемориальный корабль - подводная лодка С-56",
+        "address": "Приморский край, г. Владивосток, Корабельная набережная, 36-й причал",
+        "image": [
+          "/photo/143.webp"
+        ]
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": []
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 246,
+        "Layer": "LINES",
+        "Text": null
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": []
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 247,
+        "Layer": "LINES",
+        "Text": null
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": []
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 248,
+        "Layer": "LINES",
+        "Text": null
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": []
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "fid": 249,
         "Layer": "LINES",
         "Text": null
@@ -19095,14 +19150,7 @@
       "properties": {
         "fid": 283,
         "Layer": "LINES",
-        "Text": "63",
-        "id": 63,
-        "number": "63",
-        "description": "Ансамбль многоэтажных жилых домов - памятник советской архитектуры 30-х годов",
-        "address": "Приморский край, г. Владивосток, ул. Алеутская, д. 17, 19",
-        "image": [
-          "/photo/63.webp"
-        ]
+        "Text": null
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -35546,6 +35594,181 @@
     {
       "type": "Feature",
       "properties": {
+        "fid": 581,
+        "Layer": "LINES",
+        "Text": "455",
+        "id": 417,
+        "number": "455",
+        "description": "Здание военного ведомства",
+        "address": "Приморский край, г. Владивосток, ул. Морозова, 5",
+        "image": [
+          "/photo/455.webp"
+        ]
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": []
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 582,
+        "Layer": "LINES",
+        "Text": null
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": []
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 583,
+        "Layer": "LINES",
+        "Text": null
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": []
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 584,
+        "Layer": "LINES",
+        "Text": null
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": []
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 585,
+        "Layer": "LINES",
+        "Text": null
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": []
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 586,
+        "Layer": "LINES",
+        "Text": null
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": []
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 587,
+        "Layer": "LINES",
+        "Text": null
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": []
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 588,
+        "Layer": "LINES",
+        "Text": null
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": []
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 589,
+        "Layer": "LINES",
+        "Text": null
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": []
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 590,
+        "Layer": "LINES",
+        "Text": null
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": []
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 591,
+        "Layer": "LINES",
+        "Text": null
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": []
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 592,
+        "Layer": "LINES",
+        "Text": null
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": []
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 593,
+        "Layer": "LINES",
+        "Text": null
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": []
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 594,
+        "Layer": "LINES",
+        "Text": null
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": []
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "fid": 595,
         "Layer": "LINES",
         "Text": "454",
@@ -36241,50 +36464,6 @@
               [
                 131.8992917993697,
                 43.11596301934961
-              ]
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "fid": 5546,
-        "Layer": "LINES",
-        "Text": "143",
-        "id": 114,
-        "number": "143",
-        "description": "Мемориальный корабль - подводная лодка С-56",
-        "address": "Приморский край, г. Владивосток, Корабельная набережная, 36-й причал",
-        "image": [
-          "/photo/143.webp"
-        ]
-      },
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
-          [
-            [
-              [
-                131.89161195055374,
-                43.113278231446536
-              ],
-              [
-                131.89162166058728,
-                43.113296958953015
-              ],
-              [
-                131.8908701443049,
-                43.113506620719946
-              ],
-              [
-                131.89086274134615,
-                43.113487637423866
-              ],
-              [
-                131.89161195055374,
-                43.113278231446536
               ]
             ]
           ]
