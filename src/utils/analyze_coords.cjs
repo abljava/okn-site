@@ -2,7 +2,7 @@ const fs = require('fs');
 
 // Пути к файлам
 const jsonPath = 'src/data/objectsData.json';
-const geojsonPath = 'public/data/numbered/3_okn_regional.geojson';
+const geojsonPath = 'public/data/numbered/3_okn_regional_test.geojson';
 
 // Загрузка данных
 const objectsData = JSON.parse(fs.readFileSync(jsonPath));

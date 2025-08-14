@@ -22,16 +22,16 @@ export default function ObjectInfoModal({ feature, onClose }) {
       <div
         style={{
           position: "absolute",
-          top: "30%",
+          top: "50%",
           left: "50%",
           transform: "translate(-50%, -50%)",
           background: "#fff",
-          borderRadius: 12,
+          // borderRadius: 12,
           padding: 32,
           minWidth: 320,
           maxWidth: 480,
           boxShadow: "0 8px 32px rgba(0,0,0,0.2)",
-          maxHeight: "80vh",
+          maxHeight: "70vh",
           overflowY: "auto",
         }}
         onClick={(e) => e.stopPropagation()}
@@ -42,16 +42,32 @@ export default function ObjectInfoModal({ feature, onClose }) {
             position: "absolute",
             top: 12,
             right: 12,
-            background: "#e5e5e5",
             border: "none",
             borderRadius: 6,
-            padding: "4px 12px",
             cursor: "pointer",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            width: "32px",
+            height: "32px",
+            transition: "background-color 0.2s ease",
           }}
         >
-          ×
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
         </button>
-        <div className="flex gap-5">
+        {/* <div className="flex gap-5">
           {id !== undefined && (
             <div style={{ color: "#888", fontSize: 14, marginBottom: 8 }}>
               id: {id}
@@ -62,7 +78,7 @@ export default function ObjectInfoModal({ feature, onClose }) {
               number: {number}
             </div>
           )}
-        </div>
+        </div> */}
 
         {/* Заголовок и описание */}
         {/* <h2 style={{ marginTop: 0 }}>{name}</h2> */}
@@ -99,7 +115,6 @@ export default function ObjectInfoModal({ feature, onClose }) {
               alt={description}
               style={{
                 maxWidth: "100%",
-                borderRadius: 8,
                 display: "block",
                 margin: "0 auto",
               }}
@@ -132,7 +147,7 @@ export default function ObjectInfoModal({ feature, onClose }) {
             <img
               src={Array.isArray(image) ? image[0] : image}
               alt={description}
-              style={{ maxWidth: "100%", borderRadius: 8, marginTop: 16 }}
+              style={{ maxWidth: "100%", marginTop: 16 }}
             />
           )
         )}

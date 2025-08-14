@@ -187,5 +187,19 @@ input[type="checkbox"].custom-checkbox:checked::after {
   font-weight: bold !important;
 }
 
+/* Убираем стандартную рамку выделения Leaflet */
+.leaflet-interactive {
+  cursor: pointer !important;
+}
 
+/* Убираем стандартную черную рамку при клике */
+.leaflet-interactive:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
 
+/* Убираем стандартную рамку выделения */
+.leaflet-interactive:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
