@@ -2,7 +2,7 @@ import React from "react";
 
 export default function ObjectInfoModal({ feature, onClose }) {
   if (!feature) return null;
-  const { id, number, fid, name, description, image } =
+  const { id, number, fid, name, description, address, image } =
     feature.properties || {};
   const [currentImgIdx, setCurrentImg] = React.useState(0);
 
@@ -65,7 +65,7 @@ export default function ObjectInfoModal({ feature, onClose }) {
         </div>
 
         {/* Заголовок и описание */}
-        <h2 style={{ marginTop: 0 }}>{name}</h2>
+        {/* <h2 style={{ marginTop: 0 }}>{name}</h2> */}
         <p>{description}</p>
         
         {/* Слайдер изображений */}
@@ -96,7 +96,7 @@ export default function ObjectInfoModal({ feature, onClose }) {
             </button>
             <img
               src={image[currentImgIdx]}
-              alt={name}
+              alt={description}
               style={{
                 maxWidth: "100%",
                 borderRadius: 8,
@@ -131,7 +131,7 @@ export default function ObjectInfoModal({ feature, onClose }) {
           image && (
             <img
               src={Array.isArray(image) ? image[0] : image}
-              alt={name}
+              alt={description}
               style={{ maxWidth: "100%", borderRadius: 8, marginTop: 16 }}
             />
           )
