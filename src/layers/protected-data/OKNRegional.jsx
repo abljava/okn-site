@@ -65,7 +65,6 @@ export default function ViewOKNRegional({ onFeatureClick, layerColor="#f85e5b" }
     
     layer.on({
       click: () => {
-        console.log('Клик по объекту:', feature.properties);
         if (onFeatureClick) onFeatureClick(feature);
       },
     });

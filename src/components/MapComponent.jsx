@@ -39,10 +39,8 @@ function MapComponent() {
           .split("\n")
           .map((line) => line.trim())
           .filter((line) => line && /[0-9]+'/.test(line));
-        // console.log("Строки из файла:", lines);
         const points = lines.map((line) => dmsToDecimal(line)).filter(Boolean);
         setPolygonCoords(points);
-        // console.log("Загруженные координаты:", points);
       });
   }, []);
 

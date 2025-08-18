@@ -13,7 +13,6 @@ export default function Layer3({ onFeatureClick, layerColor = "#000" }) {
     fetch("/test-data/dev-regulations/p3_l.geojson")
       .then((res) => res.json())
       .then((data) => {
-        console.log("Линии загружены:", data);
         setGeojsonData(data);
         // Генерируем буфер вокруг линий (например, 2 метра)
         const bufferFeatures = data.features
@@ -33,8 +32,6 @@ export default function Layer3({ onFeatureClick, layerColor = "#000" }) {
     fetch("/test-data/dev-regulations/p3_p.geojson")
       .then((res) => res.json())
       .then((data) => {
-        console.log("Точки загружены:", data);
-        console.log("Количество точек:", data.features.length);
         setPointsData(data);
       })
       .catch((error) => {

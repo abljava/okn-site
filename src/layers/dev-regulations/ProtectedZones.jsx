@@ -15,7 +15,6 @@ export default function ProtectedZones({
     fetch("/test-data/dev-regulations/protected_zones.geojson")
       .then((res) => res.json())
       .then((data) => {
-        console.log("Линии загружены:", data);
         setGeojsonData(data);
         // Генерируем буфер вокруг линий (например, 2 метра)
         const bufferFeatures = data.features

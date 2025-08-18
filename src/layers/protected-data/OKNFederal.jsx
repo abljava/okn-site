@@ -10,14 +10,12 @@ export default function ViewOKNFederal({ onFeatureClick, layerColor="#ea66c9"}) 
     fetch("/data/numbered/2_okn_federal.geojson")
       .then((res) => res.json())
       .then((data) => {
-        console.log('Загружено объектов:', data.features.length);
         setGeojsonData(data);
         
         // Подсчитываем объекты с номерами
         const objectsWithNumbers = data.features.filter(f => 
           f.properties?.Text || f.properties?.number
         ).length;
-        console.log('Объектов с номерами:', objectsWithNumbers);
         
         // Генерируем буфер только для объектов с корректными координатами и номерами
         const bufferFeatures = data.features
@@ -66,7 +64,6 @@ export default function ViewOKNFederal({ onFeatureClick, layerColor="#ea66c9"}) 
     
     layer.on({
       click: () => {
-        console.log('Клик по объекту:', feature.properties);
         if (onFeatureClick) onFeatureClick(feature);
       },
     });
