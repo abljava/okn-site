@@ -102,11 +102,11 @@ function ProtectedObjects() {
             />
             <CityLanscape
               layerName="Ценный городской ландшафт"
-              layerColor="#80d4a2"
+              layerColor="#1aad56"
             />
             <NatureLandscape
               layerName="Природный ландшафт"
-              layerColor="#cbe8bc"
+              layerColor="#46c904"
             />
             <ViewSightsTracks
               layerName="Трассы видовых раскрытий"
