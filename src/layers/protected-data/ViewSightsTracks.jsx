@@ -2,12 +2,12 @@ import { useEffect, useState } from "react";
 import { GeoJSON } from "react-leaflet";
 import * as turf from "@turf/turf";
 
-export default function ViewBordersApproved({ onFeatureClick }) {
+export default function ViewSightsTracks({ onFeatureClick, layerColor="#dd3700" }) {
   const [geojsonData, setGeojsonData] = useState(null);
   const [bufferData, setBufferData] = useState(null);
 
   useEffect(() => {
-    fetch("/data/6_borders_approved.geojson")
+    fetch("/data/12_viewsights_tracks.geojson")
       .then(res => res.json())
       .then(data => {
         setGeojsonData(data);
@@ -54,12 +54,11 @@ export default function ViewBordersApproved({ onFeatureClick }) {
         data={geojsonData}
         // onEachFeature={onEachFeature}
         style={() => ({
-          color: "#ff0000",
+          color: layerColor,
           weight: 2,
-          fillColor: "#ff0000",
+          fillColor: layerColor,
           fillOpacity: 0.8,
           opacity: 1,
-          dashArray: "5, 5"
         })}
       />
     </>

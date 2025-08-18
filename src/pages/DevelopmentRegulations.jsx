@@ -4,16 +4,26 @@ import BgOverlay from "../components/BgOverlay";
 import MapComponent from "../components/MapComponent";
 import MapWithObjects from "../components/MapWithObjects";
 import FullscreenMapPortal from "../components/FullscreenMapPortal";
-import OKNBorders from "../layers/OKNBorders";
-import OKNHistorical from "../layers/OKNHistorical";
-import OKNSoviet from "../layers/OKNSoviet";
-import BordersDeveloped from "../layers/BordersDeveloped";
-import BordersApproved from "../layers/BordersApproved";
-import OKNRegional from "../layers/OKNRegional";
-import OKNFederal from "../layers/OKNFederal";
-import OKNIdentified from "../layers/OKNIdentified";
-import BordersSites from "../layers/BordersSites";
-import TestLayer from "../layers/TestLayer";
+import OKNBorders from "../layers/protected-data/OKNBorders";
+import OKNHistorical from "../layers/protected-data/OKNHistorical";
+import OKNSoviet from "../layers/protected-data/OKNSoviet";
+import BordersDeveloped from "../layers/protected-data/BordersDeveloped";
+import BordersApproved from "../layers/protected-data/BordersApproved";
+import OKNRegional from "../layers/protected-data/OKNRegional";
+import OKNFederal from "../layers/protected-data/OKNFederal";
+import OKNIdentified from "../layers/protected-data/OKNIdentified";
+import BordersSites from "../layers/protected-data/BordersSites";
+import Layer1 from "../layers/dev-regulations/Layer1";
+import Layer2 from "../layers/dev-regulations/Layer2";
+import Layer3 from "../layers/dev-regulations/Layer3";
+import Layer4 from "../layers/dev-regulations/Layer4";
+import LandscapeZones from "../layers/dev-regulations/LandscapeZones";
+import ProtectedZones from "../layers/dev-regulations/ProtectedZones";
+import DevelopmentZones from "../layers/dev-regulations/DevelopmentZones";
+import LayerRCI from "../layers/dev-regulations/LayerRCI";
+import LayerRIP from "../layers/dev-regulations/LayerRIP";
+import LayerRGL from "../layers/dev-regulations/LayerRGL";
+import LayerRT from "../layers/dev-regulations/LayerRT";
 
 function DevelopmentRegulations() {
   return (
@@ -61,43 +71,35 @@ function DevelopmentRegulations() {
         // onClick={() => setIsFullscreen(true)}
       >
         <MapWithObjects>
-          {/* <OKNBorders layerName="Границы достопримечательного места" />
-          <OKNFederal
-            layerName="Объекты культурного наследия федерального значения"
-            layerColor="#ea66c9"
+          <Layer1 layerName="Слой 1" layerColor="#ffbf00" />
+          <Layer2 layerName="Слой 2" layerColor="#00bfff" />
+          <Layer3 layerName="Слой 3" layerColor="#007ca5" />
+          <Layer4 layerName="Слой 4" layerColor="#7f00ff" />
+          <LandscapeZones
+            layerName="Зоны охраняемого природного ландшафта"
+            layerColor="#3f7f4f"
           />
-          <OKNRegional
-            layerName="Объекты культурного наследия регионального значения"
-            layerColor="#f85e5b"
+          <ProtectedZones layerName="Охранные зоны" layerColor="#000" />
+          <DevelopmentZones
+            layerName="Зоны регулирования застройки"
+            layerColor="#a5a500"
           />
-          <OKNIdentified
-            layerName="Выявленные объекты культурного наследия"
-            layerColor="#ffb266"
+          <LayerRCI
+            layerName="Слой РЦИ"
+            layerColor="#ff7f00"
           />
-          <BordersSites
-            layerName="Границы земельных участков"
-            layerColor="#2776bb "
+          <LayerRIP
+            layerName="Слой РЦИ"
+            layerColor="#a57c00"
           />
-          <BordersApproved
-            layerName="Утвержденные границы ОКН"
-            layerColor="#ff0000"
+          <LayerRGL
+            layerName="Слой РГЛ"
+            layerColor="#3f7f00"
           />
-          <BordersDeveloped
-            layerName="Разработанные границы ОКН"
-            layerColor="#0000ff"
+          <LayerRT
+            layerName="Слой РГЛ"
+            layerColor="#7f7f7f"
           />
-          <OKNHistorical
-            layerName="Ценная историческая застройка конца XIX - начала XX вв."
-            layerColor="#a866ea"
-          />
-          <OKNSoviet
-            layerName="Ценная историческая застройка 1930-1960 гг."
-            layerColor="#75eb73"
-          /> */}
-            <TestLayer
-              layerName="TestLayer"
-              layerColor="#000"
-            />
         </MapWithObjects>
       </div>
     </main>

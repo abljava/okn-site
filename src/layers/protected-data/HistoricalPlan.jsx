@@ -2,12 +2,12 @@ import { useEffect, useState } from "react";
 import { GeoJSON } from "react-leaflet";
 import * as turf from "@turf/turf";
 
-export default function ViewCityLanscape({ onFeatureClick }) {
+export default function HistoricalPlan({ onFeatureClick, layerColor="#7f8f97" }) {
   const [geojsonData, setGeojsonData] = useState(null);
   const [bufferData, setBufferData] = useState(null);
 
   useEffect(() => {
-    fetch("/data/10_valued_city_landscape.geojson")
+    fetch("/data/15_historical_plan.geojson")
       .then((res) => res.json())
       .then((data) => {
         setGeojsonData(data);
@@ -57,10 +57,10 @@ export default function ViewCityLanscape({ onFeatureClick }) {
         data={geojsonData}
         // onEachFeature={onEachFeature}
         style={() => ({
-          color: "#658256",
-          weight: 1,
-          fillColor: "#80d4a2",
-          fillOpacity: 0.6,
+          color: layerColor,
+          weight: 10,
+          fillColor: layerColor,
+          fillOpacity: 0.8,
           opacity: 1,
         })}
       />

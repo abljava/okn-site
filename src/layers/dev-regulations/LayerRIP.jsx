@@ -3,14 +3,13 @@ import { GeoJSON } from "react-leaflet";
 import * as turf from "@turf/turf";
 import L from "leaflet";
 
-export default function TestLayer({ onFeatureClick }) {
+export default function LayerRIP({ onFeatureClick, layerColor = "#000" }) {
   const [geojsonData, setGeojsonData] = useState(null);
   const [bufferData, setBufferData] = useState(null);
-  const [pointsData, setPointsData] = useState(null);
 
   useEffect(() => {
     // Загружаем данные линий
-    fetch("/test-data/dev-regulations/p1_l.geojson")
+    fetch("/test-data/dev-regulations/rip.geojson")
       .then((res) => res.json())
       .then((data) => {
         console.log("Линии загружены:", data);
@@ -27,18 +26,6 @@ export default function TestLayer({ onFeatureClick }) {
       })
       .catch((error) => {
         console.error("Ошибка загрузки линий:", error);
-      });
-
-    // Загружаем данные точек
-    fetch("/test-data/dev-regulations/p1_p.geojson")
-      .then((res) => res.json())
-      .then((data) => {
-        console.log("Точки загружены:", data);
-        console.log("Количество точек:", data.features.length);
-        setPointsData(data);
-      })
-      .catch((error) => {
-        console.error("Ошибка загрузки точек:", error);
       });
   }, []);
 
@@ -85,50 +72,21 @@ export default function TestLayer({ onFeatureClick }) {
           })}
         />
       )}
-      
+
       {/* Отрисовка линий */}
       {geojsonData && (
         <GeoJSON
           data={geojsonData}
           onEachFeature={onEachFeature}
           style={() => ({
-            color: "#000",
-            weight: 1,
-            fillColor: "#000",
+            color: layerColor,
+            weight: 2,
+            fillColor: layerColor,
             fillOpacity: 0.8,
             opacity: 1,
           })}
         />
       )}
-
-      {/* Отрисовка точек */}
-      {pointsData && (
-        <>
-          {console.log("Рендерим точки:", pointsData)}
-          <GeoJSON
-            data={pointsData}
-            onEachFeature={onEachPointFeature}
-            pointToLayer={(feature, latlng) => {
-              console.log("Создаем точку:", feature, latlng);
-              return L.circleMarker(latlng, {
-                radius: 3,
-                fillColor: "",
-                color: "#000",
-                weight: 1,
-                opacity: 1,
-                fillOpacity: 0.9,
-              });
-            }}
-          />
-        </>
-      )}
-      
-      {/* Отладочная информация */}
-      <div style={{ position: 'absolute', top: '10px', left: '10px', background: 'white', padding: '10px', zIndex: 1000 }}>
-        <div>Линии: {geojsonData ? geojsonData.features.length : 0}</div>
-        <div>Точки: {pointsData ? pointsData.features.length : 0}</div>
-        <div>Буфер: {bufferData ? bufferData.features.length : 0}</div>
-      </div>
     </>
   );
 }

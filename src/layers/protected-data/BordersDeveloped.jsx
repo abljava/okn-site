@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { GeoJSON } from "react-leaflet";
 import * as turf from "@turf/turf";
 
-export default function ViewBordersDeveloped({ onFeatureClick }) {
+export default function ViewBordersDeveloped({ onFeatureClick, layerColor="#0000ff" }) {
   const [geojsonData, setGeojsonData] = useState(null);
   const [bufferData, setBufferData] = useState(null);
 
@@ -54,9 +54,9 @@ export default function ViewBordersDeveloped({ onFeatureClick }) {
         data={geojsonData}
         // onEachFeature={onEachFeature}
         style={() => ({
-          color: "#0000ff",
+          color: layerColor,
           weight: 2,
-          fillColor: "#0000ff",
+          fillColor: layerColor,
           fillOpacity: 0.8,
           opacity: 1,
           dashArray: "5, 5"

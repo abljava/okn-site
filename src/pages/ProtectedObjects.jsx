@@ -4,19 +4,19 @@ import BgOverlay from "../components/BgOverlay";
 import MapComponent from "../components/MapComponent";
 import MapWithObjects from "../components/MapWithObjects";
 import FullscreenMapPortal from "../components/FullscreenMapPortal";
-import OKNBorders from "../layers/OKNBorders";
-import OKNHistorical from "../layers/OKNHistorical";
-import OKNSoviet from "../layers/OKNSoviet";
-import BordersDeveloped from "../layers/BordersDeveloped";
-import BordersApproved from "../layers/BordersApproved";
-import OKNRegional from "../layers/OKNRegional";
-import OKNFederal from "../layers/OKNFederal";
-import OKNIdentified from "../layers/OKNIdentified";
-import CityLanscape from "../layers/CityLanscape";
-import NatureLandscape from "../layers/NatureLandscape";
-import ViewSightsTracks from "../layers/ViewSightsTracks";
-import BordersSites from "../layers/BordersSites";
-import HistoricalPlan from "../layers/HistoricalPlan";
+import OKNBorders from "../layers/protected-data/OKNBorders";
+import OKNHistorical from "../layers/protected-data/OKNHistorical";
+import OKNSoviet from "../layers/protected-data/OKNSoviet";
+import BordersDeveloped from "../layers/protected-data/BordersDeveloped";
+import BordersApproved from "../layers/protected-data/BordersApproved";
+import OKNRegional from "../layers/protected-data/OKNRegional";
+import OKNFederal from "../layers/protected-data/OKNFederal";
+import OKNIdentified from "../layers/protected-data/OKNIdentified";
+import CityLanscape from "../layers/protected-data/CityLanscape";
+import NatureLandscape from "../layers/protected-data/NatureLandscape";
+import ViewSightsTracks from "../layers/protected-data/ViewSightsTracks";
+import BordersSites from "../layers/protected-data/BordersSites";
+import HistoricalPlan from "../layers/protected-data/HistoricalPlan";
 
 function ProtectedObjects() {
   const [isFullscreen, setIsFullscreen] = useState(false);
@@ -67,7 +67,7 @@ function ProtectedObjects() {
           // onClick={() => setIsFullscreen(true)}
         >
           <MapWithObjects>
-            <OKNBorders layerName="Границы достопримечательного места" />
+            <OKNBorders layerName="Границы достопримечательного места" layerColor="#000" />
             <OKNFederal
               layerName="Объекты культурного наследия федерального значения"
               layerColor="#ea66c9"
@@ -82,7 +82,7 @@ function ProtectedObjects() {
             />
             <BordersSites
               layerName="Границы земельных участков"
-              layerColor="#2776bb "
+              layerColor="#2776bb"
             />
             <BordersApproved
               layerName="Утвержденные границы ОКН"
@@ -110,7 +110,7 @@ function ProtectedObjects() {
             />
             <ViewSightsTracks
               layerName="Трассы видовых раскрытий"
-              layerColor="#dd3700 "
+              layerColor="#dd3700"
             />
             <HistoricalPlan
               layerName="Историческая планировочная структура"

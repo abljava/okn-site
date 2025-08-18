@@ -2,22 +2,20 @@ import { useEffect, useState } from "react";
 import { GeoJSON } from "react-leaflet";
 import * as turf from "@turf/turf";
 
-export default function ViewOKNFederal({ onFeatureClick }) {
+export default function ViewOKNRegional({ onFeatureClick, layerColor="#f85e5b" }) {
   const [geojsonData, setGeojsonData] = useState(null);
   const [bufferData, setBufferData] = useState(null);
 
   useEffect(() => {
-    fetch("/data/numbered/2_okn_federal.geojson")
+    fetch("/data/numbered/3_okn_regional.geojson")
       .then((res) => res.json())
       .then((data) => {
-        console.log('Загружено объектов:', data.features.length);
         setGeojsonData(data);
         
         // Подсчитываем объекты с номерами
         const objectsWithNumbers = data.features.filter(f => 
           f.properties?.Text || f.properties?.number
         ).length;
-        console.log('Объектов с номерами:', objectsWithNumbers);
         
         // Генерируем буфер только для объектов с корректными координатами и номерами
         const bufferFeatures = data.features
@@ -55,7 +53,6 @@ export default function ViewOKNFederal({ onFeatureClick }) {
             }
           })
           .filter(Boolean); // Убираем null значения
-        console.log('Создано буферов:', bufferFeatures.length);
         setBufferData({ type: "FeatureCollection", features: bufferFeatures });
       });
   }, []);
@@ -107,7 +104,7 @@ export default function ViewOKNFederal({ onFeatureClick }) {
         style={() => ({
           color: "#000",
           weight: 1,
-          fillColor: "#ea66c9",
+          fillColor: layerColor,
           fillOpacity: 0.8,
           opacity: 1,
         })}
