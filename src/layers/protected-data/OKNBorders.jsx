@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 import { GeoJSON } from "react-leaflet";
-import { useLazyLayer } from "../hooks/useLazyLayer";
+import { useLazyLayer } from "../../hooks/useLazyLayer";
 
-export default function ViewOKNBorders({ onFeatureClick, isVisible = true }) {
+export default function ViewOKNBorders({ onFeatureClick, isVisible = true, layerColor = "#000" }) {
   const { data: geojsonData, loading, error, setVisible } = useLazyLayer("/data/1_borders.geojson", {
     priority: 'high',
     preload: true
@@ -29,9 +29,9 @@ export default function ViewOKNBorders({ onFeatureClick, isVisible = true }) {
       data={geojsonData}
       // onEachFeature={onEachFeature}
       style={() => ({
-        color: "#000",
+        color: layerColor,
         weight: 3,
-        fillColor: "#bc6c6e",
+        fillColor: layerColor,
         fillOpacity: 0.8,
         opacity: 1,
         dashArray: "10, 10"

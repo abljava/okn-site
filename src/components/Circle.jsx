@@ -1,8 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
+import authorsInfo from "../utils/authorsInfo";
 
 function Circle() {
-  const outerPhotos = Array(6).fill({}); // внешний круг — 6 фото
-  const innerPhotos = Array(7).fill({}); // внутренний круг — 7 фото
+  const outerPhotos = authorsInfo.slice(0, 6); // внешний круг — первые 6 авторов
+  const innerPhotos = authorsInfo.slice(6, 13); // внутренний круг — оставшиеся 7 авторов
 
   const containerRef = useRef(null); // Ссылка на контейнер
   const baseSize = 335; // Базовый размер, для которого рассчитаны радиусы и позиции
@@ -165,13 +166,13 @@ function Circle() {
             }}
           >
             <img
-              src="/images/authors.png"
-              alt="photo"
+              src={outerPhotos[idx].photo}
+              alt={outerPhotos[idx].name}
               className="absolute inset-0 w-full h-full rounded-full"
             />
             <div className="absolute inset-0 rounded-full bg-blueGray opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-center text-[10px] md:text-sm xl:text-2xl w-full">
-                Имя Сотрудника
+                {outerPhotos[idx].name}
               </p>
             </div>
           </div>
@@ -194,15 +195,15 @@ function Circle() {
             }}
           >
             <img
-              src="/images/authors.png"
-              alt="photo"
+              src={innerPhotos[idx].photo}
+              alt={innerPhotos[idx].name}
               className="absolute inset-0 w-full h-full rounded-full"
             />
             <div className="absolute inset-0 rounded-full bg-blueGray opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-center text-[8px] md:text-xs xl:text-lg w-full">
-                Имя Сотрудника
+                {innerPhotos[idx].name}
               </p>
-            </div>{" "}
+            </div>
           </div>
         );
       })}

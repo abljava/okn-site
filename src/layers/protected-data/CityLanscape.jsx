@@ -2,19 +2,19 @@ import { useEffect, useState } from "react";
 import { GeoJSON } from "react-leaflet";
 import * as turf from "@turf/turf";
 
-export default function ViewBordersDeveloped({ onFeatureClick }) {
+export default function ViewCityLanscape({ onFeatureClick, layerColor="#80d4a2" }) {
   const [geojsonData, setGeojsonData] = useState(null);
   const [bufferData, setBufferData] = useState(null);
 
   useEffect(() => {
-    fetch("/data/7_borders_developed.geojson")
-      .then(res => res.json())
-      .then(data => {
+    fetch("/data/10_valued_city_landscape.geojson")
+      .then((res) => res.json())
+      .then((data) => {
         setGeojsonData(data);
         // Генерируем буфер вокруг линий (например, 2 метра)
         const bufferFeatures = data.features
-          .filter(f => f.geometry && f.geometry.type === "LineString")
-          .map(f => {
+          .filter((f) => f.geometry && f.geometry.type === "LineString")
+          .map((f) => {
             const buf = turf.buffer(f, 3, { units: "meters" });
             buf.properties = { ...f.properties };
             return buf;
@@ -27,10 +27,13 @@ export default function ViewBordersDeveloped({ onFeatureClick }) {
     layer.on({
       click: () => {
         if (onFeatureClick) onFeatureClick(feature);
-      }
+      },
     });
     if (feature.properties && feature.properties.plaintext_2) {
-      layer.bindTooltip(`№ ${feature.properties.plaintext_2}`, {permanent: false, direction: 'top'});
+      layer.bindTooltip(`№ ${feature.properties.plaintext_2}`, {
+        permanent: false,
+        direction: "top",
+      });
     }
   }
 
@@ -45,7 +48,7 @@ export default function ViewBordersDeveloped({ onFeatureClick }) {
             color: "transparent",
             fillColor: "transparent",
             fillOpacity: 0,
-            weight: 0
+            weight: 0,
           })}
         />
       )}
@@ -54,14 +57,13 @@ export default function ViewBordersDeveloped({ onFeatureClick }) {
         data={geojsonData}
         // onEachFeature={onEachFeature}
         style={() => ({
-          color: "#0000ff",
-          weight: 2,
-          fillColor: "#0000ff",
-          fillOpacity: 0.8,
+          color: "#658256",
+          weight: 1,
+          fillColor: layerColor,
+          fillOpacity: 0.6,
           opacity: 1,
-          dashArray: "5, 5"
         })}
       />
     </>
   ) : null;
-} 
+}

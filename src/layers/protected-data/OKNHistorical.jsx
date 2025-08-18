@@ -2,19 +2,19 @@ import { useEffect, useState } from "react";
 import { GeoJSON } from "react-leaflet";
 import * as turf from "@turf/turf";
 
-export default function BordersSites({ onFeatureClick }) {
+export default function ViewOKNHistorical({ onFeatureClick, layerColor="#a866ea" }) {
   const [geojsonData, setGeojsonData] = useState(null);
   const [bufferData, setBufferData] = useState(null);
 
   useEffect(() => {
-    fetch("/data/13_borders_sites.geojson")
-      .then(res => res.json())
-      .then(data => {
+    fetch("/data/8_valued_development_XIX_XX.geojson")
+      .then((res) => res.json())
+      .then((data) => {
         setGeojsonData(data);
         // Генерируем буфер вокруг линий (например, 2 метра)
         const bufferFeatures = data.features
-          .filter(f => f.geometry && f.geometry.type === "LineString")
-          .map(f => {
+          .filter((f) => f.geometry && f.geometry.type === "LineString")
+          .map((f) => {
             const buf = turf.buffer(f, 3, { units: "meters" });
             buf.properties = { ...f.properties };
             return buf;
@@ -27,10 +27,13 @@ export default function BordersSites({ onFeatureClick }) {
     layer.on({
       click: () => {
         if (onFeatureClick) onFeatureClick(feature);
-      }
+      },
     });
     if (feature.properties && feature.properties.plaintext_2) {
-      layer.bindTooltip(`№ ${feature.properties.plaintext_2}`, {permanent: false, direction: 'top'});
+      layer.bindTooltip(`№ ${feature.properties.plaintext_2}`, {
+        permanent: false,
+        direction: "top",
+      });
     }
   }
 
@@ -45,7 +48,7 @@ export default function BordersSites({ onFeatureClick }) {
             color: "transparent",
             fillColor: "transparent",
             fillOpacity: 0,
-            weight: 0
+            weight: 0,
           })}
         />
       )}
@@ -54,13 +57,13 @@ export default function BordersSites({ onFeatureClick }) {
         data={geojsonData}
         // onEachFeature={onEachFeature}
         style={() => ({
-          color: "#2776bb",
+          color: "#000",
           weight: 1,
-          fillColor: "#2776bb",
+          fillColor: layerColor,
           fillOpacity: 0.8,
           opacity: 1,
         })}
       />
     </>
   ) : null;
-} 
+}

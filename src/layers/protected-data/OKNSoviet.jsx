@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { GeoJSON } from "react-leaflet";
 import * as turf from "@turf/turf";
 
-export default function ViewOKNSoviet({ onFeatureClick }) {
+export default function ViewOKNSoviet({ onFeatureClick, layerColor="#75eb73" }) {
   const [geojsonData, setGeojsonData] = useState(null);
   const [bufferData, setBufferData] = useState(null);
 
@@ -59,7 +59,7 @@ export default function ViewOKNSoviet({ onFeatureClick }) {
         style={() => ({
           color: "#000",
           weight: 1,
-          fillColor: "#75eb73",
+          fillColor: layerColor,
           fillOpacity: 0.8,
           opacity: 1,
         })}

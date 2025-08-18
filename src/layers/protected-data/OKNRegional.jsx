@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { GeoJSON } from "react-leaflet";
 import * as turf from "@turf/turf";
 
-export default function ViewOKNRegional({ onFeatureClick }) {
+export default function ViewOKNRegional({ onFeatureClick, layerColor="#f85e5b" }) {
   const [geojsonData, setGeojsonData] = useState(null);
   const [bufferData, setBufferData] = useState(null);
 
@@ -10,14 +10,12 @@ export default function ViewOKNRegional({ onFeatureClick }) {
     fetch("/data/numbered/3_okn_regional.geojson")
       .then((res) => res.json())
       .then((data) => {
-        console.log('Загружено объектов:', data.features.length);
         setGeojsonData(data);
         
         // Подсчитываем объекты с номерами
         const objectsWithNumbers = data.features.filter(f => 
           f.properties?.Text || f.properties?.number
         ).length;
-        console.log('Объектов с номерами:', objectsWithNumbers);
         
         // Генерируем буфер только для объектов с корректными координатами и номерами
         const bufferFeatures = data.features
@@ -55,7 +53,6 @@ export default function ViewOKNRegional({ onFeatureClick }) {
             }
           })
           .filter(Boolean); // Убираем null значения
-        console.log('Создано буферов:', bufferFeatures.length);
         setBufferData({ type: "FeatureCollection", features: bufferFeatures });
       });
   }, []);
@@ -68,7 +65,6 @@ export default function ViewOKNRegional({ onFeatureClick }) {
     
     layer.on({
       click: () => {
-        console.log('Клик по объекту:', feature.properties);
         if (onFeatureClick) onFeatureClick(feature);
       },
     });
@@ -107,7 +103,7 @@ export default function ViewOKNRegional({ onFeatureClick }) {
         style={() => ({
           color: "#000",
           weight: 1,
-          fillColor: "#f85e5b",
+          fillColor: layerColor,
           fillOpacity: 0.8,
           opacity: 1,
         })}

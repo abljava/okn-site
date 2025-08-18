@@ -1,13 +1,15 @@
 import { useEffect, useState } from "react";
 import { GeoJSON } from "react-leaflet";
 import * as turf from "@turf/turf";
+import L from "leaflet";
 
-export default function ViewOKNIdentified({ onFeatureClick }) {
+export default function LayerRT({ onFeatureClick, layerColor = "#000" }) {
   const [geojsonData, setGeojsonData] = useState(null);
   const [bufferData, setBufferData] = useState(null);
 
   useEffect(() => {
-    fetch("/data/5_okn_identified.geojson")
+    // Загружаем данные линий
+    fetch("/test-data/dev-regulations/rt.geojson")
       .then((res) => res.json())
       .then((data) => {
         setGeojsonData(data);
@@ -20,6 +22,9 @@ export default function ViewOKNIdentified({ onFeatureClick }) {
             return buf;
           });
         setBufferData({ type: "FeatureCollection", features: bufferFeatures });
+      })
+      .catch((error) => {
+        console.error("Ошибка загрузки линий:", error);
       });
   }, []);
 
@@ -37,13 +42,27 @@ export default function ViewOKNIdentified({ onFeatureClick }) {
     }
   }
 
-  return geojsonData ? (
+  function onEachPointFeature(feature, layer) {
+    layer.on({
+      click: () => {
+        if (onFeatureClick) onFeatureClick(feature);
+      },
+    });
+    if (feature.properties && feature.properties.Text) {
+      layer.bindTooltip(feature.properties.Text, {
+        permanent: false,
+        direction: "top",
+      });
+    }
+  }
+
+  return (
     <>
-      {/* Невидимый буфер для клика */}
+      {/* Невидимый буфер для клика по линиям */}
       {bufferData && (
         <GeoJSON
           data={bufferData}
-          // onEachFeature={onEachFeature}
+          onEachFeature={onEachFeature}
           style={() => ({
             color: "transparent",
             fillColor: "transparent",
@@ -52,18 +71,21 @@ export default function ViewOKNIdentified({ onFeatureClick }) {
           })}
         />
       )}
-      {/* Отрисовка самих линий */}
-      <GeoJSON
-        data={geojsonData}
-        // onEachFeature={onEachFeature}
-        style={() => ({
-          color: "#000",
-          weight: 1,
-          fillColor: "#ffb266",
-          fillOpacity: 0.8,
-          opacity: 1,
-        })}
-      />
+
+      {/* Отрисовка линий */}
+      {geojsonData && (
+        <GeoJSON
+          data={geojsonData}
+          onEachFeature={onEachFeature}
+          style={() => ({
+            color: layerColor,
+            weight: 2,
+            fillColor: layerColor,
+            fillOpacity: 0.8,
+            opacity: 1,
+          })}
+        />
+      )}
     </>
-  ) : null;
+  );
 }
