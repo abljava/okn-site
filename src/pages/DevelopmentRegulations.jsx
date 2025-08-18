@@ -12,12 +12,8 @@ import BordersApproved from "../layers/BordersApproved";
 import OKNRegional from "../layers/OKNRegional";
 import OKNFederal from "../layers/OKNFederal";
 import OKNIdentified from "../layers/OKNIdentified";
-import CityLanscape from "../layers/CityLanscape";
-import NatureLandscape from "../layers/NatureLandscape";
-import ViewSightsTracks from "../layers/ViewSightsTracks";
 import BordersSites from "../layers/BordersSites";
-import HistoricalPlan from "../layers/HistoricalPlan";
-import VNumbers from "../layers/VNumbers";
+import TestLayer from "../layers/TestLayer";
 
 function DevelopmentRegulations() {
   return (
@@ -65,7 +61,7 @@ function DevelopmentRegulations() {
         // onClick={() => setIsFullscreen(true)}
       >
         <MapWithObjects>
-          <OKNBorders layerName="Границы достопримечательного места" />
+          {/* <OKNBorders layerName="Границы достопримечательного места" />
           <OKNFederal
             layerName="Объекты культурного наследия федерального значения"
             layerColor="#ea66c9"
@@ -97,11 +93,11 @@ function DevelopmentRegulations() {
           <OKNSoviet
             layerName="Ценная историческая застройка 1930-1960 гг."
             layerColor="#75eb73"
-          />
-          {/* <VNumbers
-              layerName="Объекты"
+          /> */}
+            <TestLayer
+              layerName="TestLayer"
               layerColor="#000"
-            /> */}
+            />
         </MapWithObjects>
       </div>
     </main>

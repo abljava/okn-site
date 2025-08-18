@@ -17,7 +17,6 @@ import NatureLandscape from "../layers/NatureLandscape";
 import ViewSightsTracks from "../layers/ViewSightsTracks";
 import BordersSites from "../layers/BordersSites";
 import HistoricalPlan from "../layers/HistoricalPlan";
-import VNumbers from "../layers/VNumbers";
 
 function ProtectedObjects() {
   const [isFullscreen, setIsFullscreen] = useState(false);
@@ -117,10 +116,6 @@ function ProtectedObjects() {
               layerName="Историческая планировочная структура"
               layerColor="#7f8f97"
             />
-            {/* <VNumbers
-              layerName="Объекты"
-              layerColor="#000"
-            /> */}
           </MapWithObjects>
         </div>
         {isFullscreen && (
