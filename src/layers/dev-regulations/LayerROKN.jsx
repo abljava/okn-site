@@ -3,14 +3,14 @@ import { GeoJSON } from "react-leaflet";
 import * as turf from "@turf/turf";
 import L from "leaflet";
 
-export default function LayerRCI({ onFeatureClick, layerColor = "#000" }) {
+export default function LayerROKN({ onFeatureClick, layerColor = "#000" }) {
   const [geojsonData, setGeojsonData] = useState(null);
   const [bufferData, setBufferData] = useState(null);
   const [pointsData, setPointsData] = useState(null);
 
   useEffect(() => {
     // Загружаем данные линий
-    fetch("/test-data/dev-regulations/rci.geojson")
+    fetch("/test-data/dev-regulations/rokn_polygon.geojson")
       .then((res) => res.json())
       .then((data) => {
         setGeojsonData(data);
@@ -28,7 +28,7 @@ export default function LayerRCI({ onFeatureClick, layerColor = "#000" }) {
         console.error("Ошибка загрузки линий:", error);
       });
     // Загружаем данные точек
-    fetch("/test-data/dev-regulations/rci_points.geojson")
+    fetch("/test-data/dev-regulations/rokn_point.geojson")
       .then((res) => res.json())
       .then((data) => {
         setPointsData(data);
