@@ -73,6 +73,42 @@ function DevelopmentRegulations() {
         // onClick={() => setIsFullscreen(true)}
       >
         <MapWithObjects>
+          <OKNBorders
+            layerName="Границы достопримечательного места"
+            layerColor="#000"
+          />
+          <OKNFederal
+            layerName="Объекты культурного наследия федерального значения"
+            layerColor="#ea66c9"
+          />
+          <OKNRegional
+            layerName="Объекты культурного наследия регионального значения"
+            layerColor="#f85e5b"
+          />
+          <OKNIdentified
+            layerName="Выявленные объекты культурного наследия"
+            layerColor="#ffb266"
+          />
+          <BordersSites
+            layerName="Границы земельных участков"
+            layerColor="#2776bb"
+          />
+          <BordersApproved
+            layerName="Утвержденные границы ОКН"
+            layerColor="#ff0000"
+          />
+          <BordersDeveloped
+            layerName="Разработанные границы ОКН"
+            layerColor="#0000ff"
+          />
+          <OKNHistorical
+            layerName="Ценная историческая застройка конца XIX - начала XX вв."
+            layerColor="#a866ea"
+          />
+          <OKNSoviet
+            layerName="Ценная историческая застройка 1930-1960 гг."
+            layerColor="#75eb73"
+          />
           <LandscapeZones
             layerName="Зоны охраняемого природного ландшафта"
             layerColor="#3f7f4f"
