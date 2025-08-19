@@ -84,8 +84,9 @@ export default function LandscapeZones({
             color: layerColor,
             weight: 2,
             fillColor: layerColor,
-            fillOpacity: 0.8,
+            fillOpacity: 0.3,
             opacity: 1,
+            // dashArray: "8, 8",
           })}
         />
       )}

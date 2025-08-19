@@ -24,6 +24,8 @@ import LayerRCI from "../layers/dev-regulations/LayerRCI";
 import LayerRIP from "../layers/dev-regulations/LayerRIP";
 import LayerRGL from "../layers/dev-regulations/LayerRGL";
 import LayerRT from "../layers/dev-regulations/LayerRT";
+import LayerROKN from "../layers/dev-regulations/LayerROKN";
+import LayerRPL from "../layers/dev-regulations/LayerRPL";
 
 function DevelopmentRegulations() {
   return (
@@ -71,10 +73,6 @@ function DevelopmentRegulations() {
         // onClick={() => setIsFullscreen(true)}
       >
         <MapWithObjects>
-          <Layer1 layerName="Слой 1" layerColor="#ffbf00" />
-          <Layer2 layerName="Слой 2" layerColor="#00bfff" />
-          <Layer3 layerName="Слой 3" layerColor="#007ca5" />
-          <Layer4 layerName="Слой 4" layerColor="#7f00ff" />
           <LandscapeZones
             layerName="Зоны охраняемого природного ландшафта"
             layerColor="#3f7f4f"
@@ -84,21 +82,46 @@ function DevelopmentRegulations() {
             layerName="Зоны регулирования застройки"
             layerColor="#a5a500"
           />
+          {/* <p>Границы регламентных участков, не предназначенныйх под застройку</p> */}
+          <LayerROKN
+            layerName="РОКН (Объекты культурного наследия) участки 1-74"
+            layerColor="#a50000"
+          />
           <LayerRCI
-            layerName="Слой РЦИ"
+            layerName="РЦИ (Ценная историческая застройка) участки 1-35"
             layerColor="#ff7f00"
           />
           <LayerRIP
-            layerName="Слой РЦИ"
+            layerName="РИП (Историческая планировочная структура) участки 1-32"
             layerColor="#a57c00"
           />
+          <LayerRPL
+            layerName="РПЛ (Природный ландшафт) участки 1-14"
+            layerColor="#3f7f00"
+          />
           <LayerRGL
-            layerName="Слой РГЛ"
+            layerName="РГЛ (Ценный городской ландшафт) участки 1-25"
             layerColor="#3f7f00"
           />
           <LayerRT
-            layerName="Слой РГЛ"
+            layerName="РТ (Современная планировочная структура) участки 1-7"
             layerColor="#7f7f7f"
+          />
+          <Layer1
+            layerName="Р-1 (Регулирования застройки) участки 1-56"
+            layerColor="#ffbf00"
+          />
+          <Layer2
+            layerName="Р-2 (Регулирования застройки) участки 1-56"
+            layerColor="#00bfff"
+          />
+          <Layer3
+            layerName="Р-3 (Регулирования застройки) участки 1-45"
+            layerColor="#007ca5"
+          />
+          <Layer4
+            layerName="Р-4 (Регулирования застройки) участки 1-18"
+            layerColor="#7f00ff"
           />
         </MapWithObjects>
       </div>
