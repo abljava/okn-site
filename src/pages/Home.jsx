@@ -14,7 +14,7 @@ function Home() {
         <div className="fixed inset-0 bg-black bg-opacity-50 pointer-events-none -z-5"></div>
 
         <section className="relative md:max-w-[1440px] mx-auto z-10 px-5 pt-10 md:pt-0 2xl:text-2xl">
-          <div className="flex flex-col md:grid md:grid-cols-[167px_1fr] 2xl:grid-cols-[370px_1fr] ">
+          <div className="flex flex-col md:grid md:grid-cols-[167px_1fr] xl:grid-cols-[250px_1fr] 2xl:grid-cols-[370px_1fr] ">
             <div className="hidden md:block"></div>
             {/* Заголовок и подзаголовок */}
             <div className="relative z-10 md:pr-44 md:border-l-2 md:border-white/40 md:pl-5 md:pt-10 2xl:pt-[100px] 2xl:pl-[100px]">
@@ -28,7 +28,7 @@ function Home() {
             </div>
           </div>
 
-          <section className="flex flex-col md:grid md:grid-cols-[167px_1fr_auto] 2xl:grid-cols-[370px_1fr_auto]">
+          <section className="flex flex-col md:grid md:grid-cols-[167px_1fr_auto] xl:grid-cols-[250px_1fr_auto] 2xl:grid-cols-[370px_1fr_auto]">
             <img
               src="/bgs/bg-01.png"
               className="absolute -z-10 pointer-events-none scale-[2.3] md:scale-[1] top-0 md:-top-10 lg:-top-56 left-1/2 right-1/2 -translate-x-1/2 w-screen max-w-none opacity-40"
@@ -82,7 +82,7 @@ function Home() {
               alt="background"
             />
 
-            <div className="relative pt-44 md:pt-0 md:grid md:grid-cols-[167px_1fr] 2xl:grid-cols-[370px_1fr] ">
+            <div className="relative pt-44 md:pt-0 md:grid md:grid-cols-[167px_1fr] xl:grid-cols-[250px_1fr] 2xl:grid-cols-[370px_1fr] ">
               <div className="hidden md:block md:pt-40">
                 <img
                   src="/images/photo-1.png"
@@ -143,7 +143,7 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div className="relative flex gap-2 mt-9 md:mt-0 md:gap-0 md:grid md:grid-cols-[167px_1fr] 2xl:grid-cols-[370px_1fr] ">
+            <div className="relative flex gap-2 mt-9 md:mt-0 md:gap-0 md:grid md:grid-cols-[167px_1fr] xl:grid-cols-[250px_1fr] 2xl:grid-cols-[370px_1fr] ">
               {/* Текст — в правой колонке грида */}
               <p className="text-xs md:text-[10px] xl:text-[22px] leading-[1.4] max-w-[210px] md:max-w-none md:col-start-2 md:row-start-1 md:pl-5 md:pr-32 md:pt-10 2xl:pl-[100px] md:border-l-2 md:border-white/40">
                 Информация, размещённая здесь, носит ознакомительный характер и
@@ -170,9 +170,9 @@ function Home() {
                 className="absolute pointer-events-none origin-top scale-[2.2] md:scale-[1] lg:scale-y-[0.7] left-1/2 right-1/2 -translate-x-1/2 w-screen max-w-none"
               />
               <div className="relative pt-32 md:pt-0 text-white text-xs">
-                <div className="relative grid grid-cols-[75%_1fr] grid-rows-[auto_auto_auto] gap-x-6 gap-y-4 items-start md:grid-cols-[167px_1fr_1fr] md:grid-rows-[auto_auto] md:gap-0 2xl:grid-cols-[370px_1fr_1fr]">
+                <div className="relative grid grid-cols-[75%_1fr] grid-rows-[auto_auto_auto] gap-x-6 gap-y-4 items-start md:grid-cols-[167px_1fr_1fr] xl:grid-cols-[250px_1fr_1fr] md:grid-rows-[auto_auto] md:gap-0 2xl:grid-cols-[370px_1fr_1fr]">
                   {/* 1 строка, 1 колонка: Заголовок */}
-                  <h3 className="h3 col-start-1 row-start-1 md:pt-36 md:col-start-1 md:row-start-1 2xl:leading-[1.1]">
+                  <h3 className="h3 col-start-1 row-start-1 md:pt-36 md:col-start-1 md:row-start-1 xl:leading-[1.1]">
                     правовой статус
                   </h3>
 
@@ -220,7 +220,7 @@ function Home() {
               </div>
             </div>
 
-            <div className="relative md:grid md:grid-cols-[167px_1fr] 2xl:grid-cols-[370px_1fr] bg-cover bg-center">
+            <div className="relative md:grid md:grid-cols-[167px_1fr] xl:grid-cols-[250px_1fr] 2xl:grid-cols-[370px_1fr] bg-cover bg-center">
               <div className="pt-32 md:border-l-2 md:border-white/40 md:pl-5 md:pt-36 2xl:pl-[100px]">
                 <h3 className="pt-28 h3 !text-black xl:leading-[1.1]">
                   Знать, чтобы развивать
@@ -279,7 +279,7 @@ function Home() {
             </div>
 
             {/* Видео */}
-            <div className="relative my-8 md:my-0 md:pt-14 xl:pt-20 2xl:pt-[175px] md:pb-10 xl:pb-18 2xl:pb-[200px] before:content-[''] before:absolute before:top-0 before:bottom-0 before:left-[167px] before:w-[2px] before:bg-white/40 before:hidden md:before:block 2xl:before:left-[370px] before:z-10">
+            <div className="relative my-8 md:my-0 md:pt-14 xl:pt-20 2xl:pt-[175px] md:pb-10 xl:pb-18 2xl:pb-[200px] before:content-[''] before:absolute before:top-0 before:bottom-0 before:left-[167px] before:w-[2px] before:bg-white/40 before:hidden md:before:block xl:before:left-[250px] 2xl:before:left-[370px] before:z-10">
               <div className="bg-white rounded-xl pt-4 pb-8 px-4 shadow-lg flex flex-col items-center w-full ">
                 <div className="overflow-hidden rounded-lg w-full h-[280px] xl:h-[400px] 2xl:h-[608px] aspect-video bg-black relative">
                   <video
@@ -346,7 +346,7 @@ function Home() {
                 alt="фоновая картинка"
                 className="absolute -z-5 pointer-events-none origin-top xl:-top-32 scale-[2.3] md:scale-[1.2] left-1/2 right-1/2 -translate-x-1/2 w-screen max-w-none"
               />
-              <div className="relative flex flex-col items-start pt-24 md:pt-0 gap-4 md:grid md:grid-cols-[167px_1fr] md:gap-0 2xl:grid-cols-[370px_1fr] text-white ">
+              <div className="relative flex flex-col items-start pt-24 md:pt-0 gap-4 md:grid md:grid-cols-[167px_1fr] xl:grid-cols-[250px_1fr] md:gap-0 2xl:grid-cols-[370px_1fr] text-white ">
                 <h3 className="h3 md:pt-32 lg:leading-[1]">Обратная связь</h3>
                 <div className="flex flex-col gap-7 md:pt-32 md:pl-5 md:pr-20 items-start md:border-l-2 md:border-white/40">
                   <p className="font-bold text-xs md:text-[10px] xl:text-[22px] leading-[1.4]">

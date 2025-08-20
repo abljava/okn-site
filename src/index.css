@@ -49,6 +49,11 @@
   }
   @screen xl {
     .h3 {
+      @apply text-[55px];
+    }
+  }
+  @screen 2xl {
+    .h3 {
       @apply text-[80px];
     }
   }
@@ -74,8 +79,8 @@ body {
 
   user-select: none;
   -webkit-user-select: none; /* Safari */
-  -moz-user-select: none;    /* Firefox */
-  -ms-user-select: none;     /* IE10+/Edge */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
 }
 
 @layer base {
@@ -83,7 +88,6 @@ body {
     @apply text-black;
   }
 }
-
 
 /* Скрываем флаг */
 .leaflet-control-attribution .leaflet-attribution-flag {
@@ -157,7 +161,7 @@ body {
 }
 
 /* Более специфичные селекторы */
-input[type="checkbox"].custom-checkbox {
+input[type='checkbox'].custom-checkbox {
   appearance: none !important;
   -webkit-appearance: none !important;
   -moz-appearance: none !important;
@@ -172,12 +176,12 @@ input[type="checkbox"].custom-checkbox {
   padding: 0 !important;
 }
 
-input[type="checkbox"].custom-checkbox:checked {
+input[type='checkbox'].custom-checkbox:checked {
   background-color: #3b82f6 !important;
   border-color: #3b82f6 !important;
 }
 
-input[type="checkbox"].custom-checkbox:checked::after {
+input[type='checkbox'].custom-checkbox:checked::after {
   content: '✓' !important;
   position: absolute !important;
   top: -2px !important;
