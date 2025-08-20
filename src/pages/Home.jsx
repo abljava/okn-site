@@ -291,7 +291,7 @@ function Home() {
                     muted
                     loop
                   >
-                    <source src="/videos/east-to-west-full.webm" type="video/webm" />
+                    <source src="/videos/east-to-west.mp4" type="video/mp4" />
                     <source
                       src="/videos/east-to-west.webm"
                       type="video/webm"
