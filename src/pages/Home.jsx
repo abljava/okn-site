@@ -185,7 +185,7 @@ function Home() {
                     />
                   </div>
                   {/* 2 строка, 1 колонка: Текстовый блок */}
-                  <div className="col-start-1 row-start-2 md:col-start-2 md:row-start-2 text-xs 2xl:text-[22px]/[1.4] md:pl-5 2xl:pl-[100px] md:border-l-2 md:border-white/40">
+                  <div className="col-start-1 row-start-2 md:col-start-2 md:row-start-2 text-xs xl:text-[22px]/[1.4] md:pl-5 2xl:pl-[100px] md:border-l-2 md:border-white/40">
                     <span className="font-bold">
                       Документация Достопримечательного места "Исторический
                       центр города Владивостока"
@@ -197,7 +197,7 @@ function Home() {
                     культурного наследия Приморского края.
                   </div>
                   {/* 3 строка, 1 колонка: Текстовый блок */}
-                  <div className="col-start-1 row-start-3 md:col-start-3 md:row-start-2  space-y-2 text-xs 2xl:text-[22px]/[1.4] md:pl-10 2xl:pl-16">
+                  <div className="col-start-1 row-start-3 md:col-start-3 md:row-start-2  space-y-2 text-xs xl:text-[22px]/[1.4] md:pl-10 2xl:pl-16">
                     <p>
                       Согласно законодательству в границах достопримечательных
                       мест допускается ограниченное строительство и
@@ -221,7 +221,7 @@ function Home() {
             </div>
 
             <div className="relative md:grid md:grid-cols-[167px_1fr] xl:grid-cols-[250px_1fr] 2xl:grid-cols-[370px_1fr] bg-cover bg-center">
-              <div className="pt-32 md:border-l-2 md:border-white/40 md:pl-5 md:pt-36 2xl:pl-[100px]">
+              <div className="pt-32 md:border-l-2 md:border-white/40 md:pl-5 md:pt-36 ml:pt-[350px] lg:pt-[250px] 2xl:pl-[100px]">
                 <h3 className="pt-28 h3 !text-black xl:leading-[1.1]">
                   Знать, чтобы развивать
                 </h3>
@@ -280,7 +280,7 @@ function Home() {
 
             {/* Видео */}
             <div className="relative my-8 md:my-0 md:pt-14 xl:pt-20 2xl:pt-[175px] md:pb-10 xl:pb-18 2xl:pb-[200px] before:content-[''] before:absolute before:top-0 before:bottom-0 before:left-[167px] before:w-[2px] before:bg-white/40 before:hidden md:before:block xl:before:left-[250px] 2xl:before:left-[370px] before:z-10">
-              <div className="bg-white rounded-xl pt-4 pb-8 px-4 shadow-lg flex flex-col items-center w-full ">
+              <div className="relative bg-white rounded-xl pt-4 pb-8 px-4 shadow-lg flex flex-col items-center w-full z-[999]">
                 <div className="overflow-hidden rounded-lg w-full h-[280px] xl:h-[400px] 2xl:h-[608px] aspect-video bg-black relative">
                   <video
                     controls
