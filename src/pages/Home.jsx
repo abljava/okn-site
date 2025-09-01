@@ -371,7 +371,7 @@ function Home() {
                     </div>
                   </div>
                   <a
-                    href="mailto:hist.center-vl@mail.ru"
+                    href="mailto:vladhistorycenter@gmail.com"
                     className="text-white text-xs lg:text-[22px] font-semibold uppercase bg-orange rounded px-8 py-3 lg:px-16 lg:py-6"
                   >
                     <span>Написать на почту</span>

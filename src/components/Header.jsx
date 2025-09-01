@@ -27,7 +27,7 @@ function Header() {
 
         </nav>
         <a
-          href="mailto:hist.center-vl@mail.ru"
+          href="mailto:vladhistorycenter@gmail.com"
           className="text-white text-[9px] font-semibold lg:text-base uppercase bg-orange rounded px-3 py-1.5 lg:px-6 lg:py-4"
         >
           <span>Написать на почту</span>

@@ -106,10 +106,10 @@ function Authors() {
                     достопримечательному месту Исторический центр города
                     Владивостока, вы можете направить на электронный адрес{" "}
                     <a
-                      href="mailto:hist.center-vl@mail.ru"
+                      href="mailto:vladhistorycenter@gmail.com"
                       className="text-orange font-semibold hover:text-black transition-colors"
                     >
-                      hist.center-vl@mail.ru
+                      vladhistorycenter@gmail.com
                     </a>
                   </p>
                 </div>
@@ -147,7 +147,7 @@ function Authors() {
                       className="lg:w-8"
                     />
                     <div className="md:text-base xl:text-2xl font-semibold hover:text-orange transition-colors ">
-                      hist.center-vl@mail.ru
+                      vladhistorycenter@gmail.com
                     </div>
                   </div>
 
@@ -164,7 +164,7 @@ function Authors() {
                   </div>
                 </div>
                 <a
-                  href="mailto:hist.center-vl@mail.ru"
+                  href="mailto:vladhistorycenter@gmail.com"
                   className="text-white text-xs lg:text-2xl font-semibold uppercase bg-orange rounded px-8 py-3 lg:px-14 lg:py-5"
                 >
                   <span>Написать на почту</span>
