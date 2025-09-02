@@ -78,11 +78,17 @@ export default function ObjectInfoModal({ feature, onClose }) {
               number: {number}
             </div>
           )}
+          {fid !== undefined && (
+            <div style={{ color: "#888", fontSize: 14, marginBottom: 8 }}>
+              fid: {fid}
+            </div>
+          )}
         </div> */}
 
         {/* Заголовок и описание */}
         {/* <h2 style={{ marginTop: 0 }}>{name}</h2> */}
         <p>{description}</p>
+        <p className="text-sm">{address}</p>
         
         {/* Слайдер изображений */}
         {Array.isArray(image) && image.length > 1 ? (

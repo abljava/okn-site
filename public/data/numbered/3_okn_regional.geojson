@@ -7761,13 +7761,13 @@
       "properties": {
         "fid": 128,
         "Layer": "LINES",
-        "Text": "473",
+        "Text": "474",
         "id": 435,
-        "number": "473",
-        "description": "Памятник рабочим Владивостокского",
-        "address": "Приморский край,",
+        "number": "474",
+        "description": "Городской дом",
+        "address": "Приморский край, г. Владивосток, ул. Светланская, 38/40",
         "image": [
-          "/photo/473.webp"
+          "/photo/474.webp"
         ]
       },
       "geometry": {
