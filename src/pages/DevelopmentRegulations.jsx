@@ -118,6 +118,24 @@ function DevelopmentRegulations() {
             layerName="Зоны регулирования застройки"
             layerColor="#a5a500"
           />
+
+          <Layer1
+            layerName="Р-1 (Регулирования застройки) участки 1-56"
+            layerColor="#ffbf00"
+          />
+          <Layer2
+            layerName="Р-2 (Регулирования застройки) участки 1-56"
+            layerColor="#00bfff"
+          />  
+          <Layer3
+            layerName="Р-3 (Регулирования застройки) участки 1-45"
+            layerColor="#007ca5"
+          />
+          <Layer4
+            layerName="Р-4 (Регулирования застройки) участки 1-18"
+            layerColor="#7f00ff"
+          />
+
           {/* <p>Границы регламентных участков, не предназначенныйх под застройку</p> */}
           <LayerROKN
             layerName="РОКН (Объекты культурного наследия) участки 1-74"
@@ -142,22 +160,6 @@ function DevelopmentRegulations() {
           <LayerRT
             layerName="РТ (Современная планировочная структура) участки 1-7"
             layerColor="#7f7f7f"
-          />
-          <Layer1
-            layerName="Р-1 (Регулирования застройки) участки 1-56"
-            layerColor="#ffbf00"
-          />
-          <Layer2
-            layerName="Р-2 (Регулирования застройки) участки 1-56"
-            layerColor="#00bfff"
-          />
-          <Layer3
-            layerName="Р-3 (Регулирования застройки) участки 1-45"
-            layerColor="#007ca5"
-          />
-          <Layer4
-            layerName="Р-4 (Регулирования застройки) участки 1-18"
-            layerColor="#7f00ff"
           />
         </MapWithObjects>
       </div>
