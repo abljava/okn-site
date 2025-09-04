@@ -15,7 +15,7 @@ function Authors() {
         /> */}
         <div className="md:max-w-[1440px] mx-auto">
           <Breadcrumbs />
-          <section className="flex flex-col md:grid md:grid-cols-[167px_1fr] 2xl:grid-cols-[370px_1fr] ">
+          <section className="flex flex-col md:grid md:grid-cols-[167px_1fr] xl:grid-cols-[250px_1fr_auto] 2xl:grid-cols-[370px_1fr] ">
             <div className="hidden md:block"></div>
             {/* Заголовок и подзаголовок */}
             <div className="relative z-10 grid pt-8 md:pr-44 md:pl-5 md:pt-10 xl:pt-12 xl:pr-0 xl:pl-[100px] md:border-l-2 md:border-white/40 ">
@@ -58,7 +58,7 @@ function Authors() {
               alt="фоновое изображение"
               className="absolute -z-10 top-1/3 left-0 w-full h-full object-cover "
             />
-            <section className="relative md:grid md:grid-cols-[167px_1fr] 2xl:grid-cols-[370px_1fr] bg-cover bg-center">
+            <section className="relative md:grid md:grid-cols-[167px_1fr] xl:grid-cols-[250px_1fr_auto] 2xl:grid-cols-[370px_1fr] bg-cover bg-center">
               <div className="pt-32 md:pt-28 lg:pt-56 md:pl-5 2xl:pl-[100px] md:border-l-2 md:border-white/40 ">
                 <h3 className="pt-28 h3 !text-black xl:leading-[1.1]">
                   Авторский коллектив занимается разработкой проектов:
@@ -128,9 +128,9 @@ function Authors() {
               </div>
             </section>
 
-            <section className="flex flex-col md:grid md:grid-cols-[167px_1fr_auto] 2xl:grid-cols-[370px_1fr_auto]">
+            <section className="flex flex-col md:grid md:grid-cols-[167px_1fr_auto] xl:grid-cols-[250px_1fr_auto] 2xl:grid-cols-[370px_1fr_auto]">
               <div className="pt-16 md:pt-20">
-                <h3 className="h3 !text-black  md:leading-[1]">контакты</h3>
+                <h3 className="h3 !text-black md:leading-[1]">контакты</h3>
               </div>
 
               <div className="flex flex-col items-start gap-6 lg:gap-12 text-xs/4 md:text-[10px] xl:text-[22px] pt-3 md:pt-20 md:pb-8 leading-[1.4] md:border-l-2 md:border-white/40 md:pl-5 2xl:pl-[100px]">
