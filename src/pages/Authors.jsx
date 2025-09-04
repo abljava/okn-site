@@ -31,10 +31,14 @@ function Authors() {
           {/* Круги с фото */}
           <div className="relative">
             {/* Фон для круга */}
-            <picture className="absolute -top-20 md:-top-28 lg:-top-44 left-1/2 right-1/2 -translate-x-1/2 w-screen max-w-none">
+            <picture className="absolute -top-20 md:-top-28 lg:top-0 3xl:top-[70px] 4xl:-top-[100px] left-1/2 right-1/2 -translate-x-1/2 w-screen max-w-none">
+              <source
+                media="(min-width: 1800px)"
+                srcSet="/bgs/image-authors.png"
+              />
               <source
                 media="(min-width: 1024px)"
-                srcSet="/bgs/image-authors.png"
+                srcSet="/bgs/image-authors-large.png"
               />
               <source
                 media="(min-width: 768px)"
