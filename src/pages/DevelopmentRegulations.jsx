@@ -33,7 +33,7 @@ function DevelopmentRegulations() {
       {/* <BgOverlay bgClass="bg-[url('/bgs/bg-development-mobile.png')] md:bg-[url('/bgs/bg-development-tablet.png')] lg:bg-[url('/bgs/bg-development.png')] 2xl:bg-[position:center_-150px]" /> */}
       <div className="fixed -z-20 top-0 left-0 w-full h-full before:content-[''] before:absolute before:inset-0 before:bg-black before:bg-opacity-30">
         <img
-          src="/bgs/bg-main4.png"
+          src="/bgs/bg-main2.png"
           alt="фоновое изображение"
           className="absolute -z-10 -top-20 md:top-0 xl:-top-36 left-1/2 right-1/2 -translate-x-1/2 w-screen max-w-none"
         />
