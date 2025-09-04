@@ -88,7 +88,7 @@ export default function ObjectInfoModal({ feature, onClose }) {
         {/* Заголовок и описание */}
         {/* <h2 style={{ marginTop: 0 }}>{name}</h2> */}
         <p>{description}</p>
-        <p className="text-sm">{address}</p>
+        <p className="text-sm mt-4">{address}</p>
         
         {/* Слайдер изображений */}
         {Array.isArray(image) && image.length > 1 ? (

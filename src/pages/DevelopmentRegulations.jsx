@@ -67,6 +67,31 @@ function DevelopmentRegulations() {
             </h1>
           </div>
         </section>
+        <div className="flex flex-col gap-3 md:items-end md:gap-1 text-xs md:text-[10px] xl:text-base leading-[1.4] pb-3">
+          {/* Первый пункт */}
+          <div className="flex items-center gap-5 md:gap-2">
+            <img src="/icons/pdf.svg" className="w-5 md:w-4"></img>
+            <a
+              href="/documents/project_claims.pdf"
+              download="Основные положения.pdf"
+              className="text-orange font-bold underline"
+            >
+              Основные положения
+            </a>
+          </div>
+
+          {/* Второй пункт */}
+          <div className="flex items-center gap-5 md:gap-2">
+            <img src="/icons/pdf.svg" className="w-5 md:w-4"></img>
+            <a
+              href="/documents/project_claims_2.pdf"
+              download="Режимы использования земель.pdf"
+              className="text-orange font-bold underline"
+            >
+              Режимы использования земель
+            </a>
+          </div>
+        </div>
       </div>
       <div
         className="relative -z-20 left-1/2 right-1/2 -translate-x-1/2 w-screen max-w-none"
@@ -126,7 +151,7 @@ function DevelopmentRegulations() {
           <Layer2
             layerName="Р-2 (Регулирования застройки) участки 1-56"
             layerColor="#00bfff"
-          />  
+          />
           <Layer3
             layerName="Р-3 (Регулирования застройки) участки 1-45"
             layerColor="#007ca5"
