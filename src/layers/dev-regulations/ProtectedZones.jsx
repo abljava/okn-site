@@ -65,7 +65,7 @@ export default function ProtectedZones({
       {bufferData && (
         <GeoJSON
           data={bufferData}
-          onEachFeature={onEachFeature}
+          // onEachFeature={onEachFeature}
           style={() => ({
             color: "transparent",
             fillColor: "transparent",
@@ -79,7 +79,7 @@ export default function ProtectedZones({
       {geojsonData && (
         <GeoJSON
           data={geojsonData}
-          onEachFeature={onEachFeature}
+          // onEachFeature={onEachFeature}
           style={() => ({
             color: layerColor,
             weight: 2,

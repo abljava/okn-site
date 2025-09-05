@@ -9,8 +9,8 @@ import OKNHistorical from "../layers/protected-data/OKNHistorical";
 import OKNSoviet from "../layers/protected-data/OKNSoviet";
 import BordersDeveloped from "../layers/protected-data/BordersDeveloped";
 import BordersApproved from "../layers/protected-data/BordersApproved";
-import OKNRegional from "../layers/protected-data/OKNRegional";
-import OKNFederal from "../layers/protected-data/OKNFederal";
+import OKNRegionalDev from "../layers/dev-regulations/OKNRegionalDev";
+import OKNFederalDev from "../layers/dev-regulations/OKNFederalDev";
 import OKNIdentified from "../layers/protected-data/OKNIdentified";
 import BordersSites from "../layers/protected-data/BordersSites";
 import Layer1 from "../layers/dev-regulations/Layer1";
@@ -102,14 +102,7 @@ function DevelopmentRegulations() {
             layerName="Границы достопримечательного места"
             layerColor="#000"
           />
-          <OKNFederal
-            layerName="Объекты культурного наследия федерального значения"
-            layerColor="#ea66c9"
-          />
-          <OKNRegional
-            layerName="Объекты культурного наследия регионального значения"
-            layerColor="#f85e5b"
-          />
+
           <OKNIdentified
             layerName="Выявленные объекты культурного наследия"
             layerColor="#ffb266"
@@ -185,6 +178,15 @@ function DevelopmentRegulations() {
           <LayerRT
             layerName="РТ (Современная планировочная структура) участки 1-7"
             layerColor="#7f7f7f"
+          />
+
+          <OKNFederalDev
+            layerName="Объекты культурного наследия федерального значения"
+            layerColor="#ea66c9"
+          />
+          <OKNRegionalDev
+            layerName="Объекты культурного наследия регионального значения"
+            layerColor="#f85e5b"
           />
         </MapWithObjects>
       </div>

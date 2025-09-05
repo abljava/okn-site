@@ -2,7 +2,7 @@ const fs = require('fs');
 
 // Пути к файлам
 const jsonPath = 'src/data/objectsData.json';
-const geojsonPath = 'public/data/numbered/3_okn_regional_test.geojson';
+const geojsonPath = 'public/data/numbered/okn_federal_dev.geojson';
 
 // Загрузка данных
 const objectsData = JSON.parse(fs.readFileSync(jsonPath));
@@ -34,11 +34,11 @@ for (const feature of geojson.features) {
     feature.properties.description = match.description;
     feature.properties.address = match.address;
     // Исправляем путь к изображениям
-    if (match.image && Array.isArray(match.image)) {
-      feature.properties.image = match.image.map(img => `/photo/${img}`);
-    } else if (match.image) {
-      feature.properties.image = [`/photo/${match.image}`];
-    }
+    // if (match.image && Array.isArray(match.image)) {
+    //   feature.properties.image = match.image.map(img => `/photo/${img}`);
+    // } else if (match.image) {
+    //   feature.properties.image = [`/photo/${match.image}`];
+    // }
     matched++;
   }
 }

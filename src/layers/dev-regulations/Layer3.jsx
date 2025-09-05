@@ -73,7 +73,7 @@ export default function Layer3({ onFeatureClick, layerColor = "#000" }) {
       {bufferData && (
         <GeoJSON
           data={bufferData}
-          onEachFeature={onEachFeature}
+          // onEachFeature={onEachFeature}
           style={() => ({
             color: "transparent",
             fillColor: "transparent",
@@ -87,7 +87,7 @@ export default function Layer3({ onFeatureClick, layerColor = "#000" }) {
       {geojsonData && (
         <GeoJSON
           data={geojsonData}
-          onEachFeature={onEachFeature}
+          // onEachFeature={onEachFeature}
           style={() => ({
             color: layerColor,
             weight: 2,
@@ -104,7 +104,7 @@ export default function Layer3({ onFeatureClick, layerColor = "#000" }) {
         <>
           <GeoJSON
             data={pointsData}
-            onEachFeature={onEachPointFeature}
+            // onEachFeature={onEachPointFeature}
             pointToLayer={(feature, latlng) => {
               const rawText = feature?.properties?.Text ?? "";
               const label = String(rawText)
