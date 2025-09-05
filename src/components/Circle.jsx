@@ -98,7 +98,7 @@ function Circle() {
       <svg
         className="absolute inset-0 w-full h-full"
         viewBox={`0 0 ${containerWidth} ${requiredHeight}`}
-        style={{ zIndex: 0 }}
+        style={{ zIndex: 0 }} 
       >
         {/* Круг, проходящий через центры внешних кругов */}
         <circle

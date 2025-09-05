@@ -9,8 +9,8 @@ import OKNHistorical from "../layers/protected-data/OKNHistorical";
 import OKNSoviet from "../layers/protected-data/OKNSoviet";
 import BordersDeveloped from "../layers/protected-data/BordersDeveloped";
 import BordersApproved from "../layers/protected-data/BordersApproved";
-import OKNRegional from "../layers/protected-data/OKNRegional";
-import OKNFederal from "../layers/protected-data/OKNFederal";
+import OKNRegionalDev from "../layers/dev-regulations/OKNRegionalDev";
+import OKNFederalDev from "../layers/dev-regulations/OKNFederalDev";
 import OKNIdentified from "../layers/protected-data/OKNIdentified";
 import BordersSites from "../layers/protected-data/BordersSites";
 import Layer1 from "../layers/dev-regulations/Layer1";
@@ -33,7 +33,7 @@ function DevelopmentRegulations() {
       {/* <BgOverlay bgClass="bg-[url('/bgs/bg-development-mobile.png')] md:bg-[url('/bgs/bg-development-tablet.png')] lg:bg-[url('/bgs/bg-development.png')] 2xl:bg-[position:center_-150px]" /> */}
       <div className="fixed -z-20 top-0 left-0 w-full h-full before:content-[''] before:absolute before:inset-0 before:bg-black before:bg-opacity-30">
         <img
-          src="/bgs/bg-main4.png"
+          src="/bgs/bg-main2.png"
           alt="фоновое изображение"
           className="absolute -z-10 -top-20 md:top-0 xl:-top-36 left-1/2 right-1/2 -translate-x-1/2 w-screen max-w-none"
         />
@@ -67,6 +67,31 @@ function DevelopmentRegulations() {
             </h1>
           </div>
         </section>
+        <div className="flex flex-col gap-3 md:items-end md:gap-1 text-xs md:text-[10px] xl:text-base leading-[1.4] pb-3">
+          {/* Первый пункт */}
+          <div className="flex items-center gap-5 md:gap-2">
+            <img src="/icons/pdf.svg" className="w-5 md:w-4"></img>
+            <a
+              href="/documents/project_claims.pdf"
+              download="Основные положения.pdf"
+              className="text-orange font-bold underline"
+            >
+              Основные положения
+            </a>
+          </div>
+
+          {/* Второй пункт */}
+          <div className="flex items-center gap-5 md:gap-2">
+            <img src="/icons/pdf.svg" className="w-5 md:w-4"></img>
+            <a
+              href="/documents/project_claims_2.pdf"
+              download="Режимы использования земель.pdf"
+              className="text-orange font-bold underline"
+            >
+              Режимы использования земель
+            </a>
+          </div>
+        </div>
       </div>
       <div
         className="relative -z-20 left-1/2 right-1/2 -translate-x-1/2 w-screen max-w-none"
@@ -77,14 +102,7 @@ function DevelopmentRegulations() {
             layerName="Границы достопримечательного места"
             layerColor="#000"
           />
-          <OKNFederal
-            layerName="Объекты культурного наследия федерального значения"
-            layerColor="#ea66c9"
-          />
-          <OKNRegional
-            layerName="Объекты культурного наследия регионального значения"
-            layerColor="#f85e5b"
-          />
+
           <OKNIdentified
             layerName="Выявленные объекты культурного наследия"
             layerColor="#ffb266"
@@ -126,7 +144,7 @@ function DevelopmentRegulations() {
           <Layer2
             layerName="Р-2 (Регулирования застройки) участки 1-56"
             layerColor="#00bfff"
-          />  
+          />
           <Layer3
             layerName="Р-3 (Регулирования застройки) участки 1-45"
             layerColor="#007ca5"
@@ -160,6 +178,15 @@ function DevelopmentRegulations() {
           <LayerRT
             layerName="РТ (Современная планировочная структура) участки 1-7"
             layerColor="#7f7f7f"
+          />
+
+          <OKNFederalDev
+            layerName="Объекты культурного наследия федерального значения"
+            layerColor="#ea66c9"
+          />
+          <OKNRegionalDev
+            layerName="Объекты культурного наследия регионального значения"
+            layerColor="#f85e5b"
           />
         </MapWithObjects>
       </div>

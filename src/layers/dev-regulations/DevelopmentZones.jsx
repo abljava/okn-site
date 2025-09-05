@@ -45,27 +45,13 @@ export default function DevelopmentZones({
     }
   }
 
-  function onEachPointFeature(feature, layer) {
-    layer.on({
-      click: () => {
-        if (onFeatureClick) onFeatureClick(feature);
-      },
-    });
-    if (feature.properties && feature.properties.Text) {
-      layer.bindTooltip(feature.properties.Text, {
-        permanent: false,
-        direction: "top",
-      });
-    }
-  }
-
   return (
     <>
       {/* Невидимый буфер для клика по линиям */}
       {bufferData && (
         <GeoJSON
           data={bufferData}
-          onEachFeature={onEachFeature}
+          // onEachFeature={onEachFeature}
           style={() => ({
             color: "transparent",
             fillColor: "transparent",
@@ -79,7 +65,7 @@ export default function DevelopmentZones({
       {geojsonData && (
         <GeoJSON
           data={geojsonData}
-          onEachFeature={onEachFeature}
+          // onEachFeature={onEachFeature}
           style={() => ({
             color: layerColor,
             weight: 2,
