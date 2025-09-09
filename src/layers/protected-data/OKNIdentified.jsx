@@ -43,7 +43,7 @@ export default function ViewOKNIdentified({ onFeatureClick, layerColor="#ffb266"
       {bufferData && (
         <GeoJSON
           data={bufferData}
-          // onEachFeature={onEachFeature}
+          onEachFeature={onEachFeature}
           style={() => ({
             color: "transparent",
             fillColor: "transparent",
@@ -55,7 +55,7 @@ export default function ViewOKNIdentified({ onFeatureClick, layerColor="#ffb266"
       {/* Отрисовка самих линий */}
       <GeoJSON
         data={geojsonData}
-        // onEachFeature={onEachFeature}
+        onEachFeature={onEachFeature}
         style={() => ({
           color: "#000",
           weight: 1,

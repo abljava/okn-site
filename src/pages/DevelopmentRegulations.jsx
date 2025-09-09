@@ -26,6 +26,7 @@ import LayerRGL from "../layers/dev-regulations/LayerRGL";
 import LayerRT from "../layers/dev-regulations/LayerRT";
 import LayerROKN from "../layers/dev-regulations/LayerROKN";
 import LayerRPL from "../layers/dev-regulations/LayerRPL";
+import OKNIdentifiedDev from "../layers/dev-regulations/OKNIdentifiedDev";
 
 function DevelopmentRegulations() {
   return (
@@ -102,11 +103,6 @@ function DevelopmentRegulations() {
             layerName="Границы достопримечательного места"
             layerColor="#000"
           />
-
-          <OKNIdentified
-            layerName="Выявленные объекты культурного наследия"
-            layerColor="#ffb266"
-          />
           <BordersSites
             layerName="Границы земельных участков"
             layerColor="#2776bb"
@@ -136,7 +132,6 @@ function DevelopmentRegulations() {
             layerName="Зоны регулирования застройки"
             layerColor="#a5a500"
           />
-
           <Layer1
             layerName="Р-1 (Регулирования застройки) участки 1-56"
             layerColor="#ffbf00"
@@ -153,7 +148,6 @@ function DevelopmentRegulations() {
             layerName="Р-4 (Регулирования застройки) участки 1-18"
             layerColor="#7f00ff"
           />
-
           {/* <p>Границы регламентных участков, не предназначенныйх под застройку</p> */}
           <LayerROKN
             layerName="РОКН (Объекты культурного наследия) участки 1-74"
@@ -179,7 +173,6 @@ function DevelopmentRegulations() {
             layerName="РТ (Современная планировочная структура) участки 1-7"
             layerColor="#7f7f7f"
           />
-
           <OKNFederalDev
             layerName="Объекты культурного наследия федерального значения"
             layerColor="#ea66c9"
@@ -187,6 +180,10 @@ function DevelopmentRegulations() {
           <OKNRegionalDev
             layerName="Объекты культурного наследия регионального значения"
             layerColor="#f85e5b"
+          />
+          <OKNIdentifiedDev
+            layerName="Выявленные объекты культурного наследия"
+            layerColor="#ffb266"
           />
         </MapWithObjects>
       </div>

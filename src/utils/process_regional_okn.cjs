@@ -2,8 +2,8 @@ const fs = require('fs');
 const path = require('path');
 
 // Пути к файлам
-const inputGeojsonPath = 'public/data/init_with_numbers/2_okn_federal.geojson';
-const outputGeojsonPath = 'public/data/numbered/okn_federal_dev.geojson';
+const inputGeojsonPath = 'public/data/5_okn_identified.geojson';
+const outputGeojsonPath = 'public/data/numbered/5_okn_identified_dev.geojson';
 const photoDir = 'public/photo-dev/vokn';
 
 // Загрузка данных
