@@ -7,7 +7,7 @@ export default function OKNIdentifiedDev({ onFeatureClick, layerColor="#f85e5b" 
   const [bufferData, setBufferData] = useState(null);
 
   useEffect(() => {
-    fetch("/data/numbered/okn_identified_dev.geojson")
+    fetch("/data/5_okn_identified.geojson")
       .then((res) => res.json())
       .then((data) => {
         setGeojsonData(data);
@@ -44,7 +44,7 @@ export default function OKNIdentifiedDev({ onFeatureClick, layerColor="#f85e5b" 
           })
           .map((f) => {
             try {
-              const buf = turf.buffer(f, 3, { units: "meters" });
+              const buf = turf.buffer(f, 15, { units: "meters" });
               buf.properties = { ...f.properties };
               return buf;
             } catch (error) {
@@ -102,7 +102,7 @@ export default function OKNIdentifiedDev({ onFeatureClick, layerColor="#f85e5b" 
         onEachFeature={onEachFeature}
         style={() => ({
           color: "#000",
-          weight: 1,
+          weight: 2,
           fillColor: layerColor,
           fillOpacity: 0.8,
           opacity: 1,
