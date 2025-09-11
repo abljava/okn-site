@@ -279,7 +279,7 @@ function Home() {
             </div>
 
             {/* Видео */}
-            <div className="relative my-8 md:my-0 md:pt-14 xl:pt-20 2xl:pt-[175px] md:pb-10 xl:pb-18 2xl:pb-[200px] before:content-[''] before:absolute before:top-0 before:bottom-0 before:left-[167px] before:w-[2px] before:bg-white/40 before:hidden md:before:block xl:before:left-[250px] 2xl:before:left-[370px] before:z-10">
+            <div className="relative my-8 md:my-0 md:pt-14 xl:pt-20 2xl:pt-[175px] md:pb-32 xl:pb-18 2xl:pb-[200px] before:content-[''] before:absolute before:top-0 before:bottom-0 before:left-[167px] before:w-[2px] before:bg-white/40 before:hidden md:before:block xl:before:left-[250px] 2xl:before:left-[370px] before:z-10">
               <div className="relative bg-white rounded-xl pt-4 pb-8 px-4 shadow-lg flex flex-col items-center w-full z-[999]">
                 <div className="overflow-hidden rounded-lg w-full h-[280px] xl:h-[400px] 2xl:h-[608px] aspect-video bg-black relative">
                   <video
@@ -340,7 +340,7 @@ function Home() {
             </div>
 
             {/* Обратная связь */}
-            <div className="relative mb-14">
+            {/* <div className="relative mb-14">
               <img
                 src="/bgs/bg-0.png"
                 alt="фоновая картинка"
@@ -378,7 +378,7 @@ function Home() {
                   </a>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </section>
 

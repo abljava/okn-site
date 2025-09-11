@@ -3,7 +3,7 @@ const authorsInfo = [
     id: 1,
     name: "Шевченко Сергей Юрьевич",
     text: "Руководство разработкой документации, разработка режимов использования земель и требований к градостроительным регламентам",
-    photo: "/photo_authors/shevchenko.webp"
+    photo: "/photo-authors/shevchenko.webp"
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ const authorsInfo = [
     id: 3,
     name: "Самойленко Ирина Борисовна",
     text: "Анализ совместимости решений Генерального плана города и Правил землепользования и застройки города Владивостока с исторической средой и объектами культурного наследия",
-    photo: "/photo_authors/samoylenko.webp"
+    photo: "/photo-authors/samoylenko.webp"
   },
   {
     id: 4,
@@ -45,13 +45,13 @@ const authorsInfo = [
     id: 8,
     name: "Калинин Владимир Иванович",
     text: "Историко-библиографические изыскания",
-    photo: "/photo_authors/kalinin.webp"
+    photo: "/photo-authors/kalinin.webp"
   },
   {
     id: 9,
     name: "Сергиенко Татьяна Климовна",
     text: "Обработка контуров режимных территорий, подготовка исходных данных",
-    photo: "/photo_authors/sergienko.webp"
+    photo: "/photo-authors/sergienko.webp"
   },
   {
     id: 10,
@@ -63,13 +63,13 @@ const authorsInfo = [
     id: 11,
     name: "Дегалевич Данил Иванович",
     text: "",
-    photo: "/photo_authors/degalevich.webp"
+    photo: "/photo-authors/degalevich.webp"
   },
   {
     id: 12,
     name: "Вялков Леонид Евгеньевич",
     text: "",
-    photo: "/photo_authors/vyalkov.webp"
+    photo: "/photo-authors/vyalkov.webp"
   },
   {
     id: 13,
