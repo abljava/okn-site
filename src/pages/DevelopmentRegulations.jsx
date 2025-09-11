@@ -11,7 +11,6 @@ import BordersDeveloped from "../layers/protected-data/BordersDeveloped";
 import BordersApproved from "../layers/protected-data/BordersApproved";
 import OKNRegionalDev from "../layers/dev-regulations/OKNRegionalDev";
 import OKNFederalDev from "../layers/dev-regulations/OKNFederalDev";
-import OKNIdentified from "../layers/protected-data/OKNIdentified";
 import BordersSites from "../layers/protected-data/BordersSites";
 import Layer1 from "../layers/dev-regulations/Layer1";
 import Layer2 from "../layers/dev-regulations/Layer2";

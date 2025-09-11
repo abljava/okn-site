@@ -81,7 +81,7 @@ export default function ViewOKNFederalDev({ onFeatureClick, layerColor="#ea66c9"
       {bufferData && (
         <GeoJSON
           data={bufferData}
-          onEachFeature={onEachFeature}
+          // onEachFeature={onEachFeature}
           style={() => ({
             color: "transparent",
             fillColor: "transparent",
@@ -98,7 +98,7 @@ export default function ViewOKNFederalDev({ onFeatureClick, layerColor="#ea66c9"
             f.properties?.Text || f.properties?.number
           )
         }}
-        onEachFeature={onEachFeature}
+        // onEachFeature={onEachFeature}
         style={() => ({
           color: "#000",
           weight: 1,

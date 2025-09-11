@@ -69,7 +69,7 @@ function Authors() {
               alt="фоновое изображение"
               className="absolute -z-10 top-[520px] md:top-1/3 left-0 w-full h-full object-cover "
             />
-            <section className="relative md:grid md:grid-cols-[167px_1fr] xl:grid-cols-[250px_1fr_auto] 2xl:grid-cols-[370px_1fr] bg-cover bg-center">
+            <section className="relative md:grid md:grid-cols-[167px_1fr] xl:grid-cols-[250px_1fr_auto] 2xl:grid-cols-[370px_1fr] 2xl:mt-40 bg-cover bg-center">
               <div className="pt-24 md:pt-28  md:pl-5 2xl:pl-[100px] md:border-l-2 md:border-white/40 ">
                 {/* <h3 className="pt-28 h3 !text-black xl:leading-[1.1]">
                   Авторский коллектив занимается разработкой проектов
@@ -113,7 +113,7 @@ function Authors() {
                       </p>
                     </li>
                   </ul> */}
-                  <p className="">
+                  <p className="xl:text-[22px]">
                     <span className="font-semibold">
                       Ваши пожелания и предложения,
                     </span>{" "}
@@ -140,11 +140,11 @@ function Authors() {
             </section>
 
             <section className="flex flex-col md:grid md:grid-cols-[167px_1fr_auto] xl:grid-cols-[250px_1fr_auto] 2xl:grid-cols-[370px_1fr_auto]">
-              <div className="pt-12 md:pt-20">
+              <div className="pt-12 md:pt-8">
                 <h3 className="h3 !text-black md:leading-[1]">контакты</h3>
               </div>
 
-              <div className="flex flex-col items-start justify-start gap-6 lg:gap-12 text-xs/4 md:text-[10px] xl:text-[22px] pt-3 md:pt-20 md:pb-8 leading-[1.4] md:border-l-2 md:border-white/40 md:pl-5 2xl:pl-[100px]">
+              <div className="flex flex-col items-start justify-start text-xs/4 md:text-[10px] xl:text-[22px] pt-3 md:pt-8 md:pb-8 leading-[1.4] md:border-l-2 md:border-white/40 md:pl-5 2xl:pl-[100px]">
                 <div className="hidden md:block"></div>
                 <div className="flex flex-col gap-3 lg:gap-5 text-xs md:text-sm xl:text-2xl">
                   {/* Первый пункт */}
@@ -173,7 +173,7 @@ function Authors() {
                 </div>
 
                 {/* Дипломы */}
-                <div className="mt-5 lg:mt-8 xl:mt-10 3xl:mt-20">
+                <div className="relative z-10 mt-5 lg:mt-8 xl:mt-10 3xl:mt-20">
                   <h3 className="h3 !text-black">Дипломы</h3>
                   <ul className="flex gap-8 mt-4 lg:mt-6 xl:mt-10">
                     {diplomas.map((item, index) => (
@@ -200,8 +200,8 @@ function Authors() {
               className="absolute -z-5 pointer-events-none origin-top xl:-top-[85px] 2xl:-top-[120px] 3xl:-top-[150px] scale-[2.3] md:scale-[1.2] left-1/2 right-1/2 -translate-x-1/2 w-screen max-w-none"
             />
             <div className="relative flex flex-col items-start pt-24 md:pt-0 gap-4 md:grid md:grid-cols-[167px_1fr] xl:grid-cols-[250px_1fr] md:gap-0 2xl:grid-cols-[370px_1fr] text-white ">
-              <h3 className="h3 md:pt-32 lg:leading-[1]">Обратная связь</h3>
-              <div className="flex flex-col gap-7 md:pt-32 md:pl-5 md:pr-20 items-start md:border-l-2 md:border-white/40">
+              <h3 className="h3 md:pt-32 3xl:pt-44 lg:leading-[1]">Обратная связь</h3>
+              <div className="flex flex-col gap-7 md:pt-32 3xl:pt-44 md:pl-5 2xl:pl-[100px] md:pr-20 items-start md:border-l-2 md:border-white/40">
                 <p className="font-bold text-xs md:text-[10px] xl:text-[22px] leading-[1.4]">
                   Авторский коллектив, участвовавший в создании данной
                   документации, открыт к диалогу и готов принять к рассмотрению
