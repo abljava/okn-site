@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import pageNames from '../utils/pageNames';
+import pageNames from "../utils/pageNames";
 
 function Burger() {
   const [open, setOpen] = useState(false);
@@ -24,7 +24,7 @@ function Burger() {
       {/* Модальное меню */}
       {open && (
         <div className="fixed inset-0 z-[9999] flex ">
-          <div className="relative bg-white rounded-xl shadow-xl px-8 py-10 flex flex-col items-center min-w-[220px]">
+          <div className="relative self-start bg-white rounded-xl shadow-xl p-8 pb-16 flex flex-col items-center h-auto max-h-none">
             <button
               className="absolute top-3 right-3 text-black text-xl"
               onClick={() => setOpen(false)}
@@ -33,7 +33,7 @@ function Burger() {
               &times;
             </button>
             <nav className="flex flex-col gap-6 text-black text-sm uppercase mt-4">
-              <Link to="/" onClick={() => setOpen(false)}>
+              <Link to="/" onClick={() => setOpen(false)} className="hover:text-orange transition-all">
                 Главная
               </Link>
               {pageNames.map((item) => (
@@ -41,6 +41,7 @@ function Burger() {
                   key={item.id}
                   to={`/${item.url}`}
                   onClick={() => setOpen(false)}
+                  className="hover:text-orange transition-all"
                 >
                   {item.title}
                 </Link>

@@ -65,7 +65,7 @@ export default function MapWithObjects({ children }) {
             className="flex items-center justify-between p-3 lg:p-4 cursor-pointer"
             onClick={togglePanel}
           >
-            <span className="text-sm lg:text-base font-medium">слои</span>
+            <b className="text-sm lg:text-xl font-medium">Условные обозначения</b>
             <svg 
               className="w-4 h-4 text-orange-500 transform rotate-0 transition-transform" 
               fill="none" 
@@ -79,7 +79,7 @@ export default function MapWithObjects({ children }) {
           // Развернутое состояние
           <div className="p-3 lg:p-6">
             <div className="flex items-center justify-between mb-3">
-              <b className="text-sm lg:text-base">Слои:</b>
+              <b className="text-sm lg:text-xl">Условные обозначения:</b>
               <button 
                 onClick={togglePanel}
                 className="text-orange-500 hover:text-orange-600 transition-colors"
