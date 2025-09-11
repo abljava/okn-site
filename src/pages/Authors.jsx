@@ -17,7 +17,7 @@ function Authors() {
 
   return (
     <>
-      <main className="relative pb-16 md:pb-6 lg:pb-28 z-10 px-5 2xl:text-2xl bg-[url('/bgs/bg-main.jpg')] bg-cover bg-center overflow-hidden">
+      <main className="relative pb-16 md:pb-6 lg:pb-16 z-10 px-5 2xl:text-2xl bg-[url('/bgs/bg-main.jpg')] bg-cover bg-center overflow-hidden">
         <BgOverlay bgClass="bg-[url('/bgs/bg-authors-mobile.png')] md:bg-[url('/bgs/bg-authors-tablet.png')] lg:bg-[url('/bgs/bg-authors.png')] 2xl:bg-[position:center_-150px]" />
         {/* <img
           src='/bgs/bg-main.png'
@@ -67,15 +67,15 @@ function Authors() {
             <img
               src="/bgs/bg-main4.png"
               alt="фоновое изображение"
-              className="absolute -z-10 top-1/3 left-0 w-full h-full object-cover "
+              className="absolute -z-10 top-[520px] md:top-1/3 left-0 w-full h-full object-cover "
             />
             <section className="relative md:grid md:grid-cols-[167px_1fr] xl:grid-cols-[250px_1fr_auto] 2xl:grid-cols-[370px_1fr] bg-cover bg-center">
-              <div className="pt-32 md:pt-28 lg:pt-56 md:pl-5 2xl:pl-[100px] md:border-l-2 md:border-white/40 ">
-                <h3 className="pt-28 h3 !text-black xl:leading-[1.1]">
-                  Авторский коллектив занимается разработкой проектов:
-                </h3>
-                <div className="text-xs md:text-sm xl:text-xl pt-6">
-                  <ul className="flex flex-col space-y-2">
+              <div className="pt-24 md:pt-28  md:pl-5 2xl:pl-[100px] md:border-l-2 md:border-white/40 ">
+                {/* <h3 className="pt-28 h3 !text-black xl:leading-[1.1]">
+                  Авторский коллектив занимается разработкой проектов
+                </h3> */}
+                <div className="text-xs md:text-sm xl:text-xl md:pt-4">
+                  {/* <ul className="flex flex-col space-y-2">
                     <li className="flex gap-2">
                       <span>&bull;</span>
                       <p>
@@ -112,10 +112,10 @@ function Authors() {
                         и включению в реестр новых объектов культурного наследия
                       </p>
                     </li>
-                  </ul>
-                  <p className="pt-5">
+                  </ul> */}
+                  <p className="">
                     <span className="font-semibold">
-                      Ваши пожелания и предложения по сотрудничеству,
+                      Ваши пожелания и предложения,
                     </span>{" "}
                     касающиеся разработанной документации по
                     достопримечательному месту Исторический центр города
@@ -127,25 +127,10 @@ function Authors() {
                       vladhistorycenter@gmail.com
                     </a>
                   </p>
-                  <div className="mt-5 lg:mt-8 xl:mt-10 3xl:mt-20">
-                    <h3 className="h3 !text-darkGrey">Дипломы</h3>
-                    <ul className="flex gap-8 mt-4 lg:mt-6 xl:mt-10">
-                      {diplomas.map((item, index) => (
-                        <li key={index}>
-                          <img 
-                            src={item.image} 
-                            alt="диплом" 
-                            className="w-24 h-32 object-cover cursor-pointer hover:opacity-80 transition-opacity " 
-                            onClick={() => openDiploma(item)}
-                          />
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
                 </div>
               </div>
               {/* Фото */}
-              <div className="hidden md:block md:col-start-1 md:row-start-1 pt-32 md:pt-28 lg:pt-56">
+              <div className="hidden md:block md:col-start-1 md:row-start-1 pt-32 md:pt-28">
                 <img
                   src="/images/photo-33.png"
                   alt="photo"
@@ -155,20 +140,13 @@ function Authors() {
             </section>
 
             <section className="flex flex-col md:grid md:grid-cols-[167px_1fr_auto] xl:grid-cols-[250px_1fr_auto] 2xl:grid-cols-[370px_1fr_auto]">
-              <div className="pt-16 md:pt-20">
+              <div className="pt-12 md:pt-20">
                 <h3 className="h3 !text-black md:leading-[1]">контакты</h3>
               </div>
 
-              <div className="flex flex-col items-start gap-6 lg:gap-12 text-xs/4 md:text-[10px] xl:text-[22px] pt-3 md:pt-20 md:pb-8 leading-[1.4] md:border-l-2 md:border-white/40 md:pl-5 2xl:pl-[100px]">
+              <div className="flex flex-col items-start justify-start gap-6 lg:gap-12 text-xs/4 md:text-[10px] xl:text-[22px] pt-3 md:pt-20 md:pb-8 leading-[1.4] md:border-l-2 md:border-white/40 md:pl-5 2xl:pl-[100px]">
                 <div className="hidden md:block"></div>
                 <div className="flex flex-col gap-3 lg:gap-5 text-xs md:text-sm xl:text-2xl">
-                  <p className="font-bold">
-                    Авторский коллектив, участвовавший в создании данной
-                    документации, открыт к диалогу и готов принять к
-                    рассмотрению поступившие предложения и мнения о
-                    потенциальных изменениях документации в будущем.
-                  </p>
-
                   {/* Первый пункт */}
                   <div className="flex items-start gap-3 lg:gap-5 border-t border-white/40 py-3 lg:py-5">
                     <img
@@ -193,21 +171,74 @@ function Authors() {
                     </div>
                   </div>
                 </div>
+
+                {/* Дипломы */}
+                <div className="mt-5 lg:mt-8 xl:mt-10 3xl:mt-20">
+                  <h3 className="h3 !text-black">Дипломы</h3>
+                  <ul className="flex gap-8 mt-4 lg:mt-6 xl:mt-10">
+                    {diplomas.map((item, index) => (
+                      <li key={index}>
+                        <img
+                          src={item.image}
+                          alt="диплом"
+                          className="w-24 h-32 object-cover cursor-pointer hover:opacity-80 transition-opacity "
+                          onClick={() => openDiploma(item)}
+                        />
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          {/* Обратная связь */}
+          <div className="relative mb-0 md:mb-6">
+            <img
+              src="/bgs/bg-0.png"
+              alt="фоновая картинка"
+              className="absolute -z-5 pointer-events-none origin-top xl:-top-[85px] 2xl:-top-[120px] 3xl:-top-[150px] scale-[2.3] md:scale-[1.2] left-1/2 right-1/2 -translate-x-1/2 w-screen max-w-none"
+            />
+            <div className="relative flex flex-col items-start pt-24 md:pt-0 gap-4 md:grid md:grid-cols-[167px_1fr] xl:grid-cols-[250px_1fr] md:gap-0 2xl:grid-cols-[370px_1fr] text-white ">
+              <h3 className="h3 md:pt-32 lg:leading-[1]">Обратная связь</h3>
+              <div className="flex flex-col gap-7 md:pt-32 md:pl-5 md:pr-20 items-start md:border-l-2 md:border-white/40">
+                <p className="font-bold text-xs md:text-[10px] xl:text-[22px] leading-[1.4]">
+                  Авторский коллектив, участвовавший в создании данной
+                  документации, открыт к диалогу и готов принять к рассмотрению
+                  предложения и мнения о возможных изменениях документации в
+                  будущем.
+                </p>
+                <div className="flex gap-2 items-center md:items-start">
+                  <p className="text-xs md:text-[10px] xl:text-[22px] leading-[1.4]">
+                    К таким предложениям, в числе прочего, могут относиться
+                    обоснованные пожелания по дополнительному включению ценных
+                    исторических объектов (зданий, сооружений, элементов
+                    планировки и благоустройства) в состав предмета охраны
+                    Достопримечательного места.
+                  </p>
+                  <div className="flex-shrink-0">
+                    <img
+                      alt="photo"
+                      className="w-28 md:w-[250px] object-cover"
+                      src="/images/photo-5.png"
+                    />
+                  </div>
+                </div>
                 <a
                   href="mailto:vladhistorycenter@gmail.com"
-                  className="text-white text-xs lg:text-2xl font-semibold uppercase bg-orange rounded px-8 py-3 lg:px-14 lg:py-5"
+                  className="text-white text-xs lg:text-[22px] font-semibold uppercase bg-orange rounded px-8 py-3 lg:px-16 lg:py-6"
                 >
                   <span>Написать на почту</span>
                 </a>
               </div>
-            </section>
+            </div>
           </div>
         </div>
       </main>
 
       {/* Модальное окно для просмотра диплома в полном размере */}
       {selectedDiploma && (
-        <div 
+        <div
           className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4"
           onClick={closeDiploma}
         >
