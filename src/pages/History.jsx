@@ -1,8 +1,8 @@
 import Breadcrumbs from "../components/Breadcrumbs.jsx";
 import { useState, useEffect } from "react";
-import { sectionOne } from "../utils/history/sections.js";
+import { sectionOne } from "../data/history/sections.js";
 // import { sectionTwo } from "../utils/history/sections.js";
-import { photos } from "../utils/history/photos.js";
+import { photos } from "../data/history/photos.js";
 import BgOverlay from "../components/BgOverlay";
 import ScrollToTop from "../components/ScrollToTop.jsx";
 

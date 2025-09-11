@@ -1,9 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import Breadcrumbs from "../components/Breadcrumbs";
 import Circle from "../components/Circle";
 import BgOverlay from "../components/BgOverlay";
+import { diplomas } from "../data/authors/diplomas";
 
 function Authors() {
+  const [selectedDiploma, setSelectedDiploma] = useState(null);
+
+  const openDiploma = (diploma) => {
+    setSelectedDiploma(diploma);
+  };
+
+  const closeDiploma = () => {
+    setSelectedDiploma(null);
+  };
+
   return (
     <>
       <main className="relative pb-16 md:pb-6 lg:pb-28 z-10 px-5 2xl:text-2xl bg-[url('/bgs/bg-main.jpg')] bg-cover bg-center overflow-hidden">
@@ -116,6 +127,21 @@ function Authors() {
                       vladhistorycenter@gmail.com
                     </a>
                   </p>
+                  <div className="mt-5 lg:mt-8 xl:mt-10 3xl:mt-20">
+                    <h3 className="h3 !text-darkGrey">Дипломы</h3>
+                    <ul className="flex gap-8 mt-4 lg:mt-6 xl:mt-10">
+                      {diplomas.map((item, index) => (
+                        <li key={index}>
+                          <img 
+                            src={item.image} 
+                            alt="диплом" 
+                            className="w-24 h-32 object-cover cursor-pointer hover:opacity-80 transition-opacity " 
+                            onClick={() => openDiploma(item)}
+                          />
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
               </div>
               {/* Фото */}
@@ -178,6 +204,29 @@ function Authors() {
           </div>
         </div>
       </main>
+
+      {/* Модальное окно для просмотра диплома в полном размере */}
+      {selectedDiploma && (
+        <div 
+          className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4"
+          onClick={closeDiploma}
+        >
+          <div className="relative max-w-4xl max-h-full">
+            <button
+              onClick={closeDiploma}
+              className="absolute -top-10 right-0 text-white text-2xl hover:text-gray-300 transition-colors"
+            >
+              ×
+            </button>
+            <img
+              src={selectedDiploma.image}
+              alt="диплом в полном размере"
+              className="max-w-full md:max-w-md xl:max-w-xl object-contain"
+              onClick={(e) => e.stopPropagation()}
+            />
+          </div>
+        </div>
+      )}
     </>
   );
 }
