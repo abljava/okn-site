@@ -58,23 +58,23 @@ function Circle() {
   const allCircleCenters = [...outerCircleCenters, ...innerCircleCenters];
   const maxBottom = allCircleCenters.reduce((max, center) => {
     // Учитываем радиус изображения (половина ширины) для определения нижнего края
-    const imageSize =
-      center.y > scaledCenterY
-        ? scaledOuterRadius > scaledInnerRadius
-          ? 64 * scale
-          : 48 * scale
-        : scaledOuterRadius > scaledInnerRadius
-        ? 64 * scale
-        : 48 * scale; // упрощенно: нужно определить размер изображения по центру
+    // const imageSize =
+    //   center.y > scaledCenterY
+    //     ? scaledOuterRadius > scaledInnerRadius
+    //       ? 64 * scale
+    //       : 48 * scale
+    //     : scaledOuterRadius > scaledInnerRadius
+    //     ? 64 * scale
+    //     : 48 * scale; // упрощенно: нужно определить размер изображения по центру
     // Более точный расчет: найти соответствующее изображение и его размер
-    const currentImageSize =
-      center.y > scaledCenterY
-        ? outerCircleCenters.find((c) => c === center)
-          ? 64 * scale
-          : 48 * scale
-        : outerCircleCenters.find((c) => c === center)
-        ? 64 * scale
-        : 48 * scale;
+    // const currentImageSize =
+    //   center.y > scaledCenterY
+    //     ? outerCircleCenters.find((c) => c === center)
+    //       ? 64 * scale
+    //       : 48 * scale
+    //     : outerCircleCenters.find((c) => c === center)
+    //     ? 64 * scale
+    //     : 48 * scale;
     // еще точнее: проверка на вхождение в оба массива и выбор размера
     let size = 0;
     if (outerCircleCenters.includes(center)) size = 64 * scale;
@@ -168,7 +168,7 @@ function Circle() {
             <img
               src={outerPhotos[idx].photo}
               alt={outerPhotos[idx].name}
-              className="absolute inset-0 w-full h-full rounded-full"
+              className="absolute inset-0 w-full h-full rounded-full object-cover border-8 border-white"
             />
             <div className="absolute inset-0 rounded-full bg-blueGray opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-center text-[10px] md:text-sm xl:text-2xl w-full">
@@ -197,7 +197,7 @@ function Circle() {
             <img
               src={innerPhotos[idx].photo}
               alt={innerPhotos[idx].name}
-              className="absolute inset-0 w-full h-full rounded-full"
+              className="absolute inset-0 w-full h-full rounded-full object-cover border-8 border-white"
             />
             <div className="absolute inset-0 rounded-full bg-blueGray opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-center text-[8px] md:text-xs xl:text-lg w-full">
