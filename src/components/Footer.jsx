@@ -36,7 +36,7 @@ function Footer() {
             >
               vladhistorycenter@gmail.com
             </a>
-            <div className="flex flex-col md:flex-row md:items-center md:gap-4">
+            <div className="flex flex-col md:flex-row items-center md:gap-4">
               <p>©ООО 2024. Все права защищены</p>
               <Link
                 to="/politics"

@@ -14,7 +14,7 @@ function Home() {
         <div className="fixed inset-0 bg-black bg-opacity-50 pointer-events-none -z-5"></div>
 
         <section className="relative md:max-w-[1440px] mx-auto z-10 px-5 pt-10 md:pt-0 2xl:text-2xl">
-          <div className="flex flex-col md:grid md:grid-cols-[167px_1fr] xl:grid-cols-[250px_1fr] 2xl:grid-cols-[370px_1fr] ">
+          <div className="flex flex-col md:grid md:grid-cols-[167px_1fr] xl:grid-cols-[250px_1fr] 2xl:grid-cols-[370px_1fr] mb-8">
             <div className="hidden md:block"></div>
             {/* Заголовок и подзаголовок */}
             <div className="relative z-10 md:pr-44 md:border-l-2 md:border-white/40 md:pl-5 md:pt-10 2xl:pt-[100px] 2xl:pl-[100px]">
@@ -167,7 +167,7 @@ function Home() {
               <img
                 src="/bgs/bg-2.png"
                 alt="фоновая картинка"
-                className="absolute pointer-events-none origin-top scale-[2.2] md:scale-[1] lg:scale-y-[0.7] left-1/2 right-1/2 -translate-x-1/2 w-screen max-w-none"
+                className="absolute pointer-events-none origin-top scale-[2] md:scale-[1] lg:scale-y-[0.7] left-1/2 right-1/2 -translate-x-1/2 w-screen max-w-none"
               />
               <div className="relative pt-32 md:pt-0 text-white text-xs">
                 <div className="relative grid grid-cols-[75%_1fr] grid-rows-[auto_auto_auto] gap-x-6 gap-y-4 items-start md:grid-cols-[167px_1fr_1fr] xl:grid-cols-[250px_1fr_1fr] md:grid-rows-[auto_auto] md:gap-0 2xl:grid-cols-[370px_1fr_1fr]">
@@ -221,7 +221,7 @@ function Home() {
             </div>
 
             <div className="relative md:grid md:grid-cols-[167px_1fr] xl:grid-cols-[250px_1fr] 2xl:grid-cols-[370px_1fr] bg-cover bg-center">
-              <div className="pt-32 md:border-l-2 md:border-white/40 md:pl-5 md:pt-36 ml:pt-[350px] lg:pt-[250px] 2xl:pl-[100px]">
+              <div className="pt-28 xs:pt-52 md:border-l-2 md:border-white/40 md:pl-5 md:pt-36 ml:pt-[350px] lg:pt-[250px] 2xl:pl-[100px]">
                 <h3 className="pt-28 h3 !text-black xl:leading-[1.1]">
                   Знать, чтобы развивать
                 </h3>
