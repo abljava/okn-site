@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import authorsInfo from "../utils/authorsInfo";
+import authorsInfo from "../data/authors/authorsInfo";
 
 function Circle() {
   const outerPhotos = authorsInfo.slice(0, 6); // внешний круг — первые 6 авторов

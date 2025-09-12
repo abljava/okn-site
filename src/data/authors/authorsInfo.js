@@ -9,7 +9,7 @@ const authorsInfo = [
     id: 2,
     name: "Мялк Анна Вадимовна",
     text: "Текстовые разделы обосновывающей части проектной документации, разработка режимов использования земель и требований к градостроительным регламентам",
-    photo: "/icons/profile.png"
+    photo: "/photo-authors/myalk.webp"
   },
   {
     id: 3,
@@ -33,13 +33,13 @@ const authorsInfo = [
     id: 6,
     name: "Юрченко Евгений Александрович",
     text: "Обработка топографической основы, фотофиксация территории, анализ ландшафта территории",
-    photo: "/icons/profile.png"
+    photo: "/photo-authors/yurchenko.webp"
   },
   {
     id: 7,
     name: "Анча Дмитрий Алексеевич",
     text: "Историко-библиографические изыскания",
-    photo: "/icons/profile.png"
+    photo: "/photo-authors/ancha.webp"
   },
   {
     id: 8,
