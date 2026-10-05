@@ -1,7 +1,5 @@
 import { Link } from "react-router-dom";
 import BackgroundVideo from "../components/BackgroundVideo";
-import BgOverlay from "../components/BgOverlay";
-import MapComponent from '../components/MapComponent';
 
 function Home() {
   return (
@@ -260,10 +258,62 @@ function Home() {
                       href="/documents/prikaz_ob_utverzhdenii_predmeta_ohrany_14.12.2024.pdf"
                       download="Приказ об утверждении предмета охраны достопримечательного
                     места.pdf"
-                      className="text-orange font-bold underline border-t border-b border-white/40 py-3"
+                      className="text-orange font-bold underline border-t border-white/40 pt-3"
                     >
                       Приказ об утверждении предмета охраны достопримечательного
                       места
+                    </a>
+                  </div>
+
+                  {/* Четвертый пункт */}
+                  <div className="flex items-start gap-5 pt-6">
+                    <img src="/icons/pdf.svg" className="pt-6"></img>
+                    <a
+                      href="/documents/titul-prikaz-255.pdf"
+                      download="Приказ инспекции по охране объектов культурного наследия Приморского края от 20.07.2026 № 255.pdf"
+                      className="text-orange font-bold underline border-t border-white/40 pt-3"
+                    >
+                      Приказ инспекции по охране объектов культурного наследия
+                      Приморского края от 20.07.2026 № 255
+                    </a>
+                  </div>
+
+                  {/* Пятый пункт */}
+                  <div className="flex items-start gap-5 pt-6">
+                    <img src="/icons/pdf.svg" className="pt-6"></img>
+                    <a
+                      href="/documents/grad-reglamenti.pdf"
+                      download="Требования к осуществлению деятельности и градостроительным регламентам в границах достопримечательного места.pdf"
+                      className="text-orange font-bold underline border-t border-white/40 pt-3"
+                    >
+                      Требования к осуществлению деятельности и
+                      градостроительным регламентам в границах
+                      достопримечательного места
+                    </a>
+                  </div>
+
+                  {/* Шестой пункт */}
+                  <div className="flex items-start gap-5 pt-6">
+                    <img src="/icons/pdf.svg" className="pt-6"></img>
+                    <a
+                      href="/documents/grafika.pdf"
+                      download="Графическое описание требований к градостроительным регламентам.pdf"
+                      className="text-orange font-bold underline border-t border-white/40 pt-3"
+                    >
+                      Графическое описание требований к градостроительным
+                      регламентам
+                    </a>
+                  </div>
+
+                  {/* Седьмой пункт */}
+                  <div className="flex items-start gap-5 pt-6">
+                    <img src="/icons/pdf.svg" className="pt-6"></img>
+                    <a
+                      href="/documents/koordinati.pdf"
+                      download="Координаты характерных точек границ регламентных участков.pdf"
+                      className="text-orange font-bold underline border-t border-b border-white/40 py-3"
+                    >
+                      Координаты характерных точек границ регламентных участков
                     </a>
                   </div>
                 </div>

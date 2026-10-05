@@ -4,6 +4,7 @@ import { lazy, Suspense } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import CookieConsent from "./components/CookieConsent";
+import YandexMetrika from "./components/YandexMetrika";
 
 // Ленивая загрузка страниц
 const Home = lazy(() => import("./pages/Home"));
@@ -50,6 +51,7 @@ function App() {
         </Helmet>
 
         <BrowserRouter>
+          <YandexMetrika />
           <Header />
           <Suspense fallback={
             <div className="flex items-center justify-center min-h-screen">

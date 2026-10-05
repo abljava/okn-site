@@ -1,10 +1,25 @@
 import React from "react";
+import { getObjectPdfs } from "../data/oknPdfs";
+import PdfViewerOverlay from "./PdfViewerOverlay";
 
-export default function ObjectInfoModal({ feature, onClose }) {
+export default function ObjectInfoModal({
+  feature,
+  onClose,
+  pdfSource,
+  pdfLabel,
+}) {
+  const [currentImgIdx, setCurrentImg] = React.useState(0);
+  const [openPdf, setOpenPdf] = React.useState(null);
+
+  const closeToMap = React.useCallback(() => {
+    setOpenPdf(null);
+    onClose();
+  }, [onClose]);
+
   if (!feature) return null;
   const { id, number, fid, name, description, address, image } =
     feature.properties || {};
-  const [currentImgIdx, setCurrentImg] = React.useState(0);
+  const pdfs = getObjectPdfs(number, pdfSource);
 
   return (
     <div
@@ -157,7 +172,39 @@ export default function ObjectInfoModal({ feature, onClose }) {
             />
           )
         )}
+
+        {pdfs.length > 0 && (
+          <div className="flex flex-col items-start gap-3 mt-4">
+            {pdfs.map((href) => {
+              const fileName = href.split("/").pop();
+              return (
+                <a
+                  key={href}
+                  href={href}
+                  className="flex items-center gap-2 text-orange font-bold underline"
+                  onClick={(event) => {
+                    event.preventDefault();
+                    setOpenPdf({
+                      href,
+                      downloadName: `${pdfLabel} ${fileName}`,
+                    });
+                  }}
+                >
+                  <img src="/icons/pdf.svg" alt="" className="w-5 h-5" />
+                  {pdfLabel}
+                </a>
+              );
+            })}
+          </div>
+        )}
       </div>
+      {openPdf && (
+        <PdfViewerOverlay
+          href={openPdf.href}
+          downloadName={openPdf.downloadName}
+          onClose={closeToMap}
+        />
+      )}
     </div>
   );
 }

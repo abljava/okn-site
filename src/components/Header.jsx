@@ -17,7 +17,6 @@ function Header() {
             <Link
               key={item.id}
               to={`/${item.url}`}
-              onClick={() => setOpen(false)}
               className="hover:text-orange transition-all"
             >
               {item.title}

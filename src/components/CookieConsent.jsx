@@ -13,11 +13,13 @@ function CookieConsent() {
 
   const acceptCookies = () => {
     localStorage.setItem("cookieConsent", "true");
+    window.dispatchEvent(new Event("cookie-consent-change"));
     setShowConsent(false);
   };
 
   const declineCookies = () => {
     localStorage.setItem("cookieConsent", "false");
+    window.dispatchEvent(new Event("cookie-consent-change"));
     setShowConsent(false);
   };
 

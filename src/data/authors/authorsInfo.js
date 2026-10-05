@@ -21,13 +21,13 @@ const authorsInfo = [
     id: 4,
     name: "Пономаренко Наталья Витальевна",
     text: "Анализ ценной исторической застройки, фотофиксация",
-    photo: "/icons/profile.png"
+    photo: "/photo-authors/ponomarenko.webp"
   },
   {
     id: 5,
     name: "Колобенко Ольга Сергеевна",
     text: "Разработка границ территорий объектов культурного наследия, обработка графической части проектной документации",
-    photo: "/icons/profile.png"
+    photo: "/photo-authors/kolobenko.webp"
   },
   {
     id: 6,
@@ -75,7 +75,7 @@ const authorsInfo = [
     id: 13,
     name: "Личманюк Александр Андреевич",
     text: "",
-    photo: "/icons/profile.png"
+    photo: "/photo-authors/lichmanyuk.webp"
   }
 ];
 

@@ -25,3 +25,8 @@ dist-ssr
 *.mp4
 *.webm
 *.webp
+
+# Large object PDFs — upload to the server separately, not via git
+public/pdf-protected-objects/
+public/pdf-borders/
+.metrika-build-check/

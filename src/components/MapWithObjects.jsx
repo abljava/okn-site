@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { MapContainer, TileLayer } from "react-leaflet";
+import "leaflet/dist/leaflet.css";
 import ObjectInfoModal from "./ObjectInfoModal";
 
-export default function MapWithObjects({ children }) {
+export default function MapWithObjects({ children, pdfSource, pdfLabel }) {
   const [selectedFeature, setSelectedFeature] = useState(null);
 
   // Получаем массив слоёв и их имена
@@ -48,6 +49,7 @@ export default function MapWithObjects({ children }) {
         center={[43.1155, 131.8855]}
         zoom={16}
         scrollWheelZoom={false}
+        preferCanvas
         style={{ height: "100vh", width: "100%" }}
       >
         <TileLayer
@@ -116,6 +118,8 @@ export default function MapWithObjects({ children }) {
       <ObjectInfoModal
         feature={selectedFeature}
         onClose={() => setSelectedFeature(null)}
+        pdfSource={pdfSource}
+        pdfLabel={pdfLabel}
       />
     </div>
   );

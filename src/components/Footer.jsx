@@ -20,7 +20,6 @@ function Footer() {
                 <Link
                   key={item.id}
                   to={`/${item.url}`}
-                  onClick={() => setOpen(false)}
                   className="hover:text-orange transition-all text-center md:text-left"
                 >
                   {item.title}

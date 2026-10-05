@@ -1,9 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import Breadcrumbs from "../components/Breadcrumbs";
-import BgOverlay from "../components/BgOverlay";
-import MapComponent from "../components/MapComponent";
 import MapWithObjects from "../components/MapWithObjects";
-import FullscreenMapPortal from "../components/FullscreenMapPortal";
 import OKNBorders from "../layers/protected-data/OKNBorders";
 import OKNHistorical from "../layers/protected-data/OKNHistorical";
 import OKNSoviet from "../layers/protected-data/OKNSoviet";
@@ -19,8 +16,6 @@ import BordersSites from "../layers/protected-data/BordersSites";
 import HistoricalPlan from "../layers/protected-data/HistoricalPlan";
 
 function ProtectedObjects() {
-  const [isFullscreen, setIsFullscreen] = useState(false);
-
   return (
     <>
       <main className="relative  z-10 px-5 2xl:text-2xl overflow-hidden">
@@ -66,7 +61,10 @@ function ProtectedObjects() {
           className="relative -z-20 left-1/2 right-1/2 -translate-x-1/2 w-screen max-w-none"
           // onClick={() => setIsFullscreen(true)}
         >
-          <MapWithObjects>
+          <MapWithObjects
+            pdfSource="protected-objects"
+            pdfLabel="Приказ о предмете охраны"
+          >
             <OKNBorders layerName="Границы достопримечательного места" layerColor="#000" />
             <OKNFederal
               layerName="Объекты культурного наследия федерального значения"
@@ -118,11 +116,6 @@ function ProtectedObjects() {
             />
           </MapWithObjects>
         </div>
-        {isFullscreen && (
-          <FullscreenMapPortal onClose={() => setIsFullscreen(false)}>
-            <MapComponent />
-          </FullscreenMapPortal>
-        )}
       </main>
     </>
   );

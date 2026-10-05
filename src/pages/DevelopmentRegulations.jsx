@@ -1,9 +1,6 @@
 import React from "react";
 import Breadcrumbs from "../components/Breadcrumbs";
-import BgOverlay from "../components/BgOverlay";
-import MapComponent from "../components/MapComponent";
 import MapWithObjects from "../components/MapWithObjects";
-import FullscreenMapPortal from "../components/FullscreenMapPortal";
 import OKNBorders from "../layers/protected-data/OKNBorders";
 import OKNHistorical from "../layers/protected-data/OKNHistorical";
 import OKNSoviet from "../layers/protected-data/OKNSoviet";
@@ -97,7 +94,7 @@ function DevelopmentRegulations() {
         className="relative -z-20 left-1/2 right-1/2 -translate-x-1/2 w-screen max-w-none"
         // onClick={() => setIsFullscreen(true)}
       >
-        <MapWithObjects>
+        <MapWithObjects pdfSource="borders" pdfLabel="Границы объекта">
           <OKNBorders
             layerName="Границы достопримечательного места"
             layerColor="#000"
