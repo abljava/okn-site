@@ -69,11 +69,12 @@ function DevelopmentRegulations() {
           <div className="flex items-center gap-5 md:gap-2">
             <img src="/icons/pdf.svg" className="w-5 md:w-4"></img>
             <a
-              href="/documents/project_claims.pdf"
-              download="Основные положения.pdf"
+              href="/documents/grad-reglamenti.pdf"
+              download="Требования к осуществлению деятельности и градостроительным регламентам в границах достопримечательного места.pdf"
               className="text-orange font-bold underline"
             >
-              Основные положения
+              Требования к осуществлению деятельности и градостроительным
+              регламентам
             </a>
           </div>
 
@@ -81,11 +82,11 @@ function DevelopmentRegulations() {
           <div className="flex items-center gap-5 md:gap-2">
             <img src="/icons/pdf.svg" className="w-5 md:w-4"></img>
             <a
-              href="/documents/project_claims_2.pdf"
-              download="Режимы использования земель.pdf"
+              href="/documents/grafika.pdf"
+              download="Графическое описание требований к градостроительным регламентам.pdf"
               className="text-orange font-bold underline"
             >
-              Режимы использования земель
+              Графическое описание требований к градостроительным регламентам
             </a>
           </div>
         </div>
