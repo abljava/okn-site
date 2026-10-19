@@ -26,7 +26,7 @@ import OKNIdentifiedDev from "../layers/dev-regulations/OKNIdentifiedDev";
 
 function DevelopmentRegulations() {
   return (
-    <main className="relative z-10 px-5 2xl:text-2xl bg-[url('/images/bg-main.jpg')] bg-cover bg-center">
+    <main className="relative z-10 px-5 2xl:text-2xl bg-[url('/bgs/bg-main.jpg')] bg-cover bg-center">
       {/* <BgOverlay bgClass="bg-[url('/bgs/bg-development-mobile.png')] md:bg-[url('/bgs/bg-development-tablet.png')] lg:bg-[url('/bgs/bg-development.png')] 2xl:bg-[position:center_-150px]" /> */}
       <div className="fixed -z-20 top-0 left-0 w-full h-full before:content-[''] before:absolute before:inset-0 before:bg-black before:bg-opacity-30">
         <img

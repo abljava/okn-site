@@ -24,8 +24,21 @@ export default function GeoJsonLayer({
   numberedOnly = false,
   bufferMeters = 0,
   tooltip = "number",
+  featureProps,
 }) {
-  const data = useGeoJson(url);
+  const rawData = useGeoJson(url);
+
+  const data = useMemo(() => {
+    if (!rawData || !featureProps) return rawData;
+    return {
+      ...rawData,
+      features: rawData.features.map((feature) => {
+        const extra = featureProps[feature.properties?.fid];
+        if (!extra) return feature;
+        return { ...feature, properties: { ...feature.properties, ...extra } };
+      }),
+    };
+  }, [rawData, featureProps]);
 
   const displayData = useMemo(() => {
     if (!data) return null;

@@ -1,0 +1,1058 @@
+{
+  "8": {
+    "15": {
+      "kind": "valued",
+      "number": 137,
+      "description": "Административное здание",
+      "address": "Ул. Уткинская, 38",
+      "image": [
+        "/photo-valued/137.webp"
+      ]
+    },
+    "17": {
+      "kind": "valued",
+      "number": 114,
+      "description": "Малоэтажный жилой дом",
+      "address": "Ул. Пологая, 18",
+      "image": [
+        "/photo-valued/114.webp",
+        "/photo-valued/114_2.webp"
+      ]
+    },
+    "18": {
+      "kind": "valued",
+      "number": 149,
+      "description": "Частный жилой дом",
+      "address": "Ул. Пушкинская, 63а",
+      "image": [
+        "/photo-valued/149.webp",
+        "/photo-valued/149_2.webp"
+      ]
+    },
+    "20": {
+      "kind": "valued",
+      "number": 62,
+      "description": "Жилой дом (частная застройка)",
+      "address": "Ул. Пушкинская, 38а",
+      "image": [
+        "/photo-valued/62.webp"
+      ]
+    },
+    "21": {
+      "kind": "valued",
+      "number": 119,
+      "description": "Коммерция/Общественные услуги",
+      "address": "Ул. Прапорщика Комарова, 25/1",
+      "image": [
+        "/photo-valued/119.webp"
+      ]
+    },
+    "24": {
+      "kind": "valued",
+      "number": 102,
+      "description": "Многоквартирный жилой дом/Общественные услуги",
+      "address": "Ул. Уборевича, 10а",
+      "image": [
+        "/photo-valued/102.webp"
+      ]
+    },
+    "26": {
+      "kind": "valued",
+      "number": 75,
+      "description": "Доходный дом",
+      "address": "Ул. Пионерская, 8",
+      "image": [
+        "/photo-valued/75.webp"
+      ]
+    },
+    "27": {
+      "kind": "valued",
+      "number": 36,
+      "address": "Ул. Алеутская, 10",
+      "image": [
+        "/photo-valued/36.webp"
+      ]
+    },
+    "28": {
+      "kind": "valued",
+      "number": 71,
+      "description": "Частный жилой дом",
+      "address": "Ул. Шкипера Гека, 11",
+      "image": [
+        "/photo-valued/71.webp"
+      ]
+    },
+    "29": {
+      "kind": "valued",
+      "number": 69,
+      "description": "Жилой дом",
+      "address": "Ул. Всеволода Сибирцева, 87",
+      "image": [
+        "/photo-valued/69.webp",
+        "/photo-valued/69_2.webp"
+      ]
+    },
+    "30": {
+      "kind": "valued",
+      "number": 110,
+      "description": "Поликлиника",
+      "address": "Почтовый Переулок, 9",
+      "image": [
+        "/photo-valued/110.webp"
+      ]
+    },
+    "32": {
+      "kind": "valued",
+      "number": 117,
+      "description": "Многоквартирный жилой дом",
+      "address": "Ул. Уборевича, 24",
+      "image": [
+        "/photo-valued/117.webp"
+      ]
+    },
+    "34": {
+      "kind": "valued",
+      "number": 96,
+      "description": "Апарт-отель/Гостиница",
+      "address": "Ул. Фонтанная, 59",
+      "image": [
+        "/photo-valued/96.webp",
+        "/photo-valued/96_2.webp"
+      ]
+    },
+    "47": {
+      "kind": "valued",
+      "number": 88,
+      "description": "Услуги и коммерция",
+      "address": "Ул. Семеновская, 9б",
+      "image": [
+        "/photo-valued/88.webp",
+        "/photo-valued/88_3.webp"
+      ]
+    },
+    "48": {
+      "kind": "valued",
+      "number": 87,
+      "description": "Коммерция",
+      "address": "Ул. Семеновская, 9",
+      "image": [
+        "/photo-valued/87_2.webp"
+      ]
+    },
+    "49": {
+      "kind": "valued",
+      "number": 98,
+      "description": "Многоквартирный жилой дом",
+      "address": "Ул. Фонтанная, 19",
+      "image": [
+        "/photo-valued/98.webp"
+      ]
+    },
+    "54": {
+      "kind": "valued",
+      "number": 91,
+      "address": "Ул. Семеновская, 21а",
+      "image": [
+        "/photo-valued/91_2.webp",
+        "/photo-valued/91_3.webp"
+      ]
+    },
+    "55": {
+      "kind": "valued",
+      "number": 92,
+      "description": "Приморский центр лазерной коррекции зрения и офтальмохирургии",
+      "address": "Ул. Семеновская, 19",
+      "image": [
+        "/photo-valued/92.webp",
+        "/photo-valued/92_2.webp"
+      ]
+    },
+    "56": {
+      "kind": "valued",
+      "number": 40,
+      "description": "Жилой дом",
+      "address": "Ул. Мордовцева, 8 Д",
+      "image": [
+        "/photo-valued/40.webp",
+        "/photo-valued/40_2.webp"
+      ]
+    },
+    "57": {
+      "kind": "valued",
+      "number": 38,
+      "description": "Жилой дом",
+      "address": "Ул. Мордовцева, 8 В",
+      "image": [
+        "/photo-valued/38.webp",
+        "/photo-valued/38_2.webp"
+      ]
+    },
+    "58": {
+      "kind": "valued",
+      "number": 39,
+      "description": "Жилой дом",
+      "address": "Ул. Мордовцева, 8 Г",
+      "image": [
+        "/photo-valued/39.webp"
+      ]
+    },
+    "59": {
+      "kind": "valued",
+      "number": 41,
+      "description": "Деловой офис",
+      "address": "Ул. Мордовцева, 8 е",
+      "image": [
+        "/photo-valued/41.webp"
+      ]
+    },
+    "70": {
+      "kind": "valued",
+      "number": 61,
+      "description": "Жилой дом",
+      "address": "Ул. Пушкинская, 38",
+      "image": [
+        "/photo-valued/61.webp"
+      ]
+    },
+    "77": {
+      "kind": "valued",
+      "number": 115,
+      "description": "Коммерция/общественные услуги",
+      "address": "Ул. Пологая, 22",
+      "image": [
+        "/photo-valued/115.webp"
+      ]
+    },
+    "78": {
+      "kind": "valued",
+      "number": 82,
+      "description": "Малоэтажный жилой дом",
+      "address": "Ул. Экипажная, 10",
+      "image": [
+        "/photo-valued/82.webp"
+      ]
+    },
+    "79": {
+      "kind": "valued",
+      "number": 116,
+      "description": "Офисно-деловое здание",
+      "address": "Ул. Пологая, 66",
+      "image": [
+        "/photo-valued/116_2.webp"
+      ]
+    },
+    "80": {
+      "kind": "valued",
+      "number": 70,
+      "description": "Частный жилой дом",
+      "address": "Ул. Шкипера Гека, 1а",
+      "image": [
+        "/photo-valued/70.webp"
+      ]
+    },
+    "81": {
+      "kind": "valued",
+      "number": 68,
+      "description": "Частный жилой дом",
+      "address": "Ул. Володарского, 35",
+      "image": [
+        "/photo-valued/68.webp",
+        "/photo-valued/68_2.webp"
+      ]
+    },
+    "82": {
+      "kind": "valued",
+      "number": 66,
+      "description": "Частный жилой дом",
+      "address": "Ул. Володарского, 43",
+      "image": [
+        "/photo-valued/66.webp"
+      ]
+    },
+    "83": {
+      "kind": "valued",
+      "number": 73,
+      "description": "Офисно-деловое здание",
+      "address": "Ул. Металлистов, 11",
+      "image": [
+        "/photo-valued/73.webp"
+      ]
+    },
+    "84": {
+      "kind": "valued",
+      "number": 72,
+      "description": "Многоквартирный жилой дом",
+      "address": "Ул. Шкипера Гека, 26",
+      "image": [
+        "/photo-valued/72.webp"
+      ]
+    },
+    "86": {
+      "kind": "valued",
+      "number": 109,
+      "description": "Административное здание",
+      "address": "Ул. Суханова, 7",
+      "image": [
+        "/photo-valued/109_2.webp"
+      ]
+    },
+    "87": {
+      "kind": "valued",
+      "number": 93,
+      "description": "Жилой дом/услуги",
+      "address": "Переулок Краснознаменный, 7",
+      "image": [
+        "/photo-valued/93.webp",
+        "/photo-valued/93_2.webp",
+        "/photo-valued/93_3.webp"
+      ]
+    },
+    "88": {
+      "kind": "valued",
+      "number": 103,
+      "description": "Малоэтажный жилой дом",
+      "address": "Ул. Уборевича, 15а",
+      "image": [
+        "/photo-valued/103.webp",
+        "/photo-valued/103_3.webp"
+      ]
+    },
+    "89": {
+      "kind": "valued",
+      "number": 104,
+      "description": "Офисно-деловое здание",
+      "address": "Ул. Фонтанная, 42а",
+      "image": [
+        "/photo-valued/104.webp",
+        "/photo-valued/104_2.webp"
+      ]
+    },
+    "91": {
+      "kind": "valued",
+      "number": 99,
+      "description": "Малоэтажный жилой дом/Коммерция",
+      "address": "Ул. Уборевича, 12",
+      "image": [
+        "/photo-valued/99.webp"
+      ]
+    },
+    "94": {
+      "kind": "valued",
+      "number": 85,
+      "description": "Офисно-деловое здание",
+      "address": "Ул. Фонтанная, 7",
+      "image": [
+        "/photo-valued/85.webp",
+        "/photo-valued/85_2.webp"
+      ]
+    },
+    "103": {
+      "kind": "valued",
+      "number": 146,
+      "description": "Поликлиника",
+      "address": "Ул. Посьетская, 24",
+      "image": [
+        "/photo-valued/146.webp",
+        "/photo-valued/146_2.webp"
+      ]
+    },
+    "105": {
+      "kind": "valued",
+      "number": 133,
+      "description": "Офисно-деловое здание",
+      "address": "Ул. Алеутская, 15",
+      "image": [
+        "/photo-valued/133.webp",
+        "/photo-valued/133_2.webp"
+      ]
+    },
+    "108": {
+      "kind": "valued",
+      "number": 7,
+      "description": "Военная комендатура",
+      "address": "Ул. Верхнепортовая, 6",
+      "image": [
+        "/photo-valued/7_2.webp"
+      ]
+    },
+    "109": {
+      "kind": "valued",
+      "number": 8,
+      "description": "Общежитие",
+      "address": "Ул. Верхнепортовая, 4",
+      "image": [
+        "/photo-valued/8.webp",
+        "/photo-valued/8_2.webp"
+      ]
+    },
+    "112": {
+      "kind": "valued",
+      "number": 36,
+      "address": "Ул. Алеутская, 10",
+      "image": [
+        "/photo-valued/36.webp"
+      ]
+    },
+    "113": {
+      "kind": "valued",
+      "number": 9,
+      "description": "Общежитие",
+      "address": "Ул. Верхнепортовая, 10",
+      "image": [
+        "/photo-valued/9.webp",
+        "/photo-valued/9_3.webp"
+      ]
+    },
+    "115": {
+      "kind": "valued",
+      "number": 19,
+      "description": "Признан аварийным",
+      "address": "Ул. Захарова, 14а",
+      "image": [
+        "/photo-valued/19.webp"
+      ]
+    },
+    "118": {
+      "kind": "valued",
+      "number": 20,
+      "description": "Общественное питание",
+      "address": "Ул. Бестужева, 32",
+      "image": [
+        "/photo-valued/20.webp"
+      ]
+    },
+    "119": {
+      "kind": "valued",
+      "number": 22,
+      "description": "Жилой дом",
+      "address": "Ул. Бестужева, 35а",
+      "image": [
+        "/photo-valued/22.webp"
+      ]
+    },
+    "120": {
+      "kind": "valued",
+      "number": 21,
+      "description": "Жилой дом",
+      "address": "Ул. Бестужева, 35",
+      "image": [
+        "/photo-valued/21.webp",
+        "/photo-valued/21_2.webp"
+      ]
+    },
+    "121": {
+      "kind": "valued",
+      "number": 151,
+      "address": "Ул. Верхнепортовая, 68",
+      "image": [
+        "/photo-valued/151.webp",
+        "/photo-valued/151_2.webp"
+      ]
+    }
+  },
+  "9": {
+    "59": {
+      "kind": "valued",
+      "number": 144,
+      "description": "Средняя общеобразовательная школа №46",
+      "address": "Ул. Батарейная, 6",
+      "image": [
+        "/photo-valued/144.webp"
+      ]
+    },
+    "60": {
+      "kind": "valued",
+      "number": 138,
+      "description": "Малоэтажный жилой дом",
+      "address": "Партизанский проспект, 6",
+      "image": [
+        "/photo-valued/138.webp"
+      ]
+    },
+    "61": {
+      "kind": "valued",
+      "number": 140,
+      "description": "Малоэтажный жилой дом",
+      "address": "Партизанский проспект, 10",
+      "image": [
+        "/photo-valued/140.webp"
+      ]
+    },
+    "62": {
+      "kind": "valued",
+      "number": 139,
+      "description": "Малоэтажный жилой дом",
+      "address": "Партизанский проспект, 8",
+      "image": [
+        "/photo-valued/139.webp",
+        "/photo-valued/139_2.webp"
+      ]
+    },
+    "63": {
+      "kind": "valued",
+      "number": 141,
+      "description": "Малоэтажный жилой дом/Общественное и офисно-деловое здание",
+      "address": "Партизанский проспект, 12",
+      "image": [
+        "/photo-valued/141.webp",
+        "/photo-valued/141_2.webp"
+      ]
+    },
+    "64": {
+      "kind": "valued",
+      "number": 142,
+      "description": "Малоэтажный жилой дом/Общественные услуги",
+      "address": "Партизанский проспект, 12а",
+      "image": [
+        "/photo-valued/142.webp"
+      ]
+    },
+    "69": {
+      "kind": "valued",
+      "number": 12,
+      "description": "Жилой дом",
+      "address": "Ул. Посьетская, 23",
+      "image": [
+        "/photo-valued/12.webp"
+      ]
+    },
+    "71": {
+      "kind": "valued",
+      "number": 30,
+      "description": "Многоквартирный жилой дом",
+      "address": "Ул. Тигровая, 20",
+      "image": [
+        "/photo-valued/30.webp"
+      ]
+    },
+    "73": {
+      "kind": "valued",
+      "number": 43,
+      "description": "Офисно-деловой, коммерческий объект",
+      "address": "Океанский проспект, 21",
+      "image": [
+        "/photo-valued/43.webp"
+      ]
+    },
+    "75": {
+      "kind": "valued",
+      "number": 132,
+      "description": "Многоквартирный жилой дом",
+      "address": "Ул. Уткинская, 10",
+      "image": [
+        "/photo-valued/132.webp",
+        "/photo-valued/132_2.webp"
+      ]
+    },
+    "76": {
+      "kind": "valued",
+      "number": 89,
+      "description": "Жилое и коммерческое здание",
+      "address": "Ул. Семеновская, 20",
+      "image": [
+        "/photo-valued/89.webp",
+        "/photo-valued/89_2.webp"
+      ]
+    },
+    "77": {
+      "kind": "valued",
+      "number": 101,
+      "description": "Многоквартирый жилой дом/Общественные услуги",
+      "address": "Ул. Уборевича, 10б",
+      "image": [
+        "/photo-valued/101.webp"
+      ]
+    },
+    "78": {
+      "kind": "valued",
+      "number": 77,
+      "description": "Детский сад",
+      "address": "Ул. Муравьева-Амурского, 4",
+      "image": [
+        "/photo-valued/77.webp"
+      ]
+    },
+    "80": {
+      "kind": "valued",
+      "number": 51,
+      "description": "Многоквартирный жилой дом",
+      "address": "Ул. Ивановская, 6/4",
+      "image": [
+        "/photo-valued/51.webp",
+        "/photo-valued/51_2.webp",
+        "/photo-valued/51_3.webp",
+        "/photo-valued/51_4.webp"
+      ]
+    },
+    "83": {
+      "kind": "valued",
+      "number": 67,
+      "description": "Многоквартирный жилой дом",
+      "address": "Ул. Володарского, 8а",
+      "image": [
+        "/photo-valued/67.webp"
+      ]
+    },
+    "84": {
+      "kind": "valued",
+      "number": 56,
+      "description": "Многоквартирный жилой дом",
+      "address": "Ул. Тунгусская, 20",
+      "image": [
+        "/photo-valued/56.webp",
+        "/photo-valued/56_2.webp"
+      ]
+    },
+    "85": {
+      "kind": "valued",
+      "number": 57,
+      "description": "Многоквартирный жилой дом",
+      "address": "Ул. Тунгусская, 22",
+      "image": [
+        "/photo-valued/57.webp"
+      ]
+    },
+    "86": {
+      "kind": "valued",
+      "number": 111,
+      "description": "Административное здание",
+      "address": "Ул. Петра Великого, 3",
+      "image": [
+        "/photo-valued/111_2.webp"
+      ]
+    },
+    "87": {
+      "kind": "valued",
+      "number": 118,
+      "description": "Владивостокский судостроительный техникум",
+      "address": "Ул. Уборевича, 25",
+      "image": [
+        "/photo-valued/118_2.webp"
+      ]
+    },
+    "88": {
+      "kind": "valued",
+      "number": 76,
+      "description": "Многоквартирный жилой дом",
+      "address": "Ул. Муравьева-Амурского, 5",
+      "image": [
+        "/photo-valued/76.webp"
+      ]
+    },
+    "89": {
+      "kind": "valued",
+      "number": 78,
+      "description": "Многоквартирный жилой дом",
+      "address": "Ул. Муравьева-Амурского, 15/17",
+      "image": [
+        "/photo-valued/78.webp",
+        "/photo-valued/78_2.webp"
+      ]
+    },
+    "90": {
+      "kind": "valued",
+      "number": 55,
+      "description": "Многоквартирный жилой дом",
+      "address": "Ул. Тунгусская, 12",
+      "image": [
+        "/photo-valued/55.webp",
+        "/photo-valued/55_2.webp"
+      ]
+    },
+    "91": {
+      "kind": "valued",
+      "number": 53,
+      "description": "Многоквартирный жилой дом",
+      "address": "Ул. Тунгусская, 10",
+      "image": [
+        "/photo-valued/53.webp",
+        "/photo-valued/53_2.webp"
+      ]
+    },
+    "93": {
+      "kind": "valued",
+      "number": 122,
+      "description": "Многоквартирный жилой дом/Общественные услуги/Коммерция",
+      "address": "Ул. Светланская, 105а",
+      "image": [
+        "/photo-valued/122_2.webp",
+        "/photo-valued/122_3.webp"
+      ]
+    },
+    "95": {
+      "kind": "valued",
+      "number": 126,
+      "description": "Малоэтажный жилой дом",
+      "address": "Переулок Шевченко, 11",
+      "image": [
+        "/photo-valued/126.webp",
+        "/photo-valued/126_2.webp"
+      ]
+    },
+    "96": {
+      "kind": "valued",
+      "number": 124,
+      "description": "Малоэтажный жилой дом",
+      "address": "Переулок Шевченко, 9",
+      "image": [
+        "/photo-valued/124.webp",
+        "/photo-valued/124_2.webp"
+      ]
+    },
+    "97": {
+      "kind": "valued",
+      "number": 123,
+      "description": "Малоэтажный жилой дом",
+      "address": "Переулок Шевченко, 7",
+      "image": [
+        "/photo-valued/123.webp"
+      ]
+    },
+    "98": {
+      "kind": "valued",
+      "number": 127,
+      "description": "Малоэтажный жилой дом",
+      "address": "Переулок Шевченко, 5",
+      "image": [
+        "/photo-valued/127.webp"
+      ]
+    },
+    "99": {
+      "kind": "valued",
+      "number": 125,
+      "description": "Многоквартирный жилой дом",
+      "address": "Ул. Западная, 27",
+      "image": [
+        "/photo-valued/125.webp",
+        "/photo-valued/125_2.webp"
+      ]
+    },
+    "100": {
+      "kind": "valued",
+      "number": 90,
+      "description": "Коммерция/услуги/жилое здание",
+      "address": "Ул. Семеновская, 23",
+      "image": [
+        "/photo-valued/90.webp"
+      ]
+    },
+    "103": {
+      "kind": "valued",
+      "number": 58,
+      "description": "Многоквартирный жилой дом",
+      "address": "Ул. Пушкинская, 46",
+      "image": [
+        "/photo-valued/58.webp"
+      ]
+    },
+    "104": {
+      "kind": "valued",
+      "number": 47,
+      "description": "Многоквартирный жилой дом",
+      "address": "Ул. Светланская, 117",
+      "image": [
+        "/photo-valued/47.webp"
+      ]
+    },
+    "105": {
+      "kind": "valued",
+      "number": 60,
+      "description": "Жилой дом",
+      "address": "Ул. Пушкинская, 34",
+      "image": [
+        "/photo-valued/60.webp"
+      ]
+    },
+    "106": {
+      "kind": "valued",
+      "number": 108,
+      "description": "Жилой дом",
+      "address": "Ул. Луцкого, 16",
+      "image": [
+        "/photo-valued/108.webp"
+      ]
+    },
+    "108": {
+      "kind": "valued",
+      "number": 129,
+      "description": "Офисно-деловое здание",
+      "address": "Ул. Уткинская, 3",
+      "image": [
+        "/photo-valued/129.webp",
+        "/photo-valued/129_2.webp"
+      ]
+    },
+    "109": {
+      "kind": "valued",
+      "number": 130,
+      "description": "Малоэтажный жилой дом/Мелкий бизнес",
+      "address": "Ул. Уткинская, 5",
+      "image": [
+        "/photo-valued/130.webp",
+        "/photo-valued/130_2.webp"
+      ]
+    },
+    "110": {
+      "kind": "valued",
+      "number": 50,
+      "description": "Малоэтажный жилой дом",
+      "address": "Ул. Ивановская, 5в",
+      "image": [
+        "/photo-valued/50.webp",
+        "/photo-valued/50_2.webp"
+      ]
+    },
+    "111": {
+      "kind": "valued",
+      "number": 48,
+      "description": "Малоэтажный жилой дом",
+      "address": "Ул. Ивановская, 5а",
+      "image": [
+        "/photo-valued/48.webp",
+        "/photo-valued/48_2.webp"
+      ]
+    },
+    "112": {
+      "kind": "valued",
+      "number": 49,
+      "description": "Малоэтажный жилой дом",
+      "address": "Ул. Ивановская, 5б",
+      "image": [
+        "/photo-valued/49.webp",
+        "/photo-valued/49_2.webp",
+        "/photo-valued/49_3.webp"
+      ]
+    },
+    "113": {
+      "kind": "valued",
+      "number": 83,
+      "description": "Многоквартирный жилой дом",
+      "address": "Ул. Ковальчука, 3",
+      "image": [
+        "/photo-valued/83.webp",
+        "/photo-valued/83_2.webp",
+        "/photo-valued/83_3.webp"
+      ]
+    },
+    "114": {
+      "kind": "valued",
+      "number": 84,
+      "description": "Технический лицей",
+      "address": "Ул. Ковальчука, 6",
+      "image": [
+        "/photo-valued/84.webp",
+        "/photo-valued/84_2.webp",
+        "/photo-valued/84_3.webp"
+      ]
+    },
+    "117": {
+      "kind": "valued",
+      "number": 94,
+      "description": "Многоквартирный жилой дом/услуги",
+      "address": "Переулок Краснознаменный, 9/11",
+      "image": [
+        "/photo-valued/94.webp"
+      ]
+    },
+    "119": {
+      "kind": "valued",
+      "number": 106,
+      "description": "Многоквартирый жилой дом/Общественные заведения",
+      "address": "Ул. Суханова, 6а",
+      "image": [
+        "/photo-valued/106.webp"
+      ]
+    },
+    "120": {
+      "kind": "valued",
+      "number": 107,
+      "description": "Многоквартирый жилой дом/Офисно-деловой объект",
+      "address": "Ул. Суханова, 6б",
+      "image": [
+        "/photo-valued/107.webp",
+        "/photo-valued/107_2.webp"
+      ]
+    },
+    "121": {
+      "kind": "valued",
+      "number": 100,
+      "description": "Краевая стоматологическая поликлинника",
+      "address": "Ул. Уборевича, 14",
+      "image": [
+        "/photo-valued/100.webp",
+        "/photo-valued/100_2.webp"
+      ]
+    },
+    "122": {
+      "kind": "valued",
+      "number": 121,
+      "description": "Многоквартирный жилой дом/Офисно-деловое здание",
+      "address": "Ул. Светланская, 87",
+      "image": [
+        "/photo-valued/121.webp"
+      ]
+    },
+    "123": {
+      "kind": "valued",
+      "number": 28,
+      "description": "Жилой дом",
+      "address": "Ул. Набережная, 16",
+      "image": [
+        "/photo-valued/28_2.webp",
+        "/photo-valued/28_3.webp"
+      ]
+    },
+    "127": {
+      "kind": "valued",
+      "number": 31,
+      "description": "Объект культуры и спорта",
+      "address": "Ул. Адмирала Фокина, 1В",
+      "image": [
+        "/photo-valued/31.webp",
+        "/photo-valued/31_2.webp",
+        "/photo-valued/31_3.webp"
+      ]
+    },
+    "128": {
+      "kind": "valued",
+      "number": 128,
+      "description": "Приморский политехничсекий колледж",
+      "address": "Ул. Прапорщика Комарова, 4",
+      "image": [
+        "/photo-valued/128_2.webp"
+      ]
+    },
+    "131": {
+      "kind": "valued",
+      "number": 46,
+      "description": "Поликлинника ДВОМЦ",
+      "address": "Ул. Береговая, 3",
+      "image": [
+        "/photo-valued/46.webp"
+      ]
+    },
+    "136": {
+      "kind": "valued",
+      "number": 145,
+      "description": "Малоэтажный жилой дом/Общественные услуги",
+      "address": "Ул. Казанская, 5",
+      "image": [
+        "/photo-valued/145.webp"
+      ]
+    },
+    "138": {
+      "kind": "valued",
+      "number": 111,
+      "description": "Административное здание",
+      "address": "Ул. Петра Великого, 3",
+      "image": [
+        "/photo-valued/111_2.webp"
+      ]
+    },
+    "141": {
+      "kind": "valued",
+      "number": 106,
+      "description": "Многоквартирый жилой дом/Общественные заведения",
+      "address": "Ул. Суханова, 6а",
+      "image": [
+        "/photo-valued/106.webp"
+      ]
+    },
+    "142": {
+      "kind": "valued",
+      "number": 107,
+      "description": "Многоквартирый жилой дом/Офисно-деловой объект",
+      "address": "Ул. Суханова, 6б",
+      "image": [
+        "/photo-valued/107.webp",
+        "/photo-valued/107_2.webp"
+      ]
+    },
+    "143": {
+      "kind": "valued",
+      "number": 28,
+      "description": "Жилой дом",
+      "address": "Ул. Набережная, 16",
+      "image": [
+        "/photo-valued/28_2.webp",
+        "/photo-valued/28_3.webp"
+      ]
+    },
+    "151": {
+      "kind": "valued",
+      "number": 30,
+      "description": "Многоквартирный жилой дом",
+      "address": "Ул. Тигровая, 20",
+      "image": [
+        "/photo-valued/30.webp"
+      ]
+    },
+    "152": {
+      "kind": "valued",
+      "number": 14,
+      "description": "Административно-деловой объект",
+      "address": "Ул. Посьетская, 15",
+      "image": [
+        "/photo-valued/14.webp",
+        "/photo-valued/14_2.webp"
+      ]
+    },
+    "153": {
+      "kind": "valued",
+      "number": 13,
+      "description": "коммерция/бытовое обслуживание и услуги/редакция ведомственного издания (ТОФ)",
+      "address": "Ул. Посьетская, 22",
+      "image": [
+        "/photo-valued/13.webp",
+        "/photo-valued/13_2.webp"
+      ]
+    },
+    "156": {
+      "kind": "valued",
+      "number": 1,
+      "description": "жилой дом/библиотека",
+      "address": "Ул. Верхнепортовая, 76",
+      "image": [
+        "/photo-valued/1.webp"
+      ]
+    },
+    "158": {
+      "kind": "valued",
+      "number": 15,
+      "description": "Жилой дом",
+      "address": "Ул. Посьетская, 9",
+      "image": [
+        "/photo-valued/15_2.webp",
+        "/photo-valued/15_3.webp"
+      ]
+    },
+    "159": {
+      "kind": "valued",
+      "number": 12,
+      "description": "Жилой дом",
+      "address": "Ул. Посьетская, 23",
+      "image": [
+        "/photo-valued/12.webp"
+      ]
+    },
+    "161": {
+      "kind": "valued",
+      "number": 16,
+      "description": "Мемориальный дом-музей В.К. Арсеньева",
+      "address": "Ул. Арсеньева, 6",
+      "image": [
+        "/photo-valued/16.webp",
+        "/photo-valued/16_2.webp"
+      ]
+    },
+    "163": {
+      "kind": "valued",
+      "number": 5,
+      "description": "Малоэтажный жилой дом",
+      "address": "Ул. Верхнепортовая, 9",
+      "image": [
+        "/photo-valued/5.webp"
+      ]
+    }
+  }
+}

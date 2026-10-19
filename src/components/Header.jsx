@@ -12,7 +12,7 @@ function Header() {
         <Link to="/" className="w-12 md:w-12 xl:w-24 flex-shrink-0">
           <img src="/logo.png" alt="logo" />
         </Link>
-        <nav className="hidden md:flex flex-1 min-w-0 justify-between items-center gap-3 lg:gap-4 xl:gap-6 text-[9px] lg:text-sm xl:text-lg uppercase font-medium tracking-wide">
+        <nav className="hidden md:flex flex-1 min-w-0 justify-between items-center gap-3 lg:gap-4 xl:gap-6 text-[clamp(11px,calc(5.3px+0.744vw),16px)] leading-snug uppercase font-medium tracking-wide">
           {pageNames.map((item) => (
             <Link
               key={item.id}
@@ -25,7 +25,7 @@ function Header() {
         </nav>
         <a
           href="mailto:vladhistorycenter@gmail.com"
-          className="shrink-0 whitespace-nowrap text-white text-[9px] font-semibold lg:text-xs xl:text-base uppercase bg-orange rounded px-3 py-1.5 lg:px-4 lg:py-2 xl:px-6 xl:py-4"
+          className="shrink-0 whitespace-nowrap text-white text-[10px] font-semibold lg:text-xs xl:text-base uppercase bg-orange rounded px-3 py-1.5 lg:px-4 lg:py-2 xl:px-6 xl:py-4"
         >
           <span>Написать на почту</span>
         </a>
