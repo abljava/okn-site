@@ -129,6 +129,23 @@ body {
   top: 0px !important;
 }
 
+/* Зум прилипает к верху окна, пока карта на экране.
+   overflow: clip вместо hidden — иначе sticky считается от самой карты, а не от страницы. */
+.leaflet-container {
+  overflow: clip !important;
+}
+
+.leaflet-control-container {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.leaflet-top.leaflet-left {
+  position: sticky !important;
+  top: 0;
+}
+
 /* Кастомные стили для чекбоксов */
 .custom-checkbox {
   appearance: none !important;

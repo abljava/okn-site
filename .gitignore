@@ -30,6 +30,7 @@ dist-ssr
 # Large object PDFs — upload to the server separately, not via git
 public/photo/
 public/photo-dev/
+public/photo-valued/
 public/pdf-protected-objects/
 public/pdf-borders/
 .metrika-build-check/

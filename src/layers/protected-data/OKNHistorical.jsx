@@ -1,6 +1,10 @@
 import GeoJsonLayer from "../shared/GeoJsonLayer";
+import valuedBuildings from "../../data/valuedBuildings.json";
 
-export default function ViewOKNHistorical({ layerColor = "#a866ea" }) {
+export default function ViewOKNHistorical({
+  onFeatureClick,
+  layerColor = "#a866ea",
+}) {
   return (
     <GeoJsonLayer
       url="/data/8_valued_development_XIX_XX.geojson"
@@ -11,6 +15,9 @@ export default function ViewOKNHistorical({ layerColor = "#a866ea" }) {
         fillOpacity: 0.8,
         opacity: 1,
       }}
+      onFeatureClick={onFeatureClick}
+      interactive
+      featureProps={valuedBuildings["8"]}
     />
   );
 }

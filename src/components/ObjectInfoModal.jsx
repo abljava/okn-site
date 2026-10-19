@@ -11,15 +11,19 @@ export default function ObjectInfoModal({
   const [currentImgIdx, setCurrentImg] = React.useState(0);
   const [openPdf, setOpenPdf] = React.useState(null);
 
+  React.useEffect(() => {
+    setCurrentImg(0);
+  }, [feature]);
+
   const closeToMap = React.useCallback(() => {
     setOpenPdf(null);
     onClose();
   }, [onClose]);
 
   if (!feature) return null;
-  const { id, number, fid, name, description, address, image } =
+  const { number, description, address, image, kind } =
     feature.properties || {};
-  const pdfs = getObjectPdfs(number, pdfSource);
+  const pdfs = kind === "valued" ? [] : getObjectPdfs(number, pdfSource);
 
   return (
     <div

@@ -18,7 +18,7 @@ import HistoricalPlan from "../layers/protected-data/HistoricalPlan";
 function ProtectedObjects() {
   return (
     <>
-      <main className="relative  z-10 px-5 2xl:text-2xl overflow-hidden">
+      <main className="relative  z-10 px-5 2xl:text-2xl overflow-clip">
         {/* <BgOverlay bgClass="bg-[url('/bgs/bg-protected-mobile.png')] md:bg-[url('/bgs/bg-protected-tablet.png')] lg:bg-[url('/bgs/bg-protected.png')] 2xl:bg-[position:center_-150px]" /> */}
         <div className="fixed -z-20 top-0 left-0 w-full h-full before:content-[''] before:absolute before:inset-0 before:bg-black before:bg-opacity-30">
           <img

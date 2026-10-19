@@ -1,28 +1,12 @@
-import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import BgOverlay from "../components/BgOverlay";
 import Breadcrumbs from "../components/Breadcrumbs";
 
 function Cookies() {
-  const [showConsent, setShowConsent] = useState(false);
   const navigate = useNavigate();
-
-  useEffect(() => {
-    // Проверяем, было ли уже дано согласие
-    const consentGiven = localStorage.getItem("cookieConsent");
-    if (!consentGiven) {
-      setShowConsent(true);
-    }
-  }, []);
-
-  const acceptCookies = () => {
-    localStorage.setItem("cookieConsent", "true");
-    setShowConsent(false);
-  };
 
   const declineCookies = () => {
     localStorage.setItem("cookieConsent", "false");
-    setShowConsent(false);
     navigate("/");
     setTimeout(() => window.scrollTo(0, 0), 0);
   };

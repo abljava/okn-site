@@ -15,7 +15,7 @@ function Footer() {
         <div className="flex flex-col gap-6 md:gap-2 xl:gap-8">
           {/* Меню */}
           <nav>
-            <ul className="flex flex-col md:flex-row md:gap-7 items-center md:items-start gap-5 text-xs font-medium uppercase md:text-[10px] xl:text-lg">
+            <ul className="flex flex-col md:flex-row md:justify-between md:gap-7 items-center md:items-start gap-5 text-xs md:text-[clamp(11px,calc(5.3px+0.744vw),16px)] md:leading-snug font-medium uppercase">
               {pageNames.map((item) => (
                 <Link
                   key={item.id}
@@ -28,7 +28,7 @@ function Footer() {
             </ul>
           </nav>
           {/* Контакты и копирайт */}
-          <div className="flex flex-col items-center md:flex-row md:justify-between gap-2 md:pt-4 xl:pt-10 text-xs md:text-[10px] xl:text-base md:border-t md:border-white/40/20 ">
+          <div className="flex flex-col items-center md:flex-row md:justify-between gap-2 md:pt-4 xl:pt-10 text-xs xl:text-base md:border-t md:border-white/40/20 ">
             <a
               href="mailto:vladhistorycenter@gmail.com"
               className="underline hover:text-orange transition-colors"
