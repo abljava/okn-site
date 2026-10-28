@@ -133,6 +133,20 @@ body {
    overflow: clip вместо hidden — иначе sticky считается от самой карты, а не от страницы. */
 .leaflet-container {
   overflow: clip !important;
+  --okn-label-scale: 1;
+}
+
+.okn-dot-label-inner {
+  transform: scale(var(--okn-label-scale, 1));
+  transform-origin: center center;
+}
+
+.leaflet-container.okn-labels-compact .okn-dot-label-inner span {
+  display: none;
+}
+
+.leaflet-container.okn-labels-hidden .okn-dot-label-inner {
+  visibility: hidden;
 }
 
 .leaflet-control-container {
