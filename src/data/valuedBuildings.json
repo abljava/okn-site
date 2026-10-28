@@ -1,5 +1,15 @@
 {
   "8": {
+    "1": {
+      "kind": "valued",
+      "number": 156,
+      "description": "Подпорная стена",
+      "address": "Подпорная стена в районе зданий по адресам: ул. Верхнепортовая, 54, 56, 56а,",
+      "image": [
+        "/photo-valued/156_2.webp",
+        "/photo-valued/156_3.webp"
+      ]
+    },
     "5": {
       "kind": "valued",
       "number": 17,
@@ -19,6 +29,29 @@
         "/photo-valued/157.webp",
         "/photo-valued/157_2.webp",
         "/photo-valued/157_3.webp"
+      ]
+    },
+    "9": {
+      "kind": "valued",
+      "number": 159,
+      "description": "Подпорная стена",
+      "address": "Подпорная стена у здания по адресу: ул. Пушкинская, 19",
+      "image": [
+        "/photo-valued/159.webp",
+        "/photo-valued/159_4.webp"
+      ]
+    },
+    "11": {
+      "kind": "valued",
+      "number": 168,
+      "description": "Ограждение",
+      "address": "Сохранившиеся фрагменты первоначального каменного ограждения территории Минно-артиллерийского городка Владивостокского военного порта (современный парк Минного городка)",
+      "image": [
+        "/photo-valued/168_2.webp",
+        "/photo-valued/168_3.webp",
+        "/photo-valued/168_4.webp",
+        "/photo-valued/168_5.webp",
+        "/photo-valued/168_6.webp"
       ]
     },
     "15": {
@@ -670,9 +703,48 @@
       "image": [
         "/photo-valued/25_2.webp"
       ]
+    },
+    "126": {
+      "kind": "valued",
+      "number": 155,
+      "description": "Подпорная стена",
+      "address": "Подпорная стена зданием по адресу: Океанский проспект, 26",
+      "image": [
+        "/photo-valued/155_2.webp"
+      ]
+    },
+    "127": {
+      "kind": "valued",
+      "number": 166,
+      "description": "Лестничный транзит",
+      "address": "Каменная лестница от ул. Шкипера Гека к зданию Католического костёла",
+      "image": [
+        "/photo-valued/166.webp",
+        "/photo-valued/166_2.webp",
+        "/photo-valued/166_3.webp"
+      ]
+    },
+    "128": {
+      "kind": "valued",
+      "number": 167,
+      "address": "Каменные подпорные стены, лестницы, внутренний двор зданий по адресу: ул. Капитана Шефнера, 19, 19/1, 19/2, 19/5",
+      "image": [
+        "/photo-valued/167.webp",
+        "/photo-valued/167_2.webp"
+      ]
     }
   },
   "9": {
+    "28": {
+      "kind": "valued",
+      "number": 162,
+      "description": "Подпорная стена",
+      "address": "Подпорная стена и лестницы у здания по адресу: ул. Володарского, 8а",
+      "image": [
+        "/photo-valued/162.webp",
+        "/photo-valued/162_2.webp"
+      ]
+    },
     "42": {
       "kind": "valued",
       "number": 164,
@@ -683,6 +755,35 @@
         "/photo-valued/164_2.webp",
         "/photo-valued/164_3.webp",
         "/photo-valued/164_4.webp"
+      ]
+    },
+    "43": {
+      "kind": "valued",
+      "number": 160,
+      "description": "Подпорная стена",
+      "address": "Подпорная стена и лестницы у здания по адресу: ул. Светланская, 87",
+      "image": [
+        "/photo-valued/160.webp",
+        "/photo-valued/160_2.webp"
+      ]
+    },
+    "48": {
+      "kind": "valued",
+      "number": 161,
+      "description": "Подпорная стена",
+      "address": "Подпорная стена и лестницы у здания по адресу: ул. Светланская, 109",
+      "image": [
+        "/photo-valued/161.webp"
+      ]
+    },
+    "52": {
+      "kind": "valued",
+      "number": 163,
+      "description": "Ограждение",
+      "address": "Фрагмент ограждения у здания по адресу: ул. Светланская, 119 б (МБОУ «Центр образования № 28 с углубленным изучением иностранных языков г. Владивостока»)",
+      "image": [
+        "/photo-valued/163.webp",
+        "/photo-valued/163_2.webp"
       ]
     },
     "58": {
@@ -1564,6 +1665,56 @@
       "address": "Ул. Лазо, 26",
       "image": [
         "/photo-valued/113.webp"
+      ]
+    },
+    "168": {
+      "kind": "valued",
+      "number": 152,
+      "description": "Монумент",
+      "address": "Ул. Петра Великого Николаевские триумфальные ворота",
+      "image": [
+        "/photo-valued/152.webp"
+      ]
+    },
+    "169": {
+      "kind": "valued",
+      "number": 153,
+      "description": "Лестничный транзит",
+      "address": "Лестница и стены у северного фасада здания по адресу: ул. Алеутская, 15",
+      "image": [
+        "/photo-valued/153.webp",
+        "/photo-valued/153_2.webp"
+      ]
+    },
+    "170": {
+      "kind": "valued",
+      "number": 154,
+      "description": "Подпорная стена",
+      "address": "Подпорная стена перед главным фасадом здания по адресу: ул. Алеутская, 15 стр. Б",
+      "image": [
+        "/photo-valued/154.webp",
+        "/photo-valued/154_2.webp"
+      ]
+    },
+    "171": {
+      "kind": "valued",
+      "number": 158,
+      "description": "Подпорная стена",
+      "address": "Подпорная стена между домами по адресам: ул. Бестужева, 35, 35а",
+      "image": [
+        "/photo-valued/158.webp",
+        "/photo-valued/158_2.webp"
+      ]
+    },
+    "172": {
+      "kind": "valued",
+      "number": 165,
+      "description": "Ограждение",
+      "address": "Ограждение у здания по адресу: ул. Адмирала Фокина, 24Б",
+      "image": [
+        "/photo-valued/165.webp",
+        "/photo-valued/165_2.webp",
+        "/photo-valued/165_3.webp"
       ]
     }
   }
