@@ -53,26 +53,24 @@ function App() {
         <BrowserRouter>
           <YandexMetrika />
           <Header />
-          <div className="flex-1 min-h-0 flex flex-col overflow-y-auto">
-            <Suspense fallback={
-              <div className="flex-1 flex items-center justify-center min-h-0">
-                <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-orange-500"></div>
-              </div>
-            }>
-              <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/history" element={<History />} />
-                <Route path="/authors" element={<Authors />} />
-                <Route path="/protected-objects" element={<ProtectedObjects />} />
-                <Route
-                  path="/development-regulations"
-                  element={<DevelopmentRegulations />}
-                />
-                <Route path="/politics" element={<Politics />} />
-                <Route path="/cookies" element={<Cookies />} />
-              </Routes>
-            </Suspense>
-          </div>
+          <Suspense fallback={
+            <div className="flex items-center justify-center min-h-screen">
+              <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-orange-500"></div>
+            </div>
+          }>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/history" element={<History />} />
+              <Route path="/authors" element={<Authors />} />
+              <Route path="/protected-objects" element={<ProtectedObjects />} />
+              <Route
+                path="/development-regulations"
+                element={<DevelopmentRegulations />}
+              />
+              <Route path="/politics" element={<Politics />} />
+              <Route path="/cookies" element={<Cookies />} />
+            </Routes>
+          </Suspense>
           <Footer />
           <CookieConsent />
         </BrowserRouter>

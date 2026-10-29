@@ -1,4 +1,5 @@
 import React from "react";
+import { createPortal } from "react-dom";
 import { getObjectPdfs } from "../data/oknPdfs";
 import PdfViewerOverlay from "./PdfViewerOverlay";
 
@@ -25,14 +26,14 @@ export default function ObjectInfoModal({
     feature.properties || {};
   const pdfs = kind === "valued" ? [] : getObjectPdfs(number, pdfSource);
 
-  return (
+  return createPortal(
     <div
       style={{
         position: "fixed",
-        top: 0,
-        left: 0,
-        width: "100vw",
-        height: "100vh",
+        inset: 0,
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
         background: "rgba(0,0,0,0.6)",
         zIndex: 10000,
       }}
@@ -40,17 +41,13 @@ export default function ObjectInfoModal({
     >
       <div
         style={{
-          position: "absolute",
-          top: "50%",
-          left: "50%",
-          transform: "translate(-50%, -50%)",
+          position: "relative",
           background: "#fff",
-          // borderRadius: 12,
           padding: 32,
-          minWidth: 320,
+          width: "min(480px, calc(100% - 2rem))",
           maxWidth: 480,
           boxShadow: "0 8px 32px rgba(0,0,0,0.2)",
-          maxHeight: "70vh",
+          maxHeight: "70dvh",
           overflowY: "auto",
         }}
         onClick={(e) => e.stopPropagation()}
@@ -209,6 +206,7 @@ export default function ObjectInfoModal({
           onClose={closeToMap}
         />
       )}
-    </div>
+    </div>,
+    document.body
   );
 }
