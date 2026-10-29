@@ -1,94 +1,2292 @@
 {
-"type": "FeatureCollection",
-"name": "rokn_point",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
-"features": [
-{ "type": "Feature", "properties": { "fid": 1, "Layer": "РОКН", "Text": "РОКН\\Pуч.22" }, "geometry": { "type": "Point", "coordinates": [ 131.877824904462756, 43.114286949637112 ] } },
-{ "type": "Feature", "properties": { "fid": 2, "Layer": "РОКН", "Text": "РОКН\\Pуч.23" }, "geometry": { "type": "Point", "coordinates": [ 131.88063094957252, 43.114102849493008 ] } },
-{ "type": "Feature", "properties": { "fid": 3, "Layer": "РОКН", "Text": "РОКН\\Pуч.24" }, "geometry": { "type": "Point", "coordinates": [ 131.878587004962213, 43.116087599492722 ] } },
-{ "type": "Feature", "properties": { "fid": 4, "Layer": "РОКН", "Text": "РОКН\\Pуч.26" }, "geometry": { "type": "Point", "coordinates": [ 131.877471610953449, 43.122962399362457 ] } },
-{ "type": "Feature", "properties": { "fid": 5, "Layer": "РОКН", "Text": "РОКН\\Pуч.27" }, "geometry": { "type": "Point", "coordinates": [ 131.876869337686855, 43.125829950720494 ] } },
-{ "type": "Feature", "properties": { "fid": 6, "Layer": "РОКН", "Text": "РОКН\\Pуч.30" }, "geometry": { "type": "Point", "coordinates": [ 131.882444344085457, 43.121158472818536 ] } },
-{ "type": "Feature", "properties": { "fid": 7, "Layer": "РОКН", "Text": "РОКН\\Pуч.31" }, "geometry": { "type": "Point", "coordinates": [ 131.882493905705047, 43.12159166598714 ] } },
-{ "type": "Feature", "properties": { "fid": 8, "Layer": "РОКН", "Text": "РОКН\\Pуч.32" }, "geometry": { "type": "Point", "coordinates": [ 131.883968973941791, 43.121992158881554 ] } },
-{ "type": "Feature", "properties": { "fid": 9, "Layer": "РОКН", "Text": "РОКН\\Pуч.33" }, "geometry": { "type": "Point", "coordinates": [ 131.884569136112844, 43.117928035951692 ] } },
-{ "type": "Feature", "properties": { "fid": 10, "Layer": "РОКН", "Text": "РОКН\\Pуч.35" }, "geometry": { "type": "Point", "coordinates": [ 131.884031017255523, 43.119763126126557 ] } },
-{ "type": "Feature", "properties": { "fid": 11, "Layer": "РОКН", "Text": "РОКН\\Pуч.36" }, "geometry": { "type": "Point", "coordinates": [ 131.88455672639941, 43.121301743373913 ] } },
-{ "type": "Feature", "properties": { "fid": 12, "Layer": "РОКН", "Text": "РОКН\\Pуч.37" }, "geometry": { "type": "Point", "coordinates": [ 131.885591351520247, 43.121648361453452 ] } },
-{ "type": "Feature", "properties": { "fid": 13, "Layer": "РОКН", "Text": "РОКН\\Pуч.38" }, "geometry": { "type": "Point", "coordinates": [ 131.886886370974594, 43.120729062418803 ] } },
-{ "type": "Feature", "properties": { "fid": 14, "Layer": "РОКН", "Text": "РОКН\\Pуч.39" }, "geometry": { "type": "Point", "coordinates": [ 131.886763039693875, 43.122799334459302 ] } },
-{ "type": "Feature", "properties": { "fid": 15, "Layer": "РОКН", "Text": "РОКН\\Pуч.40" }, "geometry": { "type": "Point", "coordinates": [ 131.887776334022334, 43.120328951028931 ] } },
-{ "type": "Feature", "properties": { "fid": 16, "Layer": "РОКН", "Text": "РОКН\\Pуч.41" }, "geometry": { "type": "Point", "coordinates": [ 131.888506170487688, 43.12237856250858 ] } },
-{ "type": "Feature", "properties": { "fid": 17, "Layer": "РОКН", "Text": "РОКН\\Pуч.42" }, "geometry": { "type": "Point", "coordinates": [ 131.889503213975729, 43.119721659050171 ] } },
-{ "type": "Feature", "properties": { "fid": 18, "Layer": "РОКН", "Text": "РОКН\\Pуч.43" }, "geometry": { "type": "Point", "coordinates": [ 131.889254761764562, 43.120836669729087 ] } },
-{ "type": "Feature", "properties": { "fid": 19, "Layer": "РОКН", "Text": "РОКН\\Pуч.48" }, "geometry": { "type": "Point", "coordinates": [ 131.892389353290724, 43.115484062359322 ] } },
-{ "type": "Feature", "properties": { "fid": 20, "Layer": "РОКН", "Text": "РОКН\\Pуч.45" }, "geometry": { "type": "Point", "coordinates": [ 131.895577888767605, 43.113548389276787 ] } },
-{ "type": "Feature", "properties": { "fid": 21, "Layer": "РОКН", "Text": "РОКН\\Pуч.46" }, "geometry": { "type": "Point", "coordinates": [ 131.895226648966428, 43.114312445943661 ] } },
-{ "type": "Feature", "properties": { "fid": 22, "Layer": "РОКН", "Text": "РОКН\\Pуч.47" }, "geometry": { "type": "Point", "coordinates": [ 131.893826119945857, 43.115159226506037 ] } },
-{ "type": "Feature", "properties": { "fid": 23, "Layer": "РОКН", "Text": "РОКН\\Pуч.51" }, "geometry": { "type": "Point", "coordinates": [ 131.899512826439491, 43.113821136636922 ] } },
-{ "type": "Feature", "properties": { "fid": 24, "Layer": "РОКН", "Text": "РОКН\\Pуч.52" }, "geometry": { "type": "Point", "coordinates": [ 131.897554538534678, 43.114630076437329 ] } },
-{ "type": "Feature", "properties": { "fid": 25, "Layer": "РОКН", "Text": "РОКН\\Pуч.53" }, "geometry": { "type": "Point", "coordinates": [ 131.897743328728382, 43.115630968423169 ] } },
-{ "type": "Feature", "properties": { "fid": 26, "Layer": "РОКН", "Text": "РОКН\\Pуч.55" }, "geometry": { "type": "Point", "coordinates": [ 131.900965284404805, 43.114371645850497 ] } },
-{ "type": "Feature", "properties": { "fid": 27, "Layer": "РОКН", "Text": "РОКН\\Pуч.56" }, "geometry": { "type": "Point", "coordinates": [ 131.902607041770466, 43.114896828597381 ] } },
-{ "type": "Feature", "properties": { "fid": 28, "Layer": "РОКН", "Text": "РОКН\\Pуч.56" }, "geometry": { "type": "Point", "coordinates": [ 131.905799400387536, 43.115142486813681 ] } },
-{ "type": "Feature", "properties": { "fid": 29, "Layer": "РОКН", "Text": "РОКН\\Pуч.57" }, "geometry": { "type": "Point", "coordinates": [ 131.906187844179954, 43.11801556907627 ] } },
-{ "type": "Feature", "properties": { "fid": 30, "Layer": "РОКН", "Text": "РОКН\\Pуч.58" }, "geometry": { "type": "Point", "coordinates": [ 131.907784495903201, 43.114398403846266 ] } },
-{ "type": "Feature", "properties": { "fid": 31, "Layer": "РОКН", "Text": "РОКН\\Pуч.58" }, "geometry": { "type": "Point", "coordinates": [ 131.909712299230648, 43.114299372137673 ] } },
-{ "type": "Feature", "properties": { "fid": 32, "Layer": "РОКН", "Text": "РОКН\\Pуч.60" }, "geometry": { "type": "Point", "coordinates": [ 131.910035662993408, 43.115775693610701 ] } },
-{ "type": "Feature", "properties": { "fid": 33, "Layer": "РОКН", "Text": "РОКН\\Pуч.61" }, "geometry": { "type": "Point", "coordinates": [ 131.912848278483494, 43.118687741095421 ] } },
-{ "type": "Feature", "properties": { "fid": 34, "Layer": "РОКН", "Text": "РОКН\\Pуч.62" }, "geometry": { "type": "Point", "coordinates": [ 131.914381691575301, 43.113357244615017 ] } },
-{ "type": "Feature", "properties": { "fid": 35, "Layer": "РОКН", "Text": "РОКН\\Pуч.62" }, "geometry": { "type": "Point", "coordinates": [ 131.912441879767528, 43.114227534368702 ] } },
-{ "type": "Feature", "properties": { "fid": 36, "Layer": "РОКН", "Text": "РОКН\\Pуч.66" }, "geometry": { "type": "Point", "coordinates": [ 131.922583491579985, 43.111041863562725 ] } },
-{ "type": "Feature", "properties": { "fid": 37, "Layer": "РОКН", "Text": "РОКН\\Pуч.74" }, "geometry": { "type": "Point", "coordinates": [ 131.928312328537658, 43.110218618335388 ] } },
-{ "type": "Feature", "properties": { "fid": 38, "Layer": "РОКН", "Text": "РОКН\\Pуч.74" }, "geometry": { "type": "Point", "coordinates": [ 131.933050177303699, 43.110936254420317 ] } },
-{ "type": "Feature", "properties": { "fid": 39, "Layer": "РОКН", "Text": "РОКН\\Pуч.68" }, "geometry": { "type": "Point", "coordinates": [ 131.931869562204412, 43.11475112930848 ] } },
-{ "type": "Feature", "properties": { "fid": 40, "Layer": "РОКН", "Text": "РОКН\\Pуч.70" }, "geometry": { "type": "Point", "coordinates": [ 131.936722511390201, 43.113201691957691 ] } },
-{ "type": "Feature", "properties": { "fid": 41, "Layer": "РОКН", "Text": "РОКН\\Pуч.72" }, "geometry": { "type": "Point", "coordinates": [ 131.941238584938816, 43.124436278331643 ] } },
-{ "type": "Feature", "properties": { "fid": 42, "Layer": "РОКН", "Text": "РОКН\\Pуч.72" }, "geometry": { "type": "Point", "coordinates": [ 131.9403646429611, 43.121518318840877 ] } },
-{ "type": "Feature", "properties": { "fid": 43, "Layer": "РОКН", "Text": "РОКН\\Pуч.72" }, "geometry": { "type": "Point", "coordinates": [ 131.940594432677955, 43.122599321388641 ] } },
-{ "type": "Feature", "properties": { "fid": 44, "Layer": "РОКН", "Text": "РОКН\\Pуч.71" }, "geometry": { "type": "Point", "coordinates": [ 131.940749764470524, 43.118865754932635 ] } },
-{ "type": "Feature", "properties": { "fid": 45, "Layer": "РОКН", "Text": "РОКН\\Pуч.67" }, "geometry": { "type": "Point", "coordinates": [ 131.925952989838237, 43.110237957724671 ] } },
-{ "type": "Feature", "properties": { "fid": 46, "Layer": "РОКН", "Text": "РОКН\\Pуч.44" }, "geometry": { "type": "Point", "coordinates": [ 131.892790110358959, 43.119574044176275 ] } },
-{ "type": "Feature", "properties": { "fid": 47, "Layer": "РОКН", "Text": "РОКН\\Pуч.57" }, "geometry": { "type": "Point", "coordinates": [ 131.907989144624395, 43.117604350629968 ] } },
-{ "type": "Feature", "properties": { "fid": 48, "Layer": "РОКН", "Text": "РОКН\\Pуч.69" }, "geometry": { "type": "Point", "coordinates": [ 131.935152029173224, 43.111788449899684 ] } },
-{ "type": "Feature", "properties": { "fid": 49, "Layer": "РОКН", "Text": "РОКН\\Pуч.28" }, "geometry": { "type": "Point", "coordinates": [ 131.882667505765568, 43.119488910205156 ] } },
-{ "type": "Feature", "properties": { "fid": 50, "Layer": "РОКН", "Text": "РОКН\\Pуч.25" }, "geometry": { "type": "Point", "coordinates": [ 131.880427308894269, 43.116273086518156 ] } },
-{ "type": "Feature", "properties": { "fid": 51, "Layer": "РОКН", "Text": "РОКН\\Pуч.29" }, "geometry": { "type": "Point", "coordinates": [ 131.88306283075633, 43.120105119533328 ] } },
-{ "type": "Feature", "properties": { "fid": 52, "Layer": "РОКН", "Text": "РОКН\\Pуч.64" }, "geometry": { "type": "Point", "coordinates": [ 131.917587525548981, 43.112149134896974 ] } },
-{ "type": "Feature", "properties": { "fid": 53, "Layer": "РОКН", "Text": "РОКН\\Pуч.65" }, "geometry": { "type": "Point", "coordinates": [ 131.917448325712513, 43.114546347073592 ] } },
-{ "type": "Feature", "properties": { "fid": 54, "Layer": "РОКН", "Text": "РОКН\\Pуч.63" }, "geometry": { "type": "Point", "coordinates": [ 131.914585142396504, 43.114891245061472 ] } },
-{ "type": "Feature", "properties": { "fid": 55, "Layer": "РОКН", "Text": "РОКН\\Pуч.59" }, "geometry": { "type": "Point", "coordinates": [ 131.908945026809079, 43.11545669102243 ] } },
-{ "type": "Feature", "properties": { "fid": 56, "Layer": "РОКН", "Text": "РОКН\\Pуч.50" }, "geometry": { "type": "Point", "coordinates": [ 131.895672537904574, 43.117061537997948 ] } },
-{ "type": "Feature", "properties": { "fid": 57, "Layer": "РОКН", "Text": "РОКН\\Pуч.49" }, "geometry": { "type": "Point", "coordinates": [ 131.895603727627702, 43.115699694649678 ] } },
-{ "type": "Feature", "properties": { "fid": 58, "Layer": "РОКН", "Text": "РОКН\\Pуч.51" }, "geometry": { "type": "Point", "coordinates": [ 131.896796516262441, 43.113311610444178 ] } },
-{ "type": "Feature", "properties": { "fid": 59, "Layer": "РОКН", "Text": "РОКН\\Pуч.34" }, "geometry": { "type": "Point", "coordinates": [ 131.884629857108166, 43.118879241682691 ] } },
-{ "type": "Feature", "properties": { "fid": 60, "Layer": "РОКН", "Text": "РОКН\\Pуч.54" }, "geometry": { "type": "Point", "coordinates": [ 131.897653886669019, 43.116812900322891 ] } },
-{ "type": "Feature", "properties": { "fid": 61, "Layer": "РОКН", "Text": "РОКН\\Pуч.1" }, "geometry": { "type": "Point", "coordinates": [ 131.842981947581222, 43.074690322461791 ] } },
-{ "type": "Feature", "properties": { "fid": 62, "Layer": "РОКН", "Text": "РОКН\\Pуч.3" }, "geometry": { "type": "Point", "coordinates": [ 131.84182736026176, 43.080342008821241 ] } },
-{ "type": "Feature", "properties": { "fid": 63, "Layer": "РОКН", "Text": "РОКН\\Pуч.4" }, "geometry": { "type": "Point", "coordinates": [ 131.845899865842199, 43.082278805944917 ] } },
-{ "type": "Feature", "properties": { "fid": 64, "Layer": "РОКН", "Text": "РОКН\\Pуч.4" }, "geometry": { "type": "Point", "coordinates": [ 131.851400157528644, 43.083236190008655 ] } },
-{ "type": "Feature", "properties": { "fid": 65, "Layer": "РОКН", "Text": "РОКН\\Pуч.5" }, "geometry": { "type": "Point", "coordinates": [ 131.851468167364374, 43.087865084622265 ] } },
-{ "type": "Feature", "properties": { "fid": 66, "Layer": "РОКН", "Text": "РОКН\\Pуч.6" }, "geometry": { "type": "Point", "coordinates": [ 131.86155050672204, 43.090981358904941 ] } },
-{ "type": "Feature", "properties": { "fid": 67, "Layer": "РОКН", "Text": "РОКН\\Pуч.6" }, "geometry": { "type": "Point", "coordinates": [ 131.863087938726437, 43.092902751597293 ] } },
-{ "type": "Feature", "properties": { "fid": 68, "Layer": "РОКН", "Text": "РОКН\\Pуч.12" }, "geometry": { "type": "Point", "coordinates": [ 131.862904932754702, 43.099196300500566 ] } },
-{ "type": "Feature", "properties": { "fid": 69, "Layer": "РОКН", "Text": "РОКН\\Pуч.15" }, "geometry": { "type": "Point", "coordinates": [ 131.875728328242786, 43.106205287634658 ] } },
-{ "type": "Feature", "properties": { "fid": 70, "Layer": "РОКН", "Text": "РОКН\\Pуч.16" }, "geometry": { "type": "Point", "coordinates": [ 131.876532819581968, 43.109880160373557 ] } },
-{ "type": "Feature", "properties": { "fid": 71, "Layer": "РОКН", "Text": "РОКН\\Pуч.17" }, "geometry": { "type": "Point", "coordinates": [ 131.882032276804949, 43.108991513446391 ] } },
-{ "type": "Feature", "properties": { "fid": 72, "Layer": "РОКН", "Text": "РОКН\\Pуч.18" }, "geometry": { "type": "Point", "coordinates": [ 131.881114943877151, 43.109709973182504 ] } },
-{ "type": "Feature", "properties": { "fid": 73, "Layer": "РОКН", "Text": "РОКН\\Pуч.20" }, "geometry": { "type": "Point", "coordinates": [ 131.879689363614631, 43.111824922294232 ] } },
-{ "type": "Feature", "properties": { "fid": 74, "Layer": "РОКН", "Text": "РОКН\\Pуч.21" }, "geometry": { "type": "Point", "coordinates": [ 131.878592521052155, 43.111623813624014 ] } },
-{ "type": "Feature", "properties": { "fid": 75, "Layer": "РОКН", "Text": "РОКН\\Pуч.22" }, "geometry": { "type": "Point", "coordinates": [ 131.879162114018982, 43.114247205338508 ] } },
-{ "type": "Feature", "properties": { "fid": 76, "Layer": "РОКН", "Text": "РОКН\\Pуч.23" }, "geometry": { "type": "Point", "coordinates": [ 131.880595741021352, 43.114466982631029 ] } },
-{ "type": "Feature", "properties": { "fid": 77, "Layer": "РОКН", "Text": "РОКН\\Pуч.19" }, "geometry": { "type": "Point", "coordinates": [ 131.879552071223628, 43.11052750539757 ] } },
-{ "type": "Feature", "properties": { "fid": 78, "Layer": "РОКН", "Text": "РОКН\\Pуч.73" }, "geometry": { "type": "Point", "coordinates": [ 131.844615062193498, 43.083297129234445 ] } },
-{ "type": "Feature", "properties": { "fid": 79, "Layer": "РОКН", "Text": "РОКН\\Pуч.2" }, "geometry": { "type": "Point", "coordinates": [ 131.841704660606354, 43.079776924256805 ] } },
-{ "type": "Feature", "properties": { "fid": 80, "Layer": "РОКН", "Text": "РОКН\\Pуч.11" }, "geometry": { "type": "Point", "coordinates": [ 131.86041050276225, 43.095605583931352 ] } },
-{ "type": "Feature", "properties": { "fid": 81, "Layer": "РОКН", "Text": "РОКН\\Pуч.7" }, "geometry": { "type": "Point", "coordinates": [ 131.864661473400446, 43.09289773990804 ] } },
-{ "type": "Feature", "properties": { "fid": 82, "Layer": "РОКН", "Text": "РОКН\\Pуч.8" }, "geometry": { "type": "Point", "coordinates": [ 131.864627558286458, 43.09369569884494 ] } },
-{ "type": "Feature", "properties": { "fid": 83, "Layer": "РОКН", "Text": "РОКН\\Pуч.13" }, "geometry": { "type": "Point", "coordinates": [ 131.870164013234557, 43.104536606411827 ] } },
-{ "type": "Feature", "properties": { "fid": 84, "Layer": "РОКН", "Text": "РОКН\\Pуч.10" }, "geometry": { "type": "Point", "coordinates": [ 131.865295971078837, 43.094886226460453 ] } },
-{ "type": "Feature", "properties": { "fid": 85, "Layer": "РОКН", "Text": "РОКН\\Pуч.14" }, "geometry": { "type": "Point", "coordinates": [ 131.875685912384625, 43.105554658705891 ] } },
-{ "type": "Feature", "properties": { "fid": 86, "Layer": "РОКН", "Text": "РОКН\\Pуч.1" }, "geometry": { "type": "Point", "coordinates": [ 131.84245667467053, 43.078347232015425 ] } },
-{ "type": "Feature", "properties": { "fid": 87, "Layer": "РОКН", "Text": "РОКН\\Pуч.9" }, "geometry": { "type": "Point", "coordinates": [ 131.863453658143243, 43.095451723758835 ] } }
-]
+  "type": "FeatureCollection",
+  "name": "rokn_point",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 1,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.8429418538392,
+          43.07469070687712
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 2,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.84241657853724,
+          43.078347616273376
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 3,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.84167029296904,
+          43.07977725194548
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 4,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.84179299231005,
+          43.08034233655028
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 5,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.84457496286169,
+          43.083297514284844
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 6,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.5"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.8458597671921,
+          43.08227919143806
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 7,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.5"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.85136005832945,
+          43.08323657743614
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 8,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.6"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.85059736762727,
+          43.085886052963986
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 9,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.7"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.8553382094301,
+          43.08440538344484
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 10,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.8"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.85170338424822,
+          43.08781471999908
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 11,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.9"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.8615063949013,
+          43.090997744392475
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 12,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.9"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.86305521575633,
+          43.09292036285983
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 13,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.10"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.86462136808166,
+          43.09289813205415
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 14,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.11"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.8645874524465,
+          43.09369609098509
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 15,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.12"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.86037039561737,
+          43.09560597460773
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 16,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.13"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.86341355114106,
+          43.095452115500656
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 17,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.14"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.86525586447115,
+          43.09488661884374
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 18,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.15"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.86286482330098,
+          43.099196692077854
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 19,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.15"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.8641322757583,
+          43.10059676577701
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 20,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.16"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.87068498358812,
+          43.10323091583091
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 21,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.17"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.87012390039558,
+          43.104537000573366
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 22,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.18"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.8756457989581,
+          43.10555505481071
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 23,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.19"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.87568821439208,
+          43.10620568375925
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 24,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.20"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.87344691587018,
+          43.10643972893746
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 25,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.21"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.87649270334282,
+          43.10988055680775
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 26,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.22"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.8810252545495,
+          43.108820773131335
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 27,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.23"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.8810748278136,
+          43.10971037122176
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 28,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.24"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.87951195460425,
+          43.110527902895065
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 29,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.25"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.8742270139386,
+          43.11313890176732
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 30,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.26"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.87546830339585,
+          43.112286485470655
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 31,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.27"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.87690800167422,
+          43.11130741697329
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 32,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.28"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.87855240370317,
+          43.111624210793394
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 33,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.29"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.8796492461497,
+          43.111825319849686
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 34,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.30"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.88252178918327,
+          43.11051250606719
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 35,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.31"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.8751745209204,
+          43.114714959703676
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 36,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.32"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.87912199496444,
+          43.11424760272735
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 37,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.33"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.88056163327562,
+          43.11449223628716
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 38,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.34"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.88106309961992,
+          43.11257788184782
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 39,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.35"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.8821853754962,
+          43.113670758124904
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 40,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.35"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.88265795899125,
+          43.115866665970955
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 41,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.36"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.87739430267226,
+          43.11634387475452
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 42,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.37"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.87893740776215,
+          43.11671026050303
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 43,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.38"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.8795681656203,
+          43.1165106150182
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 44,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.39"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.88038718853412,
+          43.116273484365834
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 45,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.40"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.88095100976827,
+          43.11626887535335
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 46,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.41"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.88161976343545,
+          43.11605335065626
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 47,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.42"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.8803093097835,
+          43.11729639658971
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 48,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.43"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.87918648941906,
+          43.118363952983465
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 49,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.44"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.88069144550627,
+          43.11865677526784
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 50,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.45"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.8828622368924,
+          43.118325254637526
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 51,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.46"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.88089971395507,
+          43.11961088583868
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 52,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.47"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.88107944779597,
+          43.12021479473485
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 53,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.48"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.88302270792965,
+          43.12010551833402
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 54,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.49"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.8824042205617,
+          43.12115887141032
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 55,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.50"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.88245378189893,
+          43.12159206459956
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 56,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.51"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.88039127653698,
+          43.122310538030135
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 57,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.52"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.88102957695403,
+          43.12271386430393
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 58,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.53"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.8839288498948,
+          43.12199255801425
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 59,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.54"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.87745118389137,
+          43.12294952480318
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 60,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.55"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.87682921103166,
+          43.12583034739251
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 61,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.56"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.88377429728808,
+          43.1240953771221
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 62,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.57"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.8870699425256,
+          43.124970730385925
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 63,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.58"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.88760991486376,
+          43.12370373336023
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 64,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.59"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.88672291515905,
+          43.12279973457783
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 65,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.88451655935978,
+          43.12132519011131
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 66,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.61"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.88555122772084,
+          43.12164876115247
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 67,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.62"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.88684624779424,
+          43.120729462564874
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 68,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.63"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.88399089466608,
+          43.11976352526412
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 69,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.64"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.8845897351047,
+          43.118879641023554
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 70,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.65"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.8845290147299,
+          43.11792843526407
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 71,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.66"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.885013439268,
+          43.11668397929356
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 72,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.67"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.89045492311791,
+          43.11426935762011
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 73,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.67"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.89191946471175,
+          43.1140218217103
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 74,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.67"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.88468010245765,
+          43.11542780597772
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 75,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.68"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.88989755052486,
+          43.1130821063494
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 76,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.68"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.89143111761157,
+          43.11261782298903
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 77,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.69"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.88612900047343,
+          43.116365765861545
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 78,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.70"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.88726351462145,
+          43.11619537430633
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 79,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.71"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.88759189349366,
+          43.11891679507813
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 80,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.71"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.89040598776933,
+          43.118224757972165
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 81,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.72"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.8868712039402,
+          43.11952527212205
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 82,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.73"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.88946309149085,
+          43.11972206010619
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 83,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.74"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.8877362111162,
+          43.12032935148405
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 84,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.75"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.88921463854751,
+          43.12083707070644
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 85,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.76"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.8884660462525,
+          43.12237896323512
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 86,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.77"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.89274541587338,
+          43.122169684020506
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 87,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.78"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.89274998801713,
+          43.11957444638367
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 88,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.79"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.8914000307613,
+          43.11851391937965
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 89,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.80"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.89255776469224,
+          43.118023821889025
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 90,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.81"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.88951761302485,
+          43.11734265098622
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 91,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.81"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.89059705785914,
+          43.11581855414647
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 92,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.82"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.89081266336203,
+          43.11643651849467
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 93,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.83"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.89273242629443,
+          43.11669429086611
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 94,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.84"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.89234923361536,
+          43.11548446439505
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 95,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.85"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.89327955564866,
+          43.1153417029732
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 96,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.86"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.89486916390425,
+          43.11646985941258
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 97,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.87"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.8956324172455,
+          43.11706194119679
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 98,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.88"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.89556360785727,
+          43.11570009781401
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 99,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.89"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.89549583362555,
+          43.11455932596824
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 100,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.90"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.89553777040211,
+          43.11354879241562
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 101,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.91"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.8994727079521,
+          43.113821541157435
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 102,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.91"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.896756398069,
+          43.113312014008486
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 103,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.92"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.89751441949088,
+          43.114630480277455
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 104,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.92"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.90129732755634,
+          43.115466450881286
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 105,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.93"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.8977032090334,
+          43.11563137233713
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 106,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.94"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.8983501768272,
+          43.11624364667546
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 107,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.95"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.89761376620072,
+          43.11681330421453
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 108,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.96"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.89913983452814,
+          43.116643524386575
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 109,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.97"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.89999791135102,
+          43.11661921513211
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 110,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.98"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.90111495776623,
+          43.11604063146074
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 111,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.99"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.90256692262477,
+          43.11489723421095
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 112,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.99"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.9057525389548,
+          43.115145322158426
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 113,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.100"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.90417340858104,
+          43.116155836097825
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 114,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.100"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.9032522554178,
+          43.116305249658105
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 115,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.101"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.90276700502665,
+          43.11707531388811
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 116,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.101"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.904565302699,
+          43.11786295233862
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 117,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.102"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.90291500194678,
+          43.117785347873834
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 118,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.103"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.90614772304838,
+          43.11801597596931
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 119,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.103"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.90794902378744,
+          43.11760475815143
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 120,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.104"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.90798894179747,
+          43.11664093059239
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 121,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.105"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.90890018087654,
+          43.1154364403261
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 122,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.106"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.90774437715768,
+          43.114398811271236
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 123,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.106"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.9103154045729,
+          43.11358344490868
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 124,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.107"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.90999554338055,
+          43.11577610183558
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 125,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.108"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.91056569193339,
+          43.11637052576226
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 126,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.108"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.91205871311925,
+          43.11628775887139
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 127,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.109"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.91135928692543,
+          43.11770504559938
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 128,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.110"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.91280241024953,
+          43.11869792297762
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 129,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.111"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.91434157360524,
+          43.113357654344846
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 130,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.111"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.91240176120093,
+          43.11422794342522
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 131,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.112"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.9145450234274,
+          43.114891654874526
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 132,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.113"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.91740820701025,
+          43.11454675788777
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 133,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.114"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.9175474084146,
+          43.11214954574138
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 134,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.115"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.91908133565246,
+          43.11218516733557
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 135,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.116"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.92254337524156,
+          43.11104227614996
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 136,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.117"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.92591456327673,
+          43.110268703423756
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 137,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.118"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.92579787853654,
+          43.11219183056355
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 138,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.119"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.92534614839178,
+          43.113058914023654
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 139,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.120"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.92827225809415,
+          43.11340335258922
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 140,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.121"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.9318294435793,
+          43.11475154518032
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 141,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.122"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.93121069091598,
+          43.11299832121901
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 142,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.123"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.93491161177406,
+          43.11362224156478
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 143,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.124"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.93012961166082,
+          43.11200489970746
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 144,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.125"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.9282722128207,
+          43.110219032924526
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 145,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.125"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.93304957426318,
+          43.11094985701472
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 146,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.126"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.93511191253165,
+          43.11178886689903
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 147,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.127"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.93648785209638,
+          43.113246857864034
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 148,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.128"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.9378932024833,
+          43.11596728035923
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 149,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.129"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.9407096432886,
+          43.11886617395048
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 150,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.130"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.9411984601239,
+          43.12443669756508
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 151,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.130"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.94032452004012,
+          43.12151873774469
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 152,
+        "Layer": "РОКН",
+        "Text": "РОКН\\Pуч.130"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.942663686037,
+          43.1228325880344
+        ]
+      }
+    }
+  ]
 }

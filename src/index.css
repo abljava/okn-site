@@ -77,10 +77,23 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+html,
+body,
+#root {
+  height: 100%;
+  min-height: 100dvh;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
 body {
   margin: 0;
   min-width: 320px;
-  min-height: 100vh;
+  min-height: 100dvh;
 
   user-select: none;
   -webkit-user-select: none; /* Safari */
@@ -133,6 +146,20 @@ body {
    overflow: clip вместо hidden — иначе sticky считается от самой карты, а не от страницы. */
 .leaflet-container {
   overflow: clip !important;
+  --okn-label-scale: 1;
+}
+
+.okn-dot-label-inner {
+  transform: scale(var(--okn-label-scale, 1));
+  transform-origin: center center;
+}
+
+.leaflet-container.okn-labels-compact .okn-dot-label-inner span {
+  display: none;
+}
+
+.leaflet-container.okn-labels-hidden .okn-dot-label-inner {
+  visibility: hidden;
 }
 
 .leaflet-control-container {

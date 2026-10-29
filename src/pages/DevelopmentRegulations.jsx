@@ -26,7 +26,7 @@ import OKNIdentifiedDev from "../layers/dev-regulations/OKNIdentifiedDev";
 
 function DevelopmentRegulations() {
   return (
-    <main className="relative z-10 px-5 2xl:text-2xl bg-[url('/bgs/bg-main.jpg')] bg-cover bg-center">
+    <main className="relative z-10 flex-1 flex flex-col min-h-0 overflow-hidden px-5 2xl:text-2xl bg-[url('/bgs/bg-main.jpg')] bg-cover bg-center">
       {/* <BgOverlay bgClass="bg-[url('/bgs/bg-development-mobile.png')] md:bg-[url('/bgs/bg-development-tablet.png')] lg:bg-[url('/bgs/bg-development.png')] 2xl:bg-[position:center_-150px]" /> */}
       <div className="fixed -z-20 top-0 left-0 w-full h-full before:content-[''] before:absolute before:inset-0 before:bg-black before:bg-opacity-30">
         <img
@@ -35,7 +35,7 @@ function DevelopmentRegulations() {
           className="absolute -z-10 -top-20 md:top-0 xl:-top-36 left-1/2 right-1/2 -translate-x-1/2 w-screen max-w-none"
         />
       </div>
-      <div className="md:max-w-[1440px] mx-auto">
+      <div className="shrink-0 overflow-hidden w-full md:max-w-[1440px] mx-auto">
         <Breadcrumbs />
         <section className="!hidden flex flex-col md:grid md:grid-cols-[167px_1fr] 2xl:grid-cols-[370px_1fr] ">
           <div className="hidden md:block"></div>
@@ -49,22 +49,22 @@ function DevelopmentRegulations() {
             </div>
           </div>
         </section>
-        <section className="relative flex flex-col md:grid md:grid-cols-[167px_1fr] 2xl:grid-cols-[370px_1fr] ">
-          <div className="hidden justify-self-end md:pt-0 md:block">
+        <section className="relative flex items-center gap-3 md:grid md:grid-cols-[72px_1fr] lg:grid-cols-[88px_1fr] 2xl:grid-cols-[110px_1fr] md:gap-0">
+          <div className="hidden justify-self-end md:block">
             <img
               src="/images/photo-34.png"
               alt="photo"
-              className="w-24 lg:w-[160px]"
+              className="w-16 lg:w-[88px] 2xl:w-[110px]"
             />
           </div>
-          <div className="relative z-10 grid pb-5 md:pr-10 md:pl-5 md:pb-5 xl:pt-26 xl:pr-0 xl:pl-[100px] md:border-l-2 md:border-white/40 ">
-            <h1 className="text-white text-3xl/8 md:text-3xl/[1.1] lg:text-5xl/[1.1] xl:text-[70px] font-bold font-bebas tracking-[0.04em]">
+          <div className="relative z-10 py-1 md:py-2 md:pl-4 xl:pl-6 md:border-l-2 md:border-white/40">
+            <h1 className="text-white text-2xl/7 md:text-3xl/8 lg:text-4xl/[1.05] xl:text-[42px]/[1.05] 2xl:text-[48px]/[1.05] font-bold font-bebas tracking-[0.04em]">
               проект режимов использования земель и требования к
               градостроительному регламенту
             </h1>
           </div>
         </section>
-        <div className="flex flex-col gap-3 md:items-end md:gap-1 text-xs md:text-[10px] xl:text-base leading-[1.4] pb-3">
+        <div className="flex flex-col gap-1 md:items-end text-[11px] md:text-[10px] xl:text-xs leading-[1.3] pb-2">
           {/* Первый пункт */}
           <div className="flex items-center gap-5 md:gap-2">
             <img src="/icons/pdf.svg" className="w-5 md:w-4"></img>
@@ -92,7 +92,7 @@ function DevelopmentRegulations() {
         </div>
       </div>
       <div
-        className="relative -z-20 left-1/2 right-1/2 -translate-x-1/2 w-screen max-w-none"
+        className="relative z-0 flex-1 min-h-0 left-1/2 right-1/2 -translate-x-1/2 w-screen max-w-none"
         // onClick={() => setIsFullscreen(true)}
       >
         <MapWithObjects pdfSource="borders" pdfLabel="Границы объекта">
@@ -130,44 +130,44 @@ function DevelopmentRegulations() {
             layerColor="#a5a500"
           />
           <Layer1
-            layerName="Р-1 (Регулирования застройки) участки 1-56"
+            layerName="Р-1 (Регулирования застройки) участки 1-102"
             layerColor="#ffbf00"
           />
           <Layer2
-            layerName="Р-2 (Регулирования застройки) участки 1-56"
+            layerName="Р-2 (Регулирования застройки) участки 1-114"
             layerColor="#00bfff"
           />
           <Layer3
-            layerName="Р-3 (Регулирования застройки) участки 1-45"
+            layerName="Р-3 (Регулирования застройки) участки 1-55"
             layerColor="#007ca5"
           />
           <Layer4
-            layerName="Р-4 (Регулирования застройки) участки 1-18"
+            layerName="Р-4 (Регулирования застройки) участки 1-20"
             layerColor="#7f00ff"
           />
           {/* <p>Границы регламентных участков, не предназначенныйх под застройку</p> */}
           <LayerROKN
-            layerName="РОКН (Объекты культурного наследия) участки 1-74"
+            layerName="РОКН (Объекты культурного наследия) участки 1-130"
             layerColor="#a50000"
           />
           <LayerRCI
-            layerName="РЦИ (Ценная историческая застройка) участки 1-35"
+            layerName="РЦИ (Ценная историческая застройка) участки 1-49"
             layerColor="#ff7f00"
           />
           <LayerRIP
-            layerName="РИП (Историческая планировочная структура) участки 1-32"
+            layerName="РИП (Ценная планировочная структура) участки 1-34"
             layerColor="#a57c00"
           />
           <LayerRPL
-            layerName="РПЛ (Природный ландшафт) участки 1-14"
+            layerName="РПЛ (Природный ландшафт) участки 1-16 РПЛ.1 участок 1"
             layerColor="#3f7f00"
           />
           <LayerRGL
-            layerName="РГЛ (Ценный городской ландшафт) участки 1-25"
+            layerName="РГЛ (Ценный городской ландшафт) участки 1-27 РГЛ.1 участок 1"
             layerColor="#3f7f00"
           />
           <LayerRT
-            layerName="РТ (Современная планировочная структура) участки 1-7"
+            layerName="РТ (Современная планировочная структура) участки 1-9"
             layerColor="#7f7f7f"
           />
           <OKNFederalDev

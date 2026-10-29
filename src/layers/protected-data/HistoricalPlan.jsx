@@ -4,6 +4,7 @@ export default function HistoricalPlan({ layerColor = "#7f8f97" }) {
   return (
     <GeoJsonLayer
       url="/data/15_historical_plan.geojson"
+      scaleStroke
       style={{
         color: layerColor,
         weight: 10,

@@ -17,7 +17,7 @@ function Authors() {
 
   return (
     <>
-      <main className="relative pb-16 md:pb-6 lg:pb-16 z-10 px-5 2xl:text-2xl bg-[url('/bgs/bg-main.jpg')] bg-cover bg-center overflow-hidden">
+      <main className="relative shrink-0 pb-16 md:pb-6 lg:pb-16 z-10 px-5 2xl:text-2xl bg-[url('/bgs/bg-main.jpg')] bg-cover bg-center overflow-hidden">
         <BgOverlay bgClass="bg-[url('/bgs/bg-authors-mobile.png')] md:bg-[url('/bgs/bg-authors-tablet.png')] lg:bg-[url('/bgs/bg-authors.png')] 2xl:bg-[position:center_-150px]" />
         {/* <img
           src='/bgs/bg-main.png'

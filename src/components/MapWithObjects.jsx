@@ -1,7 +1,22 @@
-import React, { useState } from "react";
-import { MapContainer, TileLayer } from "react-leaflet";
+import React, { useEffect, useState } from "react";
+import { MapContainer, TileLayer, useMap } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import ObjectInfoModal from "./ObjectInfoModal";
+
+function InvalidateMapSize() {
+  const map = useMap();
+  useEffect(() => {
+    const redraw = () => map.invalidateSize();
+    redraw();
+    const timer = window.setTimeout(redraw, 100);
+    window.addEventListener("resize", redraw);
+    return () => {
+      window.clearTimeout(timer);
+      window.removeEventListener("resize", redraw);
+    };
+  }, [map]);
+  return null;
+}
 
 export default function MapWithObjects({ children, pdfSource, pdfLabel }) {
   const [selectedFeature, setSelectedFeature] = useState(null);
@@ -44,14 +59,15 @@ export default function MapWithObjects({ children, pdfSource, pdfLabel }) {
   });
 
   return (
-    <div className="relative w-full h-full">
+    <div className="relative w-full h-full min-h-0 overflow-hidden">
       <MapContainer
         center={[43.1155, 131.8855]}
         zoom={16}
         scrollWheelZoom={false}
         preferCanvas
-        style={{ height: "100vh", width: "100%" }}
+        style={{ height: "100%", width: "100%" }}
       >
+        <InvalidateMapSize />
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -60,7 +76,7 @@ export default function MapWithObjects({ children, pdfSource, pdfLabel }) {
       </MapContainer>
 
       {/* Панель управления слоями */}
-      <div className="absolute z-[1000] w-[300px] md:w-[450px] xl:w-[650px] top-3 left-3 bg-white rounded-lg shadow-lg">
+      <div className="absolute z-[1000] w-[300px] md:w-[450px] xl:w-[650px] top-3 left-3 max-h-[calc(100%-0.75rem)] flex flex-col overflow-hidden bg-white rounded-lg shadow-lg">
         {isCollapsed ? (
           // Свернутое состояние
           <div 
@@ -79,8 +95,8 @@ export default function MapWithObjects({ children, pdfSource, pdfLabel }) {
           </div>
         ) : (
           // Развернутое состояние
-          <div className="p-3 lg:p-6">
-            <div className="flex items-center justify-between mb-3">
+          <div className="p-3 lg:p-6 min-h-0 flex flex-col overflow-hidden">
+            <div className="flex items-center justify-between mb-3 shrink-0">
               <b className="text-sm lg:text-xl">Условные обозначения:</b>
               <button 
                 onClick={togglePanel}
@@ -96,6 +112,7 @@ export default function MapWithObjects({ children, pdfSource, pdfLabel }) {
                 </svg>
               </button>
             </div>
+            <div className="min-h-0 overflow-y-auto">
             {layerNames.map((name, index) => (
               <div key={name} className="flex items-center gap-2 mb-2">
                 <label className="flex items-center gap-3 text-xs lg:text-base xl:text-lg">
@@ -112,6 +129,7 @@ export default function MapWithObjects({ children, pdfSource, pdfLabel }) {
                 </label>
               </div>
             ))}
+            </div>
           </div>
         )}
       </div>

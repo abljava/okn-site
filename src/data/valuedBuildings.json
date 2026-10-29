@@ -1,5 +1,59 @@
 {
   "8": {
+    "1": {
+      "kind": "valued",
+      "number": 156,
+      "description": "Подпорная стена",
+      "address": "Подпорная стена в районе зданий по адресам: ул. Верхнепортовая, 54, 56, 56а,",
+      "image": [
+        "/photo-valued/156_2.webp",
+        "/photo-valued/156_3.webp"
+      ]
+    },
+    "5": {
+      "kind": "valued",
+      "number": 17,
+      "description": "Частный жилой дом",
+      "address": "Ул. Арсеньева, 11",
+      "image": [
+        "/photo-valued/17.webp",
+        "/photo-valued/17_2.webp"
+      ]
+    },
+    "7": {
+      "kind": "valued",
+      "number": 157,
+      "description": "Подпорная стена",
+      "address": "Подпорная стена Покровского парка Океанский проспект",
+      "image": [
+        "/photo-valued/157.webp",
+        "/photo-valued/157_2.webp",
+        "/photo-valued/157_3.webp"
+      ]
+    },
+    "9": {
+      "kind": "valued",
+      "number": 159,
+      "description": "Подпорная стена",
+      "address": "Подпорная стена у здания по адресу: ул. Пушкинская, 19",
+      "image": [
+        "/photo-valued/159.webp",
+        "/photo-valued/159_4.webp"
+      ]
+    },
+    "11": {
+      "kind": "valued",
+      "number": 168,
+      "description": "Ограждение",
+      "address": "Сохранившиеся фрагменты первоначального каменного ограждения территории Минно-артиллерийского городка Владивостокского военного порта (современный парк Минного городка)",
+      "image": [
+        "/photo-valued/168_2.webp",
+        "/photo-valued/168_3.webp",
+        "/photo-valued/168_4.webp",
+        "/photo-valued/168_5.webp",
+        "/photo-valued/168_6.webp"
+      ]
+    },
     "15": {
       "kind": "valued",
       "number": 137,
@@ -7,6 +61,16 @@
       "address": "Ул. Уткинская, 38",
       "image": [
         "/photo-valued/137.webp"
+      ]
+    },
+    "16": {
+      "kind": "valued",
+      "number": 63,
+      "description": "Хозяйственная пристройка",
+      "address": "Со стороны юго-западного угла объекта культурного наследия по адресу: ул. Ключевая, 5",
+      "image": [
+        "/photo-valued/63.webp",
+        "/photo-valued/63_2.webp"
       ]
     },
     "17": {
@@ -29,6 +93,15 @@
         "/photo-valued/149_2.webp"
       ]
     },
+    "19": {
+      "kind": "valued",
+      "number": 150,
+      "description": "Частный жилой дом",
+      "address": "Ул. Пушкинская, 63б",
+      "image": [
+        "/photo-valued/150_2.webp"
+      ]
+    },
     "20": {
       "kind": "valued",
       "number": 62,
@@ -47,6 +120,25 @@
         "/photo-valued/119.webp"
       ]
     },
+    "22": {
+      "kind": "valued",
+      "number": 97,
+      "description": "Малоэтажный жилой дом",
+      "address": "Ул. Фонтанная, 15",
+      "image": [
+        "/photo-valued/97.webp"
+      ]
+    },
+    "23": {
+      "kind": "valued",
+      "number": 42,
+      "description": "Административное здание",
+      "address": "Океанский проспект, 1",
+      "image": [
+        "/photo-valued/42.webp",
+        "/photo-valued/42_3.webp"
+      ]
+    },
     "24": {
       "kind": "valued",
       "number": 102,
@@ -54,6 +146,15 @@
       "address": "Ул. Уборевича, 10а",
       "image": [
         "/photo-valued/102.webp"
+      ]
+    },
+    "25": {
+      "kind": "valued",
+      "number": 74,
+      "description": "Малоэтажный жилой дом",
+      "address": "Ул. Пионерская, 5",
+      "image": [
+        "/photo-valued/74.webp"
       ]
     },
     "26": {
@@ -101,6 +202,17 @@
         "/photo-valued/110.webp"
       ]
     },
+    "31": {
+      "kind": "valued",
+      "number": 86,
+      "description": "Услуги и коммерция",
+      "address": "Ул. Батарейная, 8б",
+      "image": [
+        "/photo-valued/86.webp",
+        "/photo-valued/86_2.webp",
+        "/photo-valued/86_3.webp"
+      ]
+    },
     "32": {
       "kind": "valued",
       "number": 117,
@@ -118,6 +230,43 @@
       "image": [
         "/photo-valued/96.webp",
         "/photo-valued/96_2.webp"
+      ]
+    },
+    "42": {
+      "kind": "valued",
+      "number": 81,
+      "description": "Военный объект",
+      "address": "Строения в южной части ул. Муравьева-Амурского",
+      "image": []
+    },
+    "43": {
+      "kind": "valued",
+      "number": 81,
+      "description": "Военный объект",
+      "address": "Строения в южной части ул. Муравьева-Амурского",
+      "image": []
+    },
+    "44": {
+      "kind": "valued",
+      "number": 79,
+      "description": "Военный объект",
+      "address": "Строение в южной части ул. Муравьева-Амурского",
+      "image": []
+    },
+    "45": {
+      "kind": "valued",
+      "number": 80,
+      "description": "Военный объект",
+      "address": "Строение в южной части ул. Муравьева-Амурского",
+      "image": []
+    },
+    "46": {
+      "kind": "valued",
+      "number": 37,
+      "description": "Жилой дом",
+      "address": "Ул. Алеутская, 41",
+      "image": [
+        "/photo-valued/37.webp"
       ]
     },
     "47": {
@@ -146,6 +295,24 @@
       "address": "Ул. Фонтанная, 19",
       "image": [
         "/photo-valued/98.webp"
+      ]
+    },
+    "51": {
+      "kind": "valued",
+      "number": 44,
+      "description": "Отель",
+      "address": "Океанский проспект, 26а",
+      "image": [
+        "/photo-valued/44.webp"
+      ]
+    },
+    "53": {
+      "kind": "valued",
+      "number": 45,
+      "description": "Гостиница",
+      "address": "Океанский проспект, 26б",
+      "image": [
+        "/photo-valued/45.webp"
       ]
     },
     "54": {
@@ -336,6 +503,14 @@
         "/photo-valued/99.webp"
       ]
     },
+    "93": {
+      "kind": "valued",
+      "number": 65,
+      "address": "Ул. Светланская, 113 (А1)",
+      "image": [
+        "/photo-valued/65.webp"
+      ]
+    },
     "94": {
       "kind": "valued",
       "number": 85,
@@ -344,6 +519,15 @@
       "image": [
         "/photo-valued/85.webp",
         "/photo-valued/85_2.webp"
+      ]
+    },
+    "101": {
+      "kind": "valued",
+      "number": 24,
+      "description": "Жилой дом",
+      "address": "Ул. 1-я Морская, 10",
+      "image": [
+        "/photo-valued/24.webp"
       ]
     },
     "103": {
@@ -385,6 +569,16 @@
         "/photo-valued/8_2.webp"
       ]
     },
+    "110": {
+      "kind": "valued",
+      "number": 42,
+      "description": "Административное здание",
+      "address": "Океанский проспект, 1",
+      "image": [
+        "/photo-valued/42.webp",
+        "/photo-valued/42_3.webp"
+      ]
+    },
     "112": {
       "kind": "valued",
       "number": 36,
@@ -403,6 +597,15 @@
         "/photo-valued/9_3.webp"
       ]
     },
+    "114": {
+      "kind": "valued",
+      "number": 4,
+      "description": "жилой дом военного ведомства",
+      "address": "Ул. Верхнепортовая, 29а",
+      "image": [
+        "/photo-valued/4.webp"
+      ]
+    },
     "115": {
       "kind": "valued",
       "number": 19,
@@ -410,6 +613,22 @@
       "address": "Ул. Захарова, 14а",
       "image": [
         "/photo-valued/19.webp"
+      ]
+    },
+    "116": {
+      "kind": "valued",
+      "number": 32,
+      "address": "Ул. Алеутская, 2 (служебное строение в 6 м к югу от здания Железнодорожного вокзала по ул. Алеутская, 2)",
+      "image": [
+        "/photo-valued/32.webp"
+      ]
+    },
+    "117": {
+      "kind": "valued",
+      "number": 33,
+      "address": "Ул. Алеутская, 2 Стр.5",
+      "image": [
+        "/photo-valued/33.webp"
       ]
     },
     "118": {
@@ -448,9 +667,134 @@
         "/photo-valued/151.webp",
         "/photo-valued/151_2.webp"
       ]
+    },
+    "122": {
+      "kind": "valued",
+      "number": 17,
+      "description": "Частный жилой дом",
+      "address": "Ул. Арсеньева, 11",
+      "image": [
+        "/photo-valued/17.webp",
+        "/photo-valued/17_2.webp"
+      ]
+    },
+    "123": {
+      "kind": "valued",
+      "number": 26,
+      "description": "Общественное заведение",
+      "address": "Ул. 1-я Морская, 13",
+      "image": [
+        "/photo-valued/26.webp"
+      ]
+    },
+    "124": {
+      "kind": "valued",
+      "number": 64,
+      "address": "С северо-западной стороны здания по адресу: ул. Пушкинская, 33а",
+      "image": [
+        "/photo-valued/64.webp"
+      ]
+    },
+    "125": {
+      "kind": "valued",
+      "number": 25,
+      "description": "Жилой дом",
+      "address": "Ул. 1-я Морская, 10а",
+      "image": [
+        "/photo-valued/25_2.webp"
+      ]
+    },
+    "126": {
+      "kind": "valued",
+      "number": 155,
+      "description": "Подпорная стена",
+      "address": "Подпорная стена зданием по адресу: Океанский проспект, 26",
+      "image": [
+        "/photo-valued/155_2.webp"
+      ]
+    },
+    "127": {
+      "kind": "valued",
+      "number": 166,
+      "description": "Лестничный транзит",
+      "address": "Каменная лестница от ул. Шкипера Гека к зданию Католического костёла",
+      "image": [
+        "/photo-valued/166.webp",
+        "/photo-valued/166_2.webp",
+        "/photo-valued/166_3.webp"
+      ]
+    },
+    "128": {
+      "kind": "valued",
+      "number": 167,
+      "address": "Каменные подпорные стены, лестницы, внутренний двор зданий по адресу: ул. Капитана Шефнера, 19, 19/1, 19/2, 19/5",
+      "image": [
+        "/photo-valued/167.webp",
+        "/photo-valued/167_2.webp"
+      ]
     }
   },
   "9": {
+    "28": {
+      "kind": "valued",
+      "number": 162,
+      "description": "Подпорная стена",
+      "address": "Подпорная стена и лестницы у здания по адресу: ул. Володарского, 8а",
+      "image": [
+        "/photo-valued/162.webp",
+        "/photo-valued/162_2.webp"
+      ]
+    },
+    "42": {
+      "kind": "valued",
+      "number": 164,
+      "description": "Общественное пространство, ограждение, подпорная стена",
+      "address": "Ротонда напротив здания по адресу: ул. Набережная, 16, Ограждение ул. Набережная, Подпорная стена вдоль ул. Набережная",
+      "image": [
+        "/photo-valued/164.webp",
+        "/photo-valued/164_2.webp",
+        "/photo-valued/164_3.webp",
+        "/photo-valued/164_4.webp"
+      ]
+    },
+    "43": {
+      "kind": "valued",
+      "number": 160,
+      "description": "Подпорная стена",
+      "address": "Подпорная стена и лестницы у здания по адресу: ул. Светланская, 87",
+      "image": [
+        "/photo-valued/160.webp",
+        "/photo-valued/160_2.webp"
+      ]
+    },
+    "48": {
+      "kind": "valued",
+      "number": 161,
+      "description": "Подпорная стена",
+      "address": "Подпорная стена и лестницы у здания по адресу: ул. Светланская, 109",
+      "image": [
+        "/photo-valued/161.webp"
+      ]
+    },
+    "52": {
+      "kind": "valued",
+      "number": 163,
+      "description": "Ограждение",
+      "address": "Фрагмент ограждения у здания по адресу: ул. Светланская, 119 б (МБОУ «Центр образования № 28 с углубленным изучением иностранных языков г. Владивостока»)",
+      "image": [
+        "/photo-valued/163.webp",
+        "/photo-valued/163_2.webp"
+      ]
+    },
+    "58": {
+      "kind": "valued",
+      "number": 147,
+      "description": "Офисно-деловое здание",
+      "address": "Ул. Пушкинская, 83 (Центральный объём здания)",
+      "image": [
+        "/photo-valued/147.webp"
+      ]
+    },
     "59": {
       "kind": "valued",
       "number": 144,
@@ -507,6 +851,46 @@
         "/photo-valued/142.webp"
       ]
     },
+    "65": {
+      "kind": "valued",
+      "number": 134,
+      "description": "Малоэтажный жилой дом",
+      "address": "Ул. Уткинская, 18а",
+      "image": [
+        "/photo-valued/134.webp",
+        "/photo-valued/134_2.webp"
+      ]
+    },
+    "66": {
+      "kind": "valued",
+      "number": 135,
+      "description": "Малоэтажный жилой дом",
+      "address": "Ул. Уткинская, 20а",
+      "image": [
+        "/photo-valued/135.webp",
+        "/photo-valued/135_2.webp"
+      ]
+    },
+    "67": {
+      "kind": "valued",
+      "number": 136,
+      "description": "Малоэтажный жилой дом",
+      "address": "Ул. Уткинская, 11б",
+      "image": [
+        "/photo-valued/136.webp",
+        "/photo-valued/136_2.webp",
+        "/photo-valued/136_3.webp"
+      ]
+    },
+    "68": {
+      "kind": "valued",
+      "number": 143,
+      "description": "Центр образования №28 с углубленным изучением иностранных языков",
+      "address": "Ул. Светланская, 119б",
+      "image": [
+        "/photo-valued/143.webp"
+      ]
+    },
     "69": {
       "kind": "valued",
       "number": 12,
@@ -525,6 +909,15 @@
         "/photo-valued/30.webp"
       ]
     },
+    "72": {
+      "kind": "valued",
+      "number": 95,
+      "description": "Многоквартирный жилой дом/Общественные заведения",
+      "address": "Ул. Фонтанная, 31/2",
+      "image": [
+        "/photo-valued/95.webp"
+      ]
+    },
     "73": {
       "kind": "valued",
       "number": 43,
@@ -532,6 +925,15 @@
       "address": "Океанский проспект, 21",
       "image": [
         "/photo-valued/43.webp"
+      ]
+    },
+    "74": {
+      "kind": "valued",
+      "number": 59,
+      "description": "Жилой дом",
+      "address": "Ул. Пушкинская, 48",
+      "image": [
+        "/photo-valued/59.webp"
       ]
     },
     "75": {
@@ -582,6 +984,23 @@
         "/photo-valued/51_2.webp",
         "/photo-valued/51_3.webp",
         "/photo-valued/51_4.webp"
+      ]
+    },
+    "81": {
+      "kind": "valued",
+      "number": 35,
+      "address": "Ул. Алеутская, 12а",
+      "image": [
+        "/photo-valued/35.webp"
+      ]
+    },
+    "82": {
+      "kind": "valued",
+      "number": 34,
+      "address": "Ул. Алеутская, 14а",
+      "image": [
+        "/photo-valued/34.webp",
+        "/photo-valued/34_2.webp"
       ]
     },
     "83": {
@@ -669,6 +1088,16 @@
         "/photo-valued/53_2.webp"
       ]
     },
+    "92": {
+      "kind": "valued",
+      "number": 54,
+      "description": "Малоэтажный жилой дом",
+      "address": "Ул. Тунгусская, 10а",
+      "image": [
+        "/photo-valued/54.webp",
+        "/photo-valued/54_2.webp"
+      ]
+    },
     "93": {
       "kind": "valued",
       "number": 122,
@@ -677,6 +1106,15 @@
       "image": [
         "/photo-valued/122_2.webp",
         "/photo-valued/122_3.webp"
+      ]
+    },
+    "94": {
+      "kind": "valued",
+      "number": 112,
+      "description": "Офисно-деловое/Коммерческое здание",
+      "address": "Ул. Светланская, 51а",
+      "image": [
+        "/photo-valued/112.webp"
       ]
     },
     "95": {
@@ -772,6 +1210,15 @@
         "/photo-valued/108.webp"
       ]
     },
+    "107": {
+      "kind": "valued",
+      "number": 131,
+      "description": "Малоэтажный жилой дом",
+      "address": "Ул. Уткинская, 5а",
+      "image": [
+        "/photo-valued/131.webp"
+      ]
+    },
     "108": {
       "kind": "valued",
       "number": 129,
@@ -845,6 +1292,15 @@
         "/photo-valued/84_3.webp"
       ]
     },
+    "115": {
+      "kind": "valued",
+      "number": 120,
+      "description": "Фуникулер-нижняя станция",
+      "address": "Ул. Пушкинская, 29 Верхняя Станция Фуникулера",
+      "image": [
+        "/photo-valued/120.webp"
+      ]
+    },
     "117": {
       "kind": "valued",
       "number": 94,
@@ -852,6 +1308,15 @@
       "address": "Переулок Краснознаменный, 9/11",
       "image": [
         "/photo-valued/94.webp"
+      ]
+    },
+    "118": {
+      "kind": "valued",
+      "number": 105,
+      "description": "Многоквартирый жилой дом/Коммерция",
+      "address": "Ул. Суханова, 6",
+      "image": [
+        "/photo-valued/105.webp"
       ]
     },
     "119": {
@@ -922,6 +1387,16 @@
         "/photo-valued/128_2.webp"
       ]
     },
+    "130": {
+      "kind": "valued",
+      "number": 29,
+      "description": "Жилой дом/Административно-деловое здание",
+      "address": "Ул. Тигровая, 29",
+      "image": [
+        "/photo-valued/29.webp",
+        "/photo-valued/29_2.webp"
+      ]
+    },
     "131": {
       "kind": "valued",
       "number": 46,
@@ -929,6 +1404,25 @@
       "address": "Ул. Береговая, 3",
       "image": [
         "/photo-valued/46.webp"
+      ]
+    },
+    "132": {
+      "kind": "valued",
+      "number": 52,
+      "address": "Ул. Ивановская, 4 Стр. 9",
+      "image": [
+        "/photo-valued/52.webp",
+        "/photo-valued/52_2.webp"
+      ]
+    },
+    "133": {
+      "kind": "valued",
+      "number": 23,
+      "description": "Жилой дом",
+      "address": "Ул. 1-я Морская, 8а",
+      "image": [
+        "/photo-valued/23.webp",
+        "/photo-valued/23_2.webp"
       ]
     },
     "136": {
@@ -947,6 +1441,24 @@
       "address": "Ул. Петра Великого, 3",
       "image": [
         "/photo-valued/111_2.webp"
+      ]
+    },
+    "139": {
+      "kind": "valued",
+      "number": 112,
+      "description": "Офисно-деловое/Коммерческое здание",
+      "address": "Ул. Светланская, 51а",
+      "image": [
+        "/photo-valued/112.webp"
+      ]
+    },
+    "140": {
+      "kind": "valued",
+      "number": 105,
+      "description": "Многоквартирый жилой дом/Коммерция",
+      "address": "Ул. Суханова, 6",
+      "image": [
+        "/photo-valued/105.webp"
       ]
     },
     "141": {
@@ -978,6 +1490,42 @@
         "/photo-valued/28_3.webp"
       ]
     },
+    "147": {
+      "kind": "valued",
+      "number": 3,
+      "description": "медицинское учреждение (железнодорожная больница)",
+      "address": "Ул. Верхнепортовая, 25а",
+      "image": [
+        "/photo-valued/3.webp"
+      ]
+    },
+    "148": {
+      "kind": "valued",
+      "number": 35,
+      "address": "Ул. Алеутская, 12а",
+      "image": [
+        "/photo-valued/35.webp"
+      ]
+    },
+    "149": {
+      "kind": "valued",
+      "number": 34,
+      "address": "Ул. Алеутская, 14а",
+      "image": [
+        "/photo-valued/34.webp",
+        "/photo-valued/34_2.webp"
+      ]
+    },
+    "150": {
+      "kind": "valued",
+      "number": 29,
+      "description": "Жилой дом/Административно-деловое здание",
+      "address": "Ул. Тигровая, 29",
+      "image": [
+        "/photo-valued/29.webp",
+        "/photo-valued/29_2.webp"
+      ]
+    },
     "151": {
       "kind": "valued",
       "number": 30,
@@ -1007,6 +1555,14 @@
         "/photo-valued/13_2.webp"
       ]
     },
+    "155": {
+      "kind": "valued",
+      "number": 2,
+      "address": "Ул. Верхнепортовая, 76а",
+      "image": [
+        "/photo-valued/2.webp"
+      ]
+    },
     "156": {
       "kind": "valued",
       "number": 1,
@@ -1014,6 +1570,16 @@
       "address": "Ул. Верхнепортовая, 76",
       "image": [
         "/photo-valued/1.webp"
+      ]
+    },
+    "157": {
+      "kind": "valued",
+      "number": 10,
+      "description": "Жилой дом",
+      "address": "Ул. Верхнепортовая, 12б",
+      "image": [
+        "/photo-valued/10_3.webp",
+        "/photo-valued/10_4.webp"
       ]
     },
     "158": {
@@ -1045,6 +1611,16 @@
         "/photo-valued/16_2.webp"
       ]
     },
+    "162": {
+      "kind": "valued",
+      "number": 18,
+      "description": "Многоквартирный жилой дом",
+      "address": "Ул. Арсеньева, 13",
+      "image": [
+        "/photo-valued/18.webp",
+        "/photo-valued/18_2.webp"
+      ]
+    },
     "163": {
       "kind": "valued",
       "number": 5,
@@ -1052,6 +1628,93 @@
       "address": "Ул. Верхнепортовая, 9",
       "image": [
         "/photo-valued/5.webp"
+      ]
+    },
+    "164": {
+      "kind": "valued",
+      "number": 27,
+      "description": "Жилой дом",
+      "address": "Ул. 1-я Морская, 16а",
+      "image": [
+        "/photo-valued/27.webp"
+      ]
+    },
+    "165": {
+      "kind": "valued",
+      "number": 6,
+      "description": "Малоэтажный жилой дом",
+      "address": "Ул. Верхнепортовая, 9а",
+      "image": [
+        "/photo-valued/6.webp"
+      ]
+    },
+    "166": {
+      "kind": "valued",
+      "number": 11,
+      "description": "Управление федеральной почтовой связи Приморского края",
+      "address": "Ул. Верхнепортовая, 2",
+      "image": [
+        "/photo-valued/11.webp",
+        "/photo-valued/11_4.webp"
+      ]
+    },
+    "167": {
+      "kind": "valued",
+      "number": 113,
+      "description": "Офисно-деловое здание",
+      "address": "Ул. Лазо, 26",
+      "image": [
+        "/photo-valued/113.webp"
+      ]
+    },
+    "168": {
+      "kind": "valued",
+      "number": 152,
+      "description": "Монумент",
+      "address": "Ул. Петра Великого Николаевские триумфальные ворота",
+      "image": [
+        "/photo-valued/152.webp"
+      ]
+    },
+    "169": {
+      "kind": "valued",
+      "number": 153,
+      "description": "Лестничный транзит",
+      "address": "Лестница и стены у северного фасада здания по адресу: ул. Алеутская, 15",
+      "image": [
+        "/photo-valued/153.webp",
+        "/photo-valued/153_2.webp"
+      ]
+    },
+    "170": {
+      "kind": "valued",
+      "number": 154,
+      "description": "Подпорная стена",
+      "address": "Подпорная стена перед главным фасадом здания по адресу: ул. Алеутская, 15 стр. Б",
+      "image": [
+        "/photo-valued/154.webp",
+        "/photo-valued/154_2.webp"
+      ]
+    },
+    "171": {
+      "kind": "valued",
+      "number": 158,
+      "description": "Подпорная стена",
+      "address": "Подпорная стена между домами по адресам: ул. Бестужева, 35, 35а",
+      "image": [
+        "/photo-valued/158.webp",
+        "/photo-valued/158_2.webp"
+      ]
+    },
+    "172": {
+      "kind": "valued",
+      "number": 165,
+      "description": "Ограждение",
+      "address": "Ограждение у здания по адресу: ул. Адмирала Фокина, 24Б",
+      "image": [
+        "/photo-valued/165.webp",
+        "/photo-valued/165_2.webp",
+        "/photo-valued/165_3.webp"
       ]
     }
   }

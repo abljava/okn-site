@@ -168,7 +168,7 @@ export default function ObjectInfoModal({
             </div>
           </div>
         ) : (
-          image && (
+          (Array.isArray(image) ? image[0] : image) && (
             <img
               src={Array.isArray(image) ? image[0] : image}
               alt={description}

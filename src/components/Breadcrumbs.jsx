@@ -12,7 +12,7 @@ function Breadcrumbs() {
 
   return (
     <nav
-      className='text-[10px] lg:text-base text-white uppercase py-4'
+      className='text-[10px] lg:text-xs text-white uppercase py-2'
       aria-label='Breadcrumb'
     >
       <ol className='list-none flex flex-wrap gap-2'>

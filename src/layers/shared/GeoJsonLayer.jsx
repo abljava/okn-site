@@ -1,5 +1,5 @@
-import { useMemo } from "react";
-import { GeoJSON } from "react-leaflet";
+import { useCallback, useMemo, useRef } from "react";
+import { GeoJSON, useMap, useMapEvents } from "react-leaflet";
 import { useGeoJson } from "./useGeoJson";
 import {
   bindNumberTooltip,
@@ -16,6 +16,14 @@ const transparentStyle = {
   weight: 0,
 };
 
+const STROKE_REF_ZOOM = 16;
+const MIN_STROKE_WEIGHT = 0.75;
+
+function strokeForZoom(baseWeight, zoom) {
+  if (zoom >= STROKE_REF_ZOOM) return baseWeight;
+  return Math.max(MIN_STROKE_WEIGHT, baseWeight * 2 ** (zoom - STROKE_REF_ZOOM));
+}
+
 export default function GeoJsonLayer({
   url,
   style,
@@ -25,6 +33,7 @@ export default function GeoJsonLayer({
   bufferMeters = 0,
   tooltip = "number",
   featureProps,
+  scaleStroke = false,
 }) {
   const rawData = useGeoJson(url);
 
@@ -63,7 +72,31 @@ export default function GeoJsonLayer({
     };
   }, [interactive, onFeatureClick, tooltip]);
 
-  const pathStyle = useMemo(() => () => style, [style]);
+  const map = useMap();
+  const geoJsonRef = useRef(null);
+
+  const styleAtZoom = useCallback(
+    (zoom) => {
+      if (!scaleStroke) return style;
+      return {
+        ...style,
+        weight: strokeForZoom(style.weight ?? 1, zoom),
+      };
+    },
+    [scaleStroke, style]
+  );
+
+  const pathStyle = useCallback(
+    () => styleAtZoom(map.getZoom()),
+    [map, styleAtZoom]
+  );
+
+  useMapEvents({
+    zoomend() {
+      if (!scaleStroke) return;
+      geoJsonRef.current?.setStyle(styleAtZoom(map.getZoom()));
+    },
+  });
 
   if (!displayData) return null;
 
@@ -77,6 +110,7 @@ export default function GeoJsonLayer({
         />
       )}
       <GeoJSON
+        ref={geoJsonRef}
         data={displayData}
         onEachFeature={onEachFeature}
         style={pathStyle}
