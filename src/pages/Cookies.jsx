@@ -12,7 +12,7 @@ function Cookies() {
   };
 
   return (
-    <main className="relative shrink-0 bg-bg py-8 md:py-10 lg:py-20 px-5 md:px-16 xl:px-[200px] 2xl:text-2xl">
+    <main className="relative bg-bg py-8 md:py-10 lg:py-20 px-5 md:px-16 xl:px-[200px] 2xl:text-2xl">
       <BgOverlay bgClass="bg-[url('/bgs/bg-history-mobile.png')] md:bg-[url('/bgs/bg-history-tablet.png')] lg:bg-[url('/bgs/bg-history.png')] 2xl:bg-[position:center_-150px]" />
       <Breadcrumbs />
       <div className="space-y-6 text-xs lg:text-base mb-16">

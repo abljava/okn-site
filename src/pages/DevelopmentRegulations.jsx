@@ -26,7 +26,7 @@ import OKNIdentifiedDev from "../layers/dev-regulations/OKNIdentifiedDev";
 
 function DevelopmentRegulations() {
   return (
-    <main className="relative z-10 flex-1 flex flex-col min-h-0 overflow-hidden px-5 2xl:text-2xl bg-[url('/bgs/bg-main.jpg')] bg-cover bg-center">
+    <main className="relative z-10 px-5 2xl:text-2xl bg-[url('/bgs/bg-main.jpg')] bg-cover bg-center">
       {/* <BgOverlay bgClass="bg-[url('/bgs/bg-development-mobile.png')] md:bg-[url('/bgs/bg-development-tablet.png')] lg:bg-[url('/bgs/bg-development.png')] 2xl:bg-[position:center_-150px]" /> */}
       <div className="fixed -z-20 top-0 left-0 w-full h-full before:content-[''] before:absolute before:inset-0 before:bg-black before:bg-opacity-30">
         <img
@@ -92,7 +92,7 @@ function DevelopmentRegulations() {
         </div>
       </div>
       <div
-        className="relative z-0 flex-1 min-h-0 left-1/2 right-1/2 -translate-x-1/2 w-screen max-w-none"
+        className="relative z-0 h-[70vh] min-h-[320px] left-1/2 right-1/2 -translate-x-1/2 w-screen max-w-none"
         // onClick={() => setIsFullscreen(true)}
       >
         <MapWithObjects pdfSource="borders" pdfLabel="Границы объекта">
@@ -111,14 +111,6 @@ function DevelopmentRegulations() {
           <BordersDeveloped
             layerName="Разработанные границы ОКН"
             layerColor="#0000ff"
-          />
-          <OKNHistorical
-            layerName="Ценная историческая застройка конца XIX - начала XX вв."
-            layerColor="#a866ea"
-          />
-          <OKNSoviet
-            layerName="Ценная историческая застройка 1930-1960 гг."
-            layerColor="#75eb73"
           />
           <LandscapeZones
             layerName="Зоны охраняемого природного ландшафта"
@@ -169,6 +161,14 @@ function DevelopmentRegulations() {
           <LayerRT
             layerName="РТ (Современная планировочная структура) участки 1-9"
             layerColor="#7f7f7f"
+          />
+          <OKNHistorical
+            layerName="Ценная историческая застройка конца XIX - начала XX вв."
+            layerColor="#a866ea"
+          />
+          <OKNSoviet
+            layerName="Ценная историческая застройка 1930-1960 гг."
+            layerColor="#75eb73"
           />
           <OKNFederalDev
             layerName="Объекты культурного наследия федерального значения"

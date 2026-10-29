@@ -23,7 +23,7 @@ function History() {
   };
 
   return (
-    <main className="relative shrink-0 pb-16 md:pb-6 px-5 2xl:text-2xl">
+    <main className="relative pb-16 md:pb-6 px-5 2xl:text-2xl">
       <ScrollToTop />
       <BgOverlay bgClass="bg-[url('/bgs/bg-history-mobile.png')] md:bg-[url('/bgs/bg-history-tablet.png')] lg:bg-[url('/bgs/bg-history.png')] 2xl:bg-[position:center_-150px]" />
       <img

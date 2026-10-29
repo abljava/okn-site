@@ -6,7 +6,7 @@ function Home() {
     <>
       {/* <BgOverlay bgClass='bg-black z-30 opacity-90' /> */}
 
-      <main className="relative overflow-hidden shrink-0">
+      <main className="relative overflow-hidden">
         {/* Видео и оверлей */}
         <BackgroundVideo src="/videos/east-to-west.webm" className="" />
         <div className="fixed inset-0 bg-black bg-opacity-50 pointer-events-none -z-5"></div>
