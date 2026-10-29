@@ -32,7 +32,7 @@ function Burger() {
             >
               &times;
             </button>
-            <nav className="flex flex-col gap-6 text-black text-sm uppercase mt-4">
+            <nav className="flex flex-col gap-5 text-black text-[15px] leading-snug uppercase mt-4">
               <Link to="/" onClick={() => setOpen(false)} className="hover:text-orange transition-all">
                 Главная
               </Link>

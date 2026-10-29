@@ -4,15 +4,15 @@ import pageNames from "../utils/pageNames";
 
 function Header() {
   return (
-    <header className="relative z-20 text-white py-1 md:py-2 lg:py-5 border-b border-white/40">
-      <div className="max-w-[1440px] mx-auto flex justify-between items-center gap-3 lg:gap-4 xl:gap-6 px-5 2xl:px-0">
+    <header className="relative z-20 shrink-0 text-white py-1.5 md:py-2 2xl:py-3 border-b border-white/40">
+      <div className="max-w-[1440px] mx-auto flex justify-between items-center gap-3 lg:gap-4 px-5 2xl:px-0">
         <div className="md:hidden">
           <Burger />
         </div>
-        <Link to="/" className="w-12 md:w-12 xl:w-24 flex-shrink-0">
+        <Link to="/" className="w-10 md:w-11 xl:w-14 2xl:w-16 flex-shrink-0">
           <img src="/logo.png" alt="logo" />
         </Link>
-        <nav className="hidden md:flex flex-1 min-w-0 justify-between items-center gap-3 lg:gap-4 xl:gap-6 text-[clamp(11px,calc(5.3px+0.744vw),16px)] leading-snug uppercase font-medium tracking-wide">
+        <nav className="hidden md:flex flex-1 min-w-0 justify-between items-center gap-2 lg:gap-4 text-[11px] 2xl:text-[13px] leading-snug uppercase font-medium tracking-wide">
           {pageNames.map((item) => (
             <Link
               key={item.id}
@@ -25,7 +25,7 @@ function Header() {
         </nav>
         <a
           href="mailto:vladhistorycenter@gmail.com"
-          className="shrink-0 whitespace-nowrap text-white text-[10px] font-semibold lg:text-xs xl:text-base uppercase bg-orange rounded px-3 py-1.5 lg:px-4 lg:py-2 xl:px-6 xl:py-4"
+          className="shrink-0 whitespace-nowrap text-white text-[11px] 2xl:text-[13px] font-semibold uppercase bg-orange rounded px-3 py-1.5 2xl:px-5 2xl:py-2"
         >
           <span>Написать на почту</span>
         </a>

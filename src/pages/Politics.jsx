@@ -2,7 +2,7 @@ import BgOverlay from "../components/BgOverlay";
 
 function Politics() {
   return (
-    <main className="relative bg-white py-8 md:py-10 lg:py-20 px-5 md:px-16 xl:px-[200px] 2xl:text-2xl">
+    <main className="relative shrink-0 bg-white py-8 md:py-10 lg:py-20 px-5 md:px-16 xl:px-[200px] 2xl:text-2xl">
       <BgOverlay bgClass="bg-[url('/bgs/bg-history-mobile.png')] md:bg-[url('/bgs/bg-history-tablet.png')] lg:bg-[url('/bgs/bg-history.png')] 2xl:bg-[position:center_-150px]" />
       <div className="space-y-6">
         <h1 className="text-2xl font-bold mb-6">ПОЛИТИКА В ОТНОШЕНИИ ОБРАБОТКИ ПЕРСОНАЛЬНЫХ ДАННЫХ</h1>
