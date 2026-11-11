@@ -13,9 +13,6 @@ import Layer1 from "../layers/dev-regulations/Layer1";
 import Layer2 from "../layers/dev-regulations/Layer2";
 import Layer3 from "../layers/dev-regulations/Layer3";
 import Layer4 from "../layers/dev-regulations/Layer4";
-import LandscapeZones from "../layers/dev-regulations/LandscapeZones";
-import ProtectedZones from "../layers/dev-regulations/ProtectedZones";
-import DevelopmentZones from "../layers/dev-regulations/DevelopmentZones";
 import LayerRCI from "../layers/dev-regulations/LayerRCI";
 import LayerRIP from "../layers/dev-regulations/LayerRIP";
 import LayerRGL from "../layers/dev-regulations/LayerRGL";
@@ -111,15 +108,6 @@ function DevelopmentRegulations() {
           <BordersDeveloped
             layerName="Разработанные границы ОКН"
             layerColor="#0000ff"
-          />
-          <LandscapeZones
-            layerName="Зоны охраняемого природного ландшафта"
-            layerColor="#3f7f4f"
-          />
-          <ProtectedZones layerName="Охранные зоны" layerColor="#000" />
-          <DevelopmentZones
-            layerName="Зоны регулирования застройки"
-            layerColor="#a5a500"
           />
           <Layer1
             layerName="Р-1 (Регулирования застройки) участки 1-102"
