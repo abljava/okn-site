@@ -4,26 +4,18 @@
       "kind": "valued",
       "number": 156,
       "description": "Подпорная стена",
+      "historicPurpose": "Подпорная стена",
       "address": "Подпорная стена в районе зданий по адресам: ул. Верхнепортовая, 54, 56, 56а,",
       "image": [
         "/photo-valued/156_2.webp",
         "/photo-valued/156_3.webp"
       ]
     },
-    "5": {
-      "kind": "valued",
-      "number": 17,
-      "description": "Частный жилой дом",
-      "address": "Ул. Арсеньева, 11",
-      "image": [
-        "/photo-valued/17.webp",
-        "/photo-valued/17_2.webp"
-      ]
-    },
     "7": {
       "kind": "valued",
       "number": 157,
       "description": "Подпорная стена",
+      "historicPurpose": "Подпорная стена",
       "address": "Подпорная стена Покровского парка Океанский проспект",
       "image": [
         "/photo-valued/157.webp",
@@ -35,6 +27,7 @@
       "kind": "valued",
       "number": 159,
       "description": "Подпорная стена",
+      "historicPurpose": "Подпорная стена",
       "address": "Подпорная стена у здания по адресу: ул. Пушкинская, 19",
       "image": [
         "/photo-valued/159.webp",
@@ -45,6 +38,7 @@
       "kind": "valued",
       "number": 168,
       "description": "Ограждение",
+      "historicPurpose": "Ограждение",
       "address": "Сохранившиеся фрагменты первоначального каменного ограждения территории Минно-артиллерийского городка Владивостокского военного порта (современный парк Минного городка)",
       "image": [
         "/photo-valued/168_2.webp",
@@ -58,6 +52,7 @@
       "kind": "valued",
       "number": 137,
       "description": "Административное здание",
+      "historicPurpose": "Медицинское учреждение. Пастеровская станция",
       "address": "Ул. Уткинская, 38",
       "image": [
         "/photo-valued/137.webp"
@@ -66,7 +61,7 @@
     "16": {
       "kind": "valued",
       "number": 63,
-      "description": "Хозяйственная пристройка",
+      "historicPurpose": "Хозяйственная пристройка",
       "address": "Со стороны юго-западного угла объекта культурного наследия по адресу: ул. Ключевая, 5",
       "image": [
         "/photo-valued/63.webp",
@@ -106,6 +101,7 @@
       "kind": "valued",
       "number": 62,
       "description": "Жилой дом (частная застройка)",
+      "historicPurpose": "Жилой дом (частная застройка)",
       "address": "Ул. Пушкинская, 38а",
       "image": [
         "/photo-valued/62.webp"
@@ -124,6 +120,7 @@
       "kind": "valued",
       "number": 97,
       "description": "Малоэтажный жилой дом",
+      "historicPurpose": "Малоэтажный жилой дом",
       "address": "Ул. Фонтанная, 15",
       "image": [
         "/photo-valued/97.webp"
@@ -152,6 +149,7 @@
       "kind": "valued",
       "number": 74,
       "description": "Малоэтажный жилой дом",
+      "historicPurpose": "Малоэтажный жилой дом",
       "address": "Ул. Пионерская, 5",
       "image": [
         "/photo-valued/74.webp"
@@ -160,7 +158,7 @@
     "26": {
       "kind": "valued",
       "number": 75,
-      "description": "Доходный дом",
+      "historicPurpose": "Доходный дом",
       "address": "Ул. Пионерская, 8",
       "image": [
         "/photo-valued/75.webp"
@@ -178,6 +176,7 @@
       "kind": "valued",
       "number": 71,
       "description": "Частный жилой дом",
+      "historicPurpose": "Частный жилой дом",
       "address": "Ул. Шкипера Гека, 11",
       "image": [
         "/photo-valued/71.webp"
@@ -187,6 +186,7 @@
       "kind": "valued",
       "number": 69,
       "description": "Жилой дом",
+      "historicPurpose": "Жилой дом",
       "address": "Ул. Всеволода Сибирцева, 87",
       "image": [
         "/photo-valued/69.webp",
@@ -217,6 +217,7 @@
       "kind": "valued",
       "number": 117,
       "description": "Многоквартирный жилой дом",
+      "historicPurpose": "Многоквартирный жилой дом",
       "address": "Ул. Уборевича, 24",
       "image": [
         "/photo-valued/117.webp"
@@ -226,6 +227,7 @@
       "kind": "valued",
       "number": 96,
       "description": "Апарт-отель/Гостиница",
+      "historicPurpose": "Малоэтажный жилой дом",
       "address": "Ул. Фонтанная, 59",
       "image": [
         "/photo-valued/96.webp",
@@ -236,6 +238,7 @@
       "kind": "valued",
       "number": 81,
       "description": "Военный объект",
+      "historicPurpose": "Военный объект",
       "address": "Строения в южной части ул. Муравьева-Амурского",
       "image": []
     },
@@ -243,6 +246,7 @@
       "kind": "valued",
       "number": 81,
       "description": "Военный объект",
+      "historicPurpose": "Военный объект",
       "address": "Строения в южной части ул. Муравьева-Амурского",
       "image": []
     },
@@ -250,6 +254,7 @@
       "kind": "valued",
       "number": 79,
       "description": "Военный объект",
+      "historicPurpose": "Военный объект",
       "address": "Строение в южной части ул. Муравьева-Амурского",
       "image": []
     },
@@ -257,6 +262,7 @@
       "kind": "valued",
       "number": 80,
       "description": "Военный объект",
+      "historicPurpose": "Военный объект",
       "address": "Строение в южной части ул. Муравьева-Амурского",
       "image": []
     },
@@ -283,6 +289,7 @@
       "kind": "valued",
       "number": 87,
       "description": "Коммерция",
+      "historicPurpose": "Многоквартирный жилой дом/коммерция",
       "address": "Ул. Семеновская, 9",
       "image": [
         "/photo-valued/87_2.webp"
@@ -292,6 +299,7 @@
       "kind": "valued",
       "number": 98,
       "description": "Многоквартирный жилой дом",
+      "historicPurpose": "Многоквартирный жилой дом",
       "address": "Ул. Фонтанная, 19",
       "image": [
         "/photo-valued/98.webp"
@@ -328,6 +336,7 @@
       "kind": "valued",
       "number": 92,
       "description": "Приморский центр лазерной коррекции зрения и офтальмохирургии",
+      "historicPurpose": "Японский храм УРадзио хонгандзи",
       "address": "Ул. Семеновская, 19",
       "image": [
         "/photo-valued/92.webp",
@@ -348,6 +357,7 @@
       "kind": "valued",
       "number": 38,
       "description": "Жилой дом",
+      "historicPurpose": "Жилой дом",
       "address": "Ул. Мордовцева, 8 В",
       "image": [
         "/photo-valued/38.webp",
@@ -367,6 +377,7 @@
       "kind": "valued",
       "number": 41,
       "description": "Деловой офис",
+      "historicPurpose": "Жилой объект",
       "address": "Ул. Мордовцева, 8 е",
       "image": [
         "/photo-valued/41.webp"
@@ -376,6 +387,7 @@
       "kind": "valued",
       "number": 61,
       "description": "Жилой дом",
+      "historicPurpose": "Жилой дом",
       "address": "Ул. Пушкинская, 38",
       "image": [
         "/photo-valued/61.webp"
@@ -385,6 +397,7 @@
       "kind": "valued",
       "number": 115,
       "description": "Коммерция/общественные услуги",
+      "historicPurpose": "Булочная предпринимателя Константинид",
       "address": "Ул. Пологая, 22",
       "image": [
         "/photo-valued/115.webp"
@@ -394,6 +407,7 @@
       "kind": "valued",
       "number": 82,
       "description": "Малоэтажный жилой дом",
+      "historicPurpose": "Малоэтажный жилой дом",
       "address": "Ул. Экипажная, 10",
       "image": [
         "/photo-valued/82.webp"
@@ -412,6 +426,7 @@
       "kind": "valued",
       "number": 70,
       "description": "Частный жилой дом",
+      "historicPurpose": "Частный жилой дом",
       "address": "Ул. Шкипера Гека, 1а",
       "image": [
         "/photo-valued/70.webp"
@@ -421,6 +436,7 @@
       "kind": "valued",
       "number": 68,
       "description": "Частный жилой дом",
+      "historicPurpose": "Частный жилой дом",
       "address": "Ул. Володарского, 35",
       "image": [
         "/photo-valued/68.webp",
@@ -449,6 +465,7 @@
       "kind": "valued",
       "number": 72,
       "description": "Многоквартирный жилой дом",
+      "historicPurpose": "Многоквартирный жилой дом",
       "address": "Ул. Шкипера Гека, 26",
       "image": [
         "/photo-valued/72.webp"
@@ -467,6 +484,7 @@
       "kind": "valued",
       "number": 93,
       "description": "Жилой дом/услуги",
+      "historicPurpose": "Малоэтажный жилой дом",
       "address": "Переулок Краснознаменный, 7",
       "image": [
         "/photo-valued/93.webp",
@@ -478,6 +496,7 @@
       "kind": "valued",
       "number": 103,
       "description": "Малоэтажный жилой дом",
+      "historicPurpose": "Малоэтажный жилой дом",
       "address": "Ул. Уборевича, 15а",
       "image": [
         "/photo-valued/103.webp",
@@ -488,6 +507,7 @@
       "kind": "valued",
       "number": 104,
       "description": "Офисно-деловое здание",
+      "historicPurpose": "Частный жилой дом/особняк",
       "address": "Ул. Фонтанная, 42а",
       "image": [
         "/photo-valued/104.webp",
@@ -498,6 +518,7 @@
       "kind": "valued",
       "number": 99,
       "description": "Малоэтажный жилой дом/Коммерция",
+      "historicPurpose": "Малоэтажный жилой дом",
       "address": "Ул. Уборевича, 12",
       "image": [
         "/photo-valued/99.webp"
@@ -515,6 +536,7 @@
       "kind": "valued",
       "number": 85,
       "description": "Офисно-деловое здание",
+      "historicPurpose": "Малоэтажный жилой дом",
       "address": "Ул. Фонтанная, 7",
       "image": [
         "/photo-valued/85.webp",
@@ -525,6 +547,7 @@
       "kind": "valued",
       "number": 24,
       "description": "Жилой дом",
+      "historicPurpose": "Жилой дом",
       "address": "Ул. 1-я Морская, 10",
       "image": [
         "/photo-valued/24.webp"
@@ -534,6 +557,7 @@
       "kind": "valued",
       "number": 146,
       "description": "Поликлиника",
+      "historicPurpose": "Особняк строителя Владивостокской крепости военного инженера Александра Фёдорова",
       "address": "Ул. Посьетская, 24",
       "image": [
         "/photo-valued/146.webp",
@@ -563,6 +587,7 @@
       "kind": "valued",
       "number": 8,
       "description": "Общежитие",
+      "historicPurpose": "Офицерский флигель/военная казарма",
       "address": "Ул. Верхнепортовая, 4",
       "image": [
         "/photo-valued/8.webp",
@@ -591,6 +616,7 @@
       "kind": "valued",
       "number": 9,
       "description": "Общежитие",
+      "historicPurpose": "Офицерский флигель/военная казарма",
       "address": "Ул. Верхнепортовая, 10",
       "image": [
         "/photo-valued/9.webp",
@@ -600,7 +626,7 @@
     "114": {
       "kind": "valued",
       "number": 4,
-      "description": "жилой дом военного ведомства",
+      "historicPurpose": "жилой дом военного ведомства",
       "address": "Ул. Верхнепортовая, 29а",
       "image": [
         "/photo-valued/4.webp"
@@ -610,6 +636,7 @@
       "kind": "valued",
       "number": 19,
       "description": "Признан аварийным",
+      "historicPurpose": "Жилой дом",
       "address": "Ул. Захарова, 14а",
       "image": [
         "/photo-valued/19.webp"
@@ -653,6 +680,7 @@
       "kind": "valued",
       "number": 21,
       "description": "Жилой дом",
+      "historicPurpose": "Жилой дом",
       "address": "Ул. Бестужева, 35",
       "image": [
         "/photo-valued/21.webp",
@@ -672,6 +700,7 @@
       "kind": "valued",
       "number": 17,
       "description": "Частный жилой дом",
+      "historicPurpose": "Частный жилой дом",
       "address": "Ул. Арсеньева, 11",
       "image": [
         "/photo-valued/17.webp",
@@ -699,6 +728,7 @@
       "kind": "valued",
       "number": 25,
       "description": "Жилой дом",
+      "historicPurpose": "Жилой дом",
       "address": "Ул. 1-я Морская, 10а",
       "image": [
         "/photo-valued/25_2.webp"
@@ -708,6 +738,7 @@
       "kind": "valued",
       "number": 155,
       "description": "Подпорная стена",
+      "historicPurpose": "Подпорная стена",
       "address": "Подпорная стена зданием по адресу: Океанский проспект, 26",
       "image": [
         "/photo-valued/155_2.webp"
@@ -717,6 +748,7 @@
       "kind": "valued",
       "number": 166,
       "description": "Лестничный транзит",
+      "historicPurpose": "Лестничный транзит",
       "address": "Каменная лестница от ул. Шкипера Гека к зданию Католического костёла",
       "image": [
         "/photo-valued/166.webp",
@@ -739,6 +771,7 @@
       "kind": "valued",
       "number": 162,
       "description": "Подпорная стена",
+      "historicPurpose": "Подпорная стена",
       "address": "Подпорная стена и лестницы у здания по адресу: ул. Володарского, 8а",
       "image": [
         "/photo-valued/162.webp",
@@ -749,6 +782,7 @@
       "kind": "valued",
       "number": 164,
       "description": "Общественное пространство, ограждение, подпорная стена",
+      "historicPurpose": "Общественное пространство, ограждение, подпорная стена",
       "address": "Ротонда напротив здания по адресу: ул. Набережная, 16, Ограждение ул. Набережная, Подпорная стена вдоль ул. Набережная",
       "image": [
         "/photo-valued/164.webp",
@@ -761,6 +795,7 @@
       "kind": "valued",
       "number": 160,
       "description": "Подпорная стена",
+      "historicPurpose": "Подпорная стена",
       "address": "Подпорная стена и лестницы у здания по адресу: ул. Светланская, 87",
       "image": [
         "/photo-valued/160.webp",
@@ -771,6 +806,7 @@
       "kind": "valued",
       "number": 161,
       "description": "Подпорная стена",
+      "historicPurpose": "Подпорная стена",
       "address": "Подпорная стена и лестницы у здания по адресу: ул. Светланская, 109",
       "image": [
         "/photo-valued/161.webp"
@@ -780,6 +816,7 @@
       "kind": "valued",
       "number": 163,
       "description": "Ограждение",
+      "historicPurpose": "Ограждение",
       "address": "Фрагмент ограждения у здания по адресу: ул. Светланская, 119 б (МБОУ «Центр образования № 28 с углубленным изучением иностранных языков г. Владивостока»)",
       "image": [
         "/photo-valued/163.webp",
@@ -799,6 +836,7 @@
       "kind": "valued",
       "number": 144,
       "description": "Средняя общеобразовательная школа №46",
+      "historicPurpose": "Средняя общеобразовательная школа №46",
       "address": "Ул. Батарейная, 6",
       "image": [
         "/photo-valued/144.webp"
@@ -808,6 +846,7 @@
       "kind": "valued",
       "number": 138,
       "description": "Малоэтажный жилой дом",
+      "historicPurpose": "Малоэтажный жилой дом",
       "address": "Партизанский проспект, 6",
       "image": [
         "/photo-valued/138.webp"
@@ -817,6 +856,7 @@
       "kind": "valued",
       "number": 140,
       "description": "Малоэтажный жилой дом",
+      "historicPurpose": "Малоэтажный жилой дом",
       "address": "Партизанский проспект, 10",
       "image": [
         "/photo-valued/140.webp"
@@ -826,6 +866,7 @@
       "kind": "valued",
       "number": 139,
       "description": "Малоэтажный жилой дом",
+      "historicPurpose": "Малоэтажный жилой дом",
       "address": "Партизанский проспект, 8",
       "image": [
         "/photo-valued/139.webp",
@@ -855,6 +896,7 @@
       "kind": "valued",
       "number": 134,
       "description": "Малоэтажный жилой дом",
+      "historicPurpose": "Малоэтажный жилой дом",
       "address": "Ул. Уткинская, 18а",
       "image": [
         "/photo-valued/134.webp",
@@ -895,6 +937,7 @@
       "kind": "valued",
       "number": 12,
       "description": "Жилой дом",
+      "historicPurpose": "Жилой дом",
       "address": "Ул. Посьетская, 23",
       "image": [
         "/photo-valued/12.webp"
@@ -904,6 +947,7 @@
       "kind": "valued",
       "number": 30,
       "description": "Многоквартирный жилой дом",
+      "historicPurpose": "Многоквартирный жилой дом",
       "address": "Ул. Тигровая, 20",
       "image": [
         "/photo-valued/30.webp"
@@ -913,6 +957,7 @@
       "kind": "valued",
       "number": 95,
       "description": "Многоквартирный жилой дом/Общественные заведения",
+      "historicPurpose": "Многоквартирный жилой дом",
       "address": "Ул. Фонтанная, 31/2",
       "image": [
         "/photo-valued/95.webp"
@@ -931,6 +976,7 @@
       "kind": "valued",
       "number": 59,
       "description": "Жилой дом",
+      "historicPurpose": "Жилой дом",
       "address": "Ул. Пушкинская, 48",
       "image": [
         "/photo-valued/59.webp"
@@ -940,6 +986,7 @@
       "kind": "valued",
       "number": 132,
       "description": "Многоквартирный жилой дом",
+      "historicPurpose": "Многоквартирный жилой дом",
       "address": "Ул. Уткинская, 10",
       "image": [
         "/photo-valued/132.webp",
@@ -960,6 +1007,7 @@
       "kind": "valued",
       "number": 101,
       "description": "Многоквартирый жилой дом/Общественные услуги",
+      "historicPurpose": "Многоквартирный жилой дом",
       "address": "Ул. Уборевича, 10б",
       "image": [
         "/photo-valued/101.webp"
@@ -978,6 +1026,7 @@
       "kind": "valued",
       "number": 51,
       "description": "Многоквартирный жилой дом",
+      "historicPurpose": "Многоквартирный жилой дом",
       "address": "Ул. Ивановская, 6/4",
       "image": [
         "/photo-valued/51.webp",
@@ -1007,6 +1056,7 @@
       "kind": "valued",
       "number": 67,
       "description": "Многоквартирный жилой дом",
+      "historicPurpose": "Многоквартирный жилой дом",
       "address": "Ул. Володарского, 8а",
       "image": [
         "/photo-valued/67.webp"
@@ -1016,6 +1066,7 @@
       "kind": "valued",
       "number": 56,
       "description": "Многоквартирный жилой дом",
+      "historicPurpose": "Многоквартирный жилой дом",
       "address": "Ул. Тунгусская, 20",
       "image": [
         "/photo-valued/56.webp",
@@ -1026,6 +1077,7 @@
       "kind": "valued",
       "number": 57,
       "description": "Многоквартирный жилой дом",
+      "historicPurpose": "Многоквартирный жилой дом",
       "address": "Ул. Тунгусская, 22",
       "image": [
         "/photo-valued/57.webp"
@@ -1043,7 +1095,7 @@
     "87": {
       "kind": "valued",
       "number": 118,
-      "description": "Владивостокский судостроительный техникум",
+      "historicPurpose": "Владивостокский судостроительный техникум",
       "address": "Ул. Уборевича, 25",
       "image": [
         "/photo-valued/118_2.webp"
@@ -1053,6 +1105,7 @@
       "kind": "valued",
       "number": 76,
       "description": "Многоквартирный жилой дом",
+      "historicPurpose": "Многоквартирный жилой дом",
       "address": "Ул. Муравьева-Амурского, 5",
       "image": [
         "/photo-valued/76.webp"
@@ -1062,6 +1115,7 @@
       "kind": "valued",
       "number": 78,
       "description": "Многоквартирный жилой дом",
+      "historicPurpose": "Многоквартирный жилой дом",
       "address": "Ул. Муравьева-Амурского, 15/17",
       "image": [
         "/photo-valued/78.webp",
@@ -1072,6 +1126,7 @@
       "kind": "valued",
       "number": 55,
       "description": "Многоквартирный жилой дом",
+      "historicPurpose": "Многоквартирный жилой дом",
       "address": "Ул. Тунгусская, 12",
       "image": [
         "/photo-valued/55.webp",
@@ -1082,6 +1137,7 @@
       "kind": "valued",
       "number": 53,
       "description": "Многоквартирный жилой дом",
+      "historicPurpose": "Многоквартирный жилой дом",
       "address": "Ул. Тунгусская, 10",
       "image": [
         "/photo-valued/53.webp",
@@ -1102,6 +1158,7 @@
       "kind": "valued",
       "number": 122,
       "description": "Многоквартирный жилой дом/Общественные услуги/Коммерция",
+      "historicPurpose": "Многоквартирный жилой дом для начсостава ТОФ",
       "address": "Ул. Светланская, 105а",
       "image": [
         "/photo-valued/122_2.webp",
@@ -1169,6 +1226,7 @@
       "kind": "valued",
       "number": 90,
       "description": "Коммерция/услуги/жилое здание",
+      "historicPurpose": "Жилой дом",
       "address": "Ул. Семеновская, 23",
       "image": [
         "/photo-valued/90.webp"
@@ -1178,6 +1236,7 @@
       "kind": "valued",
       "number": 58,
       "description": "Многоквартирный жилой дом",
+      "historicPurpose": "Многоквартирный жилой дом",
       "address": "Ул. Пушкинская, 46",
       "image": [
         "/photo-valued/58.webp"
@@ -1187,6 +1246,7 @@
       "kind": "valued",
       "number": 47,
       "description": "Многоквартирный жилой дом",
+      "historicPurpose": "Многоквартирный жилой дом",
       "address": "Ул. Светланская, 117",
       "image": [
         "/photo-valued/47.webp"
@@ -1196,6 +1256,7 @@
       "kind": "valued",
       "number": 60,
       "description": "Жилой дом",
+      "historicPurpose": "Жилой дом",
       "address": "Ул. Пушкинская, 34",
       "image": [
         "/photo-valued/60.webp"
@@ -1243,6 +1304,7 @@
       "kind": "valued",
       "number": 50,
       "description": "Малоэтажный жилой дом",
+      "historicPurpose": "Малоэтажный жилой дом",
       "address": "Ул. Ивановская, 5в",
       "image": [
         "/photo-valued/50.webp",
@@ -1253,6 +1315,7 @@
       "kind": "valued",
       "number": 48,
       "description": "Малоэтажный жилой дом",
+      "historicPurpose": "Малоэтажный жилой дом",
       "address": "Ул. Ивановская, 5а",
       "image": [
         "/photo-valued/48.webp",
@@ -1263,6 +1326,7 @@
       "kind": "valued",
       "number": 49,
       "description": "Малоэтажный жилой дом",
+      "historicPurpose": "Малоэтажный жилой дом",
       "address": "Ул. Ивановская, 5б",
       "image": [
         "/photo-valued/49.webp",
@@ -1274,6 +1338,7 @@
       "kind": "valued",
       "number": 83,
       "description": "Многоквартирный жилой дом",
+      "historicPurpose": "Многоквартирный жилой дом",
       "address": "Ул. Ковальчука, 3",
       "image": [
         "/photo-valued/83.webp",
@@ -1285,6 +1350,7 @@
       "kind": "valued",
       "number": 84,
       "description": "Технический лицей",
+      "historicPurpose": "Общеобразовательная школа",
       "address": "Ул. Ковальчука, 6",
       "image": [
         "/photo-valued/84.webp",
@@ -1296,6 +1362,7 @@
       "kind": "valued",
       "number": 120,
       "description": "Фуникулер-нижняя станция",
+      "historicPurpose": "Фуникулер-нижняя станция",
       "address": "Ул. Пушкинская, 29 Верхняя Станция Фуникулера",
       "image": [
         "/photo-valued/120.webp"
@@ -1305,6 +1372,7 @@
       "kind": "valued",
       "number": 94,
       "description": "Многоквартирный жилой дом/услуги",
+      "historicPurpose": "Многоквартирный жилой дом",
       "address": "Переулок Краснознаменный, 9/11",
       "image": [
         "/photo-valued/94.webp"
@@ -1314,6 +1382,7 @@
       "kind": "valued",
       "number": 105,
       "description": "Многоквартирый жилой дом/Коммерция",
+      "historicPurpose": "Многоквартирый жилой дом/Дом специалистов",
       "address": "Ул. Суханова, 6",
       "image": [
         "/photo-valued/105.webp"
@@ -1323,6 +1392,7 @@
       "kind": "valued",
       "number": 106,
       "description": "Многоквартирый жилой дом/Общественные заведения",
+      "historicPurpose": "Многоквартирый жилой дом/Дом специалистов",
       "address": "Ул. Суханова, 6а",
       "image": [
         "/photo-valued/106.webp"
@@ -1332,6 +1402,7 @@
       "kind": "valued",
       "number": 107,
       "description": "Многоквартирый жилой дом/Офисно-деловой объект",
+      "historicPurpose": "Многоквартирый жилой дом/Дом специалистов",
       "address": "Ул. Суханова, 6б",
       "image": [
         "/photo-valued/107.webp",
@@ -1371,6 +1442,7 @@
       "kind": "valued",
       "number": 31,
       "description": "Объект культуры и спорта",
+      "historicPurpose": "Объект культуры и спорта",
       "address": "Ул. Адмирала Фокина, 1В",
       "image": [
         "/photo-valued/31.webp",
@@ -1391,6 +1463,7 @@
       "kind": "valued",
       "number": 29,
       "description": "Жилой дом/Административно-деловое здание",
+      "historicPurpose": "Гостиница \"Европа\"/административно-деловое здание",
       "address": "Ул. Тигровая, 29",
       "image": [
         "/photo-valued/29.webp",
@@ -1400,7 +1473,8 @@
     "131": {
       "kind": "valued",
       "number": 46,
-      "description": "Поликлинника ДВОМЦ",
+      "description": "Поликлиника ДВОМЦ",
+      "historicPurpose": "Управление Владивостокского торгового порта",
       "address": "Ул. Береговая, 3",
       "image": [
         "/photo-valued/46.webp"
@@ -1429,6 +1503,7 @@
       "kind": "valued",
       "number": 145,
       "description": "Малоэтажный жилой дом/Общественные услуги",
+      "historicPurpose": "Малоэтажный жилой дом",
       "address": "Ул. Казанская, 5",
       "image": [
         "/photo-valued/145.webp"
@@ -1456,6 +1531,7 @@
       "kind": "valued",
       "number": 105,
       "description": "Многоквартирый жилой дом/Коммерция",
+      "historicPurpose": "Многоквартирый жилой дом/Дом специалистов",
       "address": "Ул. Суханова, 6",
       "image": [
         "/photo-valued/105.webp"
@@ -1465,6 +1541,7 @@
       "kind": "valued",
       "number": 106,
       "description": "Многоквартирый жилой дом/Общественные заведения",
+      "historicPurpose": "Многоквартирый жилой дом/Дом специалистов",
       "address": "Ул. Суханова, 6а",
       "image": [
         "/photo-valued/106.webp"
@@ -1474,6 +1551,7 @@
       "kind": "valued",
       "number": 107,
       "description": "Многоквартирый жилой дом/Офисно-деловой объект",
+      "historicPurpose": "Многоквартирый жилой дом/Дом специалистов",
       "address": "Ул. Суханова, 6б",
       "image": [
         "/photo-valued/107.webp",
@@ -1520,6 +1598,7 @@
       "kind": "valued",
       "number": 29,
       "description": "Жилой дом/Административно-деловое здание",
+      "historicPurpose": "Гостиница \"Европа\"/административно-деловое здание",
       "address": "Ул. Тигровая, 29",
       "image": [
         "/photo-valued/29.webp",
@@ -1530,6 +1609,7 @@
       "kind": "valued",
       "number": 30,
       "description": "Многоквартирный жилой дом",
+      "historicPurpose": "Многоквартирный жилой дом",
       "address": "Ул. Тигровая, 20",
       "image": [
         "/photo-valued/30.webp"
@@ -1549,6 +1629,7 @@
       "kind": "valued",
       "number": 13,
       "description": "коммерция/бытовое обслуживание и услуги/редакция ведомственного издания (ТОФ)",
+      "historicPurpose": "Редакция газеты Тихоокеанского флота \"Боевая вахта\"",
       "address": "Ул. Посьетская, 22",
       "image": [
         "/photo-valued/13.webp",
@@ -1567,6 +1648,7 @@
       "kind": "valued",
       "number": 1,
       "description": "жилой дом/библиотека",
+      "historicPurpose": "жилой дом/библиотека",
       "address": "Ул. Верхнепортовая, 76",
       "image": [
         "/photo-valued/1.webp"
@@ -1586,6 +1668,7 @@
       "kind": "valued",
       "number": 15,
       "description": "Жилой дом",
+      "historicPurpose": "Блочный, жилой многоквартирный дом",
       "address": "Ул. Посьетская, 9",
       "image": [
         "/photo-valued/15_2.webp",
@@ -1596,6 +1679,7 @@
       "kind": "valued",
       "number": 12,
       "description": "Жилой дом",
+      "historicPurpose": "Жилой дом",
       "address": "Ул. Посьетская, 23",
       "image": [
         "/photo-valued/12.webp"
@@ -1605,6 +1689,7 @@
       "kind": "valued",
       "number": 16,
       "description": "Мемориальный дом-музей В.К. Арсеньева",
+      "historicPurpose": "Жилой дом",
       "address": "Ул. Арсеньева, 6",
       "image": [
         "/photo-valued/16.webp",
@@ -1615,6 +1700,7 @@
       "kind": "valued",
       "number": 18,
       "description": "Многоквартирный жилой дом",
+      "historicPurpose": "Многоквартирный жилой дом",
       "address": "Ул. Арсеньева, 13",
       "image": [
         "/photo-valued/18.webp",
@@ -1625,6 +1711,7 @@
       "kind": "valued",
       "number": 5,
       "description": "Малоэтажный жилой дом",
+      "historicPurpose": "Многоквартирный жилой дом",
       "address": "Ул. Верхнепортовая, 9",
       "image": [
         "/photo-valued/5.webp"
@@ -1634,6 +1721,7 @@
       "kind": "valued",
       "number": 27,
       "description": "Жилой дом",
+      "historicPurpose": "Жилой дом",
       "address": "Ул. 1-я Морская, 16а",
       "image": [
         "/photo-valued/27.webp"
@@ -1643,6 +1731,7 @@
       "kind": "valued",
       "number": 6,
       "description": "Малоэтажный жилой дом",
+      "historicPurpose": "Малоэтажный жилой дом",
       "address": "Ул. Верхнепортовая, 9а",
       "image": [
         "/photo-valued/6.webp"
@@ -1652,6 +1741,7 @@
       "kind": "valued",
       "number": 11,
       "description": "Управление федеральной почтовой связи Приморского края",
+      "historicPurpose": "Военное здание морского собрания",
       "address": "Ул. Верхнепортовая, 2",
       "image": [
         "/photo-valued/11.webp",
@@ -1662,6 +1752,7 @@
       "kind": "valued",
       "number": 113,
       "description": "Офисно-деловое здание",
+      "historicPurpose": "Малоэтажный жилой дом",
       "address": "Ул. Лазо, 26",
       "image": [
         "/photo-valued/113.webp"
@@ -1671,6 +1762,7 @@
       "kind": "valued",
       "number": 152,
       "description": "Монумент",
+      "historicPurpose": "Монумент",
       "address": "Ул. Петра Великого Николаевские триумфальные ворота",
       "image": [
         "/photo-valued/152.webp"
@@ -1680,6 +1772,7 @@
       "kind": "valued",
       "number": 153,
       "description": "Лестничный транзит",
+      "historicPurpose": "Лестничный транзит",
       "address": "Лестница и стены у северного фасада здания по адресу: ул. Алеутская, 15",
       "image": [
         "/photo-valued/153.webp",
@@ -1690,6 +1783,7 @@
       "kind": "valued",
       "number": 154,
       "description": "Подпорная стена",
+      "historicPurpose": "Подпорная стена",
       "address": "Подпорная стена перед главным фасадом здания по адресу: ул. Алеутская, 15 стр. Б",
       "image": [
         "/photo-valued/154.webp",
@@ -1700,6 +1794,7 @@
       "kind": "valued",
       "number": 158,
       "description": "Подпорная стена",
+      "historicPurpose": "Подпорная стена",
       "address": "Подпорная стена между домами по адресам: ул. Бестужева, 35, 35а",
       "image": [
         "/photo-valued/158.webp",
@@ -1710,6 +1805,7 @@
       "kind": "valued",
       "number": 165,
       "description": "Ограждение",
+      "historicPurpose": "Ограждение",
       "address": "Ограждение у здания по адресу: ул. Адмирала Фокина, 24Б",
       "image": [
         "/photo-valued/165.webp",

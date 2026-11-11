@@ -11,10 +11,31 @@ export default function ObjectInfoModal({
 }) {
   const [currentImgIdx, setCurrentImg] = React.useState(0);
   const [openPdf, setOpenPdf] = React.useState(null);
+  const [imageMax, setImageMax] = React.useState(320);
+  const textRef = React.useRef(null);
+  const footerRef = React.useRef(null);
 
   React.useEffect(() => {
     setCurrentImg(0);
   }, [feature]);
+
+  React.useLayoutEffect(() => {
+    if (!feature) return undefined;
+    const fit = () => {
+      const viewport = window.visualViewport?.height ?? window.innerHeight;
+      const textH = textRef.current?.offsetHeight ?? 0;
+      const footerH = footerRef.current?.offsetHeight ?? 0;
+      const available = viewport - 32 - 64 - 16 - textH - footerH;
+      setImageMax(Math.max(96, Math.floor(available)));
+    };
+    fit();
+    window.addEventListener("resize", fit);
+    window.visualViewport?.addEventListener("resize", fit);
+    return () => {
+      window.removeEventListener("resize", fit);
+      window.visualViewport?.removeEventListener("resize", fit);
+    };
+  }, [feature, currentImgIdx]);
 
   const closeToMap = React.useCallback(() => {
     setOpenPdf(null);
@@ -22,7 +43,7 @@ export default function ObjectInfoModal({
   }, [onClose]);
 
   if (!feature) return null;
-  const { number, description, address, image, kind } =
+  const { number, description, address, image, kind, historicPurpose } =
     feature.properties || {};
   const pdfs = kind === "valued" ? [] : getObjectPdfs(number, pdfSource);
 
@@ -47,8 +68,10 @@ export default function ObjectInfoModal({
           width: "min(480px, calc(100% - 2rem))",
           maxWidth: 480,
           boxShadow: "0 8px 32px rgba(0,0,0,0.2)",
-          maxHeight: "70dvh",
-          overflowY: "auto",
+          maxHeight: "calc(100dvh - 2rem)",
+          overflow: "hidden",
+          display: "flex",
+          flexDirection: "column",
         }}
         onClick={(e) => e.stopPropagation()}
       >
@@ -103,75 +126,95 @@ export default function ObjectInfoModal({
 
         {/* Заголовок и описание */}
         {/* <h2 style={{ marginTop: 0 }}>{name}</h2> */}
-        <p>{description}</p>
-        <p className="text-sm mt-4">{address}</p>
-        
+        <div ref={textRef} className="shrink-0">
+          {kind === "valued" ? (
+            <>
+              <p className="min-h-[1.5em]">{description || "\u00a0"}</p>
+              {historicPurpose ? (
+                <p className="mt-1 text-sm">
+                  Историческое назначение здания: {historicPurpose}
+                </p>
+              ) : null}
+            </>
+          ) : (
+            <p>{description}</p>
+          )}
+          <p className="text-sm mt-4">{address}</p>
+        </div>
+
         {/* Слайдер изображений */}
-        {Array.isArray(image) && image.length > 1 ? (
-          <div
-            style={{ position: "relative", maxWidth: "100%", marginTop: 16 }}
-          >
-            <button
-              onClick={() =>
-                setCurrentImg((idx) => (idx - 1 + image.length) % image.length)
-              }
-              style={{
-                position: "absolute",
-                left: 0,
-                top: "50%",
-                transform: "translateY(-50%)",
-                zIndex: 2,
-                background: "rgba(255,255,255,0.7)",
-                border: "none",
-                borderRadius: "50%",
-                width: 32,
-                height: 32,
-                cursor: "pointer",
-              }}
-              aria-label="Предыдущее фото"
-            >
-              &#8592;
-            </button>
-            <img
-              src={image[currentImgIdx]}
-              alt={description}
-              style={{
-                maxWidth: "100%",
-                display: "block",
-                margin: "0 auto",
-              }}
-            />
-            <button
-              onClick={() => setCurrentImg((idx) => (idx + 1) % image.length)}
-              style={{
-                position: "absolute",
-                right: 0,
-                top: "50%",
-                transform: "translateY(-50%)",
-                zIndex: 2,
-                background: "rgba(255,255,255,0.7)",
-                border: "none",
-                borderRadius: "50%",
-                width: 32,
-                height: 32,
-                cursor: "pointer",
-              }}
-              aria-label="Следующее фото"
-            >
-              &#8594;
-            </button>
-            <div style={{ textAlign: "center", marginTop: 8, color: "#888" }}>
-              {currentImgIdx + 1} / {image.length}
+        {(() => {
+          const photos = Array.isArray(image) ? image.filter(Boolean) : image ? [image] : [];
+          if (!photos.length) return null;
+          const src = photos[Math.min(currentImgIdx, photos.length - 1)];
+          return (
+            <div className="relative mt-4 min-h-0 shrink" style={{ maxHeight: imageMax }}>
+              {photos.length > 1 && (
+                <button
+                  onClick={() =>
+                    setCurrentImg((idx) => (idx - 1 + photos.length) % photos.length)
+                  }
+                  style={{
+                    position: "absolute",
+                    left: 0,
+                    top: "50%",
+                    transform: "translateY(-50%)",
+                    zIndex: 2,
+                    background: "rgba(255,255,255,0.7)",
+                    border: "none",
+                    borderRadius: "50%",
+                    width: 32,
+                    height: 32,
+                    cursor: "pointer",
+                  }}
+                  aria-label="Предыдущее фото"
+                >
+                  &#8592;
+                </button>
+              )}
+              <img
+                src={src}
+                alt={description || ""}
+                style={{
+                  display: "block",
+                  maxWidth: "100%",
+                  width: "auto",
+                  height: "auto",
+                  maxHeight: imageMax,
+                  margin: "0 auto",
+                  objectFit: "contain",
+                }}
+              />
+              {photos.length > 1 && (
+                <button
+                  onClick={() => setCurrentImg((idx) => (idx + 1) % photos.length)}
+                  style={{
+                    position: "absolute",
+                    right: 0,
+                    top: "50%",
+                    transform: "translateY(-50%)",
+                    zIndex: 2,
+                    background: "rgba(255,255,255,0.7)",
+                    border: "none",
+                    borderRadius: "50%",
+                    width: 32,
+                    height: 32,
+                    cursor: "pointer",
+                  }}
+                  aria-label="Следующее фото"
+                >
+                  &#8594;
+                </button>
+              )}
             </div>
+          );
+        })()}
+
+        <div ref={footerRef} className="shrink-0">
+        {Array.isArray(image) && image.filter(Boolean).length > 1 && (
+          <div style={{ textAlign: "center", marginTop: 8, color: "#888" }}>
+            {currentImgIdx + 1} / {image.filter(Boolean).length}
           </div>
-        ) : (
-          (Array.isArray(image) ? image[0] : image) && (
-            <img
-              src={Array.isArray(image) ? image[0] : image}
-              alt={description}
-              style={{ maxWidth: "100%", marginTop: 16 }}
-            />
-          )
         )}
 
         {pdfs.length > 0 && (
@@ -198,6 +241,7 @@ export default function ObjectInfoModal({
             })}
           </div>
         )}
+        </div>
       </div>
       {openPdf && (
         <PdfViewerOverlay
