@@ -31,7 +31,6 @@ const protectedObjectPdfs = {
   "73": ["/pdf-protected-objects/073_2.pdf"],
   "80": ["/pdf-protected-objects/080_2.pdf"],
   "84": ["/pdf-protected-objects/084_2.pdf"],
-  "87": ["/pdf-protected-objects/087.pdf"],
   "95": ["/pdf-protected-objects/095.pdf"],
   "108": ["/pdf-protected-objects/108.pdf"],
   "109": ["/pdf-protected-objects/109.pdf"],
