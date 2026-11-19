@@ -8,6 +8,7 @@ import {
   bufferNumberedFeatures,
   filterNumberedFeatures,
 } from "./geoBuffers";
+import { ensureMapPane } from "./mapPanes";
 
 const transparentStyle = {
   color: "transparent",
@@ -34,7 +35,10 @@ export default function GeoJsonLayer({
   tooltip = "number",
   featureProps,
   scaleStroke = false,
+  pane,
 }) {
+  const map = useMap();
+  ensureMapPane(map, pane);
   const rawData = useGeoJson(url);
 
   const data = useMemo(() => {
@@ -72,7 +76,6 @@ export default function GeoJsonLayer({
     };
   }, [interactive, onFeatureClick, tooltip]);
 
-  const map = useMap();
   const geoJsonRef = useRef(null);
 
   const styleAtZoom = useCallback(
@@ -105,6 +108,7 @@ export default function GeoJsonLayer({
       {bufferData && (
         <GeoJSON
           data={bufferData}
+          pane={pane}
           onEachFeature={onEachFeature}
           style={() => transparentStyle}
         />
@@ -112,6 +116,7 @@ export default function GeoJsonLayer({
       <GeoJSON
         ref={geoJsonRef}
         data={displayData}
+        pane={pane}
         onEachFeature={onEachFeature}
         style={pathStyle}
       />

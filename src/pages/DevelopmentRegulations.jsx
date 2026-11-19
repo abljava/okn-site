@@ -20,6 +20,10 @@ import LayerRT from "../layers/dev-regulations/LayerRT";
 import LayerROKN from "../layers/dev-regulations/LayerROKN";
 import LayerRPL from "../layers/dev-regulations/LayerRPL";
 import OKNIdentifiedDev from "../layers/dev-regulations/OKNIdentifiedDev";
+import {
+  REGIME_FILL_PANE,
+  REGIME_OBJECT_PANE,
+} from "../layers/shared/mapPanes";
 
 function DevelopmentRegulations() {
   return (
@@ -112,63 +116,78 @@ function DevelopmentRegulations() {
           <Layer1
             layerName="Р-1 (Регулирования застройки) участки 1-102"
             layerColor="#ffbf00"
+            pane={REGIME_FILL_PANE}
           />
           <Layer2
             layerName="Р-2 (Регулирования застройки) участки 1-114"
             layerColor="#00bfff"
+            pane={REGIME_FILL_PANE}
           />
           <Layer3
             layerName="Р-3 (Регулирования застройки) участки 1-55"
             layerColor="#007ca5"
+            pane={REGIME_FILL_PANE}
           />
           <Layer4
             layerName="Р-4 (Регулирования застройки) участки 1-20"
             layerColor="#7f00ff"
+            pane={REGIME_FILL_PANE}
           />
           {/* <p>Границы регламентных участков, не предназначенныйх под застройку</p> */}
           <LayerROKN
             layerName="РОКН (Объекты культурного наследия) участки 1-130"
             layerColor="#a50000"
+            pane={REGIME_FILL_PANE}
           />
           <LayerRCI
             layerName="РЦИ (Ценная историческая застройка) участки 1-49"
             layerColor="#ff7f00"
+            pane={REGIME_FILL_PANE}
           />
           <LayerRIP
             layerName="РИП (Ценная планировочная структура) участки 1-34"
             layerColor="#a57c00"
+            pane={REGIME_FILL_PANE}
           />
           <LayerRPL
             layerName="РПЛ (Природный ландшафт) участки 1-16 РПЛ.1 участок 1"
             layerColor="#3f7f00"
+            pane={REGIME_FILL_PANE}
           />
           <LayerRGL
             layerName="РГЛ (Ценный городской ландшафт) участки 1-27 РГЛ.1 участок 1"
             layerColor="#3f7f00"
+            pane={REGIME_FILL_PANE}
           />
           <LayerRT
             layerName="РТ (Современная планировочная структура) участки 1-9"
             layerColor="#7f7f7f"
+            pane={REGIME_FILL_PANE}
           />
           <OKNHistorical
             layerName="Ценная историческая застройка конца XIX - начала XX вв."
             layerColor="#a866ea"
+            pane={REGIME_OBJECT_PANE}
           />
           <OKNSoviet
             layerName="Ценная историческая застройка 1930-1960 гг."
             layerColor="#75eb73"
+            pane={REGIME_OBJECT_PANE}
           />
           <OKNFederalDev
             layerName="Объекты культурного наследия федерального значения"
             layerColor="#ea66c9"
+            pane={REGIME_OBJECT_PANE}
           />
           <OKNRegionalDev
             layerName="Объекты культурного наследия регионального значения"
             layerColor="#f85e5b"
+            pane={REGIME_OBJECT_PANE}
           />
           <OKNIdentifiedDev
             layerName="Выявленные объекты культурного наследия"
             layerColor="#ffb266"
+            pane={REGIME_OBJECT_PANE}
           />
         </MapWithObjects>
       </div>

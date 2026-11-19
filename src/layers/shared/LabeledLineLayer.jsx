@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { GeoJSON, useMap } from "react-leaflet";
 import L from "leaflet";
 import { useGeoJson } from "./useGeoJson";
+import { ensureMapPane } from "./mapPanes";
 
 const LABEL_REF_ZOOM = 16;
 const MIN_LABEL_SCALE = 0.3;
@@ -49,7 +50,7 @@ function createLabeledMarker(feature, latlng, layerColor) {
       iconSize: [44, 44],
       iconAnchor: [22, 22],
     }),
-    interactive: true,
+    interactive: false,
   });
 }
 
@@ -58,10 +59,12 @@ export default function LabeledLineLayer({
   pointsUrl,
   layerColor = "#000",
   dashArray,
+  pane,
 }) {
   const lines = useGeoJson(linesUrl);
   const points = useGeoJson(pointsUrl);
   const map = useMap();
+  ensureMapPane(map, pane);
 
   useEffect(() => {
     applyLabelScale(map);
@@ -77,6 +80,8 @@ export default function LabeledLineLayer({
       {lines && (
         <GeoJSON
           data={lines}
+          pane={pane}
+          interactive={false}
           style={() => ({
             color: layerColor,
             weight: 2,

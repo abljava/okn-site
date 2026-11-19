@@ -3,10 +3,12 @@ import GeoJsonLayer from "../shared/GeoJsonLayer";
 export default function OKNIdentifiedDev({
   onFeatureClick,
   layerColor = "#f85e5b",
+  pane,
 }) {
   return (
     <GeoJsonLayer
       url="/data/5_okn_identified.geojson"
+      pane={pane}
       style={{
         color: "#000",
         weight: 2,

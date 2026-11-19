@@ -1,12 +1,13 @@
 import LabeledLineLayer from "../shared/LabeledLineLayer";
 
-export default function Layer1({ layerColor = "#000" }) {
+export default function Layer1({ layerColor = "#000", pane }) {
   return (
     <LabeledLineLayer
       linesUrl="/test-data/dev-regulations/p1_l.geojson"
       pointsUrl="/test-data/dev-regulations/p1_p.geojson"
       layerColor={layerColor}
       dashArray="8, 8"
+      pane={pane}
     />
   );
 }
