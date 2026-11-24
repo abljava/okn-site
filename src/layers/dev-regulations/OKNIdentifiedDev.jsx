@@ -20,6 +20,7 @@ export default function OKNIdentifiedDev({
       interactive
       numberedOnly
       bufferMeters={15}
+      imageFolder="/photo-identified"
     />
   );
 }

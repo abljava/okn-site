@@ -4,6 +4,7 @@ export default function ViewCityLanscape({ layerColor = "#80d4a2" }) {
   return (
     <GeoJsonLayer
       url="/data/10_valued_city_landscape.geojson"
+      sendToBack
       style={{
         color: "#658256",
         weight: 1,

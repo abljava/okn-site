@@ -16,8 +16,9 @@ export default function ViewOKNIdentified({
       }}
       onFeatureClick={onFeatureClick}
       interactive
+      numberedOnly
       bufferMeters={3}
-      tooltip="plaintext_2"
+      imageFolder="/photo-identified"
     />
   );
 }

@@ -10,6 +10,7 @@ export default function ObjectInfoModal({
   pdfLabel,
 }) {
   const [currentImgIdx, setCurrentImg] = React.useState(0);
+  const [hiddenPhotos, setHiddenPhotos] = React.useState([]);
   const [openPdf, setOpenPdf] = React.useState(null);
   const [imageMax, setImageMax] = React.useState(320);
   const textRef = React.useRef(null);
@@ -17,6 +18,7 @@ export default function ObjectInfoModal({
 
   React.useEffect(() => {
     setCurrentImg(0);
+    setHiddenPhotos([]);
   }, [feature]);
 
   React.useLayoutEffect(() => {
@@ -144,7 +146,9 @@ export default function ObjectInfoModal({
 
         {/* Слайдер изображений */}
         {(() => {
-          const photos = Array.isArray(image) ? image.filter(Boolean) : image ? [image] : [];
+          const photos = (Array.isArray(image) ? image.filter(Boolean) : image ? [image] : []).filter(
+            (src) => !hiddenPhotos.includes(src)
+          );
           if (!photos.length) return null;
           const src = photos[Math.min(currentImgIdx, photos.length - 1)];
           return (
@@ -175,6 +179,9 @@ export default function ObjectInfoModal({
               <img
                 src={src}
                 alt={description || ""}
+                onError={() =>
+                  setHiddenPhotos((list) => (list.includes(src) ? list : [...list, src]))
+                }
                 style={{
                   display: "block",
                   maxWidth: "100%",

@@ -65,6 +65,10 @@ function ProtectedObjects() {
             pdfSource="protected-objects"
             pdfLabel="Приказ о предмете охраны"
           >
+            <CityLanscape
+              layerName="Ценный городской ландшафт"
+              layerColor="#1aad56"
+            />
             <OKNBorders layerName="Границы достопримечательного места" layerColor="#000" />
             <OKNFederal
               layerName="Объекты культурного наследия федерального значения"
@@ -97,10 +101,6 @@ function ProtectedObjects() {
             <OKNSoviet
               layerName="Ценная историческая застройка 1930-1960 гг."
               layerColor="#75eb73"
-            />
-            <CityLanscape
-              layerName="Ценный городской ландшафт"
-              layerColor="#1aad56"
             />
             <NatureLandscape
               layerName="Природный ландшафт"

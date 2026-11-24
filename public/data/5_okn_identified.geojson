@@ -13,7 +13,10 @@
       "properties": {
         "fid": 1,
         "Layer": "5 - выявленные окн",
-        "Text": "7"
+        "Text": "В4",
+        "number": "В4",
+        "description": "Мемориальный ансамбль памяти пограничников, погибших при защите границ Отечества",
+        "address": "в районе остановки общественного транспорта «Гайдамак» (пересечение улиц Муравьёва-Амурского, Светланской, Ивановской)"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -50,14 +53,11 @@
         "SubClasses": "AcDbEntity:AcDbPolyline",
         "Linetype": "ByLayer",
         "EntityHandle": "115",
-        "Text": "7",
+        "Text": "В4",
         "id": 7,
-        "number": "7",
-        "description": "Остановка Гайдамак",
-        "address": "",
-        "image": [
-          "/photo-dev/vokn/7.webp"
-        ]
+        "number": "В4",
+        "description": "Мемориальный ансамбль памяти пограничников, погибших при защите границ Отечества",
+        "address": "в районе остановки общественного транспорта «Гайдамак» (пересечение улиц Муравьёва-Амурского, Светланской, Ивановской)"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -94,14 +94,11 @@
         "SubClasses": "AcDbEntity:AcDbPolyline",
         "Linetype": "ByLayer",
         "EntityHandle": "117",
-        "Text": "5",
+        "Text": "В9",
         "id": 5,
-        "number": "5",
-        "description": "ул. Лазо, 3",
-        "address": "ул. Лазо, 3",
-        "image": [
-          "/photo-dev/vokn/5.webp"
-        ]
+        "number": "В9",
+        "description": "Гостиница «Московское подворье»",
+        "address": "ул. Лазо, 3"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -198,14 +195,11 @@
       "properties": {
         "fid": 4,
         "Layer": "5 - выявленные окн",
-        "Text": "3",
+        "Text": "В8",
         "id": 3,
-        "number": "3",
-        "description": "Южная часть пол-ва Шкота, в основании западного отрога горы Токаревского",
-        "address": "Адрес не указан",
-        "image": [
-          "/photo-dev/vokn/3.webp"
-        ]
+        "number": "В8",
+        "description": "Трехамбразурный ДОТ № 254",
+        "address": "южная часть полуострова Шкота, в основании западного отрога горы Токаревского"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -254,14 +248,11 @@
       "properties": {
         "fid": 5,
         "Layer": "5 - выявленные окн",
-        "Text": "2",
+        "Text": "В7",
         "id": 2,
-        "number": "2",
-        "description": "Токаревский маяк, 1",
-        "address": "Адрес не указан",
-        "image": [
-          "/photo-dev/vokn/2.webp"
-        ]
+        "number": "В7",
+        "description": "Орудийный полукапонир № 06",
+        "address": "в районе дома по адресу: ул. Токаревский Маяк, д. 1"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -334,14 +325,11 @@
       "properties": {
         "fid": 6,
         "Layer": "5 - выявленные окн",
-        "Text": "1",
+        "Text": "В6",
         "id": 1,
-        "number": "1",
+        "number": "В6",
         "description": "Токаревский маяк",
-        "address": "",
-        "image": [
-          "/photo-dev/vokn/1.webp"
-        ]
+        "address": "оконечность насыпной косы, продолжающейся в южном направлении от ориентира, расположенного по ул. Токаревский маяк, д. 1"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -398,7 +386,7 @@
         "SubClasses": "AcDbEntity:AcDbPolyline",
         "Linetype": "ByLayer",
         "EntityHandle": "11F",
-        "Text": null,
+        "Text": "В1",
         "ogr_style": "PEN(c:#000000)",
         "font": null,
         "angle": null,
@@ -415,7 +403,10 @@
         "dx": null,
         "dx_u": null,
         "dy": null,
-        "dy_u": null
+        "dy_u": null,
+        "number": "В1",
+        "description": "Полукапонир береговой противодесантный № 18",
+        "address": "ул. Полевая, высота 62,1, северо-восточный склон высоты в 0,2 км от вершины, в районе отметок 19,5-19,1"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -452,14 +443,11 @@
       "properties": {
         "fid": 8,
         "Layer": "5 - выявленные окн",
-        "Text": "4",
+        "Text": "В5",
         "id": 4,
-        "number": "4",
-        "description": "ул. Посьетская, 24",
-        "address": "ул. Посьетская, 24",
-        "image": [
-          "/photo-dev/vokn/4.webp"
-        ]
+        "number": "В5",
+        "description": "Особняк военного инженера А.Л. Федорова, строителя Владивостокской крепости. Здесь с 1918 по 1922 г. жил выдающийся исследователь Арктики, учёный - геолог К.Г. Кригер-Войновский",
+        "address": "ул. Посьетская, 24 (угол на пересечении улиц Посьетская и 1-я Морская)"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -512,14 +500,11 @@
       "properties": {
         "fid": 9,
         "Layer": "5 - выявленные окн",
-        "Text": "6",
+        "Text": "В10",
         "id": 6,
-        "number": "6",
-        "description": " ул. Экипажная",
-        "address": "ул. Экипажная",
-        "image": [
-          "/photo-dev/vokn/6.webp"
-        ]
+        "number": "В10",
+        "description": "Ансамбль зданий Сибирского флотского экипажа",
+        "address": "между улицами Светланская, Экипажная, Муравьёва-Амурского"
       },
       "geometry": {
         "type": "MultiPolygon",

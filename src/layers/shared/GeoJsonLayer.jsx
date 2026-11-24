@@ -36,22 +36,29 @@ export default function GeoJsonLayer({
   featureProps,
   scaleStroke = false,
   pane,
+  sendToBack = false,
+  imageFolder,
 }) {
   const map = useMap();
   ensureMapPane(map, pane);
   const rawData = useGeoJson(url);
 
   const data = useMemo(() => {
-    if (!rawData || !featureProps) return rawData;
+    if (!rawData || (!featureProps && !imageFolder)) return rawData;
+    const folder = imageFolder ? imageFolder.replace(/\/$/, "") : "";
     return {
       ...rawData,
       features: rawData.features.map((feature) => {
-        const extra = featureProps[feature.properties?.fid];
-        if (!extra) return feature;
-        return { ...feature, properties: { ...feature.properties, ...extra } };
+        const extra = featureProps?.[feature.properties?.fid];
+        const properties = { ...feature.properties, ...extra };
+        if (folder && properties.number && !properties.image) {
+          properties.image = [`${folder}/${properties.number}.webp`];
+        }
+        if (!extra && properties === feature.properties) return feature;
+        return { ...feature, properties };
       }),
     };
-  }, [rawData, featureProps]);
+  }, [rawData, featureProps, imageFolder]);
 
   const displayData = useMemo(() => {
     if (!data) return null;
@@ -118,6 +125,9 @@ export default function GeoJsonLayer({
         data={displayData}
         pane={pane}
         onEachFeature={onEachFeature}
+        eventHandlers={
+          sendToBack ? { add: (event) => event.target.bringToBack() } : undefined
+        }
         style={pathStyle}
       />
     </>
